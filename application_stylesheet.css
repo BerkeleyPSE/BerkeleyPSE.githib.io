@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav#header {
+	background-color: #1f1f1f;
+}
+
+div#body {
+	margin: 125px auto auto auto;
+}
+
+form#application {
+	width: 70%;
+	margin: auto;
+}
+
+form#application input {
+	margin: 10px;
+}

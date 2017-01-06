@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav#header {
+	background-color: #1f1f1f;
+}
+
+div#body {
+	margin: 125px auto auto auto;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.25px;
+	margin-left: 300px;
+}
+

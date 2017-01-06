@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#body ul {
+	list-style: none;
+	margin: auto;
+	width: 85%;
+}
+
+div#body ul li {
+	display: inline-block;
+}
+
+div#body ul#vp li {
+	margin: 10px 5px 0 5px;
+}
+
+div#body ul li img {
+	opacity: 1.0;
+	transition: opacity .65s ease-in-out;
+	-moz-transition: opacity .65s ease-in-out;
+	-webkit-transition: opacity .65s ease-in-out;
+}
+
+div#body ul li img:hover {
+	opacity: 0.75;
+	transition: opacity .65s ease-in-out;
+	-moz-transition: opacity .65s ease-in-out;
+	-webkit-transition: opacity .65s ease-in-out;
+}
+
+div#body ul li p {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+li#kevin {
+	margin-left: 40.75%;
+}
+
+.names {
+	font-family: "Adobe Garamond Pro", serif;
+	font-size: 18px;
+	letter-spacing: 0.35px;
+}
+
+.position {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h3 {
+	font-size: 22px;
+}

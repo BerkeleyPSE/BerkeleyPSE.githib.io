@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3 {
+	font-size: 22px;
+	text-align: left;
+	margin-left: 300px;
+}
+
+p {
+	padding-bottom: 25px;
+}

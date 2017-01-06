@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Header */
+
+nav#header {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	display: inline;
+	position: absolute;
+}
+
+h1#PSE {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	float: left;
+	margin-left: 20px;
+}
+
+h1#PSE a {
+	color: white;
+}
+
+/* NAVIGATION BAR DROPDOWNS */
+
+ul#nav {
+	list-style: none;
+	font-weight: bold;
+	float: right;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+ul#nav li {
+	float: left;
+	margin-right: 14px;
+	position: relative;
+}
+
+ul#nav a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+ul#nav ul {
+	list-style: none;
+	position: absolute;
+	left: -9999px; /* dropdown tabs are hidden when not needed */
+}
+
+ul#nav ul li {
+	padding-top: 1px;
+	float: none;
+/*	line-height: 0.7em;*/
+}
+
+ul#nav ul a {
+	white-space: nowrap;
+}
+
+ul#nav li:hover ul {
+	left: 0;
+	border-color: #1f1f1f;
+	border-style: solid;
+	background-color: #1f1f1f;
+	text-align: left;
+	padding-right: 20px;
+}
+
+ul#nav li:hover ul li a:hover {
+	background: #1f1f1f;
+	color: yellow;
+}
+
+ul#nav a:hover#contact {
+	color: #1f1f1f;
+}
+
+li#contact-button {
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+li:hover#contact-button {
+	background-color: white;
+}
+
+/* Prefooter Navigation Bar */
+
+div#prefooter {
+	background-color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	clear: both;
+}
+
+p#prefooter-desc {
+	text-align: center;
+	color: #c8c8c8;
+}
+
+ul#icon-nav {
+	text-align: center;
+}
+
+ul#icon-nav li {
+	list-style: none;
+	display: inline;
+	padding-left: 5px;
+	pading-right: 5px;
+}
+
+/* Footer */
+
+div#footer {
+	background-color: #1f1f1f;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+p#footer-desc {
+	width: 80%;
+	color: #c8c8c8;
+}
+
+a#pse-link {
+	text-decoration: underline;
+	color: #c8c8c8;
+}
