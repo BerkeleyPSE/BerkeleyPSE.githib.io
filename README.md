@@ -1,1 +1,1 @@
-# BerkeleyPSE.githib.io
+# BerkeleyPSE.github.io
