@@ -119,6 +119,10 @@ ul#icon-nav li {
 	pading-right: 5px;
 }
 
+ul#icon-nav li:hover {
+	opacity: 0.75;
+}
+
 /* Footer */
 
 div#footer {
