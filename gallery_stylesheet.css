@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+div {
+	margin: auto;
+}
+
+nav#header {
+	background-color: #1f1f1f;
+}
+
+div#body {
+	margin: 125px auto auto auto;
+	width: 100%;
+}
+
+/*
+div#galleries div div ul {
+	list-style: none;
+	margin: auto;
+	display: block;
+	width: 90%;
+}
+
+div#galleries div div ul li {
+	display: inline;
+	margin: auto;
+}
+*/
+
+.wrapper {
+	text-align: center;
+}
+
+	.wrapper ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 85%;
+		list-style: none;
+	}
+
+    .wrapper li {
+        float: left;
+        padding: 5px 10px;
+/*        border: 1px solid black;*/
+    }
