@@ -20,3 +20,15 @@ h4 {
 	margin-left: 300px;
 }
 
+div#timeline {
+	margin: auto;
+	width: 70%;
+}
+
+div#whypse {
+	padding-top: 20px;
+}
+
+div#faqs {
+	margin-top: 20px;
+}
