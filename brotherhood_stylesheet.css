@@ -9,6 +9,10 @@ div#body {
 	margin: 125px auto auto auto;
 }
 
+h3 {
+	font-size: 22px;
+}
+
 div#body ul {
 	list-style: none;
 	margin: auto;

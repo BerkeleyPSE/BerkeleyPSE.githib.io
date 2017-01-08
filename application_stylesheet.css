@@ -7,6 +7,12 @@ nav#header {
 
 div#body {
 	margin: 125px auto auto auto;
+	width: 65%;
+}
+
+div#application {
+	margin: auto;
+/*	width: 50%;*/
 }
 
 form#application {
