@@ -4,122 +4,168 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Recruitment - Pi Sigma Epsilon Zeta Chi Chapter</title>
+
+	<!--METAS FOR WEB SEARCHES-->
+	<meta name="subject" content="Marketing">
+	<meta name="description" content="Pi Sigma Epsilon, Zeta Chi Chapter, is UC Berkeley's premier and only Marketing and Sales Professional Fraternity.">
+	<meta name="keywords" content="Pi Sigma Epsilon, UC Berkeley Pi Sigma Epsilon, Berkeley PSE, Berkeley Pi Sigma Epsilon, marketing, consulting, berkeley">
+	<meta name="url" content="http://berkeleypse.org">
+	<meta name="Reply-to" content="berkeleypse.president@gmail.com">
+	<meta name="copyright" content="Pi Sigma Epsilon">
+
+	<!--FAVICON-->
 	<link rel="shortcut icon" href="images/favicon.ico"/>
-	<link href="general_stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="classes_stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="recruitment_stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<!--STYLESHEETS-->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<link rel="stylesheet" href="css/recruitment_stylesheet.css"/>
+	
+	<!-- Bootstrap JavaScript library-->
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<!--GOOGLE FONT: MONTSERRAT-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
 
-<div>	
-	<nav id="header">
-		<h1 id="PSE"><a href="https://berkeleypse.github.io">Pi Sigma Epsilon<br>Zeta Chi Chapter</a></h1>
-		<ul id="nav">
+<nav class="navbar navbar-default" id="navigation-bar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		  <a id="PSE" class="navbar-brand text-uppercase" href="#">Pi Sigma Epsilon <br> Zeta Chi Chapter</a>
+		</div>
+		<ul id="main-navigation" class="nav navbar-nav navbar-right">
 			<li>
-				<a class="inactive" href="https://berkeleypse.github.io">Home</a>
+				<a href="https://berkeleypse.github.io">Home</a>
 			</li>
-			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/about">About</a>
-				<ul>
-					<li><a class="inactive" href="https://berkeleypse.github.io/about">About Us</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/careers">Careers</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/projects">Project Portfolio</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/pseconsulting">PSE Consulting</a></li>
+			<li class="dropdown">
+				<a href="https://berkeleypse.github.io/about">About</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a href="https://berkeleypse.github.io/about">About Us</a></li>
+					<li><a href="https://berkeleypse.github.io/careers">Careers</a></li>
+					<li><a href="https://berkeleypse.github.io/projects">Project Portfolio</a></li>
+					<li><a href="https://berkeleypse.github.io/pseconsulting">PSE Consulting</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="active-link" href="https://berkeleypse.github.io/recruitment">Recruitment</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a class="active-link" href="https://berkeleypse.github.io/recruitment">Information</a></li>
+					<li><a href="https://berkeleypse.github.io/recruitment#whypse">Why PSE?</a></li>
+					<li><a href="https://berkeleypse.github.io/recruitment#faqs">FAQs</a></li>
+					<li><a href="https://berkeleypse.github.io/application">Application</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="https://berkeleypse.github.io/brotherhood">Brotherhood</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a href="https://berkeleypse.github.io/brotherhood">Brothers</a></li>
+					<li><a href="https://berkeleypse.github.io/executives">Executive Board</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="active" href="https://berkeleypse.github.io/recruitment">Recruitment</a>
-				<ul>
-					<li><a class="active" href="https://berkeleypse.github.io/recruitment">Information</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/recruitment#whypse">Why PSE?</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/recruitment#faqs">FAQs</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/application">Application</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/brotherhood">Brotherhood</a>
-				<ul>
-					<li><a class="inactive" href="https://berkeleypse.github.io/brotherhood">Brothers</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/executives">Executive Board</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/gallery">Gallery</a>
+				<a href="https://berkeleypse.github.io/gallery">Gallery</a>
 			</li>
 			<li id="contact-button">
-				<a class="inactive" href="https://berkeleypse.github.io/contact" id="contact">Contact</a>
+				<a href="https://berkeleypse.github.io/contact" id="contact">Contact</a>
 			</li>
 		</ul>
-	</nav>
-</div>
+	</div>
+</nav>
 
-<div id="body">
-	<div id="timeline">
-<!--		<h3>Timeline</h3>-->
-		<iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1dK1-pvovH5fKzBcY25f4j6NYA1Qor8UA68GSlNruiq4&font=Default&lang=en&initial_zoom=1&height=400" width="100%" height="400" frameborder="0"></iframe>
+<div id="body" class="container-fluid">
+	
+	<div class="row" id="timeline">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1dK1-pvovH5fKzBcY25f4j6NYA1Qor8UA68GSlNruiq4&font=Default&lang=en&initial_zoom=1&height=400" width="100%" height="400" frameborder="0" class="center-block"></iframe>
+		</div>
+		<div class="col-sm-1"></div>
 	</div>
-	<div id="process">
-		<h3>Our Process</h3>
-		
+	
+	<div class="row">
+		<div class="col-sm-12">
+			<h2 class="text-center">Our Process</h2>
+		</div>
 	</div>
-	<div id="whypse">
-		<h3>Why PSE?</h3>
-		<p>Differentiating itself from numerous other business fraternities and marketing organizations on campus, Pi Sigma Epsilon focuses specifically on marketing, management, and sales. Our brothers come from many different majors but all share one commonality: a passion for marketing, sales, or retail, and motivation to succeed. As a PSE brother you will have access to training, resources, networking, recruitment and internship opportunities with some of the largest companies in these industries. 
-		</p>
-		
-	</div>
-	<div id="faqs">
-		<h3>FAQs</h3>
-		
-		<h4>What makes PSE different from other organizations?</h4>
-		<p>PSE differentiates itself from other business fraternities and organizations both in its learning philosophy and specialization. We prepare our brothers with the knowledge and skills necessary to succeed in today's business world, but go further to provide opportunities to utilize and hone these skills within projects across various industries. PSE hosts networking opportunities and corporate infosessions with professionals and alumni, and puts its members in positions to become their best possible professional selves.
-		<br>
-		But PSE provides far more than professional development - as a fraternity, we are an intimate, close-knit environment where brothers can build strong personal relationships, and lasting friendships.
-		</p>
-		
-		<h4>What do you look for in recruits?</h4>
-		<p>There is no one "type" of person that will ensure advantage over other recruits. Zeta Chi is strong because of a diversity of majors, backgrounds, strengths, and interests. We primarily look for a good culture fit among our brotherhood, a genuine interest in business and our industries, and commitment and motivation to PSE.
-		</p>
-		
-		<h4>Why do you not use terms such as "rush" or "pledge"?</h4>
-		<p>PSE is a professional fraternity, and thus we choose to use terminology that reflects our professional attitude, character, and purpose. Terms such as "recruitment," "prospective member," "prospective member training," and "PM Trainer," are used in lieu of "rush," "pledge," "pledge process," and "pledgemaster," in any verbal or written communication involving participation or membership in Pi Sigma Epsilon.
-		</p>
-		
-		<h4>What is the time commitment for a prospective member?</h4>
-		<p>The time commitment for a prospective member (PM) generally ranges from 3-10 hours per week outside of a weekly 2-hour PM training on Monday nights.</p>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
 			
-		<h4>Will I be hazed as a prospective member?</h4>
-		<p><strong>Absolutely not.</strong> PSE treats its prospective members with respect. We actively encourage our PMs to partake in other enjoyable activities. Our PMs should not sacrifice their mental or physical health, or academic lives for PSE. <a href="https://twitter.com/ASUC_Union/status/646418648219942912" target="_blank">#BearsDontHaze</a>
-		<br> <br> <br> <br> <br>
-		</p>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	<div id="whypse" class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h2 class="text-center">Why PSE?</h2>
+			<p class="text-left">Differentiating itself from numerous other business fraternities and marketing organizations on campus, Pi Sigma Epsilon focuses specifically on marketing, management, and sales. Our brothers come from many different majors but all share one commonality: a passion for marketing, sales, or retail, and motivation to succeed. As a PSE brother you will have access to training, resources, networking, recruitment and internship opportunities with some of the largest companies in these industries.</p>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+	
+	<div id="faqs" class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h2 class="text-center">FAQs</h2>
+
+			<h3 class="text-left">What makes PSE different from other organizations?</h3>
+			<p class="text-left">PSE differentiates itself from other business fraternities and organizations both in its learning philosophy and specialization. We prepare our brothers with the knowledge and skills necessary to succeed in today's business world, but go further to provide opportunities to utilize and hone these skills within projects across various industries. PSE hosts networking opportunities and corporate infosessions with professionals and alumni, and puts its members in positions to become their best possible professional selves.
+			<br>
+			But PSE provides far more than professional development - as a fraternity, we are an intimate, close-knit environment where brothers can build strong personal relationships, and lasting friendships.
+			</p>
+
+			<h3 class="text-left">What do you look for in recruits?</h3>
+			<p>There is no one "type" of person that will ensure advantage over other recruits. Zeta Chi is strong because of a diversity of majors, backgrounds, strengths, and interests. We primarily look for a good culture fit among our brotherhood, a genuine interest in business and our industries, and commitment and motivation to PSE.
+			</p>
+
+			<h3 class="text-left">Why do you not use terms such as "rush" or "pledge"?</h3>
+			<p>PSE is a professional fraternity, and thus we choose to use terminology that reflects our professional attitude, character, and purpose. Terms such as "recruitment," "prospective member," "prospective member training," and "PM Trainer," are used in lieu of "rush," "pledge," "pledge process," and "pledgemaster," in any verbal or written communication involving participation or membership in Pi Sigma Epsilon.
+			</p>
+
+			<h3 class="text-left">What is the time commitment for a prospective member?</h3>
+			<p>The time commitment for a prospective member (PM) generally ranges from 3-10 hours per week outside of a weekly 2-hour PM training on Monday nights.</p>
+
+			<h3 class="text-left">Will I be hazed as a prospective member?</h3>
+			<p><strong>Absolutely not.</strong> PSE treats its prospective members with respect. We actively encourage our PMs to partake in other enjoyable activities. Our PMs should not sacrifice their mental or physical health, or academic lives for PSE. <a href="https://twitter.com/ASUC_Union/status/646418648219942912" target="_blank">#BearsDontHaze</a>
+			</p>
+		</div>
+		<div class="col-sm-2"></div>
 				
 	</div>
 </div>
 
-<!--PREFOOTER SECTION-->
+<!--FOOTER SECTIONS-->
 
-<div id="prefooter">
-	<p id="prefooter-desc">Find us on Facebook, Twitter, and Instagram.</p>
-	<ul id="icon-nav">
-		<li><a href="https://www.facebook.com/BerkeleyPSE" target="_blank"><img src="images/icons/facebook.png" height="50" width="50"/></a></li>
-		<li><a href="https://twitter.com/berkeleypse" target="_blank"><img src="images/icons/twitter.png" height="50" width="50"/></a></li>
-		<li><img src="images/icons/instagram.png" height="50" width="50"/></li> <!-- TODO: Create Instagram & Link it!-->
-	</ul>
-</div>
-
-<!--FOOTER SECTION-->
-
-<div id="footer">
-	<p id="footer-desc">Pi Sigma Epsilon (PSE) is a co-ed, professional fraternal organization in sales, marketing, and management. 
-	<br>
-	The mission of Pi Sigma Epsilon is to develop the sales and marketing skills of its members through experiential learning and professional opportunities.
-	<br> <br>
-	National Website: <i><a id="pse-link" href="https://www.pse.org" target="_blank">www.pse.org</a></i>
-	<br> <br>
-	©2017. All rights reserved. Pi Sigma Epsilon, Zeta Chi Chapter.
-	</p>
+<div class="container-fluid">
+	<div id="prefooter" class="row">
+		<div class="col-sm-12 center-block">
+			<p id="prefooter-desc" class="text-center">Find us on Facebook, Twitter, and Instagram.</p>
+			<ul id="icon-nav">
+				<li><a href="https://www.facebook.com/BerkeleyPSE" target="_blank"><img src="images/icons/facebook.png" height="50" width="50"/></a></li>
+				<li><a href="https://twitter.com/berkeleypse" target="_blank"><img src="images/icons/twitter.png" height="50" width="50"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/icons/instagram.png" height="50" width="50"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer" class="row">
+		<div class="col-sm-12">
+			<p id="footer-desc" class="text-left">Pi Sigma Epsilon (PSE) is a co-ed, professional fraternal organization in sales, marketing, and management. 
+			<br>
+			The mission of Pi Sigma Epsilon is to develop the sales and marketing skills of its members through experiential learning and professional opportunities.
+			<br> <br>
+			National Website: <i><a id="pse-link" href="https://www.pse.org" target="_blank">www.pse.org</a></i>
+			<br> <br>
+			©2017. All rights reserved. Pi Sigma Epsilon, Zeta Chi Chapter.
+			</p>
+		</div>
+	</div>
 </div>
 
 </body>
