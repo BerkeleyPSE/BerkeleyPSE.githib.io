@@ -30,10 +30,20 @@ h1 {
 
 h2 {
 	font-family: "Montserrat", sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	color: #1a1a1a;
+	text-decoration: none;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	font-weight: 100;
 	letter-spacing: 0.5px;
 	text-decoration: none;
+	color: #1a1a1a;
 }
 
 ul li:hover {
@@ -69,6 +79,8 @@ nav#navigation-bar {
 	z-index: 5;
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
+	border-radius: 0;
+	padding-bottom: 15px;
 }
 
 a#PSE {

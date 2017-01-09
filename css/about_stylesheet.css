@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav#navigation-bar {
+	background-color: #1f1f1f;
+}
+
+div#body {
+	margin-top: 125px;
+}
+
+p#our_history {
+	width: 100%;
+}
+
+img#timeline {
+	margin-top: 50px;
+	width: 95%;
+}
