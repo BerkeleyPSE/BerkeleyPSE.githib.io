@@ -86,8 +86,10 @@ nav#navigation-bar {
 a#PSE {
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
+	font-weight: bold;
 	letter-spacing: 1px;
-	margin-left: 20px;
+	line-height: 1.2em;
+	margin-left: 15px;
 	color: white;
 }
 
@@ -103,6 +105,7 @@ ul#main-navigation li {
 ul#main-navigation a {
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
+	font-weight: bold;
 	color: white;
 	letter-spacing: 1px;
 	padding: 10px;

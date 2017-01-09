@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contact-desc {
+	font-size: 16px;
+	width: 100%;
+	line-height: 3em;
+}
+
+div#prefooter {
+	margin-top: 15px;
+}
