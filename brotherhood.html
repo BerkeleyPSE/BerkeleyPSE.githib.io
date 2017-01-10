@@ -4,403 +4,482 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Brothers - Pi Sigma Epsilon Zeta Chi Chapter</title>
+	
+	<!--METAS FOR WEB SEARCHES-->
+	<meta name="subject" content="Marketing">
+	<meta name="description" content="Pi Sigma Epsilon, Zeta Chi Chapter, is UC Berkeley's premier and only Marketing and Sales Professional Fraternity.">
+	<meta name="keywords" content="Pi Sigma Epsilon, UC Berkeley Pi Sigma Epsilon, Berkeley PSE, Berkeley Pi Sigma Epsilon, marketing, consulting, berkeley">
+	<meta name="url" content="http://berkeleypse.org">
+	<meta name="Reply-to" content="berkeleypse.president@gmail.com">
+	<meta name="copyright" content="Pi Sigma Epsilon">
+
+	<!--FAVICON-->
 	<link rel="shortcut icon" href="images/favicon.ico"/>
-	<link href="general_stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="classes_stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="brotherhood_stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="modal_stylesheet.css" rel="stylesheet" type="text/css">
+	
+	<!--STYLESHEETS-->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	<link rel="stylesheet" href="css/brotherhood_stylesheet.css"/>
+	<link rel="stylesheet" href="css/modal_stylesheet.css"/>
+	
+	<!-- Bootstrap JavaScript library-->
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<!--GOOGLE FONT: MONTSERRAT-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	
 </head>
 
 <body>
 
-<div>
-	<nav id="header">
-		<h1 id="PSE"><a href="https://berkeleypse.github.io">Pi Sigma Epsilon<br>Zeta Chi Chapter</a></h1>
-		<ul id="nav">
+<nav class="navbar navbar-default" id="navigation-bar">
+	<div class="container-fluid">
+		<div class="navbar-header">
+		  <a id="PSE" class="navbar-brand text-uppercase" href="#">Pi Sigma Epsilon <br> Zeta Chi Chapter</a>
+		</div>
+		<ul id="main-navigation" class="nav navbar-nav navbar-right">
 			<li>
-				<a class="inactive" href="https://berkeleypse.github.io">Home</a>
+				<a href="https://berkeleypse.github.io">Home</a>
 			</li>
-			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/about">About</a>
-				<ul>
-					<li><a class="inactive" href="https://berkeleypse.github.io/about">About Us</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/careers">Careers</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/projects">Project Portfolio</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/pseconsulting">PSE Consulting</a></li>
+			<li class="dropdown">
+				<a href="https://berkeleypse.github.io/about">About</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a href="https://berkeleypse.github.io/about">About Us</a></li>
+					<li><a href="https://berkeleypse.github.io/careers">Careers</a></li>
+					<li><a href="https://berkeleypse.github.io/projects">Project Portfolio</a></li>
+					<li><a href="https://berkeleypse.github.io/pseconsulting">PSE Consulting</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="https://berkeleypse.github.io/recruitment">Recruitment</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a href="https://berkeleypse.github.io/recruitment">Information</a></li>
+					<li><a href="https://berkeleypse.github.io/recruitment#whypse">Why PSE?</a></li>
+					<li><a href="https://berkeleypse.github.io/recruitment#faqs">FAQs</a></li>
+					<li><a href="https://berkeleypse.github.io/application">Application</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="https://berkeleypse.github.io/brotherhood">Brotherhood</a>
+				<ul class="dropdown-menu dropdown-menu-left">
+					<li><a href="https://berkeleypse.github.io/brotherhood">Brothers</a></li>
+					<li><a class="active-link" href="https://berkeleypse.github.io/executives">Executive Board</a></li>
 				</ul>
 			</li>
 			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/recruitment">Recruitment</a>
-				<ul>
-					<li><a class="inactive" href="https://berkeleypse.github.io/recruitment">Information</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/recruitment#whypse">Why PSE?</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/recruitment#faqs">FAQs</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/application">Application</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="active" href="https://berkeleypse.github.io/brotherhood">Brotherhood</a>
-				<ul>
-					<li><a class="active" href="https://berkeleypse.github.io/brotherhood">Brothers</a></li>
-					<li><a class="inactive" href="https://berkeleypse.github.io/executives">Executive Board</a></li>
-				</ul>
-			</li>
-			<li>
-				<a class="inactive" href="https://berkeleypse.github.io/gallery">Gallery</a>
+				<a href="https://berkeleypse.github.io/gallery">Gallery</a>
 			</li>
 			<li id="contact-button">
-				<a class="inactive" href="https://berkeleypse.github.io/contact" id="contact">Contact</a>
+				<a href="https://berkeleypse.github.io/contact" id="contact">Contact</a>
 			</li>
 		</ul>
-	</nav>
-</div>
+	</div>
+</nav>
 
-<div id="body">
-	<h3>Brothers</h3>
-	<ul>
-		<li onclick="document.getElementById('corona-modal').style.display='block'">
-		<img src="images/brothers/aaron-corona.jpg" height="301" width="200"/><br><p>Aaron Corona</p></li>
-		<li onclick="document.getElementById('nathan-modal').style.display='block'">
-		<img src="images/brothers/abhi-nathan.jpg" height="301" width="200"/><br><p>Abhi Nathan</p></li>
-		<li onclick="document.getElementById('madane-modal').style.display='block'">
-		<img src="images/brothers/akshay-madane.jpg" height="301" width="200"/><br><p>Akshay Madane</p></li>
-		<li onclick="document.getElementById('a-chen-modal').style.display='block'">
-		<img src="images/brothers/anne-ting-chen.jpg" height="301" width="200"/><br><p>Anne-Ting Chen</p></li>
-		<li onclick="document.getElementById('fan-modal').style.display='block'">
-		<img src="images/brothers/catie-fan.jpg" height="301" width="200"/><br><p>Catie Fan</p></li>		
-		<li onclick="document.getElementById('smith-modal').style.display='block'">
-		<img src="images/brothers/connor-smith.jpg" height="301" width="200"/><br><p>Connor Smith</p></li>
-		<li onclick="document.getElementById('taylor-modal').style.display='block'">
-		<img src="images/brothers/dallas-taylor.jpg" height="301" width="200"/><br><p>Dallas Taylor</p></li>
-		<li onclick="document.getElementById('javidzad-modal').style.display='block'">
-		<img src="images/brothers/david-javidzad.jpg" height="301" width="200"/><br><p>David Javidzad</p></li>
-		<li onclick="document.getElementById('balakumar-modal').style.display='block'">
-		<img src="images/brothers/dhakshi-balakumar.jpg" height="301" width="200"/><br><p>Dhakshi Balakumar</p></li>
-		<li onclick="document.getElementById('zhou-modal').style.display='block'">
-		<img src="images/brothers/dorene-zhou.jpg" height="301" width="200"/><br><p>Dorene Zhou</p></li>
-<!--
-		<li onclick="document.getElementById('choe-modal').style.display='block'">
-		<img src="images/brothers/" height="301" width="200"/><br><p>Esther Choe</p></li>
--->
-		<li onclick="document.getElementById('e-chen-modal').style.display='block'">
-		<img src="images/brothers/eva-chen.jpg" height="301" width="200"/><br><p>Eva Chen</p></li>
-		<li onclick="document.getElementById('su-modal').style.display='block'">
-		<img src="images/brothers/eva-su.jpg" height="301" width="200"/><br><p>Eva Su</p></li>	
-		<li onclick="document.getElementById('kalluri-modal').style.display='block'">
-		<img src="images/brothers/harika-kalluri.jpg" height="301" width="200"/><br><p>Harika Kalluri</p></li>	
-		<li onclick="document.getElementById('kim-modal').style.display='block'">
-		<img src="images/brothers/hoon-kim.jpg" height="301" width="200"/><br><p>Hoon Kim</p></li>
-		<li onclick="document.getElementById('tsang-modal').style.display='block'">
-		<img src="images/brothers/jacqueline-tsang.jpg" height="301" width="200"/><br><p>Jacqueline Tsang</p></li>
-		<li onclick="document.getElementById('suk-modal').style.display='block'">
-		<img src="images/brothers/jane-suk.jpg" height="301" width="200"/><br><p>Jane Suk</p></li>
-<!--
-		<li onclick="document.getElementById('liu-modal').style.display='block'">
-		<img src="images/brothers/" height="301" width="200"/><br><p>Jeanine Liu</p></li>
--->
-		<li onclick="document.getElementById('duan-modal').style.display='block'">
-		<img src="images/brothers/jonathan-duan.jpg" height="301" width="200"/><br><p>Jonathan Duan</p></li>
-		<li onclick="document.getElementById('k-li-modal').style.display='block'">
-		<img src="images/brothers/kailin-li.jpg" height="301" width="200"/><br><p>Kailin Li</p></li>		
-		<li onclick="document.getElementById('suri-modal').style.display='block'">
-		<img src="images/brothers/kanak-suri.jpg" height="301" width="200"/><br><p>Kanak Suri</p></li>
-		<li onclick="document.getElementById('phan-modal').style.display='block'">
-		<img src="images/brothers/kevin-phan.jpg" height="301" width="200"/><br><p>Kevin Phan</p></li>
-		<li onclick="document.getElementById('k-lu-modal').style.display='block'">
-		<img src="images/brothers/kyle-lu.jpg" height="301" width="200"/><br><p>Kyle Lu</p></li>
-		<li onclick="document.getElementById('lily-li-modal').style.display='block'">
-		<img src="images/brothers/lily-li.jpg" height="301" width="200"/><br><p>Lily Li</p></li>
-		<li onclick="document.getElementById('linda-li-modal').style.display='block'">
-		<img src="images/brothers/linda-li.jpg" height="301" width="200"/><br><p>Linda Li</p></li>
-<!--
-		<li onclick="document.getElementById('seltzer-modal').style.display='block'">
-		<img src="images/brothers/" height="301" width="200"/><br><p>Max Seltzer</p></li>
--->
-		<li onclick="document.getElementById('chu-modal').style.display='block'">
-		<img src="images/brothers/melody-chu.jpg" height="301" width="200"/><br><p>Melody Chu</p></li>	
-		<li onclick="document.getElementById('wan-modal').style.display='block'">
-		<img src="images/brothers/melody-wan.jpg" height="301" width="200"/><br><p>Melody Wan</p></li>
-		<li onclick="document.getElementById('zhu-modal').style.display='block'">
-		<img src="images/brothers/nancy-zhu.jpg" height="301" width="200"/><br><p>Nancy Zhu</p></li>
-		<li onclick="document.getElementById('aminpour-modal').style.display='block'">
-		<img src="images/brothers/nathan-aminpour.jpg" height="301" width="200"/><br><p>Nathan Aminpour</p></li>
-		<li onclick="document.getElementById('kelleher-modal').style.display='block'">
-		<img src="images/brothers/nathan-kelleher.jpg" height="301" width="200"/><br><p>Nathan Kelleher</p></li>
-		<li onclick="document.getElementById('cheng-modal').style.display='block'">
-		<img src="images/brothers/nick-cheng.jpg" height="301" width="200"/><br><p>Nick Cheng</p></li>
-		<li onclick="document.getElementById('chun-modal').style.display='block'">
-		<img src="images/brothers/nick-chun.JPG" height="301" width="200"/><br><p>Nick Chun</p></li>	
-<!--
-		<li onclick="document.getElementById('vu-modal').style.display='block'">
-		<img src="images/brothers/" height="301" width="200"/><br><p>Peter Vu</p></li>
--->
-		<li onclick="document.getElementById('rangnekar-modal').style.display='block'">
-		<img src="images/brothers/rahul-rangnekar.jpg" height="301" width="200"/><br><p>Rahul Rangnekar</p></li>
-		<li onclick="document.getElementById('pham-modal').style.display='block'">
-		<img src="images/brothers/reann-pham.jpg" height="301" width="200"/><br><p>Reann Pham</p></li>
-		<li onclick="document.getElementById('desai-modal').style.display='block'">
-		<img src="images/brothers/rushil-desai.jpg" height="301" width="200"/><br><p>Rushil Desai</p></li>
-		<li onclick="document.getElementById('yu-modal').style.display='block'">
-		<img src="images/brothers/sean-yu.jpg" height="301" width="200"/><br><p>Sean Yu</p></li>
-		<li onclick="document.getElementById('jerath-modal').style.display='block'">
-		<img src="images/brothers/shreya-jerath.jpg" height="301" width="200"/><br><p>Shreya Jerath</p></li>
-		<li onclick="document.getElementById('adil-modal').style.display='block'">
-		<img src="images/brothers/syed-adil.jpg" height="301" width="200"/><br><p>Syed Adil</p></li>
-		<li onclick="document.getElementById('lee-modal').style.display='block'">
-		<img src="images/brothers/taylor-lee.jpg" height="301" width="200"/><br><p>Taylor Lee</p></li>
-		<li onclick="document.getElementById('y-lu-modal').style.display='block'">
-		<img src="images/brothers/yixuan-lu.jpg" height="301" width="200"/><br><p>Yixuan Lu</p></li>
-	</ul>
+<div id="body" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2 id="brothers" class="text-center">Brothers</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('corona-modal').style.display='block'">
+				<img src="images/brothers/aaron-corona.jpg" height="301" width="200"/><br><p>Aaron Corona</p></li>
+				<li onclick="document.getElementById('nathan-modal').style.display='block'">
+				<img src="images/brothers/abhi-nathan.jpg" height="301" width="200"/><br><p>Abhi Nathan</p></li>
+				<li onclick="document.getElementById('madane-modal').style.display='block'">
+				<img src="images/brothers/akshay-madane.jpg" height="301" width="200"/><br><p>Akshay Madane</p></li>
+				<li onclick="document.getElementById('a-chen-modal').style.display='block'">
+				<img src="images/brothers/anne-ting-chen.jpg" height="301" width="200"/><br><p>Anne-Ting Chen</p></li>
+				<li onclick="document.getElementById('fan-modal').style.display='block'">
+				<img src="images/brothers/catie-fan.jpg" height="301" width="200"/><br><p>Catie Fan</p></li>		
+				<li onclick="document.getElementById('smith-modal').style.display='block'">
+				<img src="images/brothers/connor-smith.jpg" height="301" width="200"/><br><p>Connor Smith</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('taylor-modal').style.display='block'">
+				<img src="images/brothers/dallas-taylor.jpg" height="301" width="200"/><br><p>Dallas Taylor</p></li>
+				<li onclick="document.getElementById('javidzad-modal').style.display='block'">
+				<img src="images/brothers/david-javidzad.jpg" height="301" width="200"/><br><p>David Javidzad</p></li>
+				<li onclick="document.getElementById('balakumar-modal').style.display='block'">
+				<img src="images/brothers/dhakshi-balakumar.jpg" height="301" width="200"/><br><p>Dhakshi Balakumar</p></li>
+				<li onclick="document.getElementById('zhou-modal').style.display='block'">
+				<img src="images/brothers/dorene-zhou.jpg" height="301" width="200"/><br><p>Dorene Zhou</p></li>
+				<li onclick="document.getElementById('choe-modal').style.display='block'">
+				<img src="images/brothers/esther-choe.JPG" height="301" width="200"/><br><p>Esther Choe</p></li>
+				<li onclick="document.getElementById('e-chen-modal').style.display='block'">
+				<img src="images/brothers/eva-chen.jpg" height="301" width="200"/><br><p>Eva Chen</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('su-modal').style.display='block'">
+				<img src="images/brothers/eva-su.jpg" height="301" width="200"/><br><p>Eva Su</p></li>	
+				<li onclick="document.getElementById('kalluri-modal').style.display='block'">
+				<img src="images/brothers/harika-kalluri.jpg" height="301" width="200"/><br><p>Harika Kalluri</p></li>	
+				<li onclick="document.getElementById('kim-modal').style.display='block'">
+				<img src="images/brothers/hoon-kim.jpg" height="301" width="200"/><br><p>Hoon Kim</p></li>
+				<li onclick="document.getElementById('tsang-modal').style.display='block'">
+				<img src="images/brothers/jacqueline-tsang.jpg" height="301" width="200"/><br><p>Jacqueline Tsang</p></li>
+				<li onclick="document.getElementById('suk-modal').style.display='block'">
+				<img src="images/brothers/jane-suk.jpg" height="301" width="200"/><br><p>Jane Suk</p></li>
+				<li onclick="document.getElementById('duan-modal').style.display='block'">
+				<img src="images/brothers/jonathan-duan.jpg" height="301" width="200"/><br><p>Jonathan Duan</p></li>
+			</ul>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('k-li-modal').style.display='block'">
+				<img src="images/brothers/kailin-li.jpg" height="301" width="200"/><br><p>Kailin Li</p></li>		
+				<li onclick="document.getElementById('suri-modal').style.display='block'">
+				<img src="images/brothers/kanak-suri.jpg" height="301" width="200"/><br><p>Kanak Suri</p></li>
+				<li onclick="document.getElementById('phan-modal').style.display='block'">
+				<img src="images/brothers/kevin-phan.jpg" height="301" width="200"/><br><p>Kevin Phan</p></li>
+				<li onclick="document.getElementById('k-lu-modal').style.display='block'">
+				<img src="images/brothers/kyle-lu.jpg" height="301" width="200"/><br><p>Kyle Lu</p></li>
+				<li onclick="document.getElementById('lily-li-modal').style.display='block'">
+				<img src="images/brothers/lily-li.jpg" height="301" width="200"/><br><p>Lily Li</p></li>
+				<li onclick="document.getElementById('linda-li-modal').style.display='block'">
+				<img src="images/brothers/linda-li.jpg" height="301" width="200"/><br><p>Linda Li</p></li>
+			</ul>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('seltzer-modal').style.display='block'">
+				<img src="images/brothers/rahul-rangnekar.jpg" height="301" width="200"/><br><p>Max Seltzer</p></li>
+				<li onclick="document.getElementById('chu-modal').style.display='block'">
+				<img src="images/brothers/melody-chu.jpg" height="301" width="200"/><br><p>Melody Chu</p></li>	
+				<li onclick="document.getElementById('wan-modal').style.display='block'">
+				<img src="images/brothers/melody-wan.jpg" height="301" width="200"/><br><p>Melody Wan</p></li>
+				<li onclick="document.getElementById('zhu-modal').style.display='block'">
+				<img src="images/brothers/nancy-zhu.jpg" height="301" width="200"/><br><p>Nancy Zhu</p></li>
+				<li onclick="document.getElementById('aminpour-modal').style.display='block'">
+				<img src="images/brothers/nathan-aminpour.jpg" height="301" width="200"/><br><p>Nathan Aminpour</p></li>
+				<li onclick="document.getElementById('kelleher-modal').style.display='block'">
+				<img src="images/brothers/nathan-kelleher.jpg" height="301" width="200"/><br><p>Nathan Kelleher</p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="list-inline text-center">
+			<li onclick="document.getElementById('chun-modal').style.display='block'">
+			<img src="images/brothers/nicholas-chun.JPG" height="301" width="200"/><br><p>Nicholas Chun</p></li>	
+			<li onclick="document.getElementById('cheng-modal').style.display='block'">
+			<img src="images/brothers/nick-cheng.jpg" height="301" width="200"/><br><p>Nick Cheng</p></li>
+			<li onclick="document.getElementById('rangnekar-modal').style.display='block'">
+			<img src="images/brothers/rahul-rangnekar.jpg" height="301" width="200"/><br><p>Rahul Rangnekar</p></li>
+			<li onclick="document.getElementById('pham-modal').style.display='block'">
+			<img src="images/brothers/reann-pham.jpg" height="301" width="200"/><br><p>Reann Pham</p></li>
+			<li onclick="document.getElementById('desai-modal').style.display='block'">
+			<img src="images/brothers/rushil-desai.jpg" height="301" width="200"/><br><p>Rushil Desai</p></li>
+			<li onclick="document.getElementById('yu-modal').style.display='block'">
+			<img src="images/brothers/sean-yu.jpg" height="301" width="200"/><br><p>Sean Yu</p></li>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="list-inline text-center">
+				<li onclick="document.getElementById('jerath-modal').style.display='block'">
+				<img src="images/brothers/shreya-jerath.jpg" height="301" width="200"/><br><p>Shreya Jerath</p></li>
+				<li onclick="document.getElementById('adil-modal').style.display='block'">
+				<img src="images/brothers/syed-adil.jpg" height="301" width="200"/><br><p>Syed Adil</p></li>
+				<li onclick="document.getElementById('lee-modal').style.display='block'">
+				<img src="images/brothers/taylor-lee.jpg" height="301" width="200"/><br><p>Taylor Lee</p></li>
+				<li onclick="document.getElementById('y-lu-modal').style.display='block'">
+				<img src="images/brothers/yixuan-lu.jpg" height="301" width="200"/><br><p>Yixuan Lu</p></li>
+			</ul>
+		</div>
+	</div>
 </div>
-
-<br> <br> <br> <br> <br>
 
 <!--MODALS-->
 
-<!--AARON CORONA--> <!--FINISHED-->
-<div id="corona-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('corona-modal').style.display='none'">&times;</span>
-			<h3 class="name">Aaron Corona</h3>
-			<h4 class="title">Vice President of Public Relations</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/aaron-corona.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Los Angeles, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Political Economy</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Financial Services, <br> &nbsp; &nbsp; Investment Banking</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">Aaron greatly values the consulting and marketing interview skills he learned as a prospective member last semester. His role model is Nathan Aminpour, PSE's former president. Aaron spends the majority of his free time working out and playing basketball at the RSF in his free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/aaronmcorona" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--ABHI NATHAN--> <!--FINISHED-->
-<div id="nathan-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('nathan-modal').style.display='none'">&times;</span>
-			<h3 class="name">Abhi Nathan</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/abhi-nathan.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">San Diego, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Cognitive Science</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Technology Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has helped Abhi grow personally and professionally. She initially joined with hopes of learning the skills she would need to be successful in the business world. She has gained that and more. In addition to her newfound communication skills and exposure to the various fields within business, PSE has given Abhi the opportunity to make lasting friendships with people who inspire her to be her best self. Her role model is her mother. Abhi loves to make art, run, and explore new places in her free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/abhinathan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--AARON CORONA--> 
+<div id="corona-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('corona-modal').style.display='none'">&times;</span>
+				<h2 class="name">Aaron Corona</h2>
+				<h3 class="title">Vice President of Public Relations</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/aaron-corona.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Los Angeles, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Politcal Economy</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Financial Services, <br> &nbsp; &nbsp; Investment Banking</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-80">Aaron greatly values the consulting and marketing interview skills he learned as a prospective member last semester. His role model is Nathan Aminpour, PSE's former president. Aaron spends the majority of his free time working out and playing basketball at the RSF in his free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/FILLER" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--AKSHAY MADANE--> <!--FINISHED-->
-<div id="madane-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('madane-modal').style.display='none'">&times;</span>
-			<h3 class="name">Akshay Madane</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/akshay-madane.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Singapore</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Epsilon</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Political Economy</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Healthcare Management &amp; Strategy, <br> &nbsp; &nbsp; Law</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Finance</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">In addition to invaluable business skills, PSE has taught Akshay to develop a healthy balance of fun and professionalism, and to let his charming character shine in the workplace. His role model is Punit Renjen, CEO of Deloitte. Akshay is a member of the International Students at Berkeley, and a Marketing Director for both Google@Berkeley and the ASUC Office of the Chief Technology Officer. He was a finalist for the Deloitte Consulting case competition, and attended both the Deloitte Freshman Leadership Conference and FullBridge Leadership Summit. Akshay loves to read, swim, and travel throughout Southeast Asia.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/madaneakshay" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--ABHI NATHAN--> 
+<div id="nathan-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('nathan-modal').style.display='none'">&times;</span>
+				<h2 class="name">Abhi Nathan</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/abhi-nathan.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">San Diego, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration &amp; Cognitive Science</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Technology Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has helped Abhi grow personally and professionally. She initially joined with hopes of learning the skills she would need to be successful in the business world. She has gained that and more. In addition to her newfound communication skills and exposure to the various fields within business, PSE has given Abhi the opportunity to make lasting friendships with people who inspire her to be her best self. Her role model is her mother. Abhi loves to make art, run, and explore new places in her free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/abhinathan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--ANNE-TING CHEN-->
-<div id="a-chen-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('a-chen-modal').style.display='none'">&times;</span>
-			<h3 class="name">Anne-Ting Chen</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/anne-ting-chen.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--CATIE FAN--> <!--FINISHED-->
-<div id="fan-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('fan-modal').style.display='none'">&times;</span>
-			<h3 class="name">Catie Fan</h3>
-			<h4 class="title">Director of Projects</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/catie-fan.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">San Diego, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Management Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">Through PSE, Catie has learned invaluable professional skills to help her tackle interviews, presentations, and more. She's also learned the value of hard work, and every brother inspires her in a unique way to be a better person every day. She looks to Beyonce as a role model. Catie is also on the Cal Mock Trial team here at Berkeley, and won 2nd place at the 2016 PwC case competition. She loves to sing, travel, and visit art museums.
-			</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/catie-fan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--AKSHAY MADANE--> 
+<div id="madane-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('madane-modal').style.display='none'">&times;</span>
+				<h2 class="name">Akshay Madane</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/akshay-madane.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Singapore</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Epsilon</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Political Economy</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Healthcare Management &amp; Strategy, <br> &nbsp; &nbsp; Law</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Finance</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-20">In addition to invaluable business skills, PSE has taught Akshay to develop a healthy balance of fun and professionalism, and to let his charming character shine in the workplace. His role model is Punit Renjen, CEO of Deloitte. Akshay is a member of the International Students at Berkeley, and a Marketing Director for both Google@Berkeley and the ASUC Office of the Chief Technology Officer. He was a finalist for the Deloitte Consulting case competition, and attended both the Deloitte Freshman Leadership Conference and FullBridge Leadership Summit. Akshay loves to read, swim, and travel throughout Southeast Asia.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/madaneakshay" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--CONNOR SMITH--> <!--FINISHED-->
-<div id="smith-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('smith-modal').style.display='none'">&times;</span>
-			<h3 class="name">Connor Smith</h3>
-			<h4 class="title">Director of Brotherhood</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/connor-smith.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Los Angeles, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Investment Banking, <br> &nbsp; &nbsp; Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">Through PSE, Connor has learned to improve upon his weaknesses and capitalize on his strengths. PSE has taught him the importance of cooperation in group settings and the essential role of leadership in all situations. Everything he has learned from PSE gives him a deeper understanding of business and prepares him for the real world. His role model is serial entrepreneur and businessman Elon Musk. Connor is also a member of Enactus, an entrepreneurship club at Berkeley, and works in the Office of the Registrar. He has received the Eagle Scout Award, and spends his free time running, camping, or woodworking.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/connordsmith" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--ANNE-TING CHEN--> 
+<div id="a-chen-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('a-chen-modal').style.display='none'">&times;</span>
+				<h2 class="name">Anne-Ting Chen</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/anne-ting-chen.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Taipei, Taiwan</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Eta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Environmental Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Management Consulting, <br> &nbsp; &nbsp; Digital Marketing</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Technology</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">PSE has helped ease Anne-Ting's transition from a biology major to the business field. She became more knowledgeable about the career paths in the business fields, learned how to network with professionals and hone her interview skills. All the professional skills she gained through PSE helped her greatly with recruiting for summer internships and jobs. PSE also provided opportunities to working on projects with various companies and through these experiences she was able to explore different fields in business. Her role model is Ellen DeGeneres. Anne-Ting is involved in the Volunteer Health Interpreters Organization, and the Taiwanese DeCal, and she loves to hike, swim, and travel whenever she can.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/annetingchen" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--DALLAS TAYLOR-->
+<!--CATIE FAN--> 
+<div id="fan-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('fan-modal').style.display='none'">&times;</span>
+				<h2 class="name">Catie Fan</h2>
+				<h3 class="title">Director of Projects</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/catie-fan.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">San Diego, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Management Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">Through PSE, Catie has learned invaluable professional skills to help her tackle interviews, presentations, and more. She's also learned the value of hard work, and every brother inspires her in a unique way to be a better person every day. She looks to Beyonce as a role model. Catie is also on the Cal Mock Trial team here at Berkeley, and won 2nd place at the 2016 PwC case competition. She loves to sing, travel, and visit art museums.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/catie-fan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--CONNOR SMITH--> 
+<div id="smith-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('smith-modal').style.display='none'">&times;</span>
+				<h2 class="name">Connor Smith</h2>
+				<h3 class="title">Director of Brotherhood</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/connor-smith.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Los Angeles, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration &amp; Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Investment Banking, <br> &nbsp; &nbsp; Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">Through PSE, Connor has learned to improve upon his weaknesses and capitalize on his strengths. PSE has taught him the importance of cooperation in group settings and the essential role of leadership in all situations. Everything he has learned from PSE gives him a deeper understanding of business and prepares him for the real world. His role model is serial entrepreneur and businessman Elon Musk. Connor is also a member of Enactus, an entrepreneurship club at Berkeley, and works in the Office of the Registrar. He has received the Eagle Scout Award, and spends his free time running, camping, or woodworking.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/connordsmith" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--DALLAS TAYLOR--> <!--UNFINISHED!!!-->
+<!--
 <div id="taylor-modal" class="modal">
 	<div class="modal-content">
 		<div class="modal-header">
@@ -444,284 +523,331 @@
 		</div>
 	</div>
 </div>
-
-<!--DAVID JAVIDZAD--> <!--FINISHED (except for headshot)-->
-<div id="javidzad-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('javidzad-modal').style.display='none'">&times;</span>
-			<h3 class="name">David Javidzad</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/david-javidzad.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Los Angeles, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Eta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Rhetoric</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Law</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Prospective Member Trainer</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">David finds his major takeaway from PSE to be professionalism. His role model is Jerry Seinfeld. David is invovled in the Daily Cal, Alpha Epsilon Pi social fraternity, and the Real Estate Redevelopment Group - David even has a Real Estate License in the state of California. He enjoys playing the guitar, singing, and reading in his free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/david-javidzad-2b521b55" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--DHAKSHI BALAKUMAR--> <!--FINISHED-->
-<div id="balakumar-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('balakumar-modal').style.display='none'">&times;</span>
-			<h3 class="name">Dhakshi Balakumar</h3>
-			<h4 class="title">Director of External Recruitment</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/dhakshi-balakumar.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Alpharetta, GA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business Administation &amp; Cognitive Science</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph large-content">PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. Dhakshi was honored to receive Alpharetta Rotary’s Scholarship as she always wants to live by their motto, service above self. She is involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/dhakshib" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--DORENE ZHOU--> <!--FINISHED-->
-<div id="zhou-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('zhou-modal').style.display='none'">&times;</span>
-			<h3 class="name">Dorene Zhou</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/dorene-zhou.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Temple City, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Epsilon</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Media Studies &amp; Legal Studies</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Media Coordination, <br> &nbsp; &nbsp; Digital Marketing</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Marketing, <br> &nbsp; &nbsp; Vice President of Administration</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph large-content">PSE helped Dorene learn the basics of professional development in business and discover her current passion for marketing in the entertainment industry. Through PSE, Dorene was able to expand her graphic design portfolio, learn to organize herself effectively, lead projects, and gain the necessary experience to pursue her future career. Dorene also gained invaluable friendships that will thrive far beyond college. She is thankful to PSE for giving her the business leadership and project opportunities that she would not have gained in a classroom. Her role model is Sunny Park. She won 1st place at the Infosys case competition, and enjoys reviewing movies and TV shows, crocheting movie characters, and listening to audiobooks.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/dorenezhou" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--ESTHER CHOE--> <!--NOT NEEDED THIS SEMESTER-->
-<!--
-<div id="choe-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('choe-modal').style.display='none'">&times;</span>
-			<h3 class="name">Esther Choe</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Davis, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Public Health</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Healthtech Consulting, <br> &nbsp; &nbsp; Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/li-linda" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
 -->
 
-<!--EVA CHEN--> <!--FINISHED-->
-<div id="e-chen-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('e-chen-modal').style.display='none'">&times;</span>
-			<h3 class="name">Eva Chen</h3>
-			<h4 class="title">Prospective Member Trainer</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/eva-chen.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Walnut, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Nutritional Sciences</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Digital/Content Marketing, <br> &nbsp; &nbsp; Brand Development</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Projects</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">In addition to the professional skills she has developed through PSE, Eva has learned how to communicate effectively and best connect with people. PSE has truly given her a brotherhood she can call family now and in the future. Her role model is Michelle Obama. Eva was previously invovled in Spoon University's Business Team and the Student Nutrition Advocacy Club. She won the 2nd Design Thinking Challenge for UGBA 176 (Media Consulting and Public Relations). Eva's hobbies include photography, working out, and travelling.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/evahchen" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--EVA SU--> <!--FINISHED-->
-<div id="su-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('su-modal').style.display='none'">&times;</span>
-			<h3 class="name">Eva Su</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/eva-su.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Kansas City, MO</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Strategy Consulting, <br> &nbsp; &nbsp; Digital Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph high-content">PSE has given Eva a close network of friends who she can not only rely on for business advice, but unending support through college. PSE helped her gain exposure to the marketing world through numerous case competitions, mock interviews, resume workshops, and networking events. Her role model is Michelle Obama. Eva is involved in several other campus organizations, including Berkeley Women in Business, Enactus, Dance the Bay, and Freshmen Sophomore Business Club. She is a top-rated eBay seller and has sold to all 50 states and 4 continents. She recently made her 6,000th transaction while maintaining a 100% positive feedback rating. She loves Broadway and performed with the NYU Tisch performance troupe last summer. She greatly enjoys musical theatre, yoga, and hiking. </p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/sueva" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--DAVID JAVIDZAD--> <!--FINISHED (except for headshot)-->
+<div id="javidzad-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('javidzad-modal').style.display='none'">&times;</span>
+				<h2 class="name">David Javidzad</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/david-javidzad.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Los Angeles, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Eta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Rhetoric</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Law</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Prospective Member Trainer</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">David finds his major takeaway from PSE to be professionalism. His role model is Jerry Seinfeld. David is invovled in the Daily Cal, Alpha Epsilon Pi social fraternity, and the Real Estate Redevelopment Group - David even has a Real Estate License in the state of California. He enjoys playing the guitar, singing, and reading in his free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/david-javidzad-2b521b55" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--HARIKA KALLURI--> <!--FINISHED-->
-<div id="kalluri-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('kalluri-modal').style.display='none'">&times;</span>
-			<h3 class="name">Harika Kalluri</h3>
-			<h4 class="title">Prospective Member Trainer</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/harika-kalluri.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2020</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">San Jose, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Management Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models are Rushil Desai, her big in PSE, and Saad Hirani, a leader in her other campus organization Berkeley Business Society. Harika was awarded 2nd place in the 2016 PwC case competition. She enjoys hand lettering, dance, and photography in her free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/harikakalluri" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--DHAKSHI BALAKUMAR--> 
+<div id="balakumar-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('balakumar-modal').style.display='none'">&times;</span>
+				<h2 class="name">Dhakshi Balakumar</h2>
+				<h3 class="title">Director of External Recruitment</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/dhakshi-balakumar.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Alpharetta, GA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administation &amp; Cognitive Science</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. Dhakshi was honored to receive Alpharetta Rotary’s Scholarship as she always wants to live by their motto, service above self. She is involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/dhakshib" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--HOON KIM-->
+<!--DORENE ZHOU--> 
+<div id="zhou-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('zhou-modal').style.display='none'">&times;</span>
+				<h2 class="name">Dorene Zhou</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/dorene-zhou.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Temple City, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Epsilon</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Media Studies &amp; Legal Studies</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Marketing Media Coordination, <br> &nbsp; &nbsp; Digital Marketing</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Marketing, <br> &nbsp; &nbsp; Vice President of Administration</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">PSE helped Dorene learn the basics of professional development in business and discover her current passion for marketing in the entertainment industry. Through PSE, Dorene was able to expand her graphic design portfolio, learn to organize herself effectively, lead projects, and gain the necessary experience to pursue her future career. Dorene also gained invaluable friendships that will thrive far beyond college. She is thankful to PSE for giving her the business leadership and project opportunities that she would not have gained in a classroom. Her role model is Sunny Park. She won 1st place at the Infosys case competition, and enjoys reviewing movies and TV shows, crocheting movie characters, and listening to audiobooks.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/dorenezhou" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--ESTHER CHOE--> 
+<div id="choe-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('choe-modal').style.display='none'">&times;</span>
+				<h2 class="name">Esther Choe</h2>
+				<h3 class="title">[Inactive - Study Abroad]</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/esther-choe.JPG" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Los Angeles, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Eta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Media Studies</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">Korean Studies</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Advertising, <br> &nbsp; &nbsp; Content Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">PSE has taught Esther  to learn and appreciate not just the diverse fields in business but also the diverse group of people that we engage with everyday. PSE is stitched with people from all over Cal, with the same interests in sales, marketing and management. This brings PSE closer together yet helps PSE grow at our own pace through new perspectives and horizons offered to PSE via our diversity. She believes that this is what truly makes PSE unique. Her role models are vlogger Casey Neistat and "The Flash" Barry Allen. Esther is the Education Chair at Liberty in North Korea, an Administrative Assistant at Department of Music, and a Student Ambassador for Berkeley Study Abroad. She was on the Dean's Honor List in both 2015 and 2016, and loves to jet ski, cook, and travel.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/estherchoe" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--EVA CHEN--> 
+<div id="e-chen-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('e-chen-modal').style.display='none'">&times;</span>
+				<h2 class="name">Eva Chen</h2>
+				<h3 class="title">Prospective Member Trainer</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/eva-chen.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Walnut, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Nutritional Sciences</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Digital/Content Marketing, <br> &nbsp; &nbsp; Brand Development</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Projects</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-20">In addition to the professional skills she has developed through PSE, Eva has learned how to communicate effectively and best connect with people. PSE has truly given her a brotherhood she can call family now and in the future. Her role model is Michelle Obama. Eva was previously invovled in Spoon University's Business Team and the Student Nutrition Advocacy Club. She won the 2nd Design Thinking Challenge for UGBA 176 (Media Consulting and Public Relations). Eva's hobbies include photography, working out, and travelling.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/evahchen" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--EVA SU--> 
+<div id="su-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('su-modal').style.display='none'">&times;</span>
+				<h2 class="name">Eva Su</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/eva-su.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Kansas City, MO</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration &amp; Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Strategy Consulting, <br> &nbsp; &nbsp; Digital Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has given Eva a close network of friends who she can not only rely on for business advice, but unending support through college. PSE helped her gain exposure to the marketing world through numerous case competitions, mock interviews, resume workshops, and networking events. Her role model is Michelle Obama. Eva is involved in several other campus organizations, including Berkeley Women in Business, Enactus, Dance the Bay, and Freshmen Sophomore Business Club. She is a top-rated eBay seller and has sold to all 50 states and 4 continents. She recently made her 6,000th transaction while maintaining a 100% positive feedback rating. She loves Broadway and performed with the NYU Tisch performance troupe last summer. She greatly enjoys musical theatre, yoga, and hiking.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/sueva" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--HARIKA KALLURI--> 
+<div id="kalluri-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('kalluri-modal').style.display='none'">&times;</span>
+				<h2 class="name">Harika Kalluri</h2>
+				<h3 class="title">Prospective Member Trainer</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/harika-kalluri.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2020</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">San Jose, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration&amp; Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Management Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models are Rushil Desai, her big in PSE, and Saad Hirani, a leader in her other campus organization Berkeley Business Society. Harika was awarded 2nd place in the 2016 PwC case competition. She enjoys hand lettering, dance, and photography in her free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/harikakalluri" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--HOON KIM--> <!--UNFINISHED!!!-->
+<!--
 <div id="kim-modal" class="modal">
 	<div class="modal-content">
 		<div class="modal-header">
@@ -765,1181 +891,1178 @@
 		</div>
 	</div>
 </div>
+-->
 
-<!--JACQUELINE TSANG--> <!--FINISHED-->
-<div id="tsang-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('tsang-modal').style.display='none'">&times;</span>
-			<h3 class="name">Jacqueline Tsang</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/jacqueline-tsang.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">La Canada, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Product Management, <br> &nbsp; &nbsp; Digital Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/tsangjacqueline" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--JACQUELINE TSANG--> 
+<div id="tsang-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('tsang-modal').style.display='none'">&times;</span>
+				<h2 class="name">Jacqueline Tsang</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/jacqueline-tsang.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">La Canada, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Product Management, <br> &nbsp; &nbsp; Digital Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/tsangjacqueline" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--JANE SUK-->
-<div id="suk-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('suk-modal').style.display='none'">&times;</span>
-			<h3 class="name">Jane Suk</h3>
-			<h4 class="title">Vice President of Marketing</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/jane-suk.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--JANE SUK--> 
+<div id="suk-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('suk-modal').style.display='none'">&times;</span>
+				<h2 class="name">Jane Suk</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/jane-suk.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Palo Alto, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Psychology</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Healthcare Consulting, <br> &nbsp; &nbsp; Corporate Strategy</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Internal Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">Jane learned to not only work with a diverse range of people but also to learn from them. Through PSE, she was able to develop her personal brand as well as gain invaluable friendships. Her role model is her grandmother. Jane is a member of Psi Chi Honor Society in Psychology, and was previously in Creative Marketing Group. She is a certified Taekwondo referee, and love photography, travelling, and weightlifting.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/janesuk" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!--JEANINE LIU--> <!--NOT NEEDED THIS SEMESTER-->
-<!--
-<div id="liu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('liu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Jeanine Liu</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
--->
 
-<!--JONATHAN DUAN--> <!--FINISHED-->
-<div id="duan-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('duan-modal').style.display='none'">&times;</span>
-			<h3 class="name">Jonathan Duan</h3>
-			<h4 class="title">Director of Philanthropy</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/jonathan-duan.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Short Hills, NJ</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Eta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Political Science</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Consulting, <br> &nbsp; &nbsp; Project Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Projects</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">PSE has taught Jonathan that learning about business is more fun with those who share similar mindsets and passions. His role model is professional bodybuilder Jeff Nippard. Jonathan is very involved in the UC Berkeley community, as he is also a member of the ASUC Office of the Academic Affairs Vice President, campus political party Student Action, Cal Club Tennis team, technology consulting organization DiversaTech, and a brother of Chi Psi social fraternity. He loves to play tennis, lift weights, and listen to music whenever he can.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/jonduan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--JONATHAN DUAN--> 
+<div id="duan-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('duan-modal').style.display='none'">&times;</span>
+				<h2 class="name">Jonathan Duan</h2>
+				<h3 class="title">Director of Philanthropy</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/jonathan-duan.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Short Hills, NJ</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Eta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Political Science</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Consulting, <br> &nbsp; &nbsp; Project Management</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Projects</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-20">PSE has taught Jonathan that learning about business is more fun with those who share similar mindsets and passions. His role model is professional bodybuilder Jeff Nippard. Jonathan is very involved in the UC Berkeley community, as he is also a member of the ASUC Office of the Academic Affairs Vice President, campus political party Student Action, Cal Club Tennis team, technology consulting organization DiversaTech, and a brother of Chi Psi social fraternity. He loves to play tennis, lift weights, and listen to music whenever he can.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/jonduan" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--KAILIN LI--> <!--FINISHED-->
-<div id="k-li-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('k-li-modal').style.display='none'">&times;</span>
-			<h3 class="name">Kailin Li</h3>
-			<h4 class="title">Vice President of Human Relations</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/kailin-li.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Granada Hills, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Cognitive Science</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Human Resources Consulting, <br> &nbsp; &nbsp; Product Design</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of External Recruitment</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">Kailin has learned to stay curious; professionally, PSE has exposed her to new career paths with its networking dinners and info sessions. And socially, she loves the fact that she gets to work and grow with the PSE family. Whether it's going to a Kanye concert together or heading to the city together, getting to know her brothers has been the most rewarding aspect PSE has given her. Her role model is professional player Rafael Nadal. Kailin won 2nd place at the Infosys Design Thinking competition, and is involved in the Philosophy Forum at Berkeley. Her hobbies include hiking, photography, and learning new languages.
-			</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/kailinli" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--KANAK SURI--> <!--FINISHED-->
-<div id="suri-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('suri-modal').style.display='none'">&times;</span>
-			<h3 class="name">Kanak Suri</h3>
-			<h4 class="title">Director of Brotherhood</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/kanak-suri.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">New Delhi, India</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing,<br> &nbsp; &nbsp; Public Relations</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has given Kanak a reason to call Berkeley her second home - the professional and social opportunities she otherwise would not have had. Her role model is her father. Kanak is also a teaching assistant and the events organizing chair for the "Leadership and Justice - the Knowledge for Human Rights" Decal, which is facilitation by her student organization Universal Love and Peace. Her hobbies include dancing, writing, and volunteering in the Berkeley community.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/kanaksuri" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--KAILIN LI--> 
+<div id="k-li-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('k-li-modal').style.display='none'">&times;</span>
+				<h2 class="name">Kailin Li</h2>
+				<h3 class="title">Vice President of Human Relations</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/kailin-li.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Granada Hills, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Cognitive Science</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Human Resources Consulting, <br> &nbsp; &nbsp; Product Design</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of External Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-10">Kailin has learned to stay curious; professionally, PSE has exposed her to new career paths with its networking dinners and info sessions. And socially, she loves the fact that she gets to work and grow with the PSE family. Whether it's going to a Kanye concert together or heading to the city together, getting to know her brothers has been the most rewarding aspect PSE has given her. Her role model is professional player Rafael Nadal. Kailin won 2nd place at the Infosys Design Thinking competition, and is involved in the Philosophy Forum at Berkeley. Her hobbies include hiking, photography, and learning new languages.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/kailinli" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--KEVIN PHAN--> <!--FINISHED-->
-<div id="phan-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('phan-modal').style.display='none'">&times;</span>
-			<h3 class="name">Kevin Phan</h3>
-			<h4 class="title">President</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/kevin-phan.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Palo Alto, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Eta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Business Administration</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Venture Capital, <br> &nbsp; &nbsp; Investment Banking</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Professional Development</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Through PSE, Kevin has learned to draw on and apply his past experiences while working with real companies. His role models are serial entrepreneur and investors Gary Vaynercuk and Mark Cuban. Kevin is also a brother of Chi Psi social fraternity, and the Director of Sales for computer science non-profit Paradigm Shift. His hobbies include running, hiking, and listening to music.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/kevin-phan1" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--KYLE LU-->
-<div id="k-lu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('k-lu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Kyle Lu</h3>
-			<h4 class="title">Director of Technology</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/kyle-lu.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--KANAK SURI--> 
+<div id="suri-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('suri-modal').style.display='none'">&times;</span>
+				<h2 class="name">Kanak Suri</h2>
+				<h3 class="title">Director of Brotherhood</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/kanak-suri.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">New Delhi, India</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Marketing,<br> &nbsp; &nbsp; Public Relations</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has given Kanak a reason to call Berkeley her second home - the professional and social opportunities she otherwise would not have had. Her role model is her father. Kanak is also a teaching assistant and the events organizing chair for the "Leadership and Justice - the Knowledge for Human Rights" Decal, which is facilitation by her student organization Universal Love and Peace. Her hobbies include dancing, writing, and volunteering in the Berkeley community.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/kanaksuri" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--LILY LI--> <!--FINISHED-->
-<div id="lily-li-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('lily-li-modal').style.display='none'">&times;</span>
-			<h3 class="name">Lily Li</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/lily-li.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Dallas, TX</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Gamma</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Statistics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Data Science, <br> &nbsp; &nbsp; Creative Marketing</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Marketing, <br> &nbsp; &nbsp; Director of Technology</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">PSE has taught Lily invaluable skills of business and time management. Her role model is her aunt, and she works at the Fung Institute Master of Engineering. She has conducted technical analysis on the wage gap, designed numerous logos, and loves photography, hiking, and DIYs.
-			</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/ylilyli" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--LINDA LI--> <!--FINISHED-->
-<div id="linda-li-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('linda-li-modal').style.display='none'">&times;</span>
-			<h3 class="name">Linda Li</h3>
-			<h4 class="title">Director of Professional Development</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/linda-li.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Davis, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Public Health</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Healthtech Consulting, <br> &nbsp; &nbsp; Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/li-linda" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--KEVIN PHAN--> 
+<div id="phan-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('phan-modal').style.display='none'">&times;</span>
+				<h2 class="name">Kevin Phan</h2>
+				<h3 class="title">President</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/kevin-phan.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Palo Alto, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Venture Capital, <br> &nbsp; &nbsp; Investment Banking</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Professional Development</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">Through PSE, Kevin has learned to draw on and apply his past experiences while working with real companies. His role models are serial entrepreneur and investors Gary Vaynercuk and Mark Cuban. Kevin is also a brother of Chi Psi social fraternity, and the Director of Sales for computer science non-profit Paradigm Shift. His hobbies include running, hiking, and listening to music.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/kevin-phan1" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--MAX SELTZER--> <!--NOT NEEDED THIS SEMESTER-->
-<!--
-<div id="seltzer-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('seltzer-modal').style.display='none'">&times;</span>
-			<h3 class="name">Max Seltzer</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Davis, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business &amp; Public Health</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Healthtech Consulting, <br> &nbsp; &nbsp; Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/li-linda" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--KYLE LU--> 
+<div id="k-lu-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('k-lu-modal').style.display='none'">&times;</span>
+				<h2 class="name">Kyle Lu</h2>
+				<h3 class="title">Director of Technology</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/kyle-lu.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Cerritos, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration &amp; Statistics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Consulting, <br> &nbsp; &nbsp; Investment Banking</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">Through PSE, Kyle has learned many professional skills, especially how to market himself. His role model is Chinese martial artist Ip Man, mentor to Bruce Lee. Kyle is also involved in Cal Dragon Boat and Innovative Design. He won 2nd place in the Fall 2016 PwC case competition, and was a finalist in the Spring 2016 Deloitte case competition. He hobbies include photography, graphic design, and paddling.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/kylewongkailu" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
--->
+
+<!--LILY LI--> 
+<div id="lily-li-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('lily-li-modal').style.display='none'">&times;</span>
+				<h2 class="name">Lily Li</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/lily-li.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Dallas, TX</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Gamma</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Statistics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Data Science, <br> &nbsp; &nbsp; Creative Marketing</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Marketing, <br> &nbsp; &nbsp; Director of Technology</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has taught Lily invaluable skills of business and time management. Her role model is her aunt, and she works at the Fung Institute Master of Engineering. She has conducted technical analysis on the wage gap, designed numerous logos, and loves photography, hiking, and DIYs.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/ylilyli" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--LINDA LI--> 
+<div id="linda-li-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('linda-li-modal').style.display='none'">&times;</span>
+				<h2 class="name">Linda Li</h2>
+				<h3 class="title">Director of Professional Development</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/linda-li.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Davis, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business &amp; Public Health</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Healthtech Consulting, <br> &nbsp; &nbsp; Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/li-linda" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--MAX SELTZER--> 
+<div id="seltzer-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('seltzer-modal').style.display='none'">&times;</span>
+				<h2 class="name">Max Seltzer</h2>
+				<h3 class="title">[Inactive - Study Abroad]</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/max-seltzer.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Los Angeles, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Delta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Political Science</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Product Management, <br> &nbsp; &nbsp; UX Design</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Finance, <br> &nbsp; &nbsp; Director of Internal Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE taught Max the value of learning to work with individuals from such diverse backgrounds, and how everyone can contribute to a team. His role model is professional baseball player Derek Jeter. Max is a Birthright Excel Fellow, world traveler, back-to-back Intramural Softball Champion, and is undefeated in Connect 4. He is involved in EnableTech, Intramural sports, is a brother of Phi Kappa Psi social fraternity. Max loves to watch and play sports, read the newspaper, and cultivate above-average Spotify playlists.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/maxsseltzer" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	
-<!--MELODY CHU--> <!--FINISHED-->
-<div id="chu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('chu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Melody Chu</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/melody-chu.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Portland, OR</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Integrative Biology</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Healthcare Consulting, <br> &nbsp; &nbsp; Medicine</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE taught Melody a lot about the general business fields, interview strategies, and recruiting tactics - most of which were not commonly talked about among biology majors, but appears to be common sense to business majors. PSE, and the experiences she gained from it, helped Melody a lot with recruiting for her junior year internship. Melody's role model is her PSE big, Shreya. Melody studied abroad in Singapore, and is an active member of the dance community, Dance the Bay, and her church fellowship. She loves to hike, travel, and meet new people.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/melodychu2" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--MELODY WAN--> <!--FINISHED-->
-<div id="wan-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('wan-modal').style.display='none'">&times;</span>
-			<h3 class="name">Melody Wan</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/melody-wan.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Arcadia, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Theater</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Digital Marketing, <br> &nbsp; &nbsp; Brand Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. Her role models are her parents and God. Melody is also involved in Livingwater Artist Collective, Business Careers in Entertainment, EthiCAL Apparel, and the dance team AFXsi. She enjoys acting, cooking, and playwriting in her free time. </p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/wanmelody" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--MELODY CHU--> 
+<div id="chu-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('chu-modal').style.display='none'">&times;</span>
+				<h2 class="name">Melody Chu</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/melody-chu.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Portland, OR</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Integrative Biology</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Healthcare Consulting, <br> &nbsp; &nbsp; Medicine</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE taught Melody a lot about the general business fields, interview strategies, and recruiting tactics - most of which were not commonly talked about among biology majors, but appears to be common sense to business majors. PSE, and the experiences she gained from it, helped Melody a lot with recruiting for her junior year internship. Melody's role model is her PSE big, Shreya. Melody studied abroad in Singapore, and is an active member of the dance community, Dance the Bay, and her church fellowship. She loves to hike, travel, and meet new people.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/melodychu2" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--NANCY ZHU--> <!--FINISHED-->
-<div id="zhu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('zhu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Nancy Zhu</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/nancy-zhu.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Burlingame, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Zeta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Applied Mathematics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Financial Services, <br> &nbsp; &nbsp; Investment Banking</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Human Relations, <br> &nbsp; &nbsp; Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and travelling.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/nancyzy" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--NATHAN AMINPOUR--> <!--FINISHED-->
-<div id="aminpour-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('aminpour-modal').style.display='none'">&times;</span>
-			<h3 class="name">Nathan Aminpour</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/nathan-aminpour.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Beverly Hills, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Delta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Business Administration &amp; Molecular and Cell Biology </td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">EMT Certification</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Emergency Medicine, <br> &nbsp; &nbsp; Hospital Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">President, Vice President of Professional Development, <br> &nbsp; &nbsp; Director of Recruitment, Director of Projects</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">As PSE's former president, Nathan learned to lead an organization in an effective manner. He considers Steve from Blue's Clues to be his role model, and is actively involved in PreMed 101 and the social fraternity Phi Kappa Psi. Nathan once watched all three Lord of the Rings movies with the extended director's cut - close to a 12-hour feat - in a single day. 
-			
-			Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/nathanaminpour" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--MELODY WAN--> 
+<div id="wan-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('wan-modal').style.display='none'">&times;</span>
+				<h2 class="name">Melody Wan</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/melody-wan.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Arcadia, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">Theater</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Digital Marketing, <br> &nbsp; &nbsp; Brand Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. Her role models are her parents and God. Melody is also involved in Livingwater Artist Collective, Business Careers in Entertainment, EthiCAL Apparel, and the dance team AFX. She enjoys acting, cooking, and playwriting in her free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/wanmelody" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--NATHAN KELLEHER-->
-<div id="kelleher-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('kelleher-modal').style.display='none'">&times;</span>
-			<h3 class="name">Nathan Kelleher</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/nathan-kelleher.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--NICK CHENG--> <!--FINISHED-->
-<div id="cheng-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('cheng-modal').style.display='none'">&times;</span>
-			<h3 class="name">Nick Cheng</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/nick-cheng.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Bangkok, Thailand</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Delta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Sustainable Environmental Design</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Non-Tech in Tech, <br> &nbsp; &nbsp; Environmental Consulting</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Technology</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">PSE has taught Nick about the power and importance of marketing. His role model is politician and environmentalist Al Gore. Nick won 5th place in the CMYK Designathon, and is an active member of FEMTech, Thai Student Association, and dance team AFX. Nick loves photography, web design, and playing music in his free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/chengnick" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--NANCY ZHU--> 
+<div id="zhu-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('zhu-modal').style.display='none'">&times;</span>
+				<h2 class="name">Nancy Zhu</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/nancy-zhu.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Burlingame, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Applied Mathematics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Financial Services, <br> &nbsp; &nbsp; Investment Banking</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Human Relations, <br> &nbsp; &nbsp; Director of Brotherhood</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and travelling.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/nancyzy" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--NICHOLAS CHUN--> <!--FINISHED-->
-<div id="chun-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('chun-modal').style.display='none'">&times;</span>
-			<h3 class="name">Nicholas Chun</h3>
-			<h4 class="title">Vice President of Finance</h4>
+<!--NATHAN AMINPOUR--> 
+<div id="aminpour-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('aminpour-modal').style.display='none'">&times;</span>
+				<h2 class="name">Nathan Aminpour</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/nathan-aminpour.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Beverly Hills, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Delta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Business Administration &amp; Molecular and Cell Biology</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">EMT Certification</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Emergency Medicine, <br> &nbsp; &nbsp; Hospital Management</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">President, Vice President of Professional Development, <br> &nbsp; &nbsp; Director of Recruitment, Director of Projects</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">As PSE's former president, Nathan learned to lead an organization in an effective manner. He considers Steve from Blue's Clues to be his role model, and is actively involved in PreMed 101 and the social fraternity Phi Kappa Psi. Nathan once watched all three Lord of the Rings movies with the extended director's cut - close to a 12-hour feat - in a single day.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/nathanaminpour" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/nick-chun.JPG" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Carmel, IN</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business Administration</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Consulting</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Internal Recruitment</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph large-content">Through PSE, Nicholas now has a better understanding of what it means to effectively work with others professionally while also maintaining close, personal relationships. College is a great time to explore oneself and reach new heights while also forming strong friendships with others and he believes PSE helps him achieve this. His role model is professional wrestler and actor Dwayne "The Rock" Johnson. Nicholas co-wrote several articles at the American Chamber of Commerce in South Korea, and is involved in the ASUC Office of the Academic Affairs Vice President. He plays the electric guitar, longboards around Berkeley, and listens to music whenever he can.
-			</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/nicholas-chun-188a98113" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+	</div>
+</div>
+
+<!--NATHAN KELLEHER--> <!--UNFINISHED!!!-->
+
+<!--NICHOLAS CHUN--> 
+<div id="chun-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('chun-modal').style.display='none'">&times;</span>
+				<h2 class="name">Nicholas Chun</h2>
+				<h3 class="title">Vice President of Finance</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/nicholas-chun.JPG" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Carmel, IN</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Consulting</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Internal Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">Through PSE, Nicholas now has a better understanding of what it means to effectively work with others professionally while also maintaining close, personal relationships. College is a great time to explore oneself and reach new heights while also forming strong friendships with others and he believes PSE helps him achieve this. His role model is professional wrestler and actor Dwayne "The Rock" Johnson. Nicholas co-wrote several articles at the American Chamber of Commerce in South Korea, and is involved in the ASUC Office of the Academic Affairs Vice President. He plays the electric guitar, longboards around Berkeley, and listens to music whenever he can.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/nicholas-chun-188a98113" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--NICK CHENG--> 
+<div id="cheng-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('cheng-modal').style.display='none'">&times;</span>
+				<h2 class="name">Nick Cheng</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/nick-cheng.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Bangkok, Thailand</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Delta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Sustainable Environmental Design</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Non-Tech in Tech, <br> &nbsp; &nbsp; Environmental Consulting</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Technology</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has taught Nick about the power and importance of marketing. His role model is politician and environmentalist Al Gore. Nick won 5th place in the CMYK Designathon, and is an active member of FEMTech, Thai Student Association, and dance team AFX. Nick loves photography, web design, and playing music in his free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/chengnick" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!--PETER VU --> <!--NOT NEEDED THIS SEMESTER-->
-<!--
-<div id="vu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('vu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Peter Vu</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Aaron enjoys working out and playing basketball at the RSF in his free time. He considers Nathan Aminpour, PSE's former president, as a role model. He greatly values the consulting and marketing interview skills he learned as a prospective member last semester.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
--->
 
-<!--RAHUL RANGNEKAR--> <!--FINISHED-->
-<div id="rangnekar-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('rangnekar-modal').style.display='none'">&times;</span>
-			<h3 class="name">Rahul Rangnekar</h3>
-			<h4 class="title">Vice President of Marketing</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/rahul-rangnekar.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Claremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Computer Science</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Technology &amp; Entrepreneurship Certificate</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Marketing Consulting, <br> &nbsp; &nbsp; Product Management</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Brotherhood</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Through PSE, Rahul has learned to adapt his leadership style and "fill the gaps" when working on teams of people with distinct work ethics and skillsets. He enjoys the experiences PSE has given him - case competitions with fellow PSE brothers, the Under Armour project, the opportunity to code this entire website. His role models are Tim Duncan and Donald Glover. Rahul is actively involved in the Sports Analytics at Berkeley organization, and was previously in the ASUC. He enjoys working out daily, writing articles on LinkedIn, reading self-help and education books, and cooking new recipes.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--RAHUL RANGNEKAR--> 
+<div id="rangnekar-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('rangnekar-modal').style.display='none'">&times;</span>
+				<h2 class="name">Rahul Rangnekar</h2>
+				<h3 class="title">Vice President of Marketing</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/rahul-rangnekar.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Claremont, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Computer Science</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">Technology &amp; Entrepreneurship Certificate</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Product Management, <br> &nbsp; &nbsp; Marketing Consulting</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Brotherhood</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">Through PSE, Rahul has learned to adapt his leadership style and "fill the gaps" when working on teams of people with distinct work ethics and skillsets. He enjoys the experiences PSE has given him - case competitions with fellow PSE brothers, the Under Armour project, the opportunity to code this entire website. His role models are Tim Duncan and Donald Glover. Rahul is actively involved in the Sports Analytics at Berkeley organization, and was previously in the ASUC. He enjoys working out daily, writing articles on LinkedIn, reading self-help books, and cooking new recipes.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/rahrang" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--REANN PHAM--> <!--FINISHED-->
-<div id="pham-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('pham-modal').style.display='none'">&times;</span>
-			<h3 class="name">Reann Pham</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/reann-pham.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">San Jose, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Zeta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Consulting, <br> &nbsp; &nbsp; Private Banking</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Prospective Member Trainer <br> &nbsp; &nbsp; Director of External Recruitment</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">In addition to professional skills, Reann has found her personal brand with help from PSE. Her role model is her grandmother. Reann is working on a renewable energy consulting project with a graduate student instructor, and she loves to walk dogs, play board games, and grab drinks in the city.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/reann-pham-3b774b7b" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--RUSHIL DESAI--> <!--FINISHED-->
-<div id="desai-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('desai-modal').style.display='none'">&times;</span>
-			<h3 class="name">Rushil Desai</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/rushil-desai.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Santa Cruz, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Zeta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">History</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Investment Banking, <br> &nbsp; &nbsp; Corporate Banking</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Administration, <br> &nbsp; &nbsp; Director of Technology</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team. </p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/rushil-desai-29a825a7" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--REANN PHAM--> 
+<div id="pham-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('pham-modal').style.display='none'">&times;</span>
+				<h2 class="name">Reann Pham</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/reann-pham.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">San Jose, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Consulting, <br> &nbsp; &nbsp; Private Banking</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Prospective Member Trainer <br> &nbsp; &nbsp; Director of External Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">In addition to professional skills, Reann has found her personal brand with help from PSE. Her role model is her grandmother. Reann is working on a renewable energy consulting project with a graduate student instructor, and she loves to walk dogs, play board games, and grab drinks in the city.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/reann-pham-3b774b7b" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--SEAN YU--> <!--FINISHED-->
-<div id="yu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('yu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Sean Yu</h3>
-			<h4 class="title">Vice President of Professional Development</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/sean-yu.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Manila, Philippines</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Intended Business</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Investment Banking, <br> &nbsp; &nbsp; Corporate Strategy</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Prospective Member Trainer</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">PSE has taught Sean to be a great communicator. From networking with professionals at career fairs, to public speaking and giving presentations, and to casual chats with strangers, communication has unlocked multiple doors for him and has helped him to develop as an individual. His parents are his role models. Sean was previously involved in Berkeley ABA (Asian Business Association), and his hobbies include playing golf, fishing, and travelling.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/seanjcyu" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-<!--SHREYA JERATH--> <!--FINISHED-->
-<div id="jerath-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('jerath-modal').style.display='none'">&times;</span>
-			<h3 class="name">Shreya Jerath</h3>
-			<h4 class="title">Director of Alumni Relations</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/shreya-jerath.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2017</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Singapore</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Eta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Psychology</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Product Marketing, <br> &nbsp; &nbsp; Brand/Retail Consulting</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Vice President of Public Relations</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">In addition to developing her professional skillset, PSE has taught Shreya to learn from others, a capability evident throughout our fraternal community. She has learned to lead different types of people and modify her leadership style and communication to bes t support her team. Most importantly, Shreya has learned to effectively give back and be a mentor by openly sharing her experience in her college career and life. Her role models are Steve Jobs and Sheryl Sandberg. Shreya was involved in Creative Marketing Group before joining PSE, and enjoys photography, shopping, and exploring cities whenever she can.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/shreyajerath" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--RUSHIL DESAI--> 
+<div id="desai-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('desai-modal').style.display='none'">&times;</span>
+				<h2 class="name">Rushil Desai</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/rushil-desai.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Santa Cruz, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">History</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Investment Banking, <br> &nbsp; &nbsp; Corporate Banking</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Administration, <br> &nbsp; &nbsp; Director of Technology</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph">PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/rushil-desai-29a825a7" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--SYED ADIL--> <!--FINISHED-->
-<div id="adil-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('adil-modal').style.display='none'">&times;</span>
-			<h3 class="name">Syed Adil</h3>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/syed-adil.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Kuala Lumpur, Malaysia</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Zeta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Political Economy</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Management Consulting</td>
-				</tr>
-				<tr>
-					<td class="item">Previous <br> Positions</td>
-					<td class="value">Director of Internal Recruitment</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph prev">Syed appreciates how PSE taught him to learn and understand his teammates in order to make a large impact when working on team projects. He has worked as a PwC Assurance intern and a CIMB Islamic Finance Asset Management Intern over previous summers. His role model is Jack Ma, founder and CEO of the Alibaba Group. Syed is a national fencer, and an active member of the Cal Fencing team. He also plays soccer in his free time.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/syedadilemirputra" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+<!--SEAN YU--> 
+<div id="yu-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('yu-modal').style.display='none'">&times;</span>
+				<h2 class="name">Sean Yu</h2>
+				<h3 class="title">Vice President of Professional Development</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/sean-yu.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Manila, Philippines</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Intended Business Administration</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Investment Banking, <br> &nbsp; &nbsp; Corporate Strategy</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Prospective Member Trainer</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-20">PSE has taught Sean to be a great communicator. From networking with professionals at career fairs, to public speaking and giving presentations, and to casual chats with strangers, communication has unlocked multiple doors for him and has helped him to develop as an individual. His parents are his role models. Sean was previously involved in Berkeley ABA (Asian Business Association), and his hobbies include playing golf, fishing, and travelling.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/seanjcyu" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<!--TAYLOR LEE--> <!--FINISHED-->
-<div id="lee-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('lee-modal').style.display='none'">&times;</span>
-			<h3 class="name">Taylor Lee</h3>
-			<h4 class="title">Vice President of Administration</h4>
+<!--SHREYA JERATH--> 
+<div id="jerath-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('jerath-modal').style.display='none'">&times;</span>
+				<h2 class="name">Shreya Jerath</h2>
+				<h3 class="title">Director of Alumni Relations</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/shreya-jerath.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2017</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Singapore</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Eta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Psychology</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Product Marketing, <br> &nbsp; &nbsp; Brand/Retail Consulting</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Vice President of Public Relations</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-10">In addition to developing her professional skillset, PSE has taught Shreya to learn from others, a capability evident throughout our fraternal community. She has learned to lead different types of people and modify her leadership style and communication to bes t support her team. Most importantly, Shreya has learned to effectively give back and be a mentor by openly sharing her experience in her college career and life. Her role models are Steve Jobs and Sheryl Sandberg. Shreya was involved in Creative Marketing Group before joining PSE, and enjoys photography, shopping, and exploring cities whenever she can.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/shreyajerath" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
 		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/taylor-lee.jpg" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2018</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Danville, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Theta</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics</td>
-				</tr>
-				<tr>
-					<td class="item">Minor</td>
-					<td class="value">Geographic Information Science &amp; Accounting</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Accounting, <br> &nbsp; &nbsp; Consulting</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">
-				PSE has taught Taylor a variety of skills, including public speaking, interview skills, and, most importantly, how to get an internship. His role model is Kevin Phan, current president of PSE. Taylor is also actively involved in Cal Rotaract and The Green Initiative Fund. He is knowledgeable in LLC formation, and enjoys distance running (with dogs), playing the guitar, and ice skating.
+	</div>
+</div>
+
+<!--SYED ADIL--> 
+<div id="adil-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('adil-modal').style.display='none'">&times;</span>
+				<h2 class="name">Syed Adil</h2>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/syed-adil.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Kuala Lumpur, Malaysia</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Zeta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Political Economy</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Management Consulting</td>
+						</tr>
+						<tr>
+							<td class="item">Previous <br> Positions</td>
+							<td class="value">Director of Internal Recruitment</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">Syed appreciates how PSE taught him to learn and understand his teammates in order to make a large impact when working on team projects. He has worked as a PwC Assurance intern and a CIMB Islamic Finance Asset Management Intern over previous summers. His role model is Jack Ma, founder and CEO of the Alibaba Group. Syed is a national fencer, and an active member of the Cal Fencing team. He also plays soccer in his free time.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/syedadilemirputra" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--TAYLOR LEE--> 
+<div id="lee-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('lee-modal').style.display='none'">&times;</span>
+				<h2 class="name">Taylor Lee</h2>
+				<h3 class="title">Vice President of Administration</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/taylor-lee.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2018</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Danville, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Theta</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics</td>
+						</tr>
+						<tr>
+							<td class="item">Minor</td>
+							<td class="value">Geographic Information Science &amp; Accounting</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Accounting, <br> &nbsp; &nbsp; Consulting</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-50">PSE has taught Taylor a variety of skills, including public speaking, interview skills, and, most importantly, how to get an internship. His role model is Kevin Phan, current president of PSE. Taylor is also actively involved in Cal Rotaract and The Green Initiative Fund. He is knowledgeable in LLC formation, and enjoys distance running (with dogs), playing the guitar, and ice skating.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/taylorthomaslee" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--YIXUAN LU-->
+<div id="y-lu-modal" class="bro-modal container-fluid">
+	<div class="row bro-modal-content">
+		<div class="col-sm-12">
+			<div class="row bro-modal-header">
+				<span class="bro-close" onclick="document.getElementById('y-lu-modal').style.display='none'">&times;</span>
+				<h2 class="name">Yixuan Lu</h2>
+				<h3 class="title">Director of Internal Recruitment</h3>
+			</div>
+			<div class="row bro-modal-body">
+				<div class="col-sm-4">
+					<img class="bro-modal-profile" src="images/brothers/yixuan-lu.jpg" width="285" height="429"/>
+				</div>
+				<div class="col-sm-8">
+					<table class="bro-modal-table">
+						<tr>
+							<td class="item">Year</td>
+							<td class="value">2019</td>
+						</tr>
+						<tr>
+							<td class="item">Hometown</td>
+							<td class="value">Fremont, CA</td>
+						</tr>
+						<tr>
+							<td class="item">PSE Class</td>
+							<td class="value">Iota</td>
+						</tr>
+						<tr>
+							<td class="item">Major</td>
+							<td class="value">Economics &amp; Media Studies</td>
+						</tr>
+						<tr>
+							<td class="item">Career <br> Interests</td>
+							<td class="value">Digital Marketing</td>
+						</tr>
+					</table>
+					<p class="bro-modal-paragraph margin-top-30">PSE has taught Yixuan the importance of having an excellent personal brand. It has shaped her into a more confident, knowledgeable, and professional individual through coffee chats, case competitions, and various Chapter events. PSE has introduced her to many motivated and successful individuals that she feel beyond blessed to be a part of the diverse community at Cal. Her role model is her grandmother. Yixuan was awarded 2nd place in the 2016 PwC case competition, and is also an active member of Berkeley Women in Business. She loves blogging, watercoloring, and going on road trips.</p>
+					<a class="linkedin-icon" href="https://www.linkedin.com/in/yixuanlu11280" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--FOOTER SECTIONS-->
+
+<div class="container-fluid">
+	<div id="prefooter" class="row">
+		<div class="col-sm-12 center-block">
+			<p id="prefooter-desc" class="text-center">Find us on Facebook, Twitter, and Instagram.</p>
+			<ul id="icon-nav">
+				<li><a href="https://www.facebook.com/BerkeleyPSE" target="_blank"><img src="images/icons/facebook.png" height="50" width="50"/></a></li>
+				<li><a href="https://twitter.com/berkeleypse" target="_blank"><img src="images/icons/twitter.png" height="50" width="50"/></a></li>
+				<li><a href="#" target="_blank"><img src="images/icons/instagram.png" height="50" width="50"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer" class="row">
+		<div class="col-sm-12">
+			<p id="footer-desc" class="text-left">Pi Sigma Epsilon (PSE) is a co-ed, professional fraternal organization in sales, marketing, and management. 
+			<br>
+			The mission of Pi Sigma Epsilon is to develop the sales and marketing skills of its members through experiential learning and professional opportunities.
+			<br> <br>
+			National Website: <i><a id="pse-link" href="https://www.pse.org" target="_blank">www.pse.org</a></i>
+			<br> <br>
+			©2017. All rights reserved. Pi Sigma Epsilon, Zeta Chi Chapter.
 			</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/taylorthomaslee" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
 		</div>
 	</div>
 </div>
-
-<!--YIXUAN LU--> <!--FINISHED-->
-<div id="y-lu-modal" class="modal">
-	<div class="modal-content">
-		<div class="modal-header">
-			<span class="close" onclick="document.getElementById('y-lu-modal').style.display='none'">&times;</span>
-			<h3 class="name">Yixuan Lu</h3>
-			<h4 class="title">Director of Internal Recruitment</h4>
-		</div>
-		<div class="modal-body">
-			<img class="modal-profile" src="images/brothers/yix'" width="285" height="429"/>
-			<table class="modal-table">
-				<tr>
-					<td class="item">Year</td>
-					<td class="value">2019</td>
-				</tr>
-				<tr>
-					<td class="item">Hometown</td>
-					<td class="value">Fremont, CA</td>
-				</tr>
-				<tr>
-					<td class="item">PSE Class</td>
-					<td class="value">Iota</td>
-				</tr>
-				<tr>
-					<td class="item">Major</td>
-					<td class="value">Economics &amp; Media Studies</td>
-				</tr>
-				<tr>
-					<td class="item">Career <br> Interests</td>
-					<td class="value">Digital Marketing</td>
-				</tr>
-			</table>
-			<p class="modal-paragraph no-prev">PSE has taught Yixuan the importance of having an excellent personal brand. It has shaped her into a more confident, knowledgeable, and professional individual through coffee chats, case competitions, and various Chapter events. PSE has introduced her to many motivated and successful individuals that she feel beyond blessed to be a part of the diverse community at Cal. Her role model is her grandmother. Yixuan was awarded 2nd place in the 2016 PwC case competition, and is also an active member of Berkeley Women in Business. She loves blogging, watercoloring, and going on road trips.</p>
-			<a class="linkedin-icon" href="https://www.linkedin.com/in/yixuanlu11280" target="_blank"><img src="images/icons/linkedin.png" height="40" width="40"></a>
-		</div>
-	</div>
-</div>
-
-
-
-<!--PREFOOTER SECTION-->
-
-<div id="prefooter">
-	<p id="prefooter-desc">Find us on Facebook, Twitter, and Instagram.</p>
-	<ul id="icon-nav">
-		<li><a href="https://www.facebook.com/BerkeleyPSE" target="_blank"><img src="images/icons/facebook.png" height="50" width="50"/></a></li>
-		<li><a href="https://twitter.com/berkeleypse" target="_blank"><img src="images/icons/twitter.png" height="50" width="50"/></a></li>
-		<li><img src="images/icons/instagram.png" height="50" width="50"/></li> <!-- TODO: Create Instagram & Link it!-->
-	</ul>
-</div>
-
-<!--FOOTER SECTION-->
-
-<div id="footer">
-	<p id="footer-desc">Pi Sigma Epsilon (PSE) is a co-ed, professional fraternal organization in sales, marketing, and management. 
-	<br>
-	The mission of Pi Sigma Epsilon is to develop the sales and marketing skills of its members through experiential learning and professional opportunities.
-	<br> <br>
-	National Website: <i><a id="pse-link" href="https://www.pse.org" target="_blank">www.pse.org</a></i>
-	<br> <br>
-	©2017. All rights reserved. Pi Sigma Epsilon, Zeta Chi Chapter.
-	</p>
-</div>
-
 
 <!--CLOSES A MODAL UPON OFFSCREEN CLICK-->
 <script>
 
-var modal_list = ["corona-modal", "nathan-modal", "madane-modal", "a-chen-modal", "fan-modal", "smith-modal", "taylor-modal", "balakumar-modal", "zhou-modal", "e-chen-modal", "su-modal", "kalluri-modal", "kim-modal", "tsang-modal", "suk-modal", "duan-modal", "k-li-modal", "suri-modal", "phan-modal", "k-lu-modal", "lily-li-modal", "linda-li-modal", "chu-modal", "wan-modal", "zhu-modal", "aminpour-modal", "kelleher-modal", "cheng-modal", "chun-modal", "rangnekar-modal", "pham-modal", "desai-modal", "yu-modal", "jerath-modal", "adil-modal", "lee-modal", "y-lu-modal"];
+var modal_list = ["corona-modal", "nathan-modal", "madane-modal", "a-chen-modal", "fan-modal", "smith-modal", "taylor-modal", "javidzad-modal", "balakumar-modal", "zhou-modal", "choe-modal", "e-chen-modal", "su-modal", "kalluri-modal", "kim-modal", "tsang-modal", "suk-modal", "duan-modal", "k-li-modal", "suri-modal", "phan-modal", "k-lu-modal", "lily-li-modal", "linda-li-modal", "seltzer-modal", "chu-modal", "wan-modal", "zhu-modal", "aminpour-modal", "kelleher-modal", "cheng-modal", "chun-modal", "rangnekar-modal", "pham-modal", "desai-modal", "yu-modal", "jerath-modal", "adil-modal", "lee-modal", "y-lu-modal"];
 	
 var modal_list_length = modal_list.length;
+	
+//alert(modal_list_length);
 
 window.onclick = function(event) {
 	var i;

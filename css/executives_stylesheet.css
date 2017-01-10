@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.names {
+	font-family: "Adobe Garamond Pro", serif;
+	font-size: 18px;
+	letter-spacing: 0.35px;
+	width: 100%;
+	text-align: center;
+}
+
+.position {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+/*
+button {
+	border-style: none;
+	background-color: white;
+}*/
