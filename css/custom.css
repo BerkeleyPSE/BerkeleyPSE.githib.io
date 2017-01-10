@@ -139,6 +139,21 @@ li:hover#contact-button a {
 	color: white !important;
 }
 
+.navbar-toggle {
+	box-shadow: none;
+	border: none;	
+}
+
+.navbar-collapse {
+	box-shadow: none;
+	border: none;
+}
+
+.collapse {
+	box-shadow: none;
+	border: none;
+}
+
 /*** PREFOOTER ***/
 
 div#prefooter {
