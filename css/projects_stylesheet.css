@@ -38,3 +38,9 @@ ul li img:hover {
 	-moz-transition: opacity .65s ease-in-out;
 	-webkit-transition: opacity .65s ease-in-out;	
 }
+
+.comp {
+	font-family: "Adobe Garamond Pro", serif;
+	font-size: 18px;
+	text-align: center;
+}
