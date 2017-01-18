@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+h1#PSE2 {
+	margin-top: 40px;
+}
+
 p#mission {
 	margin: 30px auto;
 }
