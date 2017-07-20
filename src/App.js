@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Routes from './components/routes';
 
 class App extends Component {
   render() {
-    var Routes = null;
-
     return (
       <Router style={{ height: '100%' }}>
         <div style={{ height: '100%' }}>
