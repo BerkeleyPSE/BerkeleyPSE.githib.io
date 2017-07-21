@@ -19,33 +19,36 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 // Actions
 // import { MainActions } from '../actions/main-actions';
 
-// Components
+// Page Components
 import Home from './Home';
-import About from './About';
-import Careers from './Careers';
-import Sponsor from './Sponsor';
-import Recruitment from './Recruitment';
-import WhyPSE from './WhyPSE';
-import FAQs from './FAQs';
-import Application from './Application';
-import Brotherhood from './Brotherhood';
-import Brother from './Brother';
-import Executives from './Executives';
+import About from './About/About';
+import Careers from './About/Careers';
+import Sponsor from './About/Sponsor';
+import Recruitment from './Recruitment/Recruitment';
+import WhyPSE from './Recruitment/WhyPSE';
+import FAQs from './Recruitment/FAQs';
+import Application from './Recruitment/Application';
+import Brotherhood from './Brothers/Brotherhood';
+import Brother from './Brothers/Brother';
+import Executives from './Brothers/Executives';
 import Contact from './Contact';
 import Error404 from './Error404';
 
-// Pages
+// Other Components
+import Navbar from './reusable_components/Navbar';
+
+// Page URLs
 export const HOME = '/';
-export const ABOUT = '/about/';
-export const CAREERS = '/careers/';
-export const SPONSOR = '/sponsor/';
-export const RECRUITMENT = '/recruitment/';
-export const WHYPSE = '/why-pse/';
-export const FAQS = '/faqs/';
-export const APPLICATION = '/app/';
-export const BROTHERS = '/brothers/';
-export const EXECUTIVES = '/eboard/';
-export const CONTACT = '/contact/';
+export const ABOUT = '/about';
+export const CAREERS = '/careers';
+export const SPONSOR = '/sponsor';
+export const RECRUITMENT = '/recruitment';
+export const WHYPSE = '/why-pse';
+export const FAQS = '/faqs';
+export const APPLICATION = '/app';
+export const BROTHERS = '/brothers';
+export const EXECUTIVES = '/eboard';
+export const CONTACT = '/contact';
 
 export default class Routes extends React.Component {
   constructor(props) {
@@ -56,7 +59,7 @@ export default class Routes extends React.Component {
     return (
       <div className={css(styles.routerContainer)}>
         This is shown.
-        {/*NAVBAR COMPONENT GOES HERE*/}
+        <Navbar />
         <div className={css(styles.mainContainer)}>
           <Switch>
             <Route exact path={HOME} component={Home} />
