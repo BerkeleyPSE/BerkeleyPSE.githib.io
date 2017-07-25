@@ -10,32 +10,32 @@ import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 // Redux
-// import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 // React Router
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 // Actions
-// import { MainActions } from '../actions/main-actions';
+import { MainActions } from '../../actions/main-actions';
 
 // Page Components
-import Home from './Home';
-import About from './About/About';
-import Careers from './About/Careers';
-import Sponsor from './About/Sponsor';
-import Recruitment from './Recruitment/Recruitment';
-import WhyPSE from './Recruitment/WhyPSE';
-import FAQs from './Recruitment/FAQs';
-import Application from './Recruitment/Application';
-import Brotherhood from './Brothers/Brotherhood';
-import Brother from './Brothers/Brother';
-import Executives from './Brothers/Executives';
-import Contact from './Contact';
-import Error404 from './Error404';
+import Home from '../Home';
+import About from '../About/About';
+import Careers from '../About/Careers';
+import Sponsor from '../About/Sponsor';
+import Recruitment from '../Recruitment/Recruitment';
+import WhyPSE from '../Recruitment/WhyPSE';
+import FAQs from '../Recruitment/FAQs';
+import Application from '../Recruitment/Application';
+import Brotherhood from '../Brothers/Brotherhood';
+import Brother from '../Brothers/Brother';
+import Executives from '../Brothers/Executives';
+import Contact from '../Contact';
+import Error404 from '../Error404';
 
 // Other Components
-import Navbar from './reusable_components/Navbar';
+import Navbar from '../reusable_components/Navbar';
 
 // Page URLs
 export const HOME = '/';
@@ -50,7 +50,7 @@ export const BROTHERS = '/brothers';
 export const EXECUTIVES = '/eboard';
 export const CONTACT = '/contact';
 
-export default class Routes extends React.Component {
+class Routes extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -58,7 +58,6 @@ export default class Routes extends React.Component {
   render() {
     return (
       <div className={css(styles.routerContainer)}>
-        This is shown.
         <Navbar />
         <div className={css(styles.mainContainer)}>
           <Switch>
@@ -84,16 +83,16 @@ export default class Routes extends React.Component {
 
 const styles = StyleSheet.create({});
 
-// const mapStateToProps = (state) => {
-//     return ({
-//         main: state.main
-//     });
-// }
+const mapStateToProps = state => {
+  return {
+    main: state.main
+  };
+};
 
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//     return ({
-//         mainActions: bindActionCreators(MainActions, dispatch)
-//     });
-// }
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    mainActions: bindActionCreators(MainActions, dispatch)
+  };
+};
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Routes)
+export default connect(mapStateToProps, mapDispatchToProps)(Routes);

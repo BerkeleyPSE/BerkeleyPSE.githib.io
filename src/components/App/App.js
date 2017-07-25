@@ -1,15 +1,22 @@
+// import React
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Routes from './components/routes';
+// import routers
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { withRouter } from 'react-router';
+
+// import local components
+import Routes from '../router/routes';
+import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router style={{ height: '100%' }}>
         <div style={{ height: '100%' }}>
-          Hello
-          <Route component={Routes} />
+          <ScrollToTop>
+            <Route component={Routes} />
+          </ScrollToTop>
         </div>
       </Router>
     );

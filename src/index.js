@@ -1,12 +1,43 @@
+// React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+
+// React Redux & Router
 import { Provider } from 'react-redux';
-import configureStore from './store/configure-store';
-// import registerServiceWorker from './registerServiceWorker';
+import { Router } from 'react-router';
 
-import 'semantic-ui-css/semantic.min.css';
+// Local Components
+import { configure, history } from './store/configure-store';
+import registerServiceWorker from './registerServiceWorker';
+import App from './components/App/App';
+import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+const store = configure();
+
+console.log(history);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root')
+);
+
+if (module.hot) {
+  module.hot.accept('./components/App/App', () => {
+    const NextApp = require('./components/App/App').default;
+    ReactDOM.render(
+      <Provider store={store}>
+        <Router history={history}>
+          <App />
+        </Router>
+      </Provider>,
+      document.getElementById('root')
+    );
+  });
+  window.store = store;
+}
+
+registerServiceWorker();
