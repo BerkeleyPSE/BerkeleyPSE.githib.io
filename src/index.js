@@ -14,8 +14,6 @@ import './index.css';
 
 const store = configure();
 
-console.log(history);
-
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>

@@ -8,13 +8,30 @@ import { Link } from 'react-router-dom';
 
 // import '../../stylesheets/Navbar.scss';
 
-export default class Contact extends React.Component {
+import DropdownUnit from './DropdownUnit.jsx';
+
+import { navbar_constants } from './navbar_constants.jsx';
+
+export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
+    console.log(navbar_constants);
+
+    var mainDropdowns = navbar_constants.map((item, index) => {
+      return (
+        <DropdownUnit
+          header={item.header}
+          headerLink={item.headerLink}
+          pages={item.pages}
+          key={index}
+        />
+      );
+    });
+
     return (
       <div className={css(styles.mainContainer)}>
         <div className={css(styles.logoContainer)}>
@@ -24,7 +41,9 @@ export default class Contact extends React.Component {
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
           </div>
         </div>
-        <div className={css(styles.dropdownContainer)} />
+        <div className={css(styles.dropdownContainer)}>
+          {mainDropdowns}
+        </div>
       </div>
     );
   }
@@ -68,5 +87,14 @@ const styles = StyleSheet.create({
     fontSize: '1.125em',
     margin: 0
     // textAlign: 'center',
+  },
+
+  dropdownContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    position: 'absolute',
+    right: 0,
+    paddingRight: '20px'
   }
 });

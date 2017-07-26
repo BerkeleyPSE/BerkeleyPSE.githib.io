@@ -38,17 +38,19 @@ import Error404 from '../Error404';
 import Navbar from '../reusable_components/Navbar';
 
 // Page URLs
-export const HOME = '/';
-export const ABOUT = '/about';
-export const CAREERS = '/careers';
-export const SPONSOR = '/sponsor';
-export const RECRUITMENT = '/recruitment';
-export const WHYPSE = '/why-pse';
-export const FAQS = '/faqs';
-export const APPLICATION = '/app';
-export const BROTHERS = '/brothers';
-export const EXECUTIVES = '/eboard';
-export const CONTACT = '/contact';
+import {
+  HOME_PATH,
+  ABOUT_PATH,
+  CAREERS_PATH,
+  SPONSOR_PATH,
+  RECRUITMENT_PATH,
+  WHYPSE_PATH,
+  FAQS_PATH,
+  APPLICATION_PATH,
+  BROTHERS_PATH,
+  EXECUTIVES_PATH,
+  CONTACT_PATH
+} from '../reusable_components/navbar_constants.jsx';
 
 class Routes extends React.Component {
   constructor(props) {
@@ -61,18 +63,18 @@ class Routes extends React.Component {
         <Navbar />
         <div className={css(styles.mainContainer)}>
           <Switch>
-            <Route exact path={HOME} component={Home} />
-            <Route path={ABOUT} component={About} />
-            <Route path={CAREERS} component={Careers} />
-            <Route path={SPONSOR} component={Sponsor} />
-            <Route path={RECRUITMENT} component={Recruitment} />
-            <Route path={WHYPSE} component={WhyPSE} />
-            <Route path={FAQS} component={FAQs} />
-            <Route path={APPLICATION} component={Application} />
-            <Route exact path={BROTHERS} component={Brotherhood} />
-            <Route path={`${BROTHERS}/:name`} component={Brother} />
-            <Route path={EXECUTIVES} component={Executives} />
-            <Route path={CONTACT} component={Contact} />
+            <Route exact path={HOME_PATH} component={Home} />
+            <Route path={ABOUT_PATH} component={About} />
+            <Route path={CAREERS_PATH} component={Careers} />
+            <Route path={SPONSOR_PATH} component={Sponsor} />
+            <Route path={RECRUITMENT_PATH} component={Recruitment} />
+            <Route path={WHYPSE_PATH} component={WhyPSE} />
+            <Route path={FAQS_PATH} component={FAQs} />
+            <Route path={APPLICATION_PATH} component={Application} />
+            <Route exact path={BROTHERS_PATH} component={Brotherhood} />
+            <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
+            <Route path={EXECUTIVES_PATH} component={Executives} />
+            <Route path={CONTACT_PATH} component={Contact} />
             <Route component={Error404} />
           </Switch>
         </div>
