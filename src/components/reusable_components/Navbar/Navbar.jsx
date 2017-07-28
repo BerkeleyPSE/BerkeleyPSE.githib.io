@@ -19,8 +19,6 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    console.log(navbar_constants);
-
     var dropdownUnits = navbar_constants.map((item, index) => {
       return (
         <DropdownUnit
@@ -35,7 +33,7 @@ export default class Navbar extends React.Component {
     return (
       <div className={css(styles.mainContainer)}>
         <div className={css(styles.logoContainer)}>
-          <img className={css(styles.logo)} src="/logo.png" />
+          <img className={css(styles.logo)} src="/images/logo.png" />
           <div className={css(styles.textContainer)}>
             <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>

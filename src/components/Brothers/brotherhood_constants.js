@@ -45,10 +45,10 @@ export const brotherList = [
 export const brotherInfo = {
   /* 1 */
   aaron_corona: {
-    img: '',
-    name: 'a',
-    position: '',
-    year: '',
+    img: 'images/brothers/aaron_corona.jpg',
+    name: 'Aaron Corona',
+    position: 'Vice President of Public Relations',
+    year: 'Senior',
     hometown: '',
     class: '',
     major: '',
@@ -59,7 +59,7 @@ export const brotherInfo = {
 
   /* 2 */
   abhi_nathan: {
-    img: '',
+    img: 'images/brothers/abhi_nathan.jpg',
     name: '',
     position: '',
     year: '',
@@ -73,7 +73,7 @@ export const brotherInfo = {
 
   /* 3 */
   akshay_madane: {
-    img: '',
+    img: 'images/brothers/akshay_madane.jpg',
     name: '',
     position: '',
     year: '',
@@ -87,7 +87,7 @@ export const brotherInfo = {
 
   /* 4 */
   catie_fan: {
-    img: '',
+    img: 'images/brothers/catie_fan.jpg',
     name: '',
     position: '',
     year: '',
@@ -101,7 +101,7 @@ export const brotherInfo = {
 
   /* 5 */
   charissa_saputra: {
-    img: '',
+    img: 'images/brothers/charissa_saputra.jpg',
     name: '',
     position: '',
     year: '',
@@ -115,7 +115,7 @@ export const brotherInfo = {
 
   /* 6 */
   clevian_hsia: {
-    img: '',
+    img: 'images/brothers/clevian_hsia.jpg',
     name: '',
     position: '',
     year: '',
@@ -129,7 +129,7 @@ export const brotherInfo = {
 
   /* 7 */
   connor_smith: {
-    img: '',
+    img: 'images/brothers/connor_smith.jpg',
     name: '',
     position: '',
     year: '',
@@ -143,7 +143,7 @@ export const brotherInfo = {
 
   /* 8 */
   dallas_taylor: {
-    img: '',
+    img: 'images/brothers/dallas_taylor.jpg',
     name: '',
     position: '',
     year: '',
@@ -157,7 +157,7 @@ export const brotherInfo = {
 
   /* 9 */
   dhakshi_balakumar: {
-    img: '',
+    img: 'images/brothers/dhakshi_balakumar.jpg',
     name: '',
     position: '',
     year: '',
@@ -171,7 +171,7 @@ export const brotherInfo = {
 
   /* 10 */
   emma_tsuneishi: {
-    img: '',
+    img: 'images/brothers/emma_tsuneishi.jpg',
     name: '',
     position: '',
     year: '',
@@ -185,7 +185,7 @@ export const brotherInfo = {
 
   /* 11 */
   esther_choe: {
-    img: '',
+    img: 'images/brothers/esther_choe.jpg',
     name: '',
     position: '',
     year: '',
@@ -199,7 +199,7 @@ export const brotherInfo = {
 
   /* 12 */
   eva_su: {
-    img: '',
+    img: 'images/brothers/eva_su.jpg',
     name: '',
     position: '',
     year: '',
@@ -213,7 +213,7 @@ export const brotherInfo = {
 
   /* 13 */
   harika_kalluri: {
-    img: '',
+    img: 'images/brothers/harika_kalluri.jpg',
     name: '',
     position: '',
     year: '',
@@ -227,7 +227,7 @@ export const brotherInfo = {
 
   /* 14 */
   howard_huang: {
-    img: '',
+    img: 'images/brothers/howard_huang.jpg',
     name: '',
     position: '',
     year: '',
@@ -241,7 +241,7 @@ export const brotherInfo = {
 
   /* 15 */
   jacqueline_tsang: {
-    img: '',
+    img: 'images/brothers/jacqueline_tsang.jpg',
     name: '',
     position: '',
     year: '',
@@ -255,7 +255,7 @@ export const brotherInfo = {
 
   /* 16 */
   jeanine_liu: {
-    img: '',
+    img: 'images/brothers/jeanine_liu.jpg',
     name: '',
     position: '',
     year: '',
@@ -269,7 +269,7 @@ export const brotherInfo = {
 
   /* 17 */
   jonathan_duan: {
-    img: '',
+    img: 'images/brothers/jonathan_duan.jpg',
     name: '',
     position: '',
     year: '',
@@ -283,7 +283,7 @@ export const brotherInfo = {
 
   /* 18 */
   justin_tan: {
-    img: '',
+    img: 'images/brothers/justin_tan.jpg',
     name: '',
     position: '',
     year: '',
@@ -297,7 +297,7 @@ export const brotherInfo = {
 
   /* 19 */
   kailin_li: {
-    img: '',
+    img: 'images/brothers/kailin_li.jpg',
     name: '',
     position: '',
     year: '',
@@ -311,7 +311,7 @@ export const brotherInfo = {
 
   /* 20 */
   kelvin_xu: {
-    img: '',
+    img: 'images/brothers/kelvin_xu.jpg',
     name: '',
     position: '',
     year: '',
@@ -325,7 +325,7 @@ export const brotherInfo = {
 
   /* 21 */
   kevin_lee: {
-    img: '',
+    img: 'images/brothers/kevin_lee.jpg',
     name: '',
     position: '',
     year: '',
@@ -339,7 +339,7 @@ export const brotherInfo = {
 
   /* 22 */
   kevin_phan: {
-    img: '',
+    img: 'images/brothers/kevin_phan.jpg',
     name: '',
     position: '',
     year: '',
@@ -353,7 +353,7 @@ export const brotherInfo = {
 
   /* 23 */
   kian_kiasaleh: {
-    img: '',
+    img: 'images/brothers/kian_kiasaleh.jpg',
     name: '',
     position: '',
     year: '',
@@ -367,7 +367,7 @@ export const brotherInfo = {
 
   /* 24 */
   kyle_lu: {
-    img: '',
+    img: 'images/brothers/kyle_lu.jpg',
     name: '',
     position: '',
     year: '',
@@ -381,7 +381,7 @@ export const brotherInfo = {
 
   /* 25 */
   linda_li: {
-    img: '',
+    img: 'images/brothers/linda_li.jpg',
     name: '',
     position: '',
     year: '',
@@ -395,7 +395,7 @@ export const brotherInfo = {
 
   /* 26 */
   max_seltzer: {
-    img: '',
+    img: 'images/brothers/max_seltzer.jpg',
     name: '',
     position: '',
     year: '',
@@ -409,7 +409,7 @@ export const brotherInfo = {
 
   /* 27 */
   melody_wan: {
-    img: '',
+    img: 'images/brothers/melody_wan.jpg',
     name: '',
     position: '',
     year: '',
@@ -423,7 +423,7 @@ export const brotherInfo = {
 
   /* 28 */
   nancy_zhu: {
-    img: '',
+    img: 'images/brothers/nancy_zhu.jpg',
     name: '',
     position: '',
     year: '',
@@ -437,7 +437,7 @@ export const brotherInfo = {
 
   /* 29 */
   nathan_kelleher: {
-    img: '',
+    img: 'images/brothers/nathan_kelleher.jpg',
     name: '',
     position: '',
     year: '',
@@ -451,7 +451,7 @@ export const brotherInfo = {
 
   /* 30 */
   nick_cheng: {
-    img: '',
+    img: 'images/brothers/nick_cheng.jpg',
     name: '',
     position: '',
     year: '',
@@ -465,7 +465,7 @@ export const brotherInfo = {
 
   /* 31 */
   nick_chun: {
-    img: '',
+    img: 'images/brothers/nick_chun.jpg',
     name: '',
     position: '',
     year: '',
@@ -479,7 +479,7 @@ export const brotherInfo = {
 
   /* 32 */
   rahul_rangnekar: {
-    img: '',
+    img: 'images/brothers/rahul_rangnekar.jpg',
     name: '',
     position: '',
     year: '',
@@ -493,7 +493,7 @@ export const brotherInfo = {
 
   /* 33 */
   rose_min: {
-    img: '',
+    img: 'images/brothers/rose_min.jpg',
     name: '',
     position: '',
     year: '',
@@ -507,7 +507,7 @@ export const brotherInfo = {
 
   /* 34 */
   rushil_desai: {
-    img: '',
+    img: 'images/brothers/rushil_desai.jpg',
     name: '',
     position: '',
     year: '',
@@ -521,7 +521,7 @@ export const brotherInfo = {
 
   /* 35 */
   sean_yu: {
-    img: '',
+    img: 'images/brothers/sean_yu.jpg',
     name: '',
     position: '',
     year: '',
@@ -535,7 +535,7 @@ export const brotherInfo = {
 
   /* 36 */
   syed_adil: {
-    img: '',
+    img: 'images/brothers/syed_adil.jpg',
     name: '',
     position: '',
     year: '',
@@ -549,7 +549,7 @@ export const brotherInfo = {
 
   /* 37 */
   taylor_lee: {
-    img: '',
+    img: 'images/brothers/taylor_lee.jpg',
     name: '',
     position: '',
     year: '',
@@ -563,7 +563,7 @@ export const brotherInfo = {
 
   /* 38 */
   tia_chen_wong: {
-    img: '',
+    img: 'images/brothers/tia_chen_wong.jpg',
     name: '',
     position: '',
     year: '',
@@ -577,7 +577,7 @@ export const brotherInfo = {
 
   /* 39 */
   tim_cheng: {
-    img: '',
+    img: 'images/brothers/tim_cheng.jpg',
     name: '',
     position: '',
     year: '',
@@ -591,7 +591,7 @@ export const brotherInfo = {
 
   /* 40 */
   varsha_sundar: {
-    img: '',
+    img: 'images/brothers/varsha_sundar.jpg',
     name: '',
     position: '',
     year: '',
@@ -605,7 +605,7 @@ export const brotherInfo = {
 
   /* 41 */
   yixuan_lu: {
-    img: '',
+    img: 'images/brothers/yixuan_lu.jpg',
     name: '',
     position: '',
     year: '',

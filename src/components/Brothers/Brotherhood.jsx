@@ -15,7 +15,7 @@ export default class Brother extends React.Component {
       var bro = brotherInfo[brother];
       return (
         <li>
-          {bro.name}
+          <img src={bro.img} />
         </li>
       );
     });
