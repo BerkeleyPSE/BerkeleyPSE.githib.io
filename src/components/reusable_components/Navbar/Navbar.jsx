@@ -21,7 +21,7 @@ export default class Navbar extends React.Component {
   render() {
     console.log(navbar_constants);
 
-    var mainDropdowns = navbar_constants.map((item, index) => {
+    var dropdownUnits = navbar_constants.map((item, index) => {
       return (
         <DropdownUnit
           header={item.header}
@@ -41,8 +41,8 @@ export default class Navbar extends React.Component {
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
           </div>
         </div>
-        <div className={css(styles.dropdownContainer)}>
-          {mainDropdowns}
+        <div className={css(styles.dropdownUnitContainer)}>
+          {dropdownUnits}
         </div>
       </div>
     );
@@ -51,45 +51,45 @@ export default class Navbar extends React.Component {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    // backgroundColor: '#D4D9DF',
+    backgroundColor: '#303030',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    height: '100px'
+    height: '75px'
   },
 
   logoContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: '20px 20px'
+    padding: '20px'
   },
 
   logo: {
-    height: '70px',
-    width: '124px'
+    height: '50px',
+    width: '89px'
   },
 
   textContainer: {
-    color: '#303030',
+    color: '#FFF',
     fontFamily: 'Lato, sans-serif',
     paddingLeft: '20px'
   },
 
   PSEText: {
-    fontSize: '1.5em',
+    fontSize: '1.25em',
     letterSpacing: '-0.025em',
     margin: 0,
     textTransform: 'uppercase'
   },
 
   chapterText: {
-    fontSize: '1.125em',
+    fontSize: '1em',
     margin: 0
     // textAlign: 'center',
   },
 
-  dropdownContainer: {
+  dropdownUnitContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',

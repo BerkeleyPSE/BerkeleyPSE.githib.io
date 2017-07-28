@@ -10,7 +10,7 @@ import rootReducer from '../reducers';
 
 export const history = createHistory();
 
-const enhancers = [];
+// const enhancers = [];
 const middleware = [thunk, routerMiddleware(history)];
 
 /*

@@ -35,7 +35,7 @@ import Contact from '../Contact';
 import Error404 from '../Error404';
 
 // Other Components
-import Navbar from '../reusable_components/Navbar';
+import Navbar from '../reusable_components/Navbar/Navbar';
 
 // Page URLs
 import {
@@ -50,7 +50,7 @@ import {
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
-} from '../reusable_components/navbar_constants.jsx';
+} from '../reusable_components/Navbar/navbar_constants.jsx';
 
 class Routes extends React.Component {
   constructor(props) {

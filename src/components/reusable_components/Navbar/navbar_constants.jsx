@@ -35,7 +35,7 @@ export const navbar_constants = [
     headerLink: RECRUITMENT_PATH,
     pages: [
       {
-        page: 'Recruitment',
+        page: 'Information',
         pageLink: RECRUITMENT_PATH
       },
       {
@@ -53,15 +53,15 @@ export const navbar_constants = [
     ]
   },
   {
-    header: 'Brothers',
+    header: 'Brotherhood',
     headerLink: BROTHERS_PATH,
     pages: [
       {
-        page: 'Brotherhood',
+        page: 'Brothers',
         pageLink: BROTHERS_PATH
       },
       {
-        page: 'Executive Board',
+        page: 'Executives',
         pageLink: EXECUTIVES_PATH
       }
     ]

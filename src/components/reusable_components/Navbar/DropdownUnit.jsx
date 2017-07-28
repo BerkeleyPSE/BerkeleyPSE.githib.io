@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 // NPM Modules
 import DropdownMenu from 'react-dd-menu';
-import '../../stylesheets/react-dd.css';
+import '../../../stylesheets/react-dd.css';
 
 export default class DropdownUnit extends React.Component {
   constructor(props) {
@@ -26,29 +26,22 @@ export default class DropdownUnit extends React.Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
-  // <div className={css(styles.mainContainer)}>
-  //   <Link className={css(styles.headerLink)} to={this.props.headerLink}>
-  //     <h3 className={css(styles.header)}>
-  //       {this.props.header}
-  //     </h3>
-  //   </Link>
-  // </div>
-
   render() {
     let menuOptions = {
       isOpen: this.state.isOpen,
       close: this.close,
       toggle: <button className={css(styles.hidden)} onClick={this.toggle} />,
-      align: 'left'
+      align: 'right',
+      menuAlign: 'right'
     };
 
     var pageLinks = this.props.pages.map((page, index) => {
       return (
-        <Link to={page.pageLink} className={css(styles.pageLink)} key={index}>
-          <li>
+        <li className={css(styles.pageLi)}>
+          <Link to={page.pageLink} className={css(styles.pageLink)} key={index}>
             {page.page}
-          </li>
-        </Link>
+          </Link>
+        </li>
       );
     });
 
@@ -79,8 +72,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     height: 'auto',
-    padding: '0 20px'
+    padding: '0 15px'
   },
 
   hidden: {
@@ -88,17 +82,21 @@ const styles = StyleSheet.create({
   },
 
   headerLink: {
-    color: '#303030',
+    color: '#FFF',
     height: 'auto',
     textDecoration: 'none',
     textTransform: 'uppercase',
-    padding: '20px 10px'
+    padding: '20px 10px',
+
+    ':hover': {
+      color: '#FFD700'
+    }
   },
 
   header: {
     fontFamily: 'Lato, sans-serif',
     fontSize: '0.85em',
-    fontWeight: '700',
+    fontWeight: '500',
     letterSpacing: '0.025em',
     margin: 0
   },
@@ -106,15 +104,37 @@ const styles = StyleSheet.create({
   dropdownContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '40px'
+    marginTop: '10px',
+    position: 'relative',
+    height: '100%'
+  },
+
+  pageLi: {
+    padding: '0 20px 0 5px',
+    backgroundColor: '#303030',
+
+    ':hover': {
+      color: '#FFD700'
+    }
   },
 
   pageLink: {
-    color: '#303030',
+    color: '#FFF',
+    fontFamily: 'Lato, sans-serif',
     fontSize: '0.85em',
     fontWeight: '500',
-    padding: '10px 0',
+    letterSpacing: '0.025em',
+    padding: '10px 10px 10px 5px',
     textDecoration: 'none',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+
+    ':hover': {
+      color: '#FFD700'
+    },
+
+    ':active': {
+      backgroundColor: '#303030',
+      color: '#FFD700'
+    }
   }
 });
