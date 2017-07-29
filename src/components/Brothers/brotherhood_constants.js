@@ -50,9 +50,10 @@ export const brotherInfo = {
     position: 'Vice President of Public Relations',
     year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -60,13 +61,14 @@ export const brotherInfo = {
   /* 2 */
   abhi_nathan: {
     img: 'images/brothers/abhi_nathan.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Abhi Nathan',
+    position: 'Director of External Recruitment',
+    year: 'Sophomore',
     hometown: '',
     class: '',
-    major: '',
+    major: 'Iota',
     career_interests: '',
+    previous_positions: 'Project Manager',
     bio: '',
     linkedin: ''
   },
@@ -74,13 +76,14 @@ export const brotherInfo = {
   /* 3 */
   akshay_madane: {
     img: 'images/brothers/akshay_madane.jpg',
-    name: '',
+    name: 'Akshay Madane',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Epsilon',
     major: '',
     career_interests: '',
+    previous_positions: 'Vice President of Finance',
     bio: '',
     linkedin: ''
   },
@@ -88,13 +91,14 @@ export const brotherInfo = {
   /* 4 */
   catie_fan: {
     img: 'images/brothers/catie_fan.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Catie Fan',
+    position: 'Prospective Member Trainer',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Projects',
     bio: '',
     linkedin: ''
   },
@@ -102,13 +106,14 @@ export const brotherInfo = {
   /* 5 */
   charissa_saputra: {
     img: 'images/brothers/charissa_saputra.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Charissa Saputra',
+    position: 'Director of Technology',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -116,13 +121,14 @@ export const brotherInfo = {
   /* 6 */
   clevian_hsia: {
     img: 'images/brothers/clevian_hsia.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Clevian Hsia',
+    position: '', // Project Manager???
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -130,13 +136,14 @@ export const brotherInfo = {
   /* 7 */
   connor_smith: {
     img: 'images/brothers/connor_smith.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Connor Smith',
+    position: 'Director of Scholarships',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Brotherhood',
     bio: '',
     linkedin: ''
   },
@@ -144,13 +151,14 @@ export const brotherInfo = {
   /* 8 */
   dallas_taylor: {
     img: 'images/brothers/dallas_taylor.jpg',
-    name: '',
+    name: 'Dallas Taylor',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Delta',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -158,13 +166,14 @@ export const brotherInfo = {
   /* 9 */
   dhakshi_balakumar: {
     img: 'images/brothers/dhakshi_balakumar.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Dhakshi Balakumar',
+    position: 'Director of Alumni Relations',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -172,13 +181,14 @@ export const brotherInfo = {
   /* 10 */
   emma_tsuneishi: {
     img: 'images/brothers/emma_tsuneishi.jpg',
-    name: '',
-    position: '',
+    name: 'Emma Tsuneishi',
+    position: '', // Project Manager ???
     year: '',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -186,13 +196,14 @@ export const brotherInfo = {
   /* 11 */
   esther_choe: {
     img: 'images/brothers/esther_choe.jpg',
-    name: '',
+    name: 'Esther Choe',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta', // ??
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -200,13 +211,14 @@ export const brotherInfo = {
   /* 12 */
   eva_su: {
     img: 'images/brothers/eva_su.jpg',
-    name: '',
+    name: 'Eva Su',
     position: '',
-    year: '',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -214,13 +226,14 @@ export const brotherInfo = {
   /* 13 */
   harika_kalluri: {
     img: 'images/brothers/harika_kalluri.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Harika Kalluri',
+    position: 'Director of Professional Development',
+    year: 'Sophomore',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: 'Prospective Member Trainer',
     bio: '',
     linkedin: ''
   },
@@ -228,13 +241,14 @@ export const brotherInfo = {
   /* 14 */
   howard_huang: {
     img: 'images/brothers/howard_huang.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Howard Huang',
+    position: 'Director of Brotherhood',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -242,13 +256,14 @@ export const brotherInfo = {
   /* 15 */
   jacqueline_tsang: {
     img: 'images/brothers/jacqueline_tsang.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Jacqueline Tsang',
+    position: 'Director of Internal Recruitment',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -256,13 +271,14 @@ export const brotherInfo = {
   /* 16 */
   jeanine_liu: {
     img: 'images/brothers/jeanine_liu.jpg',
-    name: '',
+    name: 'Jeanine Liu',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -270,13 +286,14 @@ export const brotherInfo = {
   /* 17 */
   jonathan_duan: {
     img: 'images/brothers/jonathan_duan.jpg',
-    name: '',
+    name: 'Jonathan Duan',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta', // ??
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Projects, Director of Philanthropy',
     bio: '',
     linkedin: ''
   },
@@ -284,13 +301,14 @@ export const brotherInfo = {
   /* 18 */
   justin_tan: {
     img: 'images/brothers/justin_tan.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Justin Tan',
+    position: 'Director of Brotherhood',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -298,13 +316,14 @@ export const brotherInfo = {
   /* 19 */
   kailin_li: {
     img: 'images/brothers/kailin_li.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kailin Li',
+    position: 'Vice President of Human Relations',
+    year: 'Senior',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of External Recruitment',
     bio: '',
     linkedin: ''
   },
@@ -312,13 +331,14 @@ export const brotherInfo = {
   /* 20 */
   kelvin_xu: {
     img: 'images/brothers/kelvin_xu.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kelvin Xu',
+    position: '', // ??
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -326,13 +346,14 @@ export const brotherInfo = {
   /* 21 */
   kevin_lee: {
     img: 'images/brothers/kevin_lee.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kevin Lee',
+    position: 'Chapter Secretary', // ??
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -340,13 +361,14 @@ export const brotherInfo = {
   /* 22 */
   kevin_phan: {
     img: 'images/brothers/kevin_phan.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kevin Phan',
+    position: 'President',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Zeta',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Professional Development',
     bio: '',
     linkedin: ''
   },
@@ -354,13 +376,14 @@ export const brotherInfo = {
   /* 23 */
   kian_kiasaleh: {
     img: 'images/brothers/kian_kiasaleh.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kian Kiasaleh',
+    position: '', // ??
+    year: 'Sophomore',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -368,13 +391,14 @@ export const brotherInfo = {
   /* 24 */
   kyle_lu: {
     img: 'images/brothers/kyle_lu.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Kyle Lu',
+    position: 'Prospective Member Trainer',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Technology',
     bio: '',
     linkedin: ''
   },
@@ -382,13 +406,14 @@ export const brotherInfo = {
   /* 25 */
   linda_li: {
     img: 'images/brothers/linda_li.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Linda Li',
+    position: 'Director of Projects',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Professional Development',
     bio: '',
     linkedin: ''
   },
@@ -396,13 +421,14 @@ export const brotherInfo = {
   /* 26 */
   max_seltzer: {
     img: 'images/brothers/max_seltzer.jpg',
-    name: '',
+    name: 'Max Seltzer',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Delta',
     major: '',
     career_interests: '',
+    previous_positions: 'Vice President of Finance',
     bio: '',
     linkedin: ''
   },
@@ -410,13 +436,14 @@ export const brotherInfo = {
   /* 27 */
   melody_wan: {
     img: 'images/brothers/melody_wan.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Melody Wan',
+    position: '', // ??
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Iota',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -424,13 +451,15 @@ export const brotherInfo = {
   /* 28 */
   nancy_zhu: {
     img: 'images/brothers/nancy_zhu.jpg',
-    name: '',
+    name: 'Nancy Zhu',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Zeta',
     major: '',
     career_interests: '',
+    previous_positions:
+      'Vice President of Human Resources, Director of Brotherhood',
     bio: '',
     linkedin: ''
   },
@@ -438,13 +467,14 @@ export const brotherInfo = {
   /* 29 */
   nathan_kelleher: {
     img: 'images/brothers/nathan_kelleher.jpg',
-    name: '',
+    name: 'Nathan Kelleher',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta', // ??
     major: '',
     career_interests: '',
+    previous_positions: '', // ??
     bio: '',
     linkedin: ''
   },
@@ -452,13 +482,14 @@ export const brotherInfo = {
   /* 30 */
   nick_cheng: {
     img: 'images/brothers/nick_cheng.jpg',
-    name: '',
+    name: 'Nick Cheng',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Epsilon', // ??
     major: '',
     career_interests: '',
+    previous_positions: '', // ??
     bio: '',
     linkedin: ''
   },
@@ -466,13 +497,14 @@ export const brotherInfo = {
   /* 31 */
   nick_chun: {
     img: 'images/brothers/nick_chun.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Nick Chun',
+    position: 'Vice President of Finance',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Theta',
     major: '',
     career_interests: '',
+    previous_positions: 'Director of Internal Recruitment',
     bio: '',
     linkedin: ''
   },
@@ -480,27 +512,29 @@ export const brotherInfo = {
   /* 32 */
   rahul_rangnekar: {
     img: 'images/brothers/rahul_rangnekar.jpg',
-    name: '',
-    position: '',
-    year: '',
-    hometown: '',
-    class: '',
-    major: '',
-    career_interests: '',
+    name: 'Rahul Rangnekar',
+    position: 'Vice President of Marketing',
+    year: 'Senior',
+    hometown: 'Claremont, CA',
+    class: 'Theta',
+    major: 'Computer Science & Economics',
+    career_interests: 'Product Management & Software Development',
+    previous_positions: 'Director of Brotherhood',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/rahrang'
   },
 
   /* 33 */
   rose_min: {
     img: 'images/brothers/rose_min.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Rose Min',
+    position: 'Director of Projects',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -508,13 +542,14 @@ export const brotherInfo = {
   /* 34 */
   rushil_desai: {
     img: 'images/brothers/rushil_desai.jpg',
-    name: '',
+    name: 'Rushil Desai',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta', // ??
     major: '',
     career_interests: '',
+    previous_positions: 'Vice President of Administration',
     bio: '',
     linkedin: ''
   },
@@ -522,13 +557,14 @@ export const brotherInfo = {
   /* 35 */
   sean_yu: {
     img: 'images/brothers/sean_yu.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Sean Yu',
+    position: 'Vice President of Professional Development',
+    year: 'Junior',
     hometown: '',
-    class: '',
+    class: 'Theta',
     major: '',
     career_interests: '',
+    previous_positions: 'Prospective Member Trainer',
     bio: '',
     linkedin: ''
   },
@@ -536,13 +572,14 @@ export const brotherInfo = {
   /* 36 */
   syed_adil: {
     img: 'images/brothers/syed_adil.jpg',
-    name: '',
+    name: 'Syed Adil',
     position: '',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta', // ??
     major: '',
     career_interests: '',
+    previous_positions: '', // ??
     bio: '',
     linkedin: ''
   },
@@ -550,13 +587,14 @@ export const brotherInfo = {
   /* 37 */
   taylor_lee: {
     img: 'images/brothers/taylor_lee.jpg',
-    name: '',
-    position: '',
+    name: 'Taylor Lee',
+    position: 'Vice President of Administration',
     year: '',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -571,6 +609,7 @@ export const brotherInfo = {
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -585,6 +624,7 @@ export const brotherInfo = {
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -599,6 +639,7 @@ export const brotherInfo = {
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -613,6 +654,7 @@ export const brotherInfo = {
     class: '',
     major: '',
     career_interests: '',
+    previous_positions: '',
     bio: '',
     linkedin: ''
   }
