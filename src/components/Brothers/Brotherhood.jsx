@@ -3,7 +3,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
-import { brotherList, brotherInfo } from './brotherhood_constants';
+import { Link } from 'react-router-dom';
+
+import { brotherList } from './brotherhood_constants';
+import { BrotherImage } from './BrotherImage.jsx';
 
 export default class Brother extends React.Component {
   constructor(props) {
@@ -12,23 +15,19 @@ export default class Brother extends React.Component {
 
   render() {
     const allBrothers = brotherList.map(brother => {
-      var bro = brotherInfo[brother];
-      return (
-        <li>
-          <p>
-            {' '}{bro.name}{' '}
-          </p>
-          <img src={bro.img} />
-        </li>
-      );
+      return <BrotherImage brother={brother} />;
     });
 
     return (
-      <ul>
+      <div className={css(styles.brotherContainer)}>
         {allBrothers}
-      </ul>
+      </div>
     );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  brotherContainer: {
+    textAlign: 'center'
+  }
+});

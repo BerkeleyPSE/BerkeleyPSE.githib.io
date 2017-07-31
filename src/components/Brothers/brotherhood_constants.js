@@ -589,9 +589,9 @@ export const brotherInfo = {
     img: 'images/brothers/taylor_lee.jpg',
     name: 'Taylor Lee',
     position: 'Vice President of Administration',
-    year: '',
+    year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Theta',
     major: '',
     career_interests: '',
     previous_positions: '',
@@ -602,11 +602,11 @@ export const brotherInfo = {
   /* 38 */
   tia_chen_wong: {
     img: 'images/brothers/tia_chen_wong.jpg',
-    name: '',
-    position: '',
-    year: '',
+    name: 'Tia Chen-Wong',
+    position: '', // Project Manager??
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
     previous_positions: '',
@@ -617,11 +617,11 @@ export const brotherInfo = {
   /* 39 */
   tim_cheng: {
     img: 'images/brothers/tim_cheng.jpg',
-    name: '',
+    name: 'Tim Cheng',
     position: '',
-    year: '',
+    year: 'Sophomore',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
     previous_positions: '',
@@ -632,11 +632,11 @@ export const brotherInfo = {
   /* 40 */
   varsha_sundar: {
     img: 'images/brothers/varsha_sundar.jpg',
-    name: '',
+    name: 'Varsha Sundar',
     position: '',
     year: '',
     hometown: '',
-    class: '',
+    class: 'Kappa',
     major: '',
     career_interests: '',
     previous_positions: '',
@@ -647,14 +647,14 @@ export const brotherInfo = {
   /* 41 */
   yixuan_lu: {
     img: 'images/brothers/yixuan_lu.jpg',
-    name: '',
-    position: '',
+    name: 'Yixuan Lu',
+    position: '', // ??
     year: '',
     hometown: '',
     class: '',
     major: '',
     career_interests: '',
-    previous_positions: '',
+    previous_positions: '', // ??
     bio: '',
     linkedin: ''
   }
