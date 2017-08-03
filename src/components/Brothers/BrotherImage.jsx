@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 import { Link } from 'react-router-dom';

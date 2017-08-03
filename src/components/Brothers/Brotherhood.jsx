@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 import { Link } from 'react-router-dom';
@@ -8,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { brotherList } from './brotherhood_constants';
 import { BrotherImage } from './BrotherImage.jsx';
 
-export default class Brother extends React.Component {
+export default class Brotherhood extends React.Component {
   constructor(props) {
     super(props);
   }

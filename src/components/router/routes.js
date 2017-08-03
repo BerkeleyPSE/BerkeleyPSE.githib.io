@@ -6,7 +6,6 @@ author: @rahrang, @berkeleypse
 
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 // Redux
@@ -14,7 +13,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // React Router
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 // Actions
 import { MainActions } from '../../actions/main-actions';
@@ -53,10 +52,6 @@ import {
 } from '../reusable_components/Navbar/navbar_constants.jsx';
 
 class Routes extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className={css(styles.routerContainer)}>

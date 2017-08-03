@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 export default class Error404 extends React.Component {

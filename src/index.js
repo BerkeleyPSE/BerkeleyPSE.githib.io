@@ -25,7 +25,6 @@ ReactDOM.render(
 
 if (module.hot) {
   module.hot.accept('./components/App/App', () => {
-    const NextApp = require('./components/App/App').default;
     ReactDOM.render(
       <Provider store={store}>
         <Router history={history}>

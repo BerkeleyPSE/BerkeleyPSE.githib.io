@@ -49,13 +49,13 @@ export const brotherInfo = {
     name: 'Aaron Corona',
     position: 'Vice President of Public Relations',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Los Angeles, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Political Economy',
+    career_interests: 'Management Consulting & Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/aaronmcorona'
   },
 
   /* 2 */
@@ -64,28 +64,30 @@ export const brotherInfo = {
     name: 'Abhi Nathan',
     position: 'Director of External Recruitment',
     year: 'Sophomore',
-    hometown: '',
-    class: '',
-    major: 'Iota',
-    career_interests: '',
-    previous_positions: 'Project Manager',
+    hometown: 'San Diego, CA',
+    class: 'Iota',
+    major: 'Intended Business & Cognitive Science',
+    minor: '',
+    career_interests: 'Technology Consulting',
+    previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/abhinathan'
   },
 
   /* 3 */
   akshay_madane: {
     img: 'images/brothers/akshay_madane.jpg',
     name: 'Akshay Madane',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Singapore',
     class: 'Epsilon',
-    major: '',
-    career_interests: '',
+    major: 'Political Economy',
+    minor: '',
+    career_interests: 'Healthcare Management and Strategy & Law',
     previous_positions: 'Vice President of Finance',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/madaneakshay'
   },
 
   /* 4 */
@@ -94,13 +96,14 @@ export const brotherInfo = {
     name: 'Catie Fan',
     position: 'Prospective Member Trainer',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'San Diego, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business',
+    minor: '',
+    career_interests: 'Management Consulting',
     previous_positions: 'Director of Projects',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://www.linkedin.com/in/catie-fan'
   },
 
   /* 5 */
@@ -112,6 +115,7 @@ export const brotherInfo = {
     hometown: '',
     class: 'Kappa',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -122,41 +126,44 @@ export const brotherInfo = {
   clevian_hsia: {
     img: 'images/brothers/clevian_hsia.jpg',
     name: 'Clevian Hsia',
-    position: '', // Project Manager???
+    position: 'Active',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'San Ramon, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business & Economics',
+    minor: '',
+    career_interests: 'Strategy Consulting & Project Management',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/clevianhsia'
   },
 
   /* 7 */
   connor_smith: {
     img: 'images/brothers/connor_smith.jpg',
     name: 'Connor Smith',
-    position: 'Director of Scholarships',
+    position: 'Director of Scholarship',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Los Angeles, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business & Economics',
+    minor: '',
+    career_interests: 'Investment Banking & Consulting',
     previous_positions: 'Director of Brotherhood',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/connordsmith'
   },
 
   /* 8 */
   dallas_taylor: {
     img: 'images/brothers/dallas_taylor.jpg',
     name: 'Dallas Taylor',
-    position: '',
+    position: 'Active',
     year: 'Senior',
     hometown: '',
-    class: 'Delta',
+    class: 'Epsilon',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -167,60 +174,64 @@ export const brotherInfo = {
   dhakshi_balakumar: {
     img: 'images/brothers/dhakshi_balakumar.jpg',
     name: 'Dhakshi Balakumar',
-    position: 'Director of Alumni Relations',
+    position: 'Director of Philanthropy',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Alpharetta, GA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
-    previous_positions: '',
+    major: 'Intended Business & Cognitive Science',
+    minor: '',
+    career_interests: 'Consulting',
+    previous_positions: 'Director of Internal Recruitment',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/dhakshib'
   },
 
   /* 10 */
   emma_tsuneishi: {
     img: 'images/brothers/emma_tsuneishi.jpg',
     name: 'Emma Tsuneishi',
-    position: '', // Project Manager ???
-    year: '',
-    hometown: '',
+    position: 'Active',
+    year: 'Sophomore',
+    hometown: 'Torrance, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Consulting',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/emmatsuneishi'
   },
 
   /* 11 */
   esther_choe: {
     img: 'images/brothers/esther_choe.jpg',
     name: 'Esther Choe',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
-    class: 'Eta', // ??
-    major: '',
-    career_interests: '',
+    hometown: 'Los Angeles, CA',
+    class: 'Eta',
+    major: 'Media Studies',
+    minor: 'Korean Studies',
+    career_interests: 'Advertising & Content Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/estherchoe'
   },
 
   /* 12 */
   eva_su: {
     img: 'images/brothers/eva_su.jpg',
     name: 'Eva Su',
-    position: '',
+    position: 'Active',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Kansas City, Missouri',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business & Economics',
+    minor: '',
+    career_interests: 'Strategy Consulting & Digital Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/sueva'
   },
 
   /* 13 */
@@ -229,13 +240,14 @@ export const brotherInfo = {
     name: 'Harika Kalluri',
     position: 'Director of Professional Development',
     year: 'Sophomore',
-    hometown: '',
-    class: '',
-    major: '',
-    career_interests: '',
+    hometown: 'San Jose, CA',
+    class: 'Iota',
+    major: 'Intended Business & Economics',
+    minor: '',
+    career_interests: 'Management Consulting',
     previous_positions: 'Prospective Member Trainer',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/harikakalluri'
   },
 
   /* 14 */
@@ -244,13 +256,14 @@ export const brotherInfo = {
     name: 'Howard Huang',
     position: 'Director of Brotherhood',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Arcadia, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Consulting',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://www.linkedin.com/in/chinhaohowardhuang'
   },
 
   /* 15 */
@@ -259,24 +272,26 @@ export const brotherInfo = {
     name: 'Jacqueline Tsang',
     position: 'Director of Internal Recruitment',
     year: 'Junior',
-    hometown: '',
+    hometown: 'La Canada, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Business Administration',
+    minor: '',
+    career_interests: 'Product Management & Digital Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/tsangjacqueline'
   },
 
   /* 16 */
   jeanine_liu: {
     img: 'images/brothers/jeanine_liu.jpg',
     name: 'Jeanine Liu',
-    position: '',
+    position: 'Active',
     year: 'Senior',
     hometown: '',
-    class: '',
+    class: 'Eta',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -287,15 +302,16 @@ export const brotherInfo = {
   jonathan_duan: {
     img: 'images/brothers/jonathan_duan.jpg',
     name: 'Jonathan Duan',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
-    class: 'Eta', // ??
-    major: '',
-    career_interests: '',
+    hometown: 'Short Hills, NJ',
+    class: 'Eta',
+    major: 'Economics & Political Science',
+    minor: '',
+    career_interests: 'Consulting & Project Management',
     previous_positions: 'Director of Projects, Director of Philanthropy',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/jonduan'
   },
 
   /* 18 */
@@ -304,13 +320,14 @@ export const brotherInfo = {
     name: 'Justin Tan',
     position: 'Director of Brotherhood',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Newbury Park, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business & Environmental Economics',
+    minor: '',
+    career_interests: 'Investment Banking & Consulting',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/justintan14'
   },
 
   /* 19 */
@@ -319,39 +336,42 @@ export const brotherInfo = {
     name: 'Kailin Li',
     position: 'Vice President of Human Relations',
     year: 'Senior',
-    hometown: '',
-    class: '',
-    major: '',
-    career_interests: '',
+    hometown: 'Granada Hills, CA',
+    class: 'Theta',
+    major: 'Economics & Cognitive Science',
+    minor: '',
+    career_interests: 'Human Resources Consulting & Product Design',
     previous_positions: 'Director of External Recruitment',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/kailinli'
   },
 
   /* 20 */
   kelvin_xu: {
     img: 'images/brothers/kelvin_xu.jpg',
     name: 'Kelvin Xu',
-    position: '', // ??
+    position: 'Active',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Shanghai, China',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Economics & Statistics',
+    minor: '',
+    career_interests: 'Management Consulting & Data Analysis',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/kelvinxu97'
   },
 
   /* 21 */
   kevin_lee: {
     img: 'images/brothers/kevin_lee.jpg',
     name: 'Kevin Lee',
-    position: 'Chapter Secretary', // ??
+    position: 'Chapter Secretary',
     year: 'Junior',
     hometown: '',
     class: 'Kappa',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -364,28 +384,30 @@ export const brotherInfo = {
     name: 'Kevin Phan',
     position: 'President',
     year: 'Senior',
-    hometown: '',
-    class: 'Zeta',
-    major: '',
-    career_interests: '',
+    hometown: 'Palo Alto, CA',
+    class: 'Eta',
+    major: 'Business Administration',
+    minor: '',
+    career_interests: 'Venture Capital & Investment Banking',
     previous_positions: 'Director of Professional Development',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/kevin-phan1'
   },
 
   /* 23 */
   kian_kiasaleh: {
     img: 'images/brothers/kian_kiasaleh.jpg',
     name: 'Kian Kiasaleh',
-    position: '', // ??
+    position: 'Director of Alumni Relations',
     year: 'Sophomore',
-    hometown: '',
-    class: '',
-    major: '',
-    career_interests: '',
+    hometown: 'San Clemente, CA',
+    class: 'Kappa',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Brand Consulting & Product Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/kiankiasaleh'
   },
 
   /* 24 */
@@ -394,13 +416,14 @@ export const brotherInfo = {
     name: 'Kyle Lu',
     position: 'Prospective Member Trainer',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Cerritos, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Economics & Statistics',
+    minor: '',
+    career_interests: 'Consulting & Investment Banking',
     previous_positions: 'Director of Technology',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://www.linkedin.com/in/kylewongkailu'
   },
 
   /* 25 */
@@ -409,72 +432,77 @@ export const brotherInfo = {
     name: 'Linda Li',
     position: 'Director of Projects',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Davis, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Business',
+    minor: 'Public Health',
+    career_interests: 'Healthtech Consulting & Marketing',
     previous_positions: 'Director of Professional Development',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/li-linda'
   },
 
   /* 26 */
   max_seltzer: {
     img: 'images/brothers/max_seltzer.jpg',
     name: 'Max Seltzer',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Los Angeles, CA',
     class: 'Delta',
-    major: '',
-    career_interests: '',
+    major: 'Political Science',
+    minor: '',
+    career_interests: 'Product Management & UX Design',
     previous_positions: 'Vice President of Finance',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/maxsseltzer'
   },
 
   /* 27 */
   melody_wan: {
     img: 'images/brothers/melody_wan.jpg',
     name: 'Melody Wan',
-    position: '', // ??
+    position: 'Active',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Arcadia, CA',
     class: 'Iota',
-    major: '',
-    career_interests: '',
+    major: 'Business Administration',
+    minor: '',
+    career_interests: 'Digital Marketing & Brand Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/wanmelody'
   },
 
   /* 28 */
   nancy_zhu: {
     img: 'images/brothers/nancy_zhu.jpg',
     name: 'Nancy Zhu',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Burlingame, CA',
     class: 'Zeta',
-    major: '',
-    career_interests: '',
+    major: 'Applied Mathematics',
+    minor: '',
+    career_interests: 'Financial Services & Investment Banking',
     previous_positions:
       'Vice President of Human Resources, Director of Brotherhood',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/nancyzy'
   },
 
   /* 29 */
   nathan_kelleher: {
     img: 'images/brothers/nathan_kelleher.jpg',
     name: 'Nathan Kelleher',
-    position: '',
+    position: 'Active',
     year: 'Senior',
     hometown: '',
-    class: 'Eta', // ??
+    class: 'Zeta',
     major: '',
+    minor: '',
     career_interests: '',
-    previous_positions: '', // ??
+    previous_positions: '',
     bio: '',
     linkedin: ''
   },
@@ -483,15 +511,16 @@ export const brotherInfo = {
   nick_cheng: {
     img: 'images/brothers/nick_cheng.jpg',
     name: 'Nick Cheng',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
-    class: 'Epsilon', // ??
-    major: '',
-    career_interests: '',
-    previous_positions: '', // ??
+    hometown: 'Bangkok, Thailand',
+    class: 'Delta',
+    major: 'Sustainable Environmental Design',
+    minor: '',
+    career_interests: 'Environmental Consulting',
+    previous_positions: 'Director of Technology',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/chengnick'
   },
 
   /* 31 */
@@ -500,13 +529,14 @@ export const brotherInfo = {
     name: 'Nick Chun',
     position: 'Vice President of Finance',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Carmel, IN',
     class: 'Theta',
-    major: '',
-    career_interests: '',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Consulting',
     previous_positions: 'Director of Internal Recruitment',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/nicholas-chun-188a98113'
   },
 
   /* 32 */
@@ -518,6 +548,7 @@ export const brotherInfo = {
     hometown: 'Claremont, CA',
     class: 'Theta',
     major: 'Computer Science & Economics',
+    minor: '',
     career_interests: 'Product Management & Software Development',
     previous_positions: 'Director of Brotherhood',
     bio: '',
@@ -530,28 +561,30 @@ export const brotherInfo = {
     name: 'Rose Min',
     position: 'Director of Projects',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Shanghai, China',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business',
+    minor: 'French',
+    career_interests: 'Consulting & Marketing',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/rosemin'
   },
 
   /* 34 */
   rushil_desai: {
     img: 'images/brothers/rushil_desai.jpg',
     name: 'Rushil Desai',
-    position: '',
+    position: 'Prospective Member Trainer',
     year: 'Senior',
-    hometown: '',
-    class: 'Eta', // ??
-    major: '',
-    career_interests: '',
+    hometown: 'Santa Cruz, CA',
+    class: 'Zeta',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Investment Banking & Corporate Banking',
     previous_positions: 'Vice President of Administration',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/rushil-desai-29a825a7'
   },
 
   /* 35 */
@@ -560,28 +593,30 @@ export const brotherInfo = {
     name: 'Sean Yu',
     position: 'Vice President of Professional Development',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Manila, Philippines',
     class: 'Theta',
-    major: '',
-    career_interests: '',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Investment Banking & Corporate Strategy',
     previous_positions: 'Prospective Member Trainer',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/seanjcyu'
   },
 
   /* 36 */
   syed_adil: {
     img: 'images/brothers/syed_adil.jpg',
     name: 'Syed Adil',
-    position: '',
+    position: 'Active',
     year: 'Senior',
-    hometown: '',
-    class: 'Eta', // ??
-    major: '',
-    career_interests: '',
-    previous_positions: '', // ??
+    hometown: 'Kuala Lumpur, Malaysia',
+    class: 'Zeta',
+    major: 'Political Economy',
+    minor: '',
+    career_interests: 'Management Consulting',
+    previous_positions: 'Director of Internal Recruitment',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/syedadilemirputra'
   },
 
   /* 37 */
@@ -590,24 +625,26 @@ export const brotherInfo = {
     name: 'Taylor Lee',
     position: 'Vice President of Administration',
     year: 'Senior',
-    hometown: '',
+    hometown: 'Danville, California',
     class: 'Theta',
-    major: '',
-    career_interests: '',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Accounting & Consulting',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/taylorthomaslee'
   },
 
   /* 38 */
   tia_chen_wong: {
     img: 'images/brothers/tia_chen_wong.jpg',
     name: 'Tia Chen-Wong',
-    position: '', // Project Manager??
+    position: 'Active',
     year: 'Sophomore',
     hometown: '',
     class: 'Kappa',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -618,11 +655,12 @@ export const brotherInfo = {
   tim_cheng: {
     img: 'images/brothers/tim_cheng.jpg',
     name: 'Tim Cheng',
-    position: '',
+    position: 'Active',
     year: 'Sophomore',
     hometown: '',
     class: 'Kappa',
     major: '',
+    minor: '',
     career_interests: '',
     previous_positions: '',
     bio: '',
@@ -633,29 +671,31 @@ export const brotherInfo = {
   varsha_sundar: {
     img: 'images/brothers/varsha_sundar.jpg',
     name: 'Varsha Sundar',
-    position: '',
-    year: '',
-    hometown: '',
+    position: 'Active',
+    year: 'Sophomore',
+    hometown: 'Irvine, CA',
     class: 'Kappa',
-    major: '',
-    career_interests: '',
+    major: 'Intended Business & Economics',
+    minor: '',
+    career_interests: 'Management Consulting',
     previous_positions: '',
     bio: '',
-    linkedin: ''
+    linkedin: 'https://linkedin.com/in/varsha-sundar'
   },
 
   /* 41 */
   yixuan_lu: {
     img: 'images/brothers/yixuan_lu.jpg',
     name: 'Yixuan Lu',
-    position: '', // ??
-    year: '',
-    hometown: '',
-    class: '',
-    major: '',
-    career_interests: '',
-    previous_positions: '', // ??
+    position: 'Active',
+    year: 'Junior',
+    hometown: 'Fremont, CA',
+    class: 'Iota',
+    major: 'Economics & Media Studies',
+    minor: '',
+    career_interests: 'Digital Marketing',
+    previous_positions: 'Director of External Recruitment',
     bio: '',
-    linkedin: ''
+    linkedin: 'linkedin.com/in/yixuanlu11280'
   }
 };

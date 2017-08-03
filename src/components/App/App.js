@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 // import routers
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { withRouter } from 'react-router';
 
 // import local components
 import Routes from '../router/routes';

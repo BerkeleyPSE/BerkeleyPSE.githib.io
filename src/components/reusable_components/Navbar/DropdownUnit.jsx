@@ -1,6 +1,5 @@
 // React
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { StyleSheet, css } from 'aphrodite';
 
 // React Router
@@ -37,8 +36,8 @@ export default class DropdownUnit extends React.Component {
 
     var pageLinks = this.props.pages.map((page, index) => {
       return (
-        <li className={css(styles.pageLi)}>
-          <Link to={page.pageLink} className={css(styles.pageLink)} key={index}>
+        <li className={css(styles.pageLi)} key={index}>
+          <Link to={page.pageLink} className={css(styles.pageLink)}>
             {page.page}
           </Link>
         </li>
