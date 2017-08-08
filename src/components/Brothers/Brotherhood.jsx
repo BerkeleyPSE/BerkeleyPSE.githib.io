@@ -2,8 +2,10 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-import { Link } from 'react-router-dom';
+// Animations
+import { animations } from '../../stylesheets/Animations.js';
 
+// Brotherhood Helper Files
 import { brotherList } from './brotherhood_constants';
 import { BrotherImage } from './BrotherImage.jsx';
 
@@ -18,7 +20,7 @@ export default class Brotherhood extends React.Component {
     });
 
     return (
-      <div className={css(styles.brotherContainer)}>
+      <div className={css(styles.brotherContainer, animations.fadeIn)}>
         {allBrothers}
       </div>
     );

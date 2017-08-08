@@ -1,4 +1,4 @@
-export const brotherList = [
+const brotherList = [
   'aaron_corona',
   'abhi_nathan',
   'akshay_madane',
@@ -42,7 +42,7 @@ export const brotherList = [
   'yixuan_lu'
 ];
 
-export const brotherInfo = {
+const brotherInfo = {
   /* 1 */
   aaron_corona: {
     img: 'images/brothers/aaron_corona.jpg',
@@ -699,3 +699,5 @@ export const brotherInfo = {
     linkedin: 'linkedin.com/in/yixuanlu11280'
   }
 };
+
+export { brotherList, brotherInfo };

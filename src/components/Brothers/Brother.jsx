@@ -3,7 +3,11 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import queryString from 'query-string';
 
-import { brotherInfo } from './brotherhood_constants';
+// Animations
+import { animations } from '../../stylesheets/Animations.js';
+
+// Brotherhood Helper Files
+import { brotherInfo, brotherList } from './brotherhood_constants';
 
 export default class Brother extends React.Component {
   constructor(props) {
@@ -13,11 +17,16 @@ export default class Brother extends React.Component {
   render() {
     const brother = window.location.pathname.split('/')[2];
     const bro = brotherInfo[brother];
-
-    console.log(bro.name);
+    // debugger
+    const broIndex = brotherList.indexOf(brother);
+    const prevBro = brotherList[broIndex - 1];
+    const nextBro = brotherList[broIndex + 1];
+    console.log(brotherList[broIndex + 1]);
+    console.log(nextBro);
+    console.log(brotherList[-1]);
 
     return (
-      <div className={css(styles.brotherContainer)}>
+      <div className={css(styles.brotherContainer, animations.fadeIn)}>
         <div className={css(styles.broHeader)}>
           <h1 className={css(styles.name)}>
             {bro.name}
@@ -26,7 +35,7 @@ export default class Brother extends React.Component {
             {bro.position}
           </h2>
         </div>
-        <div className={css(styles.imageContainer)}>
+        <div className={css(styles.imageContainer, animations.slideInLeft)}>
           <img
             className={css(styles.image)}
             src={'../' + bro.img}
@@ -61,9 +70,15 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase'
   },
 
+  imageContainer: {
+    outline: '5px solid #895FAD'
+    // outlineOffset: '15px',
+  },
+
   image: {
-    // border: '2px solid black',
     height: '522px',
     width: '350px'
+    // height: '30%',
+    // width: '30%',
   }
 });

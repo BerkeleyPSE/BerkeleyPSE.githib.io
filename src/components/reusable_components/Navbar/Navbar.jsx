@@ -5,7 +5,7 @@ import { StyleSheet, css } from 'aphrodite';
 // React Router
 import { Link } from 'react-router-dom';
 
-// import '../../stylesheets/Navbar.scss';
+import { animations } from '../../../stylesheets/Animations.js';
 
 import DropdownUnit from './DropdownUnit.jsx';
 
@@ -30,7 +30,7 @@ export default class Navbar extends React.Component {
     });
 
     return (
-      <div className={css(styles.mainContainer)}>
+      <div className={css(styles.mainContainer, animations.fadeInDown)}>
         <div className={css(styles.logoContainer)}>
           <img className={css(styles.logo)} src="/images/logo.png" />
           <div className={css(styles.textContainer)}>

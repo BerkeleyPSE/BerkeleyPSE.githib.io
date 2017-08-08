@@ -58,6 +58,8 @@ export default class DropdownUnit extends React.Component {
         <DropdownMenu
           {...menuOptions}
           className={css(styles.dropdownContainer)}
+          enterTimeout={400}
+          leaveTimeout={400}
         >
           {pageLinks}
         </DropdownMenu>

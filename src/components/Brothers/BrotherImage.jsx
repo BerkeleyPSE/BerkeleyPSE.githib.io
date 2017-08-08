@@ -2,8 +2,10 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
+// React Link
 import { Link } from 'react-router-dom';
 
+// Brotherhood Helper Files
 import { brotherInfo } from './brotherhood_constants';
 import { BROTHERS_PATH } from '../reusable_components/Navbar/navbar_constants.jsx';
 
