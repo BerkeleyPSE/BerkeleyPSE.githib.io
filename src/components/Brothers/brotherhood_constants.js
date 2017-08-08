@@ -1,3 +1,16 @@
+/*** 
+THIS FILE CONTAINS ALL INFORMATION NEEDED FOR THE COMPONENTS:
+- Brotherhood
+- Executives
+- BrotherImage
+- Brother
+- PageHandler
+***/
+
+/***
+these MUST match EXACTLY the name "keys" in the brotherInfo Object,
+or else the brother will not be rendered in Brotherhood
+***/
 const brotherList = [
   'aaron_corona',
   'abhi_nathan',
@@ -28,8 +41,8 @@ const brotherList = [
   'melody_wan',
   'nancy_zhu',
   'nathan_kelleher',
+  'nicholas_chun',
   'nick_cheng',
-  'nick_chun',
   'rahul_rangnekar',
   'rose_min',
   'rushil_desai',
@@ -42,6 +55,23 @@ const brotherList = [
   'yixuan_lu'
 ];
 
+/***
+these MUST match EXACTLY the name "keys" in the brotherInfo Object,
+or else the brother will not be rendered in Executives
+***/
+const executiveList = [
+  'kevin_phan',
+  'aaron_corona',
+  'kailin_li',
+  'nicholas_chun',
+  'rahul_rangnekar',
+  'sean_yu',
+  'taylor_lee'
+];
+
+/***
+this is an Object of information for every brother
+***/
 const brotherInfo = {
   /* 1 */
   aaron_corona: {
@@ -726,4 +756,4 @@ const brotherInfo = {
   }
 };
 
-export { brotherList, brotherInfo };
+export { brotherList, executiveList, brotherInfo };

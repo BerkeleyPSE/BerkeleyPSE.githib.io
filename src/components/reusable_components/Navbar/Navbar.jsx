@@ -2,9 +2,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-// React Router
-import { Link } from 'react-router-dom';
-
 import { animations } from '../../../stylesheets/Animations.js';
 
 import DropdownUnit from './DropdownUnit.jsx';
@@ -32,7 +29,11 @@ export default class Navbar extends React.Component {
     return (
       <div className={css(styles.mainContainer, animations.fadeInDown)}>
         <div className={css(styles.logoContainer)}>
-          <img className={css(styles.logo)} src="/images/logo.png" />
+          <img
+            className={css(styles.logo)}
+            src="/images/logo.png"
+            alt="Pi Sigma Epsilon logo"
+          />
           <div className={css(styles.textContainer)}>
             <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>

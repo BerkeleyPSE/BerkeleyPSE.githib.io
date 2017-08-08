@@ -9,16 +9,16 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
 // Redux
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+// import { connect } from 'react-redux';
+// import { bindActionCreators } from 'redux';
 
 // React Router
 import { Switch, Route } from 'react-router-dom';
 
 // Actions
-import { MainActions } from '../../actions/main-actions';
+// import { MainActions } from '../../actions/main-actions';
 
-// Page Components
+// Local Page Components
 import Home from '../Home';
 import About from '../About/About';
 import Careers from '../About/Careers';
@@ -33,8 +33,9 @@ import Executives from '../Brothers/Executives';
 import Contact from '../Contact';
 import Error404 from '../Error404';
 
-// Other Components
+// Other Local Components
 import Navbar from '../reusable_components/Navbar/Navbar';
+import Footer from '../reusable_components/Footer/Footer';
 
 // Page URLs
 import {
@@ -51,7 +52,7 @@ import {
   CONTACT_PATH
 } from '../reusable_components/Navbar/navbar_constants.jsx';
 
-class Routes extends React.Component {
+export default class Routes extends React.Component {
   render() {
     return (
       <div className={css(styles.routerContainer)}>
@@ -73,6 +74,7 @@ class Routes extends React.Component {
             <Route component={Error404} />
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -80,16 +82,16 @@ class Routes extends React.Component {
 
 const styles = StyleSheet.create({});
 
-const mapStateToProps = state => {
-  return {
-    main: state.main
-  };
-};
+// const mapStateToProps = state => {
+//   return {
+//     main: state.main
+//   };
+// };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    mainActions: bindActionCreators(MainActions, dispatch)
-  };
-};
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//   return {
+//     mainActions: bindActionCreators(MainActions, dispatch)
+//   };
+// };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Routes);
+// export default connect(mapStateToProps, mapDispatchToProps)(Routes);

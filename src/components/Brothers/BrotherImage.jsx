@@ -1,22 +1,20 @@
 // React
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-
-// React Link
 import { Link } from 'react-router-dom';
 
-// Brotherhood Helper Files
+// Local Helper Files
 import { brotherInfo } from './brotherhood_constants';
 import { BROTHERS_PATH } from '../reusable_components/Navbar/navbar_constants.jsx';
 
 export class BrotherImage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let { brother } = this.props;
-    const bro = brotherInfo[brother];
+    var bro = brotherInfo[brother];
+
+    if (!bro) {
+      return null;
+    }
 
     return (
       <Link to={BROTHERS_PATH + '/' + brother} className={css(styles.broLink)}>

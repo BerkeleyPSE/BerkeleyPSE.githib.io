@@ -2,14 +2,27 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-export default class Executives extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+// Local Helper Files & Components
+import { animations } from '../../stylesheets/Animations.js';
+import { executiveList } from './brotherhood_constants';
+import { BrotherImage } from './BrotherImage.jsx';
 
+export default class Executives extends React.Component {
   render() {
-    return <div>Executives Component</div>;
+    const executives = executiveList.map(brother => {
+      return <BrotherImage brother={brother} key={brother} />;
+    });
+
+    return (
+      <div className={css(styles.executiveContainer, animations.fadeIn)}>
+        {executives}
+      </div>
+    );
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  executiveContainer: {
+    textAlign: 'center'
+  }
+});
