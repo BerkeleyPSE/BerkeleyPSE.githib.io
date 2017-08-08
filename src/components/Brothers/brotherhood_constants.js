@@ -54,7 +54,8 @@ const brotherInfo = {
     major: 'Political Economy',
     career_interests: 'Management Consulting & Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      "Aaron greatly values the consulting and marketing interview skills he learned as a prospective member last semester. His role model is Nathan Aminpour, PSE's former president. Aaron spends the majority of his free time working out and playing basketball at the RSF in his free time.",
     linkedin: 'https://linkedin.com/in/aaronmcorona'
   },
 
@@ -70,7 +71,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Technology Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has helped Abhi grow personally and professionally. She initially joined with hopes of learning the skills she would need to be successful in the business world. She has gained that and more. In addition to her newfound communication skills and exposure to the various fields within business, PSE has given Abhi the opportunity to make lasting friendships with people who inspire her to be her best self. Her role model is her mother. Abhi loves to make art, run, and explore new places in her free time.',
     linkedin: 'https://linkedin.com/in/abhinathan'
   },
 
@@ -86,7 +88,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Healthcare Management and Strategy & Law',
     previous_positions: 'Vice President of Finance',
-    bio: '',
+    bio:
+      'In addition to invaluable business skills, PSE has taught Akshay to develop a healthy balance of fun and professionalism, and to let his charming character shine in the workplace. His role model is Punit Renjen, CEO of Deloitte. Akshay is a member of the International Students at Berkeley, and a Marketing Director for both Google@Berkeley and the ASUC Office of the Chief Technology Officer. He was a finalist for the Deloitte Consulting case competition, and attended both the Deloitte Freshman Leadership Conference and FullBridge Leadership Summit. Akshay loves to read, swim, and travel throughout Southeast Asia.',
     linkedin: 'https://linkedin.com/in/madaneakshay'
   },
 
@@ -102,7 +105,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Management Consulting',
     previous_positions: 'Director of Projects',
-    bio: '',
+    bio:
+      "Through PSE, Catie has learned invaluable professional skills to help her tackle interviews, presentations, and more. She's also learned the value of hard work, and every brother inspires her in a unique way to be a better person every day. She looks to Beyonce as a role model. Catie is also on the Cal Mock Trial team here at Berkeley, and won 2nd place at the 2016 PwC case competition. She loves to sing, travel, and visit art museums.",
     linkedin: 'https://www.linkedin.com/in/catie-fan'
   },
 
@@ -150,7 +154,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Investment Banking & Consulting',
     previous_positions: 'Director of Brotherhood',
-    bio: '',
+    bio:
+      'Through PSE, Connor has learned to improve upon his weaknesses and capitalize on his strengths. PSE has taught him the importance of cooperation in group settings and the essential role of leadership in all situations. Everything he has learned from PSE gives him a deeper understanding of business and prepares him for the real world. His role model is serial entrepreneur and businessman Elon Musk. Connor is also a member of Enactus, an entrepreneurship club at Berkeley, and works in the Office of the Registrar. He has received the Eagle Scout Award, and spends his free time running, camping, or woodworking.',
     linkedin: 'https://linkedin.com/in/connordsmith'
   },
 
@@ -182,7 +187,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Consulting',
     previous_positions: 'Director of Internal Recruitment',
-    bio: '',
+    bio:
+      'PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. Dhakshi was honored to receive Alpharetta Rotary’s Scholarship as she always wants to live by their motto, service above self. She is involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.',
     linkedin: 'https://linkedin.com/in/dhakshib'
   },
 
@@ -214,7 +220,8 @@ const brotherInfo = {
     minor: 'Korean Studies',
     career_interests: 'Advertising & Content Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      "PSE has taught Esther to learn and appreciate not just the diverse fields in business but also the diverse group of people that we engage with everyday. PSE is stitched with people from all over Cal, with the same interests in sales, marketing and management. This brings PSE closer together yet helps PSE grow at our own pace through new perspectives and horizons offered to PSE via our diversity. She believes that this is what truly makes PSE unique. Her role models are vlogger Casey Neistat and 'The Flash' Barry Allen. Esther is the Education Chair at Liberty in North Korea, an Administrative Assistant at Department of Music, and a Student Ambassador for Berkeley Study Abroad. She was on the Dean's Honor List in both 2015 and 2016, and loves to jet ski, cook, and travel.",
     linkedin: 'https://linkedin.com/in/estherchoe'
   },
 
@@ -230,7 +237,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Strategy Consulting & Digital Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has given Eva a close network of friends who she can not only rely on for business advice, but unending support through college. PSE helped her gain exposure to the marketing world through numerous case competitions, mock interviews, resume workshops, and networking events. Her role model is Michelle Obama. Eva is involved in several other campus organizations, including Berkeley Women in Business, Enactus, Dance the Bay, and Freshmen Sophomore Business Club. She is a top-rated eBay seller and has sold to all 50 states and 4 continents. She recently made her 6,000th transaction while maintaining a 100% positive feedback rating. She loves Broadway and performed with the NYU Tisch performance troupe last summer. She greatly enjoys musical theatre, yoga, and hiking.',
     linkedin: 'https://linkedin.com/in/sueva'
   },
 
@@ -246,7 +254,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Management Consulting',
     previous_positions: 'Prospective Member Trainer',
-    bio: '',
+    bio:
+      'PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models are Rushil Desai, her big in PSE, and Saad Hirani, a leader in her other campus organization Berkeley Business Society. Harika was awarded 2nd place in the 2016 PwC case competition. She enjoys hand lettering, dance, and photography in her free time.',
     linkedin: 'https://linkedin.com/in/harikakalluri'
   },
 
@@ -278,7 +287,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Product Management & Digital Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.',
     linkedin: 'https://linkedin.com/in/tsangjacqueline'
   },
 
@@ -310,7 +320,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Consulting & Project Management',
     previous_positions: 'Director of Projects, Director of Philanthropy',
-    bio: '',
+    bio:
+      'PSE has taught Jonathan that learning about business is more fun with those who share similar mindsets and passions. His role model is professional bodybuilder Jeff Nippard. Jonathan is very involved in the UC Berkeley community, as he is also a member of the ASUC Office of the Academic Affairs Vice President, campus political party Student Action, Cal Club Tennis team, technology consulting organization DiversaTech, and a brother of Chi Psi social fraternity. He loves to play tennis, lift weights, and listen to music whenever he can.',
     linkedin: 'https://linkedin.com/in/jonduan'
   },
 
@@ -342,7 +353,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Human Resources Consulting & Product Design',
     previous_positions: 'Director of External Recruitment',
-    bio: '',
+    bio:
+      "Kailin has learned to stay curious; professionally, PSE has exposed her to new career paths with its networking dinners and info sessions. And socially, she loves the fact that she gets to work and grow with the PSE family. Whether it's going to a Kanye concert together or heading to the city together, getting to know her brothers has been the most rewarding aspect PSE has given her. Her role model is professional player Rafael Nadal. Kailin won 2nd place at the Infosys Design Thinking competition, and is involved in the Philosophy Forum at Berkeley. Her hobbies include hiking, photography, and learning new languages.",
     linkedin: 'https://linkedin.com/in/kailinli'
   },
 
@@ -390,7 +402,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Venture Capital & Investment Banking',
     previous_positions: 'Director of Professional Development',
-    bio: '',
+    bio:
+      'Through PSE, Kevin has learned to draw on and apply his past experiences while working with real companies. His role models are serial entrepreneur and investors Gary Vaynercuk and Mark Cuban. Kevin is also a brother of Chi Psi social fraternity, and the Director of Sales for computer science non-profit Paradigm Shift. His hobbies include running, hiking, and listening to music.',
     linkedin: 'https://linkedin.com/in/kevin-phan1'
   },
 
@@ -422,7 +435,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Consulting & Investment Banking',
     previous_positions: 'Director of Technology',
-    bio: '',
+    bio:
+      'Through PSE, Kyle has learned many professional skills, especially how to market himself. His role model is Chinese martial artist Ip Man, mentor to Bruce Lee. Kyle is also involved in Cal Dragon Boat and Innovative Design. He won 2nd place in the Fall 2016 PwC case competition, and was a finalist in the Spring 2016 Deloitte case competition. He hobbies include photography, graphic design, and paddling.',
     linkedin: 'https://www.linkedin.com/in/kylewongkailu'
   },
 
@@ -438,7 +452,8 @@ const brotherInfo = {
     minor: 'Public Health',
     career_interests: 'Healthtech Consulting & Marketing',
     previous_positions: 'Director of Professional Development',
-    bio: '',
+    bio:
+      'PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.',
     linkedin: 'https://linkedin.com/in/li-linda'
   },
 
@@ -454,7 +469,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Product Management & UX Design',
     previous_positions: 'Vice President of Finance',
-    bio: '',
+    bio:
+      'PSE taught Max the value of learning to work with individuals from such diverse backgrounds, and how everyone can contribute to a team. His role model is professional baseball player Derek Jeter. Max is a Birthright Excel Fellow, world traveler, back-to-back Intramural Softball Champion, and is undefeated in Connect 4. He is involved in EnableTech, Intramural sports, is a brother of Phi Kappa Psi social fraternity. Max loves to watch and play sports, read the newspaper, and cultivate above-average Spotify playlists.',
     linkedin: 'https://linkedin.com/in/maxsseltzer'
   },
 
@@ -470,7 +486,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Digital Marketing & Brand Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. Her role models are her parents and God. Melody is also involved in Livingwater Artist Collective, Business Careers in Entertainment, EthiCAL Apparel, and the dance team AFX. She enjoys acting, cooking, and playwriting in her free time.',
     linkedin: 'https://linkedin.com/in/wanmelody'
   },
 
@@ -487,7 +504,8 @@ const brotherInfo = {
     career_interests: 'Financial Services & Investment Banking',
     previous_positions:
       'Vice President of Human Resources, Director of Brotherhood',
-    bio: '',
+    bio:
+      'No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and travelling.',
     linkedin: 'https://linkedin.com/in/nancyzy'
   },
 
@@ -508,6 +526,23 @@ const brotherInfo = {
   },
 
   /* 30 */
+  nicholas_chun: {
+    img: 'images/brothers/nicholas_chun.jpg',
+    name: 'Nick Chun',
+    position: 'Vice President of Finance',
+    year: 'Junior',
+    hometown: 'Carmel, IN',
+    class: 'Theta',
+    major: 'Economics',
+    minor: '',
+    career_interests: 'Consulting',
+    previous_positions: 'Director of Internal Recruitment',
+    bio:
+      "Through PSE, Nicholas now has a better understanding of what it means to effectively work with others professionally while also maintaining close, personal relationships. College is a great time to explore oneself and reach new heights while also forming strong friendships with others and he believes PSE helps him achieve this. His role model is professional wrestler and actor Dwayne 'The Rock' Johnson. Nicholas co-wrote several articles at the American Chamber of Commerce in South Korea, and is involved in the ASUC Office of the Academic Affairs Vice President. He plays the electric guitar, longboards around Berkeley, and listens to music whenever he can.",
+    linkedin: 'https://linkedin.com/in/nicholas-chun-188a98113'
+  },
+
+  /* 31 */
   nick_cheng: {
     img: 'images/brothers/nick_cheng.jpg',
     name: 'Nick Cheng',
@@ -519,24 +554,9 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Environmental Consulting',
     previous_positions: 'Director of Technology',
-    bio: '',
+    bio:
+      'PSE has taught Nick about the power and importance of marketing. His role model is politician and environmentalist Al Gore. Nick won 5th place in the CMYK Designathon, and is an active member of FEMTech, Thai Student Association, and dance team AFX. Nick loves photography, web design, and playing music in his free time.',
     linkedin: 'https://linkedin.com/in/chengnick'
-  },
-
-  /* 31 */
-  nick_chun: {
-    img: 'images/brothers/nick_chun.jpg',
-    name: 'Nick Chun',
-    position: 'Vice President of Finance',
-    year: 'Junior',
-    hometown: 'Carmel, IN',
-    class: 'Theta',
-    major: 'Economics',
-    minor: '',
-    career_interests: 'Consulting',
-    previous_positions: 'Director of Internal Recruitment',
-    bio: '',
-    linkedin: 'https://linkedin.com/in/nicholas-chun-188a98113'
   },
 
   /* 32 */
@@ -551,7 +571,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Product Management & Software Development',
     previous_positions: 'Director of Brotherhood',
-    bio: '',
+    bio:
+      "Through PSE, Rahul has learned to adapt his leadership style and 'fill the gaps' when working on teams of people with distinct work ethics and skillsets. He enjoys the experiences PSE has given him - case competitions with fellow PSE brothers, the Under Armour project, the opportunity to code this entire website. His role models are Tim Duncan and Donald Glover. Rahul is actively involved in the Sports Analytics at Berkeley organization, and was previously in the ASUC. He enjoys working out daily, writing articles on LinkedIn, reading self-help books, and cooking new recipes.",
     linkedin: 'https://linkedin.com/in/rahrang'
   },
 
@@ -583,7 +604,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Investment Banking & Corporate Banking',
     previous_positions: 'Vice President of Administration',
-    bio: '',
+    bio:
+      "PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team.",
     linkedin: 'https://linkedin.com/in/rushil-desai-29a825a7'
   },
 
@@ -599,7 +621,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Investment Banking & Corporate Strategy',
     previous_positions: 'Prospective Member Trainer',
-    bio: '',
+    bio:
+      'PSE has taught Sean to be a great communicator. From networking with professionals at career fairs, to public speaking and giving presentations, and to casual chats with strangers, communication has unlocked multiple doors for him and has helped him to develop as an individual. His parents are his role models. Sean was previously involved in Berkeley ABA (Asian Business Association), and his hobbies include playing golf, fishing, and traveling.',
     linkedin: 'https://linkedin.com/in/seanjcyu'
   },
 
@@ -615,7 +638,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Management Consulting',
     previous_positions: 'Director of Internal Recruitment',
-    bio: '',
+    bio:
+      'Syed appreciates how PSE taught him to learn and understand his teammates in order to make a large impact when working on team projects. He has worked as a PwC Assurance intern and a CIMB Islamic Finance Asset Management Intern over previous summers. His role model is Jack Ma, founder and CEO of the Alibaba Group. Syed is a national fencer, and an active member of the Cal Fencing team. He also plays soccer in his free time.',
     linkedin: 'https://linkedin.com/in/syedadilemirputra'
   },
 
@@ -631,7 +655,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Accounting & Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has taught Taylor a variety of skills, including public speaking, interview skills, and, most importantly, how to get an internship. His role model is Kevin Phan, current president of PSE. Taylor is also actively involved in Cal Rotaract and The Green Initiative Fund. He is knowledgeable in LLC formation, and enjoys distance running (with dogs), playing the guitar, and ice skating.',
     linkedin: 'https://linkedin.com/in/taylorthomaslee'
   },
 
@@ -695,7 +720,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Digital Marketing',
     previous_positions: 'Director of External Recruitment',
-    bio: '',
+    bio:
+      'PSE has taught Yixuan the importance of having an excellent personal brand. It has shaped her into a more confident, knowledgeable, and professional individual through coffee chats, case competitions, and various Chapter events. PSE has introduced her to many motivated and successful individuals that she feel beyond blessed to be a part of the diverse community at Cal. Her role model is her grandmother. Yixuan was awarded 2nd place in the 2016 PwC case competition, and is also an active member of Berkeley Women in Business. She loves blogging, watercoloring, and going on road trips.',
     linkedin: 'linkedin.com/in/yixuanlu11280'
   }
 };
