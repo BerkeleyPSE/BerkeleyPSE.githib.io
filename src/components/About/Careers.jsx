@@ -2,16 +2,19 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-import { fulltime_columns, fulltime_careers } from './fulltime_constants';
-import { intern_columns, internships } from './intern_constants';
-
+// NPM Components
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
+
+// Local Helper Files
+import { animations } from '../../stylesheets/Animations.js';
+import { fulltime_columns, fulltime_careers } from './fulltime_constants';
+import { intern_columns, internships } from './intern_constants';
 
 export default class Careers extends React.Component {
   render() {
     return (
-      <div className={css(styles.careersContainer)}>
+      <div className={css(styles.careersContainer, animations.fadeIn)}>
         <div className={css(styles.fulltimeContainer)}>
           <h2 className={css(styles.header)}>Full-Time</h2>
           <div className={css(styles.table)}>
@@ -20,7 +23,6 @@ export default class Careers extends React.Component {
               data={fulltime_careers}
               showPagination={false}
               resizable={false}
-              page={1}
               pageSize={fulltime_careers.length}
             />
           </div>
@@ -33,7 +35,6 @@ export default class Careers extends React.Component {
               data={internships}
               showPagination={false}
               resizable={false}
-              page={1}
               pageSize={internships.length}
             />
           </div>
@@ -43,4 +44,27 @@ export default class Careers extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  careersContainer: {
+    padding: '40px'
+  },
+
+  fulltimeContainer: {
+    padding: '20px'
+  },
+
+  internContainer: {
+    padding: '20px'
+  },
+
+  header: {
+    color: '#895FAD',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '3em',
+    fontWeight: '500'
+  },
+
+  table: {}
+});
+
+const tableStyles = StyleSheet.create({});

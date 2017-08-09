@@ -33,246 +33,61 @@ const fulltime_columns = [
 ];
 
 const fulltime_careers = [
+  // 7 items
   {
-    name: 'Shreya Jerath',
+    name: 'Person 0',
     grad_year: '2016',
     industry: 'Marketing',
     company: 'Digitas LBI',
     position: 'Analyst',
     location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 1',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 2',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 3',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 4',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 5',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   },
-
   {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    grad_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Person 6',
+    grad_year: '2016',
+    industry: 'Marketing',
+    company: 'Digitas LBI',
+    position: 'Analyst',
+    location: 'San Francisco, CA'
   }
 ];

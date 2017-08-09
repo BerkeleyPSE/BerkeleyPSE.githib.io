@@ -43,155 +43,92 @@ const internships = [
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   },
 
   {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
-  },
-
-  {
-    name: '',
-    summer_year: '',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    name: 'Rahul',
+    summer_year: '2016',
+    industry: 'Human Resources & Staffing',
+    company: 'Stepping Stone Inc',
+    position: 'Business Development',
+    location: 'San Francisco, CA'
   }
 ];
