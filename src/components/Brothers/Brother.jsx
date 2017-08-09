@@ -20,11 +20,6 @@ export default class Brother extends React.Component {
 
     return (
       <div className={css(styles.brotherContainer, animations.fadeIn)}>
-        <PageHandler
-          index={broIndex}
-          brotherList={brotherList}
-          brotherInfo={brotherInfo}
-        />
         <div className={css(styles.profileContainer)}>
           <div className={css(styles.imageContainer, animations.slideInLeft)}>
             <img
@@ -35,6 +30,11 @@ export default class Brother extends React.Component {
           </div>
 
           <div className={css(styles.broInfo)}>
+            <PageHandler
+              index={broIndex}
+              brotherList={brotherList}
+              brotherInfo={brotherInfo}
+            />
             <div className={css(styles.broHeader)}>
               <h1 className={css(styles.name)}>
                 {bro.name}
@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
 
   profileContainer: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    padding: '10px 0'
   },
 
   broInfo: {
@@ -105,6 +106,10 @@ const styles = StyleSheet.create({
     fontSize: '1.25em',
     margin: '0',
     textTransform: 'uppercase'
+  },
+
+  imageContainer: {
+    padding: '0 20px'
   },
 
   image: {

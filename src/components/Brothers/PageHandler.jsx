@@ -52,7 +52,7 @@ export class PageHandler extends React.Component {
           className={css(styles.prevContainer, styles.link)}
         >
           <i
-            className={css(styles.prevButton) + ' fa fa-chevron-left'}
+            className={css(styles.icon) + ' fa fa-chevron-left'}
             aria-hidden="true"
           />
           {brotherInfo[bros[0]].name}
@@ -61,11 +61,11 @@ export class PageHandler extends React.Component {
           to={BROTHERS_PATH + '/' + nextBro}
           className={css(styles.nextContainer, styles.link)}
         >
+          {brotherInfo[bros[1]].name}
           <i
-            className={css(styles.nextButton) + ' fa fa-chevron-right'}
+            className={css(styles.icon) + ' fa fa-chevron-right'}
             aria-hidden="true"
           />
-          {brotherInfo[bros[1]].name}
         </Link>
       </div>
     );
@@ -74,7 +74,7 @@ export class PageHandler extends React.Component {
 
 const styles = StyleSheet.create({
   pageHandlerContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.2)',
     display: 'flex',
     alignItems: 'center',
     width: '100%'
@@ -84,21 +84,21 @@ const styles = StyleSheet.create({
     margin: '0 auto 0 0'
   },
 
-  prevButton: {},
-
   nextContainer: {
     margin: '0 0 0 auto'
   },
 
-  nextButton: {},
-
   link: {
-    border: '1px solid black',
     color: 'black',
     padding: '5px 10px',
     textDecoration: 'none',
     ':hover': {
-      color: 'green'
+      color: '#895FAD'
     }
+  },
+
+  icon: {
+    fontSize: '0.9em',
+    padding: '0 5px'
   }
 });
