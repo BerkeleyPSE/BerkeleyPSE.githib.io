@@ -168,7 +168,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Strategy Consulting & Project Management',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has given Clevian professional development, expanded her knowledge about different facets of business, taught her the importance of teamwork and time management, and most importantly, provided her with a family that motivates her to continue to learn and succeed. Her role models are her parents. She enjoys hiking, vlogging, and listening to music in her free time, and was previously involved in the ASUC and Spoon University.',
     linkedin: 'https://linkedin.com/in/clevianhsia'
   },
 
@@ -234,7 +235,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      "PSE has improved Emma's public speaking and presentation skills. She's learned to work efficiently and better manage her time. Her role model is actress Emma Watson. She enjoys teaching, singing, and playing basketball. Emma is involved in Wonderworks and Intervarsity, and is a recipient of the Association of Torrance School Administration Scholarship.",
     linkedin: 'https://linkedin.com/in/emmatsuneishi'
   },
 
@@ -291,7 +293,8 @@ const brotherInfo = {
 
   /* 14 */
   howard_huang: {
-    img: 'images/brothers/howard_huang.jpg',
+    // img: 'images/brothers/howard_huang.jpg', // TODO
+    img: 'images/brothers/harika_kalluri.jpg',
     name: 'Howard Huang',
     position: 'Director of Brotherhood',
     year: 'Senior',
@@ -301,7 +304,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      "As a transfer student, PSE has given Howard the confidence and skills that helped him transition socially and professionally into a new environment at Cal. Cases, info sessions, and mock interviews have better prepared him for real-world experiences. Howard's role models are his parents. He is an avid musician and athlete - he collects vinyls, and plays piano and volleyball. Howard is also a member of Voyager Consulting, and was a brother of PSE Beta Kappa at Cal Poly Pomona.",
     linkedin: 'https://www.linkedin.com/in/chinhaohowardhuang'
   },
 
@@ -324,7 +328,8 @@ const brotherInfo = {
 
   /* 16 */
   jeanine_liu: {
-    img: 'images/brothers/jeanine_liu.jpg',
+    // img: 'images/brothers/jeanine_liu.jpg', // TODO
+    img: 'images/brothers/jacqueline_tsang.jpg',
     name: 'Jeanine Liu',
     position: 'Active',
     year: 'Senior',
@@ -367,7 +372,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Investment Banking & Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      "Justin's biggest lesson from PSE is that communication is the key to holding a group together. His role model is his father. Justin enjoys traveling around the world, meeting new people and hearing their stories, and playing sports. He is one of Berkeley's three MicMan and an active member in Cal Rotaract.",
     linkedin: 'https://linkedin.com/in/justintan14'
   },
 
@@ -400,7 +406,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Management Consulting & Data Analysis',
     previous_positions: '',
-    bio: '',
+    bio:
+      'Through PSE, Kelvin has learned useful skills in professinal service industries and to utilize his strengths within a team. His role model is film director Stephen Chow, and he plays soccer, basketball, and blackjack whenever he can. Kelvin is the Public Relations Chair of the Chinese People Union.',
     linkedin: 'https://linkedin.com/in/kelvinxu97'
   },
 
@@ -449,7 +456,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Brand Consulting & Product Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE introduced Kian to a community that inspires him to improve himself, and taught him to develop his personal brand. His role models are Robert Downey Jr. and Tyra Banks. He enjoys trying new foods, riding roller coasters, and doing impressions. Kian is also a member of the Film Committee in Business Careers in Entertainment Club (BCEC).',
     linkedin: 'https://linkedin.com/in/kiankiasaleh'
   },
 
@@ -535,7 +543,7 @@ const brotherInfo = {
     previous_positions:
       'Vice President of Human Resources, Director of Brotherhood',
     bio:
-      'No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and travelling.',
+      'No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and traveling.',
     linkedin: 'https://linkedin.com/in/nancyzy'
   },
 
@@ -618,7 +626,8 @@ const brotherInfo = {
     minor: 'French',
     career_interests: 'Consulting & Marketing',
     previous_positions: '',
-    bio: '',
+    bio:
+      "PSE has given Rose the opportunity to further explore and practice her interest in different business fields. She's learned the importance of managing her time effectively, the beauty of team work, the strategy behind a personal brand, and networking etiquette. Her role model is actress Emma Watson. She enjoys traveling, photography, and dancing, and is actively involved in the Marketing team of Fashion and Student Trends (FAST).",
     linkedin: 'https://linkedin.com/in/rosemin'
   },
 
@@ -734,7 +743,8 @@ const brotherInfo = {
     minor: '',
     career_interests: 'Management Consulting',
     previous_positions: '',
-    bio: '',
+    bio:
+      'PSE has provided Varsha with professional development in respect to interviewing, emailing, and networking. She has gained exposure to various business paths and the ability to unlock hidden potential in herself and others. Her role models are her grandmother and Michelle Obama. Varsha is actively involved in Asha for Education and the ASUC Office of the EVP. She is a recipient of the Cal Alumni Leadership Award, and loves to take photos, travel, and review movies in her free time.',
     linkedin: 'https://linkedin.com/in/varsha-sundar'
   },
 

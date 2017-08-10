@@ -52,7 +52,7 @@ export class PageHandler extends React.Component {
           className={css(styles.prevContainer, styles.link)}
         >
           <i
-            className={css(styles.icon) + ' fa fa-chevron-left'}
+            className={css(styles.leftIcon) + ' fa fa-chevron-left'}
             aria-hidden="true"
           />
           {brotherInfo[bros[0]].name}
@@ -63,7 +63,7 @@ export class PageHandler extends React.Component {
         >
           {brotherInfo[bros[1]].name}
           <i
-            className={css(styles.icon) + ' fa fa-chevron-right'}
+            className={css(styles.rightIcon) + ' fa fa-chevron-right'}
             aria-hidden="true"
           />
         </Link>
@@ -81,24 +81,34 @@ const styles = StyleSheet.create({
   },
 
   prevContainer: {
-    margin: '0 auto 0 0'
+    margin: '0 auto 0 10px'
   },
 
   nextContainer: {
-    margin: '0 0 0 auto'
+    margin: '0 25px 0 auto'
   },
 
   link: {
-    color: 'black',
-    padding: '5px 10px',
+    borderBottom: '3px solid #895FAD',
+    color: '#303030',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '0.9em',
+    fontWeight: 'bold',
+    padding: '5px 2px',
     textDecoration: 'none',
     ':hover': {
-      color: '#895FAD'
+      color: '#818181'
+      // borderBottom: '3px solid #818181',
     }
   },
 
-  icon: {
+  leftIcon: {
     fontSize: '0.9em',
-    padding: '0 5px'
+    padding: '0 5px 0 0'
+  },
+
+  rightIcon: {
+    fontSize: '0.9em',
+    padding: '0 0 0 5px'
   }
 });

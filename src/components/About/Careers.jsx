@@ -19,11 +19,15 @@ export default class Careers extends React.Component {
           <h2 className={css(styles.header)}>Full-Time</h2>
           <div className={css(styles.table)}>
             <ReactTable
+              className="-striped"
               columns={fulltime_columns}
               data={fulltime_careers}
               showPagination={false}
               resizable={false}
+              filterable={false}
+              filterMethod={this.filterTable}
               pageSize={fulltime_careers.length}
+              defaultSorted={[{ id: 'name', desc: false }]}
             />
           </div>
         </div>
@@ -31,11 +35,14 @@ export default class Careers extends React.Component {
           <h2 className={css(styles.header)}>Internships</h2>
           <div className={css(styles.table)}>
             <ReactTable
+              className="-striped"
               columns={intern_columns}
               data={internships}
               showPagination={false}
               resizable={false}
+              filterable={false}
               pageSize={internships.length}
+              defaultSorted={[{ id: 'name', desc: false }]}
             />
           </div>
         </div>
@@ -46,25 +53,30 @@ export default class Careers extends React.Component {
 
 const styles = StyleSheet.create({
   careersContainer: {
-    padding: '40px'
+    padding: '40px 0'
   },
 
   fulltimeContainer: {
-    padding: '20px'
+    padding: '20px 0'
   },
 
   internContainer: {
-    padding: '20px'
+    padding: '20px 0'
   },
 
   header: {
     color: '#895FAD',
     fontFamily: 'Lato, sans-serif',
     fontSize: '3em',
-    fontWeight: '500'
+    fontWeight: '500',
+    margin: '0',
+    padding: '10px 30px'
   },
 
-  table: {}
+  table: {
+    margin: '0',
+    padding: '0'
+  }
 });
 
 const tableStyles = StyleSheet.create({});

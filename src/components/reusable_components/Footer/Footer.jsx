@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
       <div className={css(styles.footerContainer, animations.fadeIn)}>
         <div className={css(styles.copyrightContainer)}>
           <p className={css(styles.copyright, styles.text)}>
-            (C)2017. Pi Sigma Epsilon, Zeta Chi Chapter.
+            &#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.
           </p>
         </div>
         <div className={css(styles.mediaContainer)}>

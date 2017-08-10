@@ -26,12 +26,12 @@ const animations = StyleSheet.create({
 
   slideInLeft: {
     animationName: slideInLeft,
-    animationDuration: '1s'
+    animationDuration: '0.35s'
   },
 
   slideInRight: {
     animationName: slideInRight,
-    animationDuration: '1s'
+    animationDuration: '0.35s'
   },
 
   zoomIn: {
