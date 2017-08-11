@@ -1,9 +1,11 @@
 // React
 import React from 'react';
+
+// NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
 
-// Local Helper Files
+// Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
 import { brotherInfo } from './brotherhood_constants';
 import { BROTHERS_PATH } from '../reusable_components/Navbar/navbar_constants.jsx';
@@ -45,6 +47,15 @@ export class BrotherImage extends React.Component {
                 {bro.position}
               </p>
             </div>}
+          <div className={css(styles.mobileBro)}>
+            <p className={css(styles.mobileName)}>
+              {bro.name}
+            </p>
+            <hr className={css(styles.hr)} />
+            <p className={css(styles.mobilePosition)}>
+              {bro.position}
+            </p>
+          </div>
         </div>
       </Link>
     );
@@ -72,11 +83,10 @@ const styles = StyleSheet.create({
   },
 
   overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
     position: 'absolute',
     bottom: '0',
-    zIndex: '2',
-    width: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)'
+    width: '100%'
   },
 
   broName: {
@@ -84,6 +94,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato, sans-serif',
     fontSize: '1.25em',
     letterSpacing: '0.025em'
+  },
+
+  mobileName: {
+    color: '#FFF',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '1.25em',
+    letterSpacing: '0.025em',
+    padding: '5px 0',
+    margin: '0'
   },
 
   hr: {
@@ -100,5 +119,28 @@ const styles = StyleSheet.create({
     letterSpacing: '0.025em',
     padding: '0 10px',
     textTransform: 'uppercase'
+  },
+
+  mobilePosition: {
+    color: '#FFF',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '0.9em',
+    fontWeight: '500',
+    letterSpacing: '0.025em',
+    padding: '5px 0',
+    margin: '0',
+    textTransform: 'uppercase'
+  },
+
+  mobileBro: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    color: '#303030',
+    position: 'absolute',
+    bottom: '0',
+    margin: '0',
+    padding: '20px',
+    '@media (min-device-width: 425px)': {
+      display: 'none'
+    }
   }
 });

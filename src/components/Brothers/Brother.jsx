@@ -1,7 +1,10 @@
 // React
 import React from 'react';
+
+// NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
+import { Grid, Col, Row } from 'react-bootstrap';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
@@ -13,10 +16,24 @@ import {
 import { PageHandler } from './PageHandler.jsx';
 
 export default class Brother extends React.Component {
+  broNotFound = () => {
+    this.broNotFound = setTimeout(
+      function() {
+        this.props.history.push('/brothers');
+      }.bind(this),
+      250
+    );
+  };
+
   render() {
     var brother = this.props.match.params.name;
-    var bro = brotherInfo[brother];
     var broIndex = brotherList.indexOf(brother);
+    var bro = brotherInfo[brother];
+
+    if (!bro) {
+      this.broNotFound();
+      return null;
+    }
 
     return (
       <div className={css(styles.brotherContainer, animations.fadeIn)}>

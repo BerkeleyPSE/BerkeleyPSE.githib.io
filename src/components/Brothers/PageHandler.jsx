@@ -1,14 +1,14 @@
 // React
 import React from 'react';
+
+// NPM Modules
 import { StyleSheet, css } from 'aphrodite';
+import { Link } from 'react-router-dom';
 
 // Animations
 import { animations } from '../../stylesheets/Animations.js';
 
-// React Link
-import { Link } from 'react-router-dom';
-
-// Brotherhood Helper Files
+// Local Helper Files  & Components
 import { BROTHERS_PATH } from '../reusable_components/Navbar/navbar_constants.jsx';
 
 export class PageHandler extends React.Component {

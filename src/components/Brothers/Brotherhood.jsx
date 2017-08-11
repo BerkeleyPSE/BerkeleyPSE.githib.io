@@ -1,6 +1,9 @@
 // React
 import React from 'react';
+
+// NPM Modules
 import { StyleSheet, css } from 'aphrodite';
+import { Grid, Col, Row } from 'react-bootstrap';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
