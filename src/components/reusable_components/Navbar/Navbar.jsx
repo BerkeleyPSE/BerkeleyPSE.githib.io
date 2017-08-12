@@ -1,11 +1,14 @@
 // React
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
 
+// NPM Modules
+import { StyleSheet, css } from 'aphrodite'; // remove this later
+import { Link } from 'react-router-dom';
+
+// Local Helper Files & Components
 import { animations } from '../../../stylesheets/Animations.js';
-
 import DropdownUnit from './DropdownUnit.jsx';
-
+import HamburgerMenu from './HamburgerMenu.jsx';
 import { navbar_constants } from './navbar_constants.jsx';
 
 export default class Navbar extends React.Component {
@@ -15,7 +18,7 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    var dropdownUnits = navbar_constants.map((item, index) => {
+    const dropdownUnits = navbar_constants.map((item, index) => {
       return (
         <DropdownUnit
           header={item.header}
@@ -42,6 +45,9 @@ export default class Navbar extends React.Component {
         <div className={css(styles.dropdownUnitContainer)}>
           {dropdownUnits}
         </div>
+        <div className={css(styles.hamburgerMenu)}>
+          <HamburgerMenu />
+        </div>
       </div>
     );
   }
@@ -53,14 +59,23 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    height: '75px'
+    height: '75px',
+    '@media (max-width: 768px)': {
+      justifyContent: 'center'
+    },
+    '@media (max-width: 425px)': {
+      justifyContent: 'left'
+    }
   },
 
   logoContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: '20px'
+    padding: '20px',
+    '@media (max-width: 768px)': {
+      textAlign: 'center'
+    }
   },
 
   logo: {
@@ -84,7 +99,6 @@ const styles = StyleSheet.create({
   chapterText: {
     fontSize: '1em',
     margin: 0
-    // textAlign: 'center',
   },
 
   dropdownUnitContainer: {
@@ -93,6 +107,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     right: 0,
-    paddingRight: '20px'
+    paddingRight: '10px',
+    '@media (max-width: 768px)': {
+      display: 'none'
+    }
+  },
+
+  hamburgerMenu: {
+    '@media (min-width: 769px)': {
+      display: 'none'
+    }
   }
 });

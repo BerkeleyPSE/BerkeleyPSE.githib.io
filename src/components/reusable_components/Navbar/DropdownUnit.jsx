@@ -1,11 +1,9 @@
 // React
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
-
-// React Router
-import { Link } from 'react-router-dom';
 
 // NPM Modules
+import { StyleSheet, css } from 'aphrodite';
+import { Link } from 'react-router-dom';
 import DropdownMenu from 'react-dd-menu';
 import '../../../stylesheets/react-dd.css';
 
@@ -75,7 +73,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 'auto',
-    padding: '0 15px'
+    padding: '0 5px'
   },
 
   hidden: {
