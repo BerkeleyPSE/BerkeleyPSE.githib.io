@@ -138,7 +138,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: '0',
     margin: '0',
-    padding: '20px',
+    padding: '20px 0',
+    width: '100%',
     '@media (min-device-width: 425px)': {
       display: 'none'
     }

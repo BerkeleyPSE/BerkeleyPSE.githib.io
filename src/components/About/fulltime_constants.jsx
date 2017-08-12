@@ -38,8 +38,9 @@ const fulltime_columns = [
     accessor: 'name',
     className: css(styles.table, styles.cell),
     headerClassName: css(styles.columnName),
-    minWidth: 150,
-    maxWidth: 200
+    minWidth: 175
+    // maxWidth: 200
+    // maxWidth: 250,
   },
 
   {
@@ -48,7 +49,8 @@ const fulltime_columns = [
     className: css(styles.table, styles.cell, styles.centered),
     headerClassName: css(styles.columnName),
     minWidth: 100,
-    maxWidth: 150
+    maxWidth: 150,
+    show: false
   },
 
   {
@@ -56,8 +58,8 @@ const fulltime_columns = [
     accessor: 'industry',
     className: css(styles.table, styles.cell),
     headerClassName: css(styles.columnName),
-    minWidth: 175,
-    maxWidth: 250
+    minWidth: 200
+    // maxWidth: 250
   },
 
   {
@@ -65,8 +67,9 @@ const fulltime_columns = [
     accessor: 'company',
     className: css(styles.table, styles.cell),
     headerClassName: css(styles.columnName),
-    minWidth: 225,
-    maxWidth: 275
+    minWidth: 250
+    // maxWidth: 275
+    // maxWidth: 300
   },
 
   {
@@ -74,8 +77,9 @@ const fulltime_columns = [
     accessor: 'position',
     className: css(styles.table, styles.cell),
     headerClassName: css(styles.columnName),
-    minWidth: 225,
-    maxWidth: 275
+    minWidth: 250
+    // maxWidth: 275
+    // maxWidth: 325
   },
 
   {
@@ -83,8 +87,9 @@ const fulltime_columns = [
     accessor: 'location',
     className: css(styles.table, styles.cell),
     headerClassName: css(styles.columnName),
-    minWidth: 150,
-    maxWidth: 225
+    minWidth: 175
+    // maxWidth: 225
+    // maxWidth: 275
   }
 ];
 
@@ -126,7 +131,7 @@ const fulltime_careers = [
   {
     name: 'Eva Chen',
     grad_year: '2017',
-    industry: 'Consulting',
+    industry: 'Sales',
     company: 'Oracle',
     position: 'Cloud Applications Consultant',
     location: 'San Francisco, CA'
@@ -134,7 +139,7 @@ const fulltime_careers = [
   {
     name: 'Shreya Jerath',
     grad_year: '2017',
-    industry: 'Marketing',
+    industry: 'Business Analytics',
     company: 'DigitasLBi',
     position: 'Analyst',
     location: 'San Francisco, CA'
@@ -142,7 +147,7 @@ const fulltime_careers = [
   {
     name: 'Reann Pham',
     grad_year: '2017',
-    industry: 'Marketing',
+    industry: 'Business Analytics',
     company: 'PricewaterhouseCoopers',
     position: 'Data Analyst',
     location: 'San Francisco, CA'
@@ -223,8 +228,8 @@ const fulltime_careers = [
     name: 'Kent Chen',
     grad_year: '2016',
     industry: 'Business Analytics',
-    company: '',
-    position: '',
+    company: 'SoCalGas',
+    position: 'Business Analyst',
     location: 'Los Angeles, CA'
   },
   {
@@ -246,10 +251,10 @@ const fulltime_careers = [
   {
     name: 'Anne-Ting Chen',
     grad_year: '2017',
-    industry: '',
-    company: '',
-    position: '',
-    location: ''
+    industry: 'Consulting',
+    company: 'PricewaterhouseCoopers',
+    position: 'Analyst',
+    location: 'Tokyo, Japan'
   },
   {
     name: 'Lily Li',
@@ -265,6 +270,30 @@ const fulltime_careers = [
     industry: '',
     company: '',
     position: '',
+    location: 'San Francisco, CA'
+  },
+  {
+    name: 'Lily Muñoz',
+    grad_year: '2014',
+    industry: 'Sales',
+    company: 'Oracle',
+    position: 'SMB Application Sales Executive',
+    location: 'Redwood City, CA'
+  },
+  {
+    name: 'Jina Yoo',
+    grad_year: '2014',
+    industry: 'Human Resources',
+    company: 'Slack',
+    position: 'Technical Recruiter',
+    location: 'San Francisco, CA'
+  },
+  {
+    name: 'Sarah Virani',
+    grad_year: '2015',
+    industry: 'Business Analytics',
+    company: 'Adobe',
+    position: 'Financial Analyst',
     location: 'San Francisco, CA'
   }
 ];

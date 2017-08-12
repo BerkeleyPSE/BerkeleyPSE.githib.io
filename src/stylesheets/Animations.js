@@ -2,6 +2,7 @@ import { StyleSheet } from 'aphrodite';
 import {
   fadeIn,
   fadeInDown,
+  fadeInUp,
   flipInX,
   slideInLeft,
   slideInRight,
@@ -16,6 +17,11 @@ const animations = StyleSheet.create({
 
   fadeInDown: {
     animationName: fadeInDown,
+    animationDuration: '1s'
+  },
+
+  fadeInUp: {
+    animationName: fadeInUp,
     animationDuration: '1s'
   },
 

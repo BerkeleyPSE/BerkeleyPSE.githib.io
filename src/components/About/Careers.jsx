@@ -31,6 +31,7 @@ export default class Careers extends React.Component {
             />
           </div>
         </div>
+        {/* // TODO: GET ACTIVES' INTERNSHIP INFO
         <div className={css(styles.internContainer)}>
           <h2 className={css(styles.header)}>Internships</h2>
           <div className={css(styles.table)}>
@@ -46,6 +47,7 @@ export default class Careers extends React.Component {
             />
           </div>
         </div>
+        */}
       </div>
     );
   }
@@ -70,7 +72,11 @@ const styles = StyleSheet.create({
     fontSize: '3em',
     fontWeight: '500',
     margin: '0',
-    padding: '10px 30px'
+    padding: '10px 30px',
+    '@media (max-width: 900px)': {
+      padding: 'none',
+      textAlign: 'center'
+    }
   },
 
   table: {

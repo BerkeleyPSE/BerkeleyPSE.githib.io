@@ -4,7 +4,6 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
-import { Grid, Col, Row } from 'react-bootstrap';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
@@ -45,7 +44,6 @@ export default class Brother extends React.Component {
               alt={bro.name}
             />
           </div>
-
           <div className={css(styles.broInfo)}>
             <PageHandler
               index={broIndex}
@@ -71,7 +69,7 @@ export default class Brother extends React.Component {
                 <Link
                   to={bro.linkedin}
                   target="blank"
-                  className={css(styles.linkedin)}
+                  className={css(styles.mediaLink)}
                 >
                   <i
                     className={css(styles.icon) + ' fa fa-linkedin'}
@@ -93,7 +91,10 @@ const styles = StyleSheet.create({
   profileContainer: {
     display: 'flex',
     flexDirection: 'row',
-    padding: '10px 0'
+    padding: '10px 0',
+    '@media (max-width: 900px)': {
+      flexDirection: 'column'
+    }
   },
 
   broInfo: {
@@ -126,7 +127,9 @@ const styles = StyleSheet.create({
   },
 
   imageContainer: {
-    padding: '0 20px'
+    padding: '0 20px',
+    display: 'flex',
+    justifyContent: 'center'
   },
 
   image: {
@@ -146,5 +149,32 @@ const styles = StyleSheet.create({
 
   bio: {
     color: '#818181'
+  },
+
+  broMedia: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+
+  mediaLink: {
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    color: '#895FAD',
+    textDecoration: 'none',
+    border: '2px solid #895FAD',
+    borderRadius: '3px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '5px',
+    height: '30px',
+    width: '30px',
+    ':hover': {
+      backgroundColor: '#895FAD',
+      color: '#FFF'
+    }
+  },
+
+  icon: {
+    fontSize: '1.5em'
   }
 });

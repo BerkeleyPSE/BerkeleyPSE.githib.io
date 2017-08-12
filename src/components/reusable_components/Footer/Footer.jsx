@@ -1,6 +1,9 @@
 // React
 import React from 'react';
+
+// NPM Modules
 import { StyleSheet, css } from 'aphrodite';
+import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
 import { animations } from '../../../stylesheets/Animations.js';
@@ -8,25 +11,54 @@ import { animations } from '../../../stylesheets/Animations.js';
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className={css(styles.footerContainer, animations.fadeIn)}>
+      <div className={css(styles.footerContainer, animations.fadeInUp)}>
         <div className={css(styles.copyrightContainer)}>
           <p className={css(styles.copyright, styles.text)}>
             &#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.
           </p>
         </div>
         <div className={css(styles.mediaContainer)}>
-          <ul />
+          <Link
+            className={css(styles.link, styles.mediaLink)}
+            to={'https://www.facebook.com/berkeleypse'}
+            target="blank"
+          >
+            <i
+              className={css(styles.icon) + ' fa fa-facebook-official'}
+              aria-hidden="true"
+            />
+          </Link>
+          <Link
+            className={css(styles.link, styles.mediaLink)}
+            to={'https://www.instagram.com/berkeleypse'}
+            target="blank"
+          >
+            <i
+              className={css(styles.icon) + ' fa fa-instagram'}
+              aria-hidden="true"
+            />
+          </Link>
+          <Link
+            className={css(styles.link, styles.mediaLink)}
+            to={'https://www.twitter.com/berkeleypse'}
+            target="blank"
+          >
+            <i
+              className={css(styles.icon) + ' fa fa-twitter'}
+              aria-hidden="true"
+            />
+          </Link>
         </div>
         <div className={css(styles.creditContainer)}>
           <p className={css(styles.credit, styles.text)}>
             Developed by
-            <a
+            <Link
               className={css(styles.link)}
-              href="http://www.rahrang.xyz"
+              to={'http://www.rahrang.xyz'}
               target="blank"
             >
               {' '}Rahul Rangnekar
-            </a>
+            </Link>
           </p>
         </div>
       </div>
@@ -40,7 +72,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    '@media (max-width: 768px)': {
+      flexDirection: 'column'
+    }
   },
 
   text: {
@@ -59,10 +94,20 @@ const styles = StyleSheet.create({
   },
 
   link: {
-    color: 'white',
+    color: '#FFF',
+    cursor: 'pointer',
+    height: '100%',
     textDecoration: 'none',
     ':hover': {
       color: '#895FAD'
     }
+  },
+
+  mediaLink: {
+    padding: '0 10px'
+  },
+
+  icon: {
+    fontSize: '2em'
   }
 });
