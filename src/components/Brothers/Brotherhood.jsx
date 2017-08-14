@@ -16,8 +16,15 @@ export default class Brotherhood extends React.Component {
     });
 
     return (
-      <div className={css(styles.brotherhoodContainer, animations.fadeIn)}>
-        <h1 className={css(styles.header)}>Brotherhood</h1>
+      <div className={css(animations.fadeIn) + 'brotherhood-container'}>
+        <div className={css(styles.landingContainer)}>
+          <img
+            src={'../images/brotherhood.jpg'}
+            className={css(styles.image)}
+            alt={'Pi Sigma Epsilon brotherhood'}
+          />
+          <h1 className={css(styles.header)}>Our Brotherhood</h1>
+        </div>
         <div className={css(styles.allBrosContainer)}>
           {allBrothers}
         </div>
@@ -27,16 +34,30 @@ export default class Brotherhood extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  brotherhoodContainer: {},
+  landingContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '30px'
+  },
+
+  image: {
+    maxWidth: '100%',
+    position: 'relative'
+  },
 
   header: {
-    color: '#895FAD',
+    color: '#FFF',
     fontFamily: 'Lato, sans-serif',
     fontSize: '3em',
     fontWeight: '500',
+    letterSpacing: '0.025em',
     margin: '0',
     padding: '30px 0',
-    textAlign: 'center'
+    textAlign: 'center',
+
+    position: 'absolute',
+    width: '100%'
   },
 
   allBrosContainer: {

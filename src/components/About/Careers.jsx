@@ -15,8 +15,9 @@ export default class Careers extends React.Component {
   render() {
     return (
       <div className={css(styles.careersContainer, animations.fadeIn)}>
+        <h1 className={css(styles.header)}>Careers</h1>
         <div className={css(styles.fulltimeContainer)}>
-          <h1 className={css(styles.header)}>Full-Time</h1>
+          <h2 className={css(styles.header2)}>Full-Time</h2>
           <div className={css(styles.table)}>
             <ReactTable
               className="-striped"
@@ -33,7 +34,7 @@ export default class Careers extends React.Component {
         </div>
         {/* // TODO: GET ACTIVES' INTERNSHIP INFO
         <div className={css(styles.internContainer)}>
-          <h2 className={css(styles.header)}>Internships</h2>
+          <h2 className={css(styles.header2)}>Internships</h2>
           <div className={css(styles.table)}>
             <ReactTable
               className="-striped"
@@ -55,7 +56,7 @@ export default class Careers extends React.Component {
 
 const styles = StyleSheet.create({
   careersContainer: {
-    padding: '40px 0'
+    padding: '20px 0 0'
   },
 
   fulltimeContainer: {
@@ -76,10 +77,23 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
 
+  header2: {
+    color: '#303030',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '2em',
+    fontWeight: '500',
+    margin: '0',
+    padding: '30px',
+    textAlign: 'left',
+    textTransform: 'uppercase',
+    '@media(max-width: 768px)': {
+      textAlign: 'center',
+      padding: '30px 0'
+    }
+  },
+
   table: {
     margin: '0',
     padding: '0'
   }
 });
-
-const tableStyles = StyleSheet.create({});
