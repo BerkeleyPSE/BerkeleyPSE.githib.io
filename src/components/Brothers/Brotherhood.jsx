@@ -17,8 +17,8 @@ export default class Brotherhood extends React.Component {
 
     return (
       <div className={css(styles.brotherhoodContainer, animations.fadeIn)}>
-        <h1 className={css(styles.header)}>Our Brotherhood</h1>
-        <div className="all-brothers-container">
+        <h1 className={css(styles.header)}>Brotherhood</h1>
+        <div className={css(styles.allBrosContainer)}>
           {allBrothers}
         </div>
       </div>
@@ -27,14 +27,19 @@ export default class Brotherhood extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  brotherhoodContainer: {
-    textAlign: 'center'
-  },
+  brotherhoodContainer: {},
 
   header: {
     color: '#895FAD',
     fontFamily: 'Lato, sans-serif',
     fontSize: '3em',
-    fontWeight: '500'
+    fontWeight: '500',
+    margin: '0',
+    padding: '30px 0',
+    textAlign: 'center'
+  },
+
+  allBrosContainer: {
+    textAlign: 'center'
   }
 });

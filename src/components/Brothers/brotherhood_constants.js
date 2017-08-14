@@ -294,7 +294,7 @@ const brotherInfo = {
   /* 14 */
   howard_huang: {
     // img: 'images/brothers/howard_huang.jpg', // TODO
-    img: 'images/brothers/harika_kalluri.jpg',
+    img: 'images/brothers/bro-placeholder.jpg',
     name: 'Howard Huang',
     position: 'Director of Brotherhood',
     year: 'Senior',
@@ -329,7 +329,7 @@ const brotherInfo = {
   /* 16 */
   jeanine_liu: {
     // img: 'images/brothers/jeanine_liu.jpg', // TODO
-    img: 'images/brothers/jacqueline_tsang.jpg',
+    img: 'images/brothers/bro-placeholder.jpg',
     name: 'Jeanine Liu',
     position: 'Active',
     year: 'Senior',

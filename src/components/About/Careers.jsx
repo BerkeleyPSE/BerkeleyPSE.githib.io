@@ -16,7 +16,7 @@ export default class Careers extends React.Component {
     return (
       <div className={css(styles.careersContainer, animations.fadeIn)}>
         <div className={css(styles.fulltimeContainer)}>
-          <h2 className={css(styles.header)}>Full-Time</h2>
+          <h1 className={css(styles.header)}>Full-Time</h1>
           <div className={css(styles.table)}>
             <ReactTable
               className="-striped"
@@ -72,11 +72,8 @@ const styles = StyleSheet.create({
     fontSize: '3em',
     fontWeight: '500',
     margin: '0',
-    padding: '10px 30px',
-    '@media (max-width: 900px)': {
-      padding: 'none',
-      textAlign: 'center'
-    }
+    padding: '30px 0',
+    textAlign: 'center'
   },
 
   table: {
