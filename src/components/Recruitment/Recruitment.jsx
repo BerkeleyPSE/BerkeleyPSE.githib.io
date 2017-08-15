@@ -13,15 +13,16 @@ export default class Recruitment extends React.Component {
         <div className={css(styles.timelineContainer)}>
           {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
           <iframe
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=500"
+            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
             width="100%"
-            height="500"
+            height="650px"
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen
             frameborder="0"
           />
         </div>
+        {/*
         <div className={css(styles.flipcardContainer)}>
           <Link to={'/brothers'}>
             <FlipCard
@@ -36,6 +37,7 @@ export default class Recruitment extends React.Component {
             </FlipCard>
           </Link>
         </div>
+        */}
       </div>
     );
   }
