@@ -108,6 +108,6 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    fontSize: '2em'
+    fontSize: '1.5em'
   }
 });

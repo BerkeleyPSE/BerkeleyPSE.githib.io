@@ -22,13 +22,19 @@ const styles = StyleSheet.create({
     fontSize: '0.9em',
     fontWeight: '400',
     overflowX: 'auto',
-    overflowY: 'hidden'
+    overflowY: 'hidden',
+    padding: '7px 15px'
   },
 
   centered: {
     display: 'flex',
     justifyContent: 'center',
     textAlign: 'center'
+  },
+
+  name: {
+    color: '#895FAD',
+    fontWeight: 'bold'
   }
 });
 
@@ -36,7 +42,7 @@ const fulltime_columns = [
   {
     Header: 'Name',
     accessor: 'name',
-    className: css(styles.table, styles.cell),
+    className: css(styles.table, styles.cell, styles.name),
     headerClassName: css(styles.columnName),
     minWidth: 175
     // maxWidth: 200

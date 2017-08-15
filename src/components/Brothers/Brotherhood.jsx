@@ -16,7 +16,7 @@ export default class Brotherhood extends React.Component {
     });
 
     return (
-      <div className={css(animations.fadeIn) + 'brotherhood-container'}>
+      <div className={css(animations.fadeIn) + ' brotherhood-container'}>
         <div className={css(styles.landingContainer)}>
           <img
             src={'../images/brotherhood.jpg'}

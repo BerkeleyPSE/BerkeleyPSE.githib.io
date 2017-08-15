@@ -23,11 +23,11 @@ export const navbar_constants = [
       {
         page: 'Careers',
         pageLink: CAREERS_PATH
-      },
-      {
-        page: 'Sponsors',
-        pageLink: SPONSOR_PATH
       }
+      // {
+      //   page: 'Sponsors',
+      //   pageLink: SPONSOR_PATH
+      // }
     ]
   },
   {
