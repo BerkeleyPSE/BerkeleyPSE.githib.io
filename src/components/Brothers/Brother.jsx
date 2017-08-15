@@ -86,7 +86,9 @@ export default class Brother extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  brotherContainer: {},
+  brotherContainer: {
+    minHeight: `calc(100vh - 122px)`
+  },
 
   profileContainer: {
     display: 'flex',
