@@ -35,7 +35,7 @@ export default class Brother extends React.Component {
     }
 
     return (
-      <div className={css(styles.brotherContainer, animations.fadeIn)}>
+      <div className={css(animations.fadeIn) + ' brother-container'}>
         <div className={css(styles.profileContainer)}>
           <div className={css(styles.imageContainer, animations.slideInLeft)}>
             <img
@@ -86,10 +86,6 @@ export default class Brother extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  brotherContainer: {
-    minHeight: `calc(100vh - 122px)`
-  },
-
   profileContainer: {
     display: 'flex',
     flexDirection: 'row',

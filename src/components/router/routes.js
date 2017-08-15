@@ -80,7 +80,11 @@ export default class Routes extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  mainContainer: {
+    minHeight: `calc(100vh - 122px)`
+  }
+});
 
 // const mapStateToProps = state => {
 //   return {
