@@ -46,7 +46,7 @@ export default class About extends React.Component {
               continue to be iterated and improved upon for the Iota and Kappa
               classes.
               <br /> <br />
-              Now in it’s fourth year and recruiting for it’s prospective Mu
+              Now in its fourth year and recruiting for the prospective Mu
               class, Zeta Chi boasts a diverse brotherhood of over 40 active
               members in the Phan administration.
             </p>

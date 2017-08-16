@@ -6,6 +6,7 @@ import {
   flipInX,
   slideInLeft,
   slideInRight,
+  slideInDown,
   zoomIn
 } from 'react-animations';
 
@@ -13,6 +14,11 @@ const animations = StyleSheet.create({
   fadeIn: {
     animationName: fadeIn,
     animationDuration: '2s'
+  },
+
+  fadeInFast: {
+    animationName: fadeIn,
+    animationDuration: '0.5s'
   },
 
   fadeInDown: {
@@ -38,6 +44,11 @@ const animations = StyleSheet.create({
   slideInRight: {
     animationName: slideInRight,
     animationDuration: '0.35s'
+  },
+
+  slideInDown: {
+    animationName: slideInDown,
+    animationDuration: '1s'
   },
 
   zoomIn: {

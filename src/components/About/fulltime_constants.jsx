@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   },
 
   columnName: {
+    border: 'none',
     color: '#303030',
     fontFamily: 'Lato, sans-serif',
     fontSize: '0.9em',

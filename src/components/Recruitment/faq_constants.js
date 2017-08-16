@@ -1,4 +1,4 @@
-const faq_constants = [
+export const faq_constants = [
   {
     question: 'What makes PSE different from other organizations?',
     answer:
