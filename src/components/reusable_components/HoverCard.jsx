@@ -9,20 +9,11 @@ import { Link } from 'react-router-dom';
 import { animations } from '../../stylesheets/Animations.js';
 
 export default class HoverCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false
-    };
-  }
-
   render() {
     return (
       <Link
-        className={css(styles.hoverCard)}
+        className={css(styles.hoverCard, animations.zoomIn)}
         to={this.props.link}
-        onMouseEnter={() => this.setState({ hover: true })}
-        onMouseLeave={() => this.setState({ hover: false })}
       >
         <h1 className={css(styles.header)}>
           {this.props.header}
