@@ -36,9 +36,10 @@ const hoverCardItems = [
 
 export default class Recruitment extends React.Component {
   render() {
-    const hoverCards = hoverCardItems.map(item => {
+    const hoverCards = hoverCardItems.map((item, index) => {
       return (
         <HoverCard
+          key={index}
           link={item.link}
           header={item.header}
           description={item.description}
