@@ -135,7 +135,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: '10px 0',
     '@media (max-width: 900px)': {
-      flexDirection: 'column'
+      flexDirection: 'column',
+      textAlign: 'center'
     }
   },
 
@@ -247,7 +248,7 @@ const table = StyleSheet.create({
     letterSpacing: '0.025em',
     margin: '0',
     padding: '0 10px',
-    textAlign: 'right',
+    textAlign: 'left',
     textTransform: 'uppercase'
   },
 
@@ -257,6 +258,6 @@ const table = StyleSheet.create({
     fontSize: '1em',
     margin: '0',
     padding: '0 10px',
-    textAlign: 'left'
+    textAlign: 'right'
   }
 });
