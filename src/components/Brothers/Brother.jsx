@@ -9,10 +9,31 @@ import { Link } from 'react-router-dom';
 import { animations } from '../../stylesheets/Animations.js';
 import {
   brotherInfo,
-  brotherList,
-  executiveList
+  brotherList
+  // executiveList
 } from './brotherhood_constants';
 import { PageHandler } from './PageHandler.jsx';
+
+// Constants
+const infoList = [
+  'year',
+  'hometown',
+  'class',
+  'major',
+  'minor',
+  'career_interests',
+  'previous_positions'
+];
+
+const infoMap = {
+  year: 'Year',
+  hometown: 'Hometown',
+  class: 'Class',
+  major: 'Major',
+  minor: 'Minor',
+  career_interests: 'Career Interests',
+  previous_positions: 'Previous Positions'
+};
 
 export default class Brother extends React.Component {
   broNotFound = () => {
@@ -33,6 +54,23 @@ export default class Brother extends React.Component {
       this.broNotFound();
       return null;
     }
+
+    const infoTable = infoList.map(item => {
+      if (bro[item]) {
+        return (
+          <div className={css(table.infoRow)} key={`${bro.name}_${item}`}>
+            <p className={css(table.infoTitle)}>
+              {infoMap[item]}
+            </p>
+            <p className={css(table.infoValue)}>
+              {bro[item]}
+            </p>
+          </div>
+        );
+      } else {
+        return null;
+      }
+    });
 
     return (
       <div className={css(animations.fadeIn) + ' brother-container'}>
@@ -57,6 +95,12 @@ export default class Brother extends React.Component {
               <h2 className={css(styles.position)}>
                 {bro.position}
               </h2>
+            </div>
+            <div className={css(table.tableContainer)}>
+              <div className={css(table.infoTableContainer)}>
+                {infoTable}
+              </div>
+              {/* TODO: TABLE OF EXPERIENCES */}
             </div>
             <div className={css(styles.broBody)}>
               <div className={css(styles.broTable)} />
@@ -174,5 +218,45 @@ const styles = StyleSheet.create({
 
   icon: {
     fontSize: '1.5em'
+  }
+});
+
+const table = StyleSheet.create({
+  tableContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    padding: '10px 0'
+  },
+
+  infoTableContainer: {},
+
+  infoRow: {
+    borderBottom: '1px solid #303030',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '8px 0'
+  },
+
+  infoTitle: {
+    color: '#895FAD',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '1em',
+    fontWeight: 'bold',
+    letterSpacing: '0.025em',
+    margin: '0',
+    padding: '0 10px',
+    textAlign: 'right',
+    textTransform: 'uppercase'
+  },
+
+  infoValue: {
+    color: '#818181',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '1em',
+    margin: '0',
+    padding: '0 10px',
+    textAlign: 'left'
   }
 });

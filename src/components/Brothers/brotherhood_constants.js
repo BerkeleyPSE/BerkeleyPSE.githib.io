@@ -22,7 +22,7 @@ const brotherList = [
   'dallas_taylor',
   'dhakshi_balakumar',
   'emma_tsuneishi',
-  'esther_choe',
+  // 'esther_choe',
   'eva_su',
   'harika_kalluri',
   'howard_huang',
@@ -82,6 +82,7 @@ const brotherInfo = {
     hometown: 'Los Angeles, CA',
     class: 'Iota',
     major: 'Political Economy',
+    minor: '',
     career_interests: 'Management Consulting & Marketing',
     previous_positions: '',
     bio:
@@ -116,7 +117,7 @@ const brotherInfo = {
     class: 'Epsilon',
     major: 'Political Economy',
     minor: '',
-    career_interests: 'Healthcare Management and Strategy & Law',
+    career_interests: 'Healthcare Management/Strategy & Law',
     previous_positions: 'Vice President of Finance',
     bio:
       'In addition to invaluable business skills, PSE has taught Akshay to develop a healthy balance of fun and professionalism, and to let his charming character shine in the workplace. His role model is Punit Renjen, CEO of Deloitte. Akshay is a member of the International Students at Berkeley, and a Marketing Director for both Google@Berkeley and the ASUC Office of the Chief Technology Officer. He was a finalist for the Deloitte Consulting case competition, and attended both the Deloitte Freshman Leadership Conference and FullBridge Leadership Summit. Akshay loves to read, swim, and travel throughout Southeast Asia.',
@@ -283,7 +284,7 @@ const brotherInfo = {
     hometown: 'San Jose, CA',
     class: 'Iota',
     major: 'Intended Business & Economics',
-    minor: '',
+    minor: 'Technology & Entrepreneurship Certificate',
     career_interests: 'Management Consulting',
     previous_positions: 'Prospective Member Trainer',
     bio:
@@ -606,7 +607,7 @@ const brotherInfo = {
     hometown: 'Claremont, CA',
     class: 'Theta',
     major: 'Computer Science & Economics',
-    minor: '',
+    minor: 'Technology & Entrepreneurship Certificate',
     career_interests: 'Product Management & Software Development',
     previous_positions: 'Director of Brotherhood',
     bio:
@@ -740,7 +741,7 @@ const brotherInfo = {
     hometown: 'Irvine, CA',
     class: 'Kappa',
     major: 'Intended Business & Economics',
-    minor: '',
+    minor: 'Technology & Entrepreneurship Certificate',
     career_interests: 'Management Consulting',
     previous_positions: '',
     bio:
@@ -757,7 +758,7 @@ const brotherInfo = {
     hometown: 'Fremont, CA',
     class: 'Iota',
     major: 'Economics & Media Studies',
-    minor: '',
+    minor: 'Technology & Entrepreneurship Certificate',
     career_interests: 'Digital Marketing',
     previous_positions: 'Director of External Recruitment',
     bio:

@@ -3,6 +3,7 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite'; // remove this later
+import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
@@ -30,7 +31,7 @@ export default class Navbar extends React.Component {
 
     return (
       <div className={css(styles.mainContainer, animations.fadeInDown)}>
-        <div className={css(styles.logoContainer)}>
+        <Link to={'/'} className={css(styles.logoContainer)}>
           <img
             className={css(styles.logo)}
             src="/images/logo.png"
@@ -40,7 +41,7 @@ export default class Navbar extends React.Component {
             <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
           </div>
-        </div>
+        </Link>
         <div className={css(styles.dropdownUnitContainer)}>
           {dropdownUnits}
         </div>
@@ -68,10 +69,12 @@ const styles = StyleSheet.create({
   },
 
   logoContainer: {
+    cursor: 'pointer',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     padding: '20px',
+    textDecoration: 'none',
     '@media (max-width: 768px)': {
       textAlign: 'center'
     }

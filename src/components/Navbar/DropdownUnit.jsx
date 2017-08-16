@@ -68,6 +68,7 @@ export default class DropdownUnit extends React.Component {
 
 const styles = StyleSheet.create({
   mainContainer: {
+    cursor: 'pointer',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
