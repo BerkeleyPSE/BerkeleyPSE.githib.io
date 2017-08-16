@@ -50,7 +50,7 @@ import {
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
-} from '../reusable_components/Navbar/navbar_constants.jsx';
+} from '../Navbar/navbar_constants.jsx';
 
 export default class Routes extends React.Component {
   render() {
