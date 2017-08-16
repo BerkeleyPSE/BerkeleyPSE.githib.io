@@ -34,8 +34,8 @@ import Contact from '../Contact';
 import Error404 from '../Error404';
 
 // Other Local Components
-import Navbar from '../reusable_components/Navbar/Navbar';
-import Footer from '../reusable_components/Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 // Page URLs
 import {

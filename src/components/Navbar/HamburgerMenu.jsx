@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 
 // Local Helper Files & Components
-import { animations } from '../../../stylesheets/Animations.js';
+import { animations } from '../../stylesheets/Animations.js';
 import { navbar_constants } from './navbar_constants.jsx';
 
 const MENU_WIDTH = 275;

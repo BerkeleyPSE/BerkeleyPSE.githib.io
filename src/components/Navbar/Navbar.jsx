@@ -6,7 +6,7 @@ import { StyleSheet, css } from 'aphrodite'; // remove this later
 import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
-import { animations } from '../../../stylesheets/Animations.js';
+import { animations } from '../../stylesheets/Animations.js';
 import DropdownUnit from './DropdownUnit.jsx';
 import HamburgerMenu from './HamburgerMenu.jsx';
 import { navbar_constants } from './navbar_constants.jsx';

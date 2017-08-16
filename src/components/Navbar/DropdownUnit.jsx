@@ -5,7 +5,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
 import DropdownMenu from 'react-dd-menu';
-import '../../../stylesheets/react-dd.css';
+import '../../stylesheets/react-dd.css';
 
 export default class DropdownUnit extends React.Component {
   constructor(props) {
