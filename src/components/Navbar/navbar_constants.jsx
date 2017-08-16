@@ -35,7 +35,7 @@ export const navbar_constants = [
     headerLink: RECRUITMENT_PATH,
     pages: [
       {
-        page: 'Information',
+        page: 'Schedule',
         pageLink: RECRUITMENT_PATH
       },
       {
