@@ -27,7 +27,10 @@ export default class Navbar extends React.Component {
   render() {
     const menuItems = navbar_constants.map(item => {
       return (
-        <div className={css(styles.sectionContainer)} key={index}>
+        <div
+          className={css(styles.sectionContainer)}
+          key={`ham_${item.header}`}
+        >
           <div className={css(styles.headerContainer)}>
             <NavLink
               to={item.headerLink}
