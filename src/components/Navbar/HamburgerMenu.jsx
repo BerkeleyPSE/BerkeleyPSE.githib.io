@@ -3,7 +3,7 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite'; // remove this later
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 
 // Local Helper Files & Components
@@ -29,26 +29,28 @@ export default class Navbar extends React.Component {
       return (
         <div className={css(styles.sectionContainer)}>
           <div className={css(styles.headerContainer)}>
-            <Link
+            <NavLink
               to={item.headerLink}
               className={css(styles.link, styles.headerLink)}
+              activeClassName={css(styles.activeLink)}
               key={`ham_${item.header}`}
             >
               {item.header}
-            </Link>
+            </NavLink>
           </div>
           <div className={css(styles.pagesContainer)}>
             {item.pages &&
               item.pages.map(page => {
                 return (
                   <div className={css(styles.pageContainer)}>
-                    <Link
+                    <NavLink
                       to={page.pageLink}
                       className={css(styles.link, styles.pageLink)}
+                      activeClassName={css(styles.activeLink)}
                       key={`${item.header}_${page.page}`}
                     >
                       {page.page}
-                    </Link>
+                    </NavLink>
                     <br />
                   </div>
                 );
@@ -115,6 +117,10 @@ const styles = StyleSheet.create({
     ':hover': {
       color: '#895FAD'
     }
+  },
+
+  activeLink: {
+    color: '#FFD700'
   }
 });
 
