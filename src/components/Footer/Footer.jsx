@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    padding: '10px 0',
+    padding: '5px 0',
     justifyContent: 'space-between',
     '@media (max-width: 768px)': {
       flexDirection: 'column'
