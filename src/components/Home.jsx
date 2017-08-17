@@ -48,6 +48,12 @@ const homeInfo = [
     message: "Where We're Going",
     text: 'Our Careers',
     link: CAREERS_PATH
+  },
+  {
+    imgSrc: '/images/home/pi_sigma_epsilon_2.jpg',
+    message: "UC Berkeley's Marketing & Business Fraternity",
+    text: 'Apply Now',
+    link: APPLICATION_PATH
   }
 ];
 
