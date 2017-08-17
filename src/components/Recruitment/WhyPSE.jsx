@@ -125,12 +125,10 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
 
-  bodyContainer: {
-    // padding: '0 40px',
-  },
+  bodyContainer: {},
 
   section: {
-    padding: '40px 0'
+    padding: '40px 30px'
   },
 
   darkBackground: {
@@ -157,7 +155,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans, sans-serif',
     fontSize: '1.25em',
     fontWeight: '500',
-    padding: '0 40px'
+    padding: '0 10px'
   },
 
   darkDescription: {
