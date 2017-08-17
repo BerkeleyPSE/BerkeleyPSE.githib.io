@@ -12,7 +12,7 @@ import { BrotherImage } from './BrotherImage.jsx';
 export default class Brotherhood extends React.Component {
   render() {
     const allBrothers = brotherList.map(brother => {
-      return <BrotherImage brother={brother} key={brother} />;
+      return <BrotherImage brother={brother} key={brother} page="bros" />;
     });
 
     return (

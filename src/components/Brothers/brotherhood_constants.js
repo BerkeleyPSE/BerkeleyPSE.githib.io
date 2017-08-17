@@ -60,13 +60,13 @@ these MUST match EXACTLY the name "keys" in the brotherInfo Object,
 or else the brother will not be rendered in Executives
 ***/
 const executiveList = [
-  'kevin_phan',
   'aaron_corona',
+  'taylor_lee',
   'kailin_li',
-  'nicholas_chun',
+  // 'kevin_phan',
   'rahul_rangnekar',
-  'sean_yu',
-  'taylor_lee'
+  'nicholas_chun',
+  'sean_yu'
 ];
 
 /***

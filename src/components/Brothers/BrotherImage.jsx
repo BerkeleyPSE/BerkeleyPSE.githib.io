@@ -37,7 +37,7 @@ export class BrotherImage extends React.Component {
       >
         <div className={css(styles.broContainer)}>
           <img src={bro.img} className={css(styles.broImg)} alt={bro.name} />
-          {this.state.hover &&
+          {(this.state.hover || this.props.page === 'execs') &&
             <div className={css(styles.overlay)}>
               <p className={css(styles.broName, animations.slideInLeft)}>
                 {bro.name}
@@ -47,15 +47,16 @@ export class BrotherImage extends React.Component {
                 {bro.position}
               </p>
             </div>}
-          <div className={css(styles.mobileBro)}>
-            <p className={css(styles.mobileName)}>
-              {bro.name}
-            </p>
-            <hr className={css(styles.hr)} />
-            <p className={css(styles.mobilePosition)}>
-              {bro.position}
-            </p>
-          </div>
+          {this.props.page === 'bros' &&
+            <div className={css(styles.mobileBro)}>
+              <p className={css(styles.mobileName)}>
+                {bro.name}
+              </p>
+              <hr className={css(styles.hr)} />
+              <p className={css(styles.mobilePosition)}>
+                {bro.position}
+              </p>
+            </div>}
         </div>
       </Link>
     );
@@ -86,6 +87,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.7)',
     position: 'absolute',
     bottom: '0',
+    height: '135px',
     width: '100%'
   },
 
@@ -93,7 +95,8 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontFamily: 'Lato, sans-serif',
     fontSize: '1.25em',
-    letterSpacing: '0.025em'
+    letterSpacing: '0.025em',
+    margin: '15px auto'
   },
 
   mobileName: {
@@ -102,7 +105,7 @@ const styles = StyleSheet.create({
     fontSize: '1.25em',
     letterSpacing: '0.025em',
     padding: '5px 0',
-    margin: '0'
+    margin: '15px auto'
   },
 
   hr: {
@@ -117,6 +120,7 @@ const styles = StyleSheet.create({
     fontSize: '0.9em',
     fontWeight: '500',
     letterSpacing: '0.025em',
+    margin: '15px auto',
     padding: '0 10px',
     textTransform: 'uppercase'
   },
@@ -128,7 +132,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     letterSpacing: '0.025em',
     padding: '5px 0',
-    margin: '0',
+    margin: '15px auto',
     textTransform: 'uppercase'
   },
 
@@ -139,6 +143,7 @@ const styles = StyleSheet.create({
     bottom: '0',
     margin: '0',
     padding: '20px 0',
+    height: '135px',
     width: '100%',
     '@media (min-device-width: 425px)': {
       display: 'none'

@@ -12,19 +12,67 @@ import { BrotherImage } from './BrotherImage.jsx';
 export default class Executives extends React.Component {
   render() {
     const executives = executiveList.map(brother => {
-      return <BrotherImage brother={brother} key={brother} />;
+      return <BrotherImage brother={brother} key={brother} page="execs" />;
     });
 
     return (
-      <div className={css(styles.executiveContainer, animations.fadeIn)}>
-        {executives}
+      <div className={css(animations.fadeIn) + ' brotherhood-container'}>
+        <div className={css(styles.landingContainer)}>
+          <img
+            src={'../images/executive_board.jpg'}
+            className={css(styles.image)}
+            alt={'Pi Sigma Epsilon executive board'}
+          />
+          <h1 className={css(styles.header)}>Executive Board</h1>
+        </div>
+        <div className={css(styles.container, animations.fadeIn)}>
+          <BrotherImage
+            brother={'kevin_phan'}
+            key={'kevin_phan'}
+            page="execs"
+          />
+          <br />
+          <div className={css(styles.executiveContainer)}>
+            {executives}
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  executiveContainer: {
+  container: {
     textAlign: 'center'
+  },
+
+  landingContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '30px'
+  },
+
+  header: {
+    color: '#FFF',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '3em',
+    fontWeight: '500',
+    letterSpacing: '0.025em',
+    margin: '0',
+    padding: '30px 0',
+    textAlign: 'center',
+
+    position: 'absolute',
+    width: '100%'
+  },
+
+  executiveContainer: {
+    display: 'inline'
+  },
+
+  image: {
+    maxWidth: '100%',
+    position: 'relative'
   }
 });
