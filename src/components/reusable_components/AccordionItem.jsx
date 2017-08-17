@@ -8,22 +8,6 @@ import { StyleSheet, css } from 'aphrodite';
 import { animations } from '../../stylesheets/Animations.js';
 
 export default class AccordionItem extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     isOpen: false
-  //   };
-  // }
-
-  // toggle = () => {
-  //   this.setState({isOpen: !this.state.isOpen})
-  // }
-
-  // use this to only keep 1 accordion open at a time, set the active accordion id in the parent component
-  // componentWillReceiveProps(nextProps) {
-
-  // }
-
   render() {
     let { isActive, setActiveIndex, index } = this.props;
 
