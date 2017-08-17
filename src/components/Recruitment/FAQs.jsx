@@ -5,6 +5,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
 // Local Helper Files & Components
+import { animations } from '../../stylesheets/Animations.js';
 import { faq_constants } from './faq_constants.js';
 import AccordionItem from '../reusable_components/AccordionItem.jsx';
 
@@ -26,20 +27,24 @@ export default class FAQs extends React.Component {
 
   render() {
     const faqs = faq_constants.map((item, index) => {
-      return (
-        <AccordionItem
-          key={index}
-          index={index}
-          isActive={this.state.activeIndex === index}
-          question={item.question}
-          answer={item.answer}
-          setActiveIndex={this.setActiveIndex}
-        />
-      );
+      if (item.question && item.answer) {
+        return (
+          <AccordionItem
+            key={index}
+            index={index}
+            isActive={this.state.activeIndex === index}
+            question={item.question}
+            answer={item.answer}
+            setActiveIndex={this.setActiveIndex}
+          />
+        );
+      } else {
+        return null;
+      }
     });
 
     return (
-      <div className="faqs-container">
+      <div className={css(animations.fadeIn) + ' faqs-container'}>
         <h1 className={css(styles.header)}>Frequently Asked Questions</h1>
         <div className={css(styles.accordionContainer)}>
           {faqs}

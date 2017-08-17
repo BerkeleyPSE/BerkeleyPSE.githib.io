@@ -99,11 +99,9 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     letterSpacing: '0.035em',
     margin: '0 auto 0 20px'
-    // textTransform: 'uppercase',
   },
 
   chevron: {
-    // color: '#FFF',
     fontSize: '1em',
     margin: '0 20px 0 auto',
     padding: '0 10px'
@@ -111,7 +109,6 @@ const styles = StyleSheet.create({
 
   bodyContainer: {
     backgroundColor: '#303030',
-    // border: '2px solid #303030',
     borderTop: '5px solid #FFF'
   },
 
