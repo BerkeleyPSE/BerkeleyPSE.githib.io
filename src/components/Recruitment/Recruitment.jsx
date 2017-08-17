@@ -58,7 +58,7 @@ export default class Recruitment extends React.Component {
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen
-            frameborder="0"
+            frameBorder="0"
           />
         </div>
         <div className={css(styles.hoverCardContainer)}>

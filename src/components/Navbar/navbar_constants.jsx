@@ -11,6 +11,17 @@ export const BROTHERS_PATH = '/brothers';
 export const EXECUTIVES_PATH = '/eboard';
 export const CONTACT_PATH = '/contact';
 
+export let navbar_map = {};
+navbar_map[ABOUT_PATH] = ABOUT_PATH;
+navbar_map[CAREERS_PATH] = ABOUT_PATH;
+navbar_map[RECRUITMENT_PATH] = RECRUITMENT_PATH;
+navbar_map[WHYPSE_PATH] = RECRUITMENT_PATH;
+navbar_map[FAQS_PATH] = RECRUITMENT_PATH;
+navbar_map[APPLICATION_PATH] = RECRUITMENT_PATH;
+navbar_map[BROTHERS_PATH] = BROTHERS_PATH;
+navbar_map[EXECUTIVES_PATH] = BROTHERS_PATH;
+navbar_map[CONTACT_PATH] = CONTACT_PATH;
+
 export const navbar_constants = [
   {
     header: 'About',

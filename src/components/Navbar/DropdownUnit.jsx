@@ -3,15 +3,17 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import DropdownMenu from 'react-dd-menu';
 import '../../stylesheets/react-dd.css';
+import { navbar_map } from './navbar_constants.jsx';
 
 export default class DropdownUnit extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      parentLink: this.props.headerLink
     };
   }
 
@@ -21,6 +23,11 @@ export default class DropdownUnit extends React.Component {
 
   toggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
+  };
+
+  checkActive = (match, location) => {
+    const parentLink = navbar_map[location.pathname];
+    return parentLink === this.state.parentLink;
   };
 
   render() {
@@ -35,9 +42,13 @@ export default class DropdownUnit extends React.Component {
     var pageLinks = this.props.pages.map(page => {
       return (
         <li className={css(styles.pageLi)} key={page.page}>
-          <Link to={page.pageLink} className={css(styles.pageLink)}>
+          <NavLink
+            to={page.pageLink}
+            className={css(styles.pageLink)}
+            activeClassName={css(styles.activeLink)}
+          >
             {page.page}
-          </Link>
+          </NavLink>
         </li>
       );
     });
@@ -48,11 +59,16 @@ export default class DropdownUnit extends React.Component {
         onMouseEnter={() => this.setState({ isOpen: true })}
         onMouseLeave={() => this.setState({ isOpen: false })}
       >
-        <Link to={this.props.headerLink} className={css(styles.headerLink)}>
+        <NavLink
+          to={this.props.headerLink}
+          className={css(styles.headerLink)}
+          activeClassName={css(styles.activeHeaderLink)}
+          isActive={this.checkActive}
+        >
           <h3 className={css(styles.header)}>
             {this.props.header}
           </h3>
-        </Link>
+        </NavLink>
         <DropdownMenu
           {...menuOptions}
           className={css(styles.dropdownContainer)}
@@ -86,7 +102,7 @@ const styles = StyleSheet.create({
     height: 'auto',
     textDecoration: 'none',
     textTransform: 'uppercase',
-    padding: '20px 10px',
+    padding: '10px',
 
     ':hover': {
       color: '#FFD700'
@@ -130,11 +146,15 @@ const styles = StyleSheet.create({
 
     ':hover': {
       color: '#FFD700'
-    },
-
-    ':active': {
-      backgroundColor: '#303030',
-      color: '#FFD700'
     }
+  },
+
+  activeHeaderLink: {
+    borderBottom: '2px solid #FFD700'
+    // color: '#FFD700'
+  },
+
+  activeLink: {
+    color: '#FFD700'
   }
 });
