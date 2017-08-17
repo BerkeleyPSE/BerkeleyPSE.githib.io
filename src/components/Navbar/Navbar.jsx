@@ -18,13 +18,13 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    const dropdownUnits = navbar_constants.map((item, index) => {
+    const dropdownUnits = navbar_constants.map(item => {
       return (
         <DropdownUnit
           header={item.header}
           headerLink={item.headerLink}
           pages={item.pages}
-          key={index}
+          key={`nav_${item.header}`}
         />
       );
     });
