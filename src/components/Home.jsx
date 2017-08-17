@@ -13,13 +13,13 @@ const homeInfo = [
     message: 'Join Our Brotherhood',
     buttonText: 'Apply',
     buttonLink: '/app'
+  },
+  {
+    imgSrc: '/images/home/alumni.JPG',
+    message: 'Hahaha',
+    buttonText: 'This is us',
+    buttonLink: 'Gotta laugh'
   }
-  // {
-  //   imgSrc: '/images/home/funny.JPG',
-  //   message: 'Hahaha',
-  //   buttonText: 'This is us',
-  //   buttonLink: 'Gotta laugh'
-  // }
 ];
 
 export default class Home extends React.Component {
@@ -38,7 +38,7 @@ export default class Home extends React.Component {
           axis={'horizontal'}
           showStatus={false}
           showThumbs={false}
-          showArrows={true}
+          showArrows={false}
           showIndicators={true}
           infiniteLoop={true}
           id="carousel"
@@ -52,15 +52,16 @@ export default class Home extends React.Component {
 
 const styles = StyleSheet.create({
   homeContainer: {
-    width: '100%'
+    width: '100%',
+    height: '100%'
   },
 
   imageContainer: {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    height: '100%'
   },
 
   image: {
-    width: '100%',
-    height: '790px'
+    // width: '100%',
   }
 });
