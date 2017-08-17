@@ -34,6 +34,7 @@ export default class Footer extends React.Component {
           className={css(styles.link, styles.mediaLink)}
           to={item.link}
           target="blank"
+          key={item.media}
         >
           <i
             className={css(styles.icon) + ` fa ${item.icon}`}

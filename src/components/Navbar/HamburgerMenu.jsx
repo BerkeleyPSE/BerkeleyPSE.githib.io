@@ -25,21 +25,21 @@ export default class Navbar extends React.Component {
   };
 
   render() {
-    const menuItems = navbar_constants.map((item, index) => {
+    const menuItems = navbar_constants.map(item => {
       return (
         <div className={css(styles.sectionContainer)}>
           <div className={css(styles.headerContainer)}>
             <Link
               to={item.headerLink}
               className={css(styles.link, styles.headerLink)}
-              key={item.header}
+              key={`ham_${item.header}`}
             >
               {item.header}
             </Link>
           </div>
           <div className={css(styles.pagesContainer)}>
             {item.pages &&
-              item.pages.map((page, index2) => {
+              item.pages.map(page => {
                 return (
                   <div className={css(styles.pageContainer)}>
                     <Link

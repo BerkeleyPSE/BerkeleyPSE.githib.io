@@ -3,48 +3,166 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
+import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+// Local Helper Files & Components
+import {
+  ABOUT_PATH,
+  CAREERS_PATH,
+  RECRUITMENT_PATH,
+  WHYPSE_PATH,
+  APPLICATION_PATH,
+  BROTHERS_PATH
+} from './Navbar/navbar_constants.jsx';
 
 const homeInfo = [
   {
-    imgSrc: '/images/home/alumni.JPG',
-    message: 'Join Our Brotherhood',
-    buttonText: 'Apply',
-    buttonLink: '/app'
+    imgSrc: '/images/home/pi_sigma_epsilon.jpg',
+    message: "UC Berkeley's Marketing & Business Fraternity",
+    text: 'Apply Now',
+    link: APPLICATION_PATH
+  },
+  {
+    imgSrc: '/images/home/brotherhood.JPG',
+    message: 'Who We Are',
+    text: 'Meet the Chapter',
+    link: BROTHERS_PATH
+  },
+  {
+    imgSrc: '/images/home/meet_the_chapter.JPG',
+    message: 'Where We Are',
+    text: 'Join Us',
+    link: RECRUITMENT_PATH
+  },
+  {
+    imgSrc: '/images/home/our_history.JPG',
+    message: 'What We Came From',
+    text: 'Our History',
+    link: ABOUT_PATH
   },
   {
     imgSrc: '/images/home/alumni.JPG',
-    message: 'Hahaha',
-    buttonText: 'This is us',
-    buttonLink: 'Gotta laugh'
+    message: "Where We're Going",
+    text: 'Our Careers',
+    link: CAREERS_PATH
   }
 ];
 
 export default class Home extends React.Component {
   render() {
-    const carouselItems = homeInfo.map((item, index) => {
+    const slideItems = homeInfo.map((item, index) => {
       return (
-        <div className={css(styles.imageContainer)} key={index}>
-          <img src={item.imgSrc} className={css(styles.image)} />
+        <div className={css(styles.slide)} key={index}>
+          <img
+            src={item.imgSrc}
+            className={css(styles.image)}
+            alt={item.message}
+          />
+          <div className={css(styles.overlayContainer)}>
+            <h1 className={css(styles.header)}>
+              {item.message}
+            </h1>
+            <Link className={css(styles.link)} to={item.link}>
+              {item.text}
+            </Link>
+          </div>
         </div>
       );
     });
 
-    return <div className={css(styles.homeContainer)} />;
+    return (
+      <div className={css(styles.homeContainer)}>
+        <div className={css(styles.sliderContainer)}>
+          <Slider
+            accessibility={true}
+            className={css(styles.innerSlider)}
+            adaptiveHeight={false}
+            arrows={false}
+            autoplay={true}
+            autoplaySpeed={4500}
+            centerMode={false}
+            draggable={false}
+            dots={true}
+            dotsClass={css(styles.dots) + ' slick-dots'}
+            fade={true}
+            focusOnSelect={true}
+            infinite={true}
+            initialSlide={0}
+            lazyLoad={true}
+            pauseOnHover={false}
+            slidesToShow={1}
+            slidesToScroll={1}
+            swipe={true}
+          >
+            {slideItems}
+          </Slider>
+        </div>
+      </div>
+    );
   }
 }
 
 const styles = StyleSheet.create({
   homeContainer: {
-    width: '100%',
-    height: '100%'
+    backgroundColor: '#818181'
   },
 
-  imageContainer: {
+  sliderContainer: {
+    margin: '0',
+    padding: '0 0 40px 0'
+  },
+
+  slide: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative'
+  },
+
+  innerSlider: {
+    maxWidth: '100%',
+    padding: '0 0 20px 0',
+    margin: '0'
+  },
+
+  dots: {},
+
+  overlayContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute'
+  },
+
+  header: {
+    color: '#FFF',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '2.5em',
+    fontWeight: '500',
+    letterSpacing: '0.025em',
+    textAlign: 'center'
+  },
+
+  link: {
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    border: '2px solid #FFF',
+    color: '#FFF',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '1em',
+    fontWeight: 'bold',
+    letterSpacing: '0.025em',
+    padding: '10px 20px',
+    textAlign: 'center',
     textDecoration: 'none',
-    height: '100%'
-  },
-
-  image: {
-    // width: '100%',
+    textTransform: 'uppercase',
+    ':hover': {
+      backgroundColor: '#FFF',
+      border: '2px solid #895FAD',
+      color: '#895FAD'
+    }
   }
 });

@@ -32,9 +32,9 @@ export default class DropdownUnit extends React.Component {
       menuAlign: 'right'
     };
 
-    var pageLinks = this.props.pages.map((page, index) => {
+    var pageLinks = this.props.pages.map(page => {
       return (
-        <li className={css(styles.pageLi)} key={index}>
+        <li className={css(styles.pageLi)} key={page.page}>
           <Link to={page.pageLink} className={css(styles.pageLink)}>
             {page.page}
           </Link>
