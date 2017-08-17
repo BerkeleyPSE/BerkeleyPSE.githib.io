@@ -3,9 +3,6 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.css';
-import 'react-responsive-carousel/lib/styles/main.css';
 
 const homeInfo = [
   {
@@ -32,21 +29,7 @@ export default class Home extends React.Component {
       );
     });
 
-    return (
-      <div className={css(styles.homeContainer)}>
-        <Carousel
-          axis={'horizontal'}
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-          showIndicators={true}
-          infiniteLoop={true}
-          id="carousel"
-        >
-          {carouselItems}
-        </Carousel>
-      </div>
-    );
+    return <div className={css(styles.homeContainer)} />;
   }
 }
 
