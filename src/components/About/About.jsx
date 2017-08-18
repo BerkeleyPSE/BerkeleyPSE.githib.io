@@ -52,7 +52,7 @@ export default class About extends React.Component {
             </p>
             <div className={css(styles.imageContainer)}>
               <p className={css(styles.caption)}>
-                <strong>ALPHA CLASS</strong>
+                <strong>OUR FOUNDERS</strong>
                 <br />
                 Lydia Kim, Cynthia Huang, Peggy Lin
                 <br />

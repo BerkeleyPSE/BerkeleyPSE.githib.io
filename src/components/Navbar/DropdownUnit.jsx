@@ -146,6 +146,11 @@ const styles = StyleSheet.create({
 
     ':hover': {
       color: '#FFD700'
+    },
+
+    ':active': {
+      backgroundColor: '#303030',
+      color: '#FFD700'
     }
   },
 

@@ -38,7 +38,7 @@ const homeInfo = [
     link: RECRUITMENT_PATH
   },
   {
-    imgSrc: '/images/home/our_history.JPG',
+    imgSrc: '/images/home/pse_banquet.JPG',
     message: 'What We Came From',
     text: 'Our History',
     link: ABOUT_PATH
@@ -150,7 +150,8 @@ const styles = StyleSheet.create({
     fontSize: '2.5em',
     fontWeight: '500',
     letterSpacing: '0.025em',
-    textAlign: 'center'
+    textAlign: 'center',
+    padding: '0 20px'
   },
 
   link: {
