@@ -2,7 +2,7 @@
 import React from 'react';
 
 // NPM Modules
-import { StyleSheet, css } from 'aphrodite'; // remove this later
+import { StyleSheet, css } from 'aphrodite';
 import { NavLink } from 'react-router-dom';
 import { stack as Menu } from 'react-burger-menu';
 
@@ -152,7 +152,6 @@ const menuStyles = {
   bmMenu: {
     background: '#303030',
     padding: '2.5em 2em 0',
-    // textAlign: 'right',
     fontSize: '1em',
     color: '#FFF',
     width: `${MENU_WIDTH}px`,
