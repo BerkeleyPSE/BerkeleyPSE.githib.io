@@ -52,17 +52,16 @@ export default class WhyPSE extends React.Component {
                 So now, as the VP of Marketing for PSE, I love my decision in
                 joining this fraternity for several reasons.
                 <br /> <br />
-                (1) PSE didn’t (and doesn’t) haze. As a prospective member, I
-                was never forced to do anything I didn’t want to do. I didn’t
-                have to wake up at 6am in a suit-and-tie and run to campus to
-                flyer students. I didn’t experience any physical or emotional
-                abuse because my work wasn’t perfect or I asked for more
-                direction. I didn’t drink and do mindless work. I didn’t
-                sacrifice my academics or cut off all communication to my
-                friends because I was in the training process. My PMT was fun
-                and educational. I grew closer with my fellow Thetas because we
-                all enjoyed showing up and putting in the work in a positive
-                environment.
+                (1) PSE doesn’t haze. As a prospective member, I was never
+                forced to do anything I didn’t want to do. I didn’t have to wake
+                up at 6am in a suit-and-tie and run to campus to flyer students.
+                I didn’t experience any physical or emotional abuse because my
+                work wasn’t perfect or I asked for more direction. I didn’t
+                drink and do mindless work. I didn’t sacrifice my academics or
+                cut off all communication to my friends because I was in the
+                training process. My PMT was fun and educational. I grew closer
+                with my fellow Thetas because we all enjoyed showing up and
+                putting in the work in a positive environment.
                 <br /> <br />
                 I believe that when a fraternity hazes its prospective members,
                 it ingrains a negative culture in the brotherhood. The mindset
@@ -92,9 +91,10 @@ export default class WhyPSE extends React.Component {
                 visited corporate offices with Akshay and Eva, taught Jon to use
                 Adobe Photoshop, ran to the Berkeley Marina with Taylor, Kevin,
                 Charissa, and Emma, studied with Abhi and Catie during dead
-                week, and even picked up two spectacular Littles in Kyle and
-                Varsha. PSE has given me a brotherhood that shares my values and
-                genuinely cares for my happiness and success.
+                week, worked on the Under Armour project with Nancy and Adil,
+                and even picked up two spectacular Littles in Kyle and Varsha.
+                PSE has given me a brotherhood that genuinely cares for my
+                happiness and success.
               </p>
               <div className={css(styles.imagesContainer)}>
                 <img
