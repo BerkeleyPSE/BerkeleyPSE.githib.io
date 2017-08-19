@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://berkeleypse.github.io/",
+  "homepage": "https://berkeleypse.github.io",
   "dependencies": {
     "aphrodite": "^1.2.3",
     "gh-pages": "^1.0.0",
