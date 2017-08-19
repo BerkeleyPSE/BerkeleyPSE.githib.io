@@ -128,7 +128,7 @@ const brotherInfo = {
   catie_fan: {
     img: 'images/brothers/catie_fan.jpg',
     name: 'Catie Fan',
-    position: 'Prospective Member Trainer',
+    position: 'Prospective Member Mom',
     year: 'Sophomore',
     hometown: 'San Diego, CA',
     class: 'Iota',
@@ -466,7 +466,7 @@ const brotherInfo = {
   kyle_lu: {
     img: 'images/brothers/kyle_lu.jpg',
     name: 'Kyle Lu',
-    position: 'Prospective Member Trainer',
+    position: 'Active',
     year: 'Junior',
     hometown: 'Cerritos, CA',
     class: 'Iota',
@@ -636,7 +636,7 @@ const brotherInfo = {
   rushil_desai: {
     img: 'images/brothers/rushil_desai.jpg',
     name: 'Rushil Desai',
-    position: 'Prospective Member Trainer',
+    position: 'Prospective Member Dad',
     year: 'Senior',
     hometown: 'Santa Cruz, CA',
     class: 'Zeta',

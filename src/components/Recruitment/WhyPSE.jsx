@@ -10,15 +10,37 @@ import { animations } from '../../stylesheets/Animations.js';
 export default class WhyPSE extends React.Component {
   render() {
     return (
-      <div className={css(styles.whyPSEContainer, animations.fadeIn)}>
+      <div className={css(animations.fadeIn) + ' why-pse-container'}>
         <h1 className={css(styles.header)}>Why Pi Sigma Epsilon?</h1>
-        <div className={css(styles.bodyContainer)}>
+        <div className="body-container">
           <div className={css(styles.section, styles.darkBackground)}>
-            <p className={css(styles.description, styles.lightDescription)} />
+            <p
+              className={css(
+                styles.description,
+                styles.lightDescription,
+                styles.constrain
+              )}
+            >
+              Pi Sigma Epsilon provides the perfect balance of professionalism
+              and brotherhood. Throughout the Prospective Member Training
+              process, our PMs gain professional skills that leave a lasting
+              impact on their long-term careers. As a result, our brothers land
+              jobs at top-tier companies. Additionally, our brothers gain access
+              to a tight-knit alumni network and are able to foster professional
+              connections even after graduating.
+              <br /> <br />
+              What really makes PSE special is our tight-knit brotherhood. Most
+              brothers would say that some of their closest social circle is
+              PSE. As a whole fraternity, we often do social events such as an
+              overnight retreat. On a day-to-day basis, brothers will typically
+              hangout with each other or study with each other. These bonds that
+              are created in PSE will last a lifetime and most of our alumni
+              come back and visit our chapter, year after year.
+            </p>
           </div>
           <div className={css(styles.section, styles.lightBackground)}>
             <h2 className={css(styles.sectionHeader, styles.darkBottom)}>
-              Rahul's Testimonial
+              Rahul Rangnekar
             </h2>
             <div className={css(styles.descriptionContainer)}>
               <p className={css(styles.description, styles.darkDescription)}>
@@ -113,8 +135,6 @@ export default class WhyPSE extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  whyPSEContainer: {},
-
   header: {
     color: '#895FAD',
     fontFamily: 'Lato, sans-serif',
@@ -124,8 +144,6 @@ const styles = StyleSheet.create({
     padding: '30px 0',
     textAlign: 'center'
   },
-
-  bodyContainer: {},
 
   section: {
     padding: '40px 30px'
@@ -164,6 +182,17 @@ const styles = StyleSheet.create({
 
   lightDescription: {
     color: '#FFF'
+  },
+
+  constrain: {
+    textAlign: 'center',
+    margin: 'auto',
+    '@media (min-width: 320px)': {
+      width: '95%'
+    },
+    '@media (min-width: 768px)': {
+      width: '70%'
+    }
   },
 
   sectionHeader: {
