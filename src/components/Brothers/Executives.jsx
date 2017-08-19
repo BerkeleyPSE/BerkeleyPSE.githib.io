@@ -21,7 +21,7 @@ export default class Executives extends React.Component {
       <div className={css(animations.fadeIn) + ' brotherhood-container'}>
         <div className={css(styles.landingContainer)}>
           <img
-            src={'../images/executive_board.jpg'}
+            src={'../images/executive_board.JPG'}
             className={css(styles.image)}
             alt={'Pi Sigma Epsilon executive board'}
           />

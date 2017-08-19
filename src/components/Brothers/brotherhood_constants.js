@@ -363,7 +363,7 @@ const brotherInfo = {
 
   /* 18 */
   justin_tan: {
-    img: 'images/brothers/justin_tan.jpg',
+    img: 'images/brothers/justin_tan.JPG',
     name: 'Justin Tan',
     position: 'Director of Brotherhood',
     year: 'Junior',
@@ -566,7 +566,7 @@ const brotherInfo = {
 
   /* 30 */
   nicholas_chun: {
-    img: 'images/brothers/nicholas_chun.jpg',
+    img: 'images/brothers/nicholas_chun.JPG',
     name: 'Nick Chun',
     position: 'Vice President of Finance',
     year: 'Junior',

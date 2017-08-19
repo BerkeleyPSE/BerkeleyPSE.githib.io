@@ -26,19 +26,19 @@ const homeInfo = [
     link: APPLICATION_PATH
   },
   {
-    imgSrc: '/images/home/brotherhood.JPG',
+    imgSrc: '/images/home/brotherhood.jpg',
     message: 'Who We Are',
     text: 'Meet the Chapter',
     link: BROTHERS_PATH
   },
   {
-    imgSrc: '/images/home/meet_the_chapter.JPG',
+    imgSrc: '/images/home/meet_the_chapter.jpg',
     message: 'Where We Are',
     text: 'Join Us',
     link: RECRUITMENT_PATH
   },
   {
-    imgSrc: '/images/home/pse_banquet.JPG',
+    imgSrc: '/images/home/pse_banquet.jpg',
     message: 'What We Came From',
     text: 'Our History',
     link: ABOUT_PATH

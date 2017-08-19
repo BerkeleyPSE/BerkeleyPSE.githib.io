@@ -46,7 +46,7 @@ export default class AppBanner extends React.Component {
 
 const styles = StyleSheet.create({
   appBannerContainer: {
-    backgroundColor: '#895FAD',
+    backgroundColor: '#818181',
     color: '#FFF',
     display: 'flex',
     flexDirection: 'row',
