@@ -2,8 +2,10 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://berkeleypse.github.io",
   "dependencies": {
     "aphrodite": "^1.2.3",
+    "gh-pages": "^1.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.0.1",
     "prettier": "^1.5.3",
@@ -35,6 +37,8 @@
   },
   "scripts": {
     "precommit": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
