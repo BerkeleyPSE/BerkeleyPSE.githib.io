@@ -35,6 +35,7 @@ import Error404 from '../Error404';
 // Other Local Components
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import AppBanner from '../reusable_components/AppBanner.jsx';
 
 // Page URLs
 import {
@@ -55,6 +56,7 @@ export default class Routes extends React.Component {
     return (
       <div className={css(styles.routerContainer)}>
         <Navbar />
+        <AppBanner />
         <div className={css(styles.mainContainer)}>
           <Switch>
             <Route exact path={HOME_PATH} component={Home} />
