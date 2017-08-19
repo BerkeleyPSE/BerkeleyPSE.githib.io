@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Local Helper Files & Components
+import { animations } from '../stylesheets/Animations.js';
 import {
   ABOUT_PATH,
   CAREERS_PATH,
@@ -80,7 +81,7 @@ export default class Home extends React.Component {
     });
 
     return (
-      <div className={css(styles.homeContainer)}>
+      <div className={css(styles.homeContainer, animations.fadeIn)}>
         <div className={css(styles.sliderContainer)}>
           <Slider
             accessibility={true}
