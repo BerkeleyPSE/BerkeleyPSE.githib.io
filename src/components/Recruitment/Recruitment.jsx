@@ -3,7 +3,6 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
-// import FlipCard from 'react-flipcard';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
