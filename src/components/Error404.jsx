@@ -15,6 +15,8 @@ export default class Error404 extends React.Component {
   }
 
   render() {
+    document.title = 'Error :( - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     return (
       <div className={css(styles.errorContainer)}>
         <p className={css(styles.errorMsg)}>

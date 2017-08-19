@@ -55,6 +55,8 @@ export default class Brother extends React.Component {
       return null;
     }
 
+    document.title = `${bro.name} - Pi Sigma Epsilon | Zeta Chi Chapter`;
+
     const infoTable = infoList.map(item => {
       if (bro[item]) {
         return (

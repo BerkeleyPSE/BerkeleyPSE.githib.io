@@ -11,6 +11,8 @@ import { BrotherImage } from './BrotherImage.jsx';
 
 export default class Brotherhood extends React.Component {
   render() {
+    document.title = 'Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const allBrothers = brotherList.map(brother => {
       return <BrotherImage brother={brother} key={brother} page="bros" />;
     });

@@ -26,6 +26,8 @@ export default class FAQs extends React.Component {
   };
 
   render() {
+    document.title = 'FAQs - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const faqs = faq_constants.map((item, index) => {
       if (item.question && item.answer) {
         return (

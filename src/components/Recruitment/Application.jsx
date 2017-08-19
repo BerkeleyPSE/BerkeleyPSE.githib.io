@@ -9,6 +9,8 @@ import { animations } from '../../stylesheets/Animations.js';
 
 export default class Application extends React.Component {
   render() {
+    document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     return (
       <div className={css(styles.appContainer, animations.fadeIn)}>
         <h1 className={css(styles.header)}>Fall 2017 Application</h1>
@@ -20,6 +22,7 @@ export default class Application extends React.Component {
         </p>
         <div className={css(styles.formContainer)}>
           <iframe
+            title="Fall 2017 Pre-Registration"
             className="center-block"
             src="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSfua72kmqeFJYEpLEZiuUd30vMqJWxUuqKxCQ_tHExJoerndg/viewform?embedded=true"
             width="100%"

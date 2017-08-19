@@ -11,6 +11,8 @@ import { BrotherImage } from './BrotherImage.jsx';
 
 export default class Executives extends React.Component {
   render() {
+    document.title = 'Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const executives = executiveList.map(brother => {
       return <BrotherImage brother={brother} key={brother} page="execs" />;
     });

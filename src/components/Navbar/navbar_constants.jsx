@@ -2,7 +2,6 @@
 export const HOME_PATH = '/';
 export const ABOUT_PATH = '/about';
 export const CAREERS_PATH = '/careers';
-export const SPONSOR_PATH = '/sponsor';
 export const RECRUITMENT_PATH = '/recruitment';
 export const WHYPSE_PATH = '/why-pse';
 export const FAQS_PATH = '/faqs';
@@ -35,10 +34,6 @@ export const navbar_constants = [
         page: 'Careers',
         pageLink: CAREERS_PATH
       }
-      // {
-      //   page: 'Sponsors',
-      //   pageLink: SPONSOR_PATH
-      // }
     ]
   },
   {

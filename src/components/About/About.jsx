@@ -9,6 +9,8 @@ import { animations } from '../../stylesheets/Animations.js';
 
 export default class About extends React.Component {
   render() {
+    document.title = 'About - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     return (
       <div className={css(animations.fadeIn) + ' about-container'}>
         <h1 className={css(styles.header)}>About Us</h1>

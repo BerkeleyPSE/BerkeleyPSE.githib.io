@@ -22,7 +22,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../Home';
 import About from '../About/About';
 import Careers from '../About/Careers';
-import Sponsor from '../About/Sponsor';
 import Recruitment from '../Recruitment/Recruitment';
 import WhyPSE from '../Recruitment/WhyPSE';
 import FAQs from '../Recruitment/FAQs';
@@ -42,7 +41,6 @@ import {
   HOME_PATH,
   ABOUT_PATH,
   CAREERS_PATH,
-  SPONSOR_PATH,
   RECRUITMENT_PATH,
   WHYPSE_PATH,
   FAQS_PATH,
@@ -62,7 +60,6 @@ export default class Routes extends React.Component {
             <Route exact path={HOME_PATH} component={Home} />
             <Route path={ABOUT_PATH} component={About} />
             <Route path={CAREERS_PATH} component={Careers} />
-            <Route path={SPONSOR_PATH} component={Sponsor} />
             <Route path={RECRUITMENT_PATH} component={Recruitment} />
             <Route path={WHYPSE_PATH} component={WhyPSE} />
             <Route path={FAQS_PATH} component={FAQs} />

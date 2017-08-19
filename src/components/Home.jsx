@@ -14,7 +14,6 @@ import {
   ABOUT_PATH,
   CAREERS_PATH,
   RECRUITMENT_PATH,
-  WHYPSE_PATH,
   APPLICATION_PATH,
   BROTHERS_PATH
 } from './Navbar/navbar_constants.jsx';
@@ -60,6 +59,8 @@ const homeInfo = [
 
 export default class Home extends React.Component {
   render() {
+    document.title = 'Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const slideItems = homeInfo.map((item, index) => {
       return (
         <div className={css(styles.slide)} key={index}>
@@ -114,12 +115,12 @@ export default class Home extends React.Component {
 
 const styles = StyleSheet.create({
   homeContainer: {
-    backgroundColor: '#818181'
+    backgroundColor: '#FFF'
   },
 
   sliderContainer: {
     margin: '0',
-    padding: '0 0 40px 0'
+    padding: '0 0 45px 0'
   },
 
   slide: {

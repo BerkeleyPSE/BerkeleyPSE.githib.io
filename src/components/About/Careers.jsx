@@ -9,10 +9,12 @@ import 'react-table/react-table.css';
 // Local Helper Files
 import { animations } from '../../stylesheets/Animations.js';
 import { fulltime_columns, fulltime_careers } from './fulltime_constants';
-import { intern_columns, internships } from './intern_constants';
+// import { intern_columns, internships } from './intern_constants';
 
 export default class Careers extends React.Component {
   render() {
+    document.title = 'Careers - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     return (
       <div className={css(animations.fadeIn) + ' careers-container'}>
         <h1 className={css(styles.header)}>Careers</h1>

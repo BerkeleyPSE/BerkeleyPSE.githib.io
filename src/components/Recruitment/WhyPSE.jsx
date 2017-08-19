@@ -9,6 +9,8 @@ import { animations } from '../../stylesheets/Animations.js';
 
 export default class WhyPSE extends React.Component {
   render() {
+    document.title = 'Why PSE? - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     return (
       <div className={css(animations.fadeIn) + ' why-pse-container'}>
         <h1 className={css(styles.header)}>Why Pi Sigma Epsilon?</h1>

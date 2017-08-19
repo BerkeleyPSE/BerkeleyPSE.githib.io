@@ -3,7 +3,6 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
-import { Link } from 'react-router-dom';
 // import FlipCard from 'react-flipcard';
 
 // Local Helper Files & Components
@@ -36,6 +35,8 @@ const hoverCardItems = [
 
 export default class Recruitment extends React.Component {
   render() {
+    document.title = 'Recruitment - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const hoverCards = hoverCardItems.map((item, index) => {
       return (
         <HoverCard
@@ -52,6 +53,7 @@ export default class Recruitment extends React.Component {
         <div className="timeline-container">
           {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
           <iframe
+            title="Fall 2017 Recruitment Timeline"
             src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
             width="100%"
             height="650px"

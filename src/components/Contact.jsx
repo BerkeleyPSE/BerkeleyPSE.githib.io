@@ -30,6 +30,8 @@ const contactList = [
 
 export default class Contact extends React.Component {
   render() {
+    document.title = 'Contact - Pi Sigma Epsilon | Zeta Chi Chapter';
+
     const contactInfo = contactList.map((item, index) => {
       return (
         <p className={css(styles.contactInfo)}>
