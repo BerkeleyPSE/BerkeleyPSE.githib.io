@@ -181,7 +181,7 @@ const brotherInfo = {
     position: 'Director of Scholarship',
     year: 'Sophomore',
     hometown: 'Los Angeles, CA',
-    class: 'Kappa',
+    class: 'Iota',
     major: 'Intended Business & Economics',
     minor: '',
     career_interests: 'Investment Banking & Consulting',
@@ -374,7 +374,7 @@ const brotherInfo = {
     career_interests: 'Investment Banking & Consulting',
     previous_positions: '',
     bio:
-      "Justin's biggest lesson from PSE is that communication is the key to holding a group together. His role model is his father. Justin enjoys traveling around the world, meeting new people and hearing their stories, and playing sports. He is one of Berkeley's three MicMan and an active member in Cal Rotaract.",
+      "Justin's biggest lesson from PSE is that communication is the key to holding a group together. In PSE, he's found a family that will motivate him and push him to do his best. Justin's role model is his father. He enjoys traveling around the world, meeting new people and hearing their stories, and playing sports such as soccer and volleyball. He is one of Berkeley's three MicMen and an active member in Cal Rotaract.",
     linkedin: 'https://linkedin.com/in/justintan14'
   },
 
@@ -523,10 +523,10 @@ const brotherInfo = {
     class: 'Iota',
     major: 'Business Administration',
     minor: '',
-    career_interests: 'Digital Marketing & Brand Marketing',
+    career_interests: 'Content & Digital Marketing',
     previous_positions: '',
     bio:
-      'PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. Her role models are her parents and God. Melody is also involved in Livingwater Artist Collective, Business Careers in Entertainment, EthiCAL Apparel, and the dance team AFX. She enjoys acting, cooking, and playwriting in her free time.',
+      'PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. She is involved in the Livingwater Passion Fellowship and Business Careers in Entertainment Club. Melody enjoys acting, cooking, dancing, and playwriting in her free time.',
     linkedin: 'https://linkedin.com/in/wanmelody'
   },
 
@@ -757,9 +757,9 @@ const brotherInfo = {
     year: 'Junior',
     hometown: 'Fremont, CA',
     class: 'Iota',
-    major: 'Economics & Media Studies',
-    minor: 'Technology & Entrepreneurship Certificate',
-    career_interests: 'Digital Marketing',
+    major: 'Media Studies',
+    minor: 'Political Economy',
+    career_interests: 'Marketing, Business Development, & Brand Strategy',
     previous_positions: 'Director of External Recruitment',
     bio:
       'PSE has taught Yixuan the importance of having an excellent personal brand. It has shaped her into a more confident, knowledgeable, and professional individual through coffee chats, case competitions, and various Chapter events. PSE has introduced her to many motivated and successful individuals that she feel beyond blessed to be a part of the diverse community at Cal. Her role model is her grandmother. Yixuan was awarded 2nd place in the 2016 PwC case competition, and is also an active member of Berkeley Women in Business. She loves blogging, watercoloring, and going on road trips.',

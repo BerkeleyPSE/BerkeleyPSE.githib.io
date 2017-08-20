@@ -151,7 +151,7 @@ const menuStyles = {
 
   bmMenu: {
     background: '#303030',
-    padding: '2.5em 2em 0',
+    padding: '1.75em 2em 0',
     fontSize: '1em',
     color: '#FFF',
     width: `${MENU_WIDTH}px`,
@@ -159,7 +159,7 @@ const menuStyles = {
   },
 
   bmItemList: {
-    padding: '0.8em'
+    padding: '0.2em 0.8em'
   },
 
   bmOverlay: {

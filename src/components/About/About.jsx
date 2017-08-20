@@ -164,7 +164,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans, sans-serif',
     fontSize: '1.25em',
     fontWeight: '500',
-    padding: '0 20px'
+    padding: '0 5px',
+    textAlign: 'center',
+    '@media (min-width: 768px)': {
+      padding: '0 20px',
+      textAlign: 'left'
+    }
   },
 
   imageContainer: {

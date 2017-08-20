@@ -124,7 +124,7 @@ export default class WhyPSE extends React.Component {
                 <img
                   src={'/images/rahul.jpg'}
                   className={css(styles.image)}
-                  alt=""
+                  alt="Rahul Rangnekar"
                 />
               </div>
             </div>
@@ -148,7 +148,10 @@ const styles = StyleSheet.create({
   },
 
   section: {
-    padding: '40px 30px'
+    padding: '40px 15px',
+    '@media (min-width: 768px)': {
+      padding: '40px 30px'
+    }
   },
 
   darkBackground: {
@@ -167,7 +170,8 @@ const styles = StyleSheet.create({
     margin: 'auto',
     textAlign: 'left',
     '@media (max-width: 1200px)': {
-      flexDirection: 'column'
+      flexDirection: 'column',
+      textAlign: 'center'
     }
   },
 
@@ -175,7 +179,10 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans, sans-serif',
     fontSize: '1.25em',
     fontWeight: '500',
-    padding: '0 10px'
+    padding: '0 5px',
+    '@media(min-width: 768px)': {
+      padding: '0 20px'
+    }
   },
 
   darkDescription: {

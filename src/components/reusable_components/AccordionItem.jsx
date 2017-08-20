@@ -8,22 +8,29 @@ import { StyleSheet, css } from 'aphrodite';
 import { animations } from '../../stylesheets/Animations.js';
 
 export default class AccordionItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+  }
+
   render() {
-    let { isActive, setActiveIndex, index } = this.props;
+    let { isOpen } = this.state;
 
     return (
       <div className={css(styles.accordionItem)}>
         <div
           className={css(
             styles.headerContainer,
-            isActive ? styles.openHC : styles.closedHC
+            isOpen ? styles.openHC : styles.closedHC
           )}
-          onClick={() => setActiveIndex(index)}
+          onClick={() => this.setState({ isOpen: !isOpen })}
         >
           <h1 className={css(styles.header)}>
             {this.props.question}
           </h1>
-          {isActive
+          {isOpen
             ? <i
                 className={css(styles.chevron) + ' fa fa-chevron-up'}
                 aria-hidden="true"
@@ -36,7 +43,7 @@ export default class AccordionItem extends React.Component {
         <div
           className={css(
             styles.bodyContainer,
-            isActive ? animations.fadeInFast : styles.hidden
+            isOpen ? animations.fadeInFast : styles.hidden
           )}
         >
           <p className={css(styles.answer)}>

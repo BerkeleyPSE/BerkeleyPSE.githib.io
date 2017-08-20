@@ -20,7 +20,7 @@ export const faq_constants = [
   {
     question: 'Is there a GPA minimum?',
     answer:
-      'We have a soft GPA minimum of 3.0, but exceptions can and have been made. If your GPA is below a 3.0 and we offer you a prospective member spot, we expect you to improve upon your grades.'
+      'We have a GPA minimum of 3.0.. Applicants with a sub-3.0 GPA are still welcome to apply, but are expected to have an outstanding resume or potential.'
   },
   {
     question: 'Is there an age/year ceiling?',

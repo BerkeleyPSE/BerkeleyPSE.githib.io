@@ -179,8 +179,14 @@ const styles = StyleSheet.create({
 
   image: {
     border: '3px solid #895FAD',
-    height: '600px',
-    width: '402px'
+    '@media (min-width: 325px)': {
+      width: '325px',
+      height: '485px'
+    },
+    '@media (min-width: 425px)': {
+      width: '402px',
+      height: '600px'
+    }
   },
 
   broBio: {
