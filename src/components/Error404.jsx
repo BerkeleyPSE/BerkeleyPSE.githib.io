@@ -10,7 +10,7 @@ export default class Error404 extends React.Component {
       function() {
         this.props.history.push('/');
       }.bind(this),
-      2000
+      3000
     );
   }
 

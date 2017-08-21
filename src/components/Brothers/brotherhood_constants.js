@@ -418,14 +418,15 @@ const brotherInfo = {
     name: 'Kevin Lee',
     position: 'Chapter Secretary',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Fullerton, CA',
     class: 'Kappa',
-    major: '',
+    major: 'Economics',
     minor: '',
-    career_interests: '',
+    career_interests: 'Tax Advisory',
     previous_positions: '',
-    bio: '',
-    linkedin: ''
+    bio:
+      "PSE has taught Kevin that the people you meet mold and shape your future; PSE has given him the opportunity to realize his dreams. Kevin's role model is his father. He enjoys playing tennis, trying out new food, and singing. Kevin is also an active member of Korean American Student Association (KASA) and Coaching Corps.",
+    linkedin: 'https://www.linkedin.com/in/kevinkeyhyunlee/'
   },
 
   /* 22 */
@@ -659,7 +660,7 @@ const brotherInfo = {
     class: 'Theta',
     major: 'Economics',
     minor: '',
-    career_interests: 'Investment Banking & Corporate Strategy',
+    career_interests: 'Corporate Strategy & Financial Technology',
     previous_positions: 'Prospective Member Trainer',
     bio:
       'PSE has taught Sean to be a great communicator. From networking with professionals at career fairs, to public speaking and giving presentations, and to casual chats with strangers, communication has unlocked multiple doors for him and has helped him to develop as an individual. His parents are his role models. Sean was previously involved in Berkeley ABA (Asian Business Association), and his hobbies include playing golf, fishing, and traveling.',

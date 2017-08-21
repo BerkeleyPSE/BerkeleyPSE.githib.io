@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
-import { APPLICATION_PATH } from '../Navbar/navbar_constants.jsx';
 
 export default class AppBanner extends React.Component {
   constructor(props) {
@@ -29,7 +28,11 @@ export default class AppBanner extends React.Component {
           <p className={css(styles.message)}>
             Our Fall 2017 Recruitment is here! RSVP to our Facebook Event!
           </p>
-          <Link to={APPLICATION_PATH} className={css(styles.linkButton)}>
+          <Link
+            to={'https://www.facebook.com/events/112518222782092/'}
+            className={css(styles.linkButton)}
+            target="blank"
+          >
             I'm going!
           </Link>
         </div>
@@ -47,6 +50,7 @@ export default class AppBanner extends React.Component {
 const styles = StyleSheet.create({
   appBannerContainer: {
     backgroundColor: '#818181',
+    // borderBottom: '2px solid #303030',
     color: '#FFF',
     display: 'flex',
     flexDirection: 'row',
@@ -56,7 +60,8 @@ const styles = StyleSheet.create({
     fontSize: '1em',
     margin: 'auto',
     textAlign: 'center',
-    width: '100%'
+    width: '100%',
+    zIndex: '2'
   },
 
   messageContainer: {
