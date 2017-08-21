@@ -147,14 +147,15 @@ const brotherInfo = {
     name: 'Charissa Saputra',
     position: 'Director of Technology',
     year: 'Junior',
-    hometown: '',
+    hometown: 'Irvine, CA',
     class: 'Kappa',
-    major: '',
-    minor: '',
-    career_interests: '',
+    major: 'Media Studies',
+    minor: 'Environmental Science',
+    career_interests: 'Brand Marketing & Social Impact Consulting',
     previous_positions: '',
-    bio: '',
-    linkedin: ''
+    bio:
+      "PSE has allowed Charissa to grow personally and professionally. When joining PSE, she acquired many skills applicable in the workforce that classes never taught her, such as interview and networking tips. Learning from her peers, Charissa became more aware of different fields of business that she was not comfortable with, such as finance. Learning from the companies PSE has networked with, she gained exposure to the many positions available within one sector of business that she is interested in. Personally, PSE allowed Charissa to see her potential and become more confident in her abilities. Charissa's role model is Michelle Obama, and enjoys running and reading in her free time. She is also involved in CalTV.",
+    linkedin: 'linkedin.com/in/charissasaputra'
   },
 
   /* 6 */
@@ -707,14 +708,15 @@ const brotherInfo = {
     name: 'Tia Chen-Wong',
     position: 'Active',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Rancho Santa Margarita, CA',
     class: 'Kappa',
-    major: '',
-    minor: '',
-    career_interests: '',
+    major: 'Intended Business',
+    minor: 'English',
+    career_interests: 'Marketing',
     previous_positions: '',
-    bio: '',
-    linkedin: ''
+    bio:
+      'Emma has learned to deck beautiful presentations, the mechanics of case competitions, and public speaking skills through PSE. Her role models are actress Emma Watson and Eleanor Roosevelt. Tia enjoys writing creatively, hiking, and reading literature. She is a Resident Assistant (RA) in the Units.',
+    linkedin: 'www.linkedin.com/in/tiare-chen-wong'
   },
 
   /* 39 */
