@@ -367,7 +367,7 @@ const brotherInfo = {
 
   /* 18 */
   justin_tan: {
-    img: `${imagePath}/justin_tan.jpg`,
+    img: `${imagePath}/justin_tan.JPG`,
     name: 'Justin Tan',
     position: 'Director of Brotherhood',
     year: 'Junior',
