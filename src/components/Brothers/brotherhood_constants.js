@@ -11,6 +11,9 @@ THIS FILE CONTAINS ALL INFORMATION NEEDED FOR THE COMPONENTS:
 these MUST match EXACTLY the name "keys" in the brotherInfo Object,
 or else the brother will not be rendered in Brotherhood
 ***/
+
+const imagePath = 'images/brothers';
+
 const brotherList = [
   'aaron_corona',
   'abhi_nathan',
@@ -75,7 +78,7 @@ this is an Object of information for every brother
 const brotherInfo = {
   /* 1 */
   aaron_corona: {
-    img: 'images/brothers/aaron_corona.jpg',
+    img: `${imagePath}/aaron_corona.jpg`,
     name: 'Aaron Corona',
     position: 'Vice President of Public Relations',
     year: 'Senior',
@@ -92,7 +95,7 @@ const brotherInfo = {
 
   /* 2 */
   abhi_nathan: {
-    img: 'images/brothers/abhi_nathan.jpg',
+    img: `${imagePath}/abhi_nathan.jpg`,
     name: 'Abhi Nathan',
     position: 'Director of External Recruitment',
     year: 'Sophomore',
@@ -109,7 +112,7 @@ const brotherInfo = {
 
   /* 3 */
   akshay_madane: {
-    img: 'images/brothers/akshay_madane.jpg',
+    img: `${imagePath}/akshay_madane.jpg`,
     name: 'Akshay Madane',
     position: 'Active',
     year: 'Senior',
@@ -126,7 +129,7 @@ const brotherInfo = {
 
   /* 4 */
   catie_fan: {
-    img: 'images/brothers/catie_fan.jpg',
+    img: `${imagePath}/catie_fan.jpg`,
     name: 'Catie Fan',
     position: 'Prospective Member Mom',
     year: 'Sophomore',
@@ -138,12 +141,12 @@ const brotherInfo = {
     previous_positions: 'Director of Projects',
     bio:
       "Through PSE, Catie has learned invaluable professional skills to help her tackle interviews, presentations, and more. She's also learned the value of hard work, and every brother inspires her in a unique way to be a better person every day. She looks to Beyonce as a role model. Catie is also on the Cal Mock Trial team here at Berkeley, and won 2nd place at the 2016 PwC case competition. She loves to sing, travel, and visit art museums.",
-    linkedin: 'https://www.linkedin.com/in/catie-fan'
+    linkedin: 'https://linkedin.com/in/catie-fan'
   },
 
   /* 5 */
   charissa_saputra: {
-    img: 'images/brothers/charissa_saputra.jpg',
+    img: `${imagePath}/charissa_saputra.jpg`,
     name: 'Charissa Saputra',
     position: 'Director of Technology',
     year: 'Junior',
@@ -155,12 +158,12 @@ const brotherInfo = {
     previous_positions: '',
     bio:
       "PSE has allowed Charissa to grow personally and professionally. When joining PSE, she acquired many skills applicable in the workforce that classes never taught her, such as interview and networking tips. Learning from her peers, Charissa became more aware of different fields of business that she was not comfortable with, such as finance. Learning from the companies PSE has networked with, she gained exposure to the many positions available within one sector of business that she is interested in. Personally, PSE allowed Charissa to see her potential and become more confident in her abilities. Charissa's role model is Michelle Obama, and enjoys running and reading in her free time. She is also involved in CalTV.",
-    linkedin: 'linkedin.com/in/charissasaputra'
+    linkedin: 'https://linkedin.com/in/charissasaputra'
   },
 
   /* 6 */
   clevian_hsia: {
-    img: 'images/brothers/clevian_hsia.jpg',
+    img: `${imagePath}/clevian_hsia.jpg`,
     name: 'Clevian Hsia',
     position: 'Active',
     year: 'Sophomore',
@@ -177,7 +180,7 @@ const brotherInfo = {
 
   /* 7 */
   connor_smith: {
-    img: 'images/brothers/connor_smith.jpg',
+    img: `${imagePath}/connor_smith.jpg`,
     name: 'Connor Smith',
     position: 'Director of Scholarship',
     year: 'Sophomore',
@@ -194,7 +197,7 @@ const brotherInfo = {
 
   /* 8 */
   dallas_taylor: {
-    img: 'images/brothers/dallas_taylor.jpg',
+    img: `${imagePath}/dallas_taylor.jpg`,
     name: 'Dallas Taylor',
     position: 'Active',
     year: 'Senior',
@@ -210,24 +213,24 @@ const brotherInfo = {
 
   /* 9 */
   dhakshi_balakumar: {
-    img: 'images/brothers/dhakshi_balakumar.jpg',
+    img: `${imagePath}/dhakshi_balakumar.jpg`,
     name: 'Dhakshi Balakumar',
     position: 'Director of Philanthropy',
     year: 'Sophomore',
     hometown: 'Alpharetta, GA',
     class: 'Iota',
-    major: 'Intended Business & Cognitive Science',
+    major: 'Cognitive Science',
     minor: '',
     career_interests: 'Consulting',
-    previous_positions: 'Director of Internal Recruitment',
+    previous_positions: 'Director of External Recruitment',
     bio:
-      'PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. Dhakshi was honored to receive Alpharetta Rotary’s Scholarship as she always wants to live by their motto, service above self. She is involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.',
+      'PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. She is a facilitator for the Introduction to Leadership & Culture Decal, a dancer in Maya at Cal, a Golder Bear Orientation Leader, and involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.',
     linkedin: 'https://linkedin.com/in/dhakshib'
   },
 
   /* 10 */
   emma_tsuneishi: {
-    img: 'images/brothers/emma_tsuneishi.jpg',
+    img: `${imagePath}/emma_tsuneishi.jpg`,
     name: 'Emma Tsuneishi',
     position: 'Active',
     year: 'Sophomore',
@@ -244,7 +247,7 @@ const brotherInfo = {
 
   /* 11 */
   esther_choe: {
-    img: 'images/brothers/esther_choe.jpg',
+    img: `${imagePath}/esther_choe.jpg`,
     name: 'Esther Choe',
     position: 'Active',
     year: 'Senior',
@@ -261,7 +264,7 @@ const brotherInfo = {
 
   /* 12 */
   eva_su: {
-    img: 'images/brothers/eva_su.jpg',
+    img: `${imagePath}/eva_su.jpg`,
     name: 'Eva Su',
     position: 'Active',
     year: 'Sophomore',
@@ -278,7 +281,7 @@ const brotherInfo = {
 
   /* 13 */
   harika_kalluri: {
-    img: 'images/brothers/harika_kalluri.jpg',
+    img: `${imagePath}/harika_kalluri.jpg`,
     name: 'Harika Kalluri',
     position: 'Director of Professional Development',
     year: 'Sophomore',
@@ -296,7 +299,7 @@ const brotherInfo = {
   /* 14 */
   howard_huang: {
     // img: 'images/brothers/howard_huang.jpg', // TODO
-    img: 'images/brothers/bro-placeholder.jpg',
+    img: `${imagePath}/bro-placeholder.jpg`,
     name: 'Howard Huang',
     position: 'Director of Brotherhood',
     year: 'Senior',
@@ -308,12 +311,12 @@ const brotherInfo = {
     previous_positions: '',
     bio:
       "As a transfer student, PSE has given Howard the confidence and skills that helped him transition socially and professionally into a new environment at Cal. Cases, info sessions, and mock interviews have better prepared him for real-world experiences. Howard's role models are his parents. He is an avid musician and athlete - he collects vinyls, and plays piano and volleyball. Howard is also a member of Voyager Consulting, and was a brother of PSE Beta Kappa at Cal Poly Pomona.",
-    linkedin: 'https://www.linkedin.com/in/chinhaohowardhuang'
+    linkedin: 'https://linkedin.com/in/chinhaohowardhuang'
   },
 
   /* 15 */
   jacqueline_tsang: {
-    img: 'images/brothers/jacqueline_tsang.jpg',
+    img: `${imagePath}/jacqueline_tsang.jpg`,
     name: 'Jacqueline Tsang',
     position: 'Director of Internal Recruitment',
     year: 'Junior',
@@ -331,7 +334,7 @@ const brotherInfo = {
   /* 16 */
   jeanine_liu: {
     // img: 'images/brothers/jeanine_liu.jpg', // TODO
-    img: 'images/brothers/bro-placeholder.jpg',
+    img: `${imagePath}/bro-placeholder.jpg`,
     name: 'Jeanine Liu',
     position: 'Active',
     year: 'Senior',
@@ -347,7 +350,7 @@ const brotherInfo = {
 
   /* 17 */
   jonathan_duan: {
-    img: 'images/brothers/jonathan_duan.jpg',
+    img: `${imagePath}/jonathan_duan.jpg`,
     name: 'Jonathan Duan',
     position: 'Active',
     year: 'Senior',
@@ -364,7 +367,7 @@ const brotherInfo = {
 
   /* 18 */
   justin_tan: {
-    img: 'images/brothers/justin_tan.JPG',
+    img: `${imagePath}/justin_tan.jpg`,
     name: 'Justin Tan',
     position: 'Director of Brotherhood',
     year: 'Junior',
@@ -381,7 +384,7 @@ const brotherInfo = {
 
   /* 19 */
   kailin_li: {
-    img: 'images/brothers/kailin_li.jpg',
+    img: `${imagePath}/kailin_li.jpg`,
     name: 'Kailin Li',
     position: 'Vice President of Human Relations',
     year: 'Senior',
@@ -398,7 +401,7 @@ const brotherInfo = {
 
   /* 20 */
   kelvin_xu: {
-    img: 'images/brothers/kelvin_xu.jpg',
+    img: `${imagePath}/kelvin_xu.jpg`,
     name: 'Kelvin Xu',
     position: 'Active',
     year: 'Sophomore',
@@ -415,7 +418,7 @@ const brotherInfo = {
 
   /* 21 */
   kevin_lee: {
-    img: 'images/brothers/kevin_lee.jpg',
+    img: `${imagePath}/kevin_lee.jpg`,
     name: 'Kevin Lee',
     position: 'Chapter Secretary',
     year: 'Junior',
@@ -427,12 +430,12 @@ const brotherInfo = {
     previous_positions: '',
     bio:
       "PSE has taught Kevin that the people you meet mold and shape your future; PSE has given him the opportunity to realize his dreams. Kevin's role model is his father. He enjoys playing tennis, trying out new food, and singing. Kevin is also an active member of Korean American Student Association (KASA) and Coaching Corps.",
-    linkedin: 'https://www.linkedin.com/in/kevinkeyhyunlee/'
+    linkedin: 'https://linkedin.com/in/kevinkeyhyunlee/'
   },
 
   /* 22 */
   kevin_phan: {
-    img: 'images/brothers/kevin_phan.jpg',
+    img: `${imagePath}/kevin_phan.jpg`,
     name: 'Kevin Phan',
     position: 'President',
     year: 'Senior',
@@ -449,7 +452,7 @@ const brotherInfo = {
 
   /* 23 */
   kian_kiasaleh: {
-    img: 'images/brothers/kian_kiasaleh.jpg',
+    img: `${imagePath}/kian_kiasaleh.jpg`,
     name: 'Kian Kiasaleh',
     position: 'Director of Alumni Relations',
     year: 'Sophomore',
@@ -466,7 +469,7 @@ const brotherInfo = {
 
   /* 24 */
   kyle_lu: {
-    img: 'images/brothers/kyle_lu.jpg',
+    img: `${imagePath}/kyle_lu.jpg`,
     name: 'Kyle Lu',
     position: 'Active',
     year: 'Junior',
@@ -478,12 +481,12 @@ const brotherInfo = {
     previous_positions: 'Director of Technology',
     bio:
       'Through PSE, Kyle has learned many professional skills, especially how to market himself. His role model is Chinese martial artist Ip Man, mentor to Bruce Lee. Kyle is also involved in Cal Dragon Boat and Innovative Design. He won 2nd place in the Fall 2016 PwC case competition, and was a finalist in the Spring 2016 Deloitte case competition. He hobbies include photography, graphic design, and paddling.',
-    linkedin: 'https://www.linkedin.com/in/kylewongkailu'
+    linkedin: 'https://linkedin.com/in/kylewongkailu'
   },
 
   /* 25 */
   linda_li: {
-    img: 'images/brothers/linda_li.jpg',
+    img: `${imagePath}/linda_li.jpg`,
     name: 'Linda Li',
     position: 'Director of Projects',
     year: 'Junior',
@@ -500,7 +503,7 @@ const brotherInfo = {
 
   /* 26 */
   max_seltzer: {
-    img: 'images/brothers/max_seltzer.jpg',
+    img: `${imagePath}/max_seltzer.jpg`,
     name: 'Max Seltzer',
     position: 'Active',
     year: 'Senior',
@@ -511,13 +514,13 @@ const brotherInfo = {
     career_interests: 'Product Management & UX Design',
     previous_positions: 'Vice President of Finance',
     bio:
-      'PSE taught Max the value of learning to work with individuals from such diverse backgrounds, and how everyone can contribute to a team. His role model is professional baseball player Derek Jeter. Max is a Birthright Excel Fellow, world traveler, back-to-back Intramural Softball Champion, and is undefeated in Connect 4. He is involved in EnableTech, Intramural sports, is a brother of Phi Kappa Psi social fraternity. Max loves to watch and play sports, read the newspaper, and cultivate above-average Spotify playlists.',
+      'PSE taught Max the value of learning to work with individuals from such diverse backgrounds, and how everyone can contribute to a team. His role model is professional baseball player Derek Jeter. Max is a Birthright Excel Fellow, world traveler, and back-to-back Intramural Softball Champion. He is involved in EnableTech, Intramural sports, is a brother of Phi Kappa Psi social fraternity. Max loves to watch and play sports, read the newspaper, and cultivate above-average Spotify playlists.',
     linkedin: 'https://linkedin.com/in/maxsseltzer'
   },
 
   /* 27 */
   melody_wan: {
-    img: 'images/brothers/melody_wan.jpg',
+    img: `${imagePath}/melody_wan.jpg`,
     name: 'Melody Wan',
     position: 'Active',
     year: 'Junior',
@@ -534,7 +537,7 @@ const brotherInfo = {
 
   /* 28 */
   nancy_zhu: {
-    img: 'images/brothers/nancy_zhu.jpg',
+    img: `${imagePath}/nancy_zhu.jpg`,
     name: 'Nancy Zhu',
     position: 'Active',
     year: 'Senior',
@@ -552,7 +555,7 @@ const brotherInfo = {
 
   /* 29 */
   nathan_kelleher: {
-    img: 'images/brothers/nathan_kelleher.jpg',
+    img: `${imagePath}/nathan_kelleher.jpg`,
     name: 'Nathan Kelleher',
     position: 'Active',
     year: 'Senior',
@@ -568,8 +571,8 @@ const brotherInfo = {
 
   /* 30 */
   nicholas_chun: {
-    img: 'images/brothers/nicholas_chun.JPG',
-    name: 'Nick Chun',
+    img: `${imagePath}/nicholas_chun.JPG`,
+    name: 'Nicholas Chun',
     position: 'Vice President of Finance',
     year: 'Junior',
     hometown: 'Carmel, IN',
@@ -585,7 +588,7 @@ const brotherInfo = {
 
   /* 31 */
   nick_cheng: {
-    img: 'images/brothers/nick_cheng.jpg',
+    img: `${imagePath}/nick_cheng.jpg`,
     name: 'Nick Cheng',
     position: 'Active',
     year: 'Senior',
@@ -602,7 +605,7 @@ const brotherInfo = {
 
   /* 32 */
   rahul_rangnekar: {
-    img: 'images/brothers/rahul_rangnekar.jpg',
+    img: `${imagePath}/rahul_rangnekar.jpg`,
     name: 'Rahul Rangnekar',
     position: 'Vice President of Marketing',
     year: 'Senior',
@@ -613,13 +616,16 @@ const brotherInfo = {
     career_interests: 'Product Management & Software Development',
     previous_positions: 'Director of Brotherhood',
     bio:
-      "Through PSE, Rahul has learned to adapt his leadership style and 'fill the gaps' when working on teams of people with distinct work ethics and skillsets. He enjoys the experiences PSE has given him - case competitions with fellow PSE brothers, the Under Armour project, the opportunity to code this entire website. His role models are Tim Duncan and Donald Glover. Rahul is actively involved in the Sports Analytics at Berkeley organization, and was previously in the ASUC. He enjoys working out daily, writing articles on LinkedIn, reading self-help books, and cooking new recipes.",
-    linkedin: 'https://linkedin.com/in/rahrang'
+      "Through PSE, Rahul has learned to adapt his leadership style and 'fill the gaps' when working with team members who have distinct work ethics and skillsets. He enjoys the experiences PSE has given him - the Under Armour project, the opportunity to code this entire website, and the brotherhood of a lifetime. His role models are retired NBA player Tim Duncan and entrepreneur Tim Ferriss. Rahul was previously involved in the ASUC and American Red Cross at Cal. He enjoys working out daily, writing on Medium and LinkedIn, trying and reviewing restaurants on Yelp, and developing applications for others to enjoy.",
+    linkedin: 'https://linkedin.com/in/rahrang',
+    medium: 'https://medium.com/@rahrang',
+    github: 'https://github.com/rahrang',
+    website: 'http://rahrang.xyz'
   },
 
   /* 33 */
   rose_min: {
-    img: 'images/brothers/rose_min.jpg',
+    img: `${imagePath}/rose_min.jpg`,
     name: 'Rose Min',
     position: 'Director of Projects',
     year: 'Sophomore',
@@ -636,7 +642,7 @@ const brotherInfo = {
 
   /* 34 */
   rushil_desai: {
-    img: 'images/brothers/rushil_desai.jpg',
+    img: `${imagePath}/rushil_desai.jpg`,
     name: 'Rushil Desai',
     position: 'Prospective Member Dad',
     year: 'Senior',
@@ -653,7 +659,7 @@ const brotherInfo = {
 
   /* 35 */
   sean_yu: {
-    img: 'images/brothers/sean_yu.jpg',
+    img: `${imagePath}/sean_yu.jpg`,
     name: 'Sean Yu',
     position: 'Vice President of Professional Development',
     year: 'Junior',
@@ -670,7 +676,7 @@ const brotherInfo = {
 
   /* 36 */
   syed_adil: {
-    img: 'images/brothers/syed_adil.jpg',
+    img: `${imagePath}/syed_adil.jpg`,
     name: 'Syed Adil',
     position: 'Active',
     year: 'Senior',
@@ -687,7 +693,7 @@ const brotherInfo = {
 
   /* 37 */
   taylor_lee: {
-    img: 'images/brothers/taylor_lee.jpg',
+    img: `${imagePath}/taylor_lee.jpg`,
     name: 'Taylor Lee',
     position: 'Vice President of Administration',
     year: 'Senior',
@@ -704,7 +710,7 @@ const brotherInfo = {
 
   /* 38 */
   tia_chen_wong: {
-    img: 'images/brothers/tia_chen_wong.jpg',
+    img: `${imagePath}/tia_chen_wong.jpg`,
     name: 'Tia Chen-Wong',
     position: 'Active',
     year: 'Sophomore',
@@ -715,29 +721,30 @@ const brotherInfo = {
     career_interests: 'Marketing',
     previous_positions: '',
     bio:
-      'Emma has learned to deck beautiful presentations, the mechanics of case competitions, and public speaking skills through PSE. Her role models are actress Emma Watson and Eleanor Roosevelt. Tia enjoys writing creatively, hiking, and reading literature. She is a Resident Assistant (RA) in the Units.',
-    linkedin: 'www.linkedin.com/in/tiare-chen-wong'
+      'Tia has learned to deck beautiful presentations, the mechanics of case competitions, and public speaking skills through PSE. Her role models are actress Emma Watson and Eleanor Roosevelt. Tia enjoys writing creatively, hiking, and reading literature. She is a Resident Assistant (RA) in the Units.',
+    linkedin: 'https://linkedin.com/in/tiare-chen-wong'
   },
 
   /* 39 */
   tim_cheng: {
-    img: 'images/brothers/tim_cheng.jpg',
+    img: `${imagePath}/tim_cheng.jpg`,
     name: 'Tim Cheng',
     position: 'Active',
     year: 'Sophomore',
-    hometown: '',
+    hometown: 'Oak Park, CA',
     class: 'Kappa',
-    major: '',
+    major: 'Computer Science',
     minor: '',
-    career_interests: '',
+    career_interests: 'Software Development',
     previous_positions: '',
-    bio: '',
-    linkedin: ''
+    bio:
+      "Through PSE, Tim learned to effectively utilize his soft skills in public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods. He works in Berkeley's Educational Technology Services Department.",
+    linkedin: 'https://www.linkedin.com/in/tim-cheng/'
   },
 
   /* 40 */
   varsha_sundar: {
-    img: 'images/brothers/varsha_sundar.jpg',
+    img: `${imagePath}/varsha_sundar.jpg`,
     name: 'Varsha Sundar',
     position: 'Active',
     year: 'Sophomore',
@@ -754,7 +761,7 @@ const brotherInfo = {
 
   /* 41 */
   yixuan_lu: {
-    img: 'images/brothers/yixuan_lu.jpg',
+    img: `${imagePath}/yixuan_lu.jpg`,
     name: 'Yixuan Lu',
     position: 'Active',
     year: 'Junior',
@@ -763,10 +770,10 @@ const brotherInfo = {
     major: 'Media Studies',
     minor: 'Political Economy',
     career_interests: 'Marketing, Business Development, & Brand Strategy',
-    previous_positions: 'Director of External Recruitment',
+    previous_positions: 'Director of Internal Recruitment',
     bio:
       'PSE has taught Yixuan the importance of having an excellent personal brand. It has shaped her into a more confident, knowledgeable, and professional individual through coffee chats, case competitions, and various Chapter events. PSE has introduced her to many motivated and successful individuals that she feel beyond blessed to be a part of the diverse community at Cal. Her role model is her grandmother. Yixuan was awarded 2nd place in the 2016 PwC case competition, and is also an active member of Berkeley Women in Business. She loves blogging, watercoloring, and going on road trips.',
-    linkedin: 'linkedin.com/in/yixuanlu11280'
+    linkedin: 'https://linkedin.com/in/yixuanlu11280'
   }
 };
 
