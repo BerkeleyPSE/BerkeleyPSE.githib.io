@@ -85,17 +85,9 @@ export default class WhyPSE extends React.Component {
                 cut off all communication to my friends because I was in the
                 training process. My PMT was fun and educational. I grew closer
                 with my fellow Thetas because we all enjoyed showing up and
-                putting in the work in a positive environment.
-                <br /> <br />
-                I believe that when a fraternity hazes its prospective members,
-                it ingrains a negative culture in the brotherhood. The mindset
-                of “I had to go through this bad experience doing XYZ, you
-                should have to do the same (or even worse)” doesn’t promote
-                happiness or inclusivity. It alienates and harbors resentment in
-                its brothers, which is then fed into a never-ending cycle of
-                hazing. So when PSE says it doesn’t haze and sticks to it, I’m
-                proud to say that I am a brother of a fraternity that shares my
-                values.
+                putting in the work in a positive environment. So when PSE says
+                it doesn't haze and then sticks to it, I’m proud to say that I
+                am a brother of a fraternity that shares my values.
                 <br /> <br />
                 (2) Chapter Growth — we’re still a relatively new fraternity
                 chapter. We’ve only been around for 4 years. I’ve been able to
