@@ -26,14 +26,17 @@ export default class AppBanner extends React.Component {
       <div className={css(animations.slideInRight, styles.appBannerContainer)}>
         <div className={css(styles.messageContainer)}>
           <p className={css(styles.message)}>
-            Our Fall 2017 Recruitment is here! RSVP to our Facebook Event!
+            Our Fall 2017 Application is open!
           </p>
+          <Link to={'/app'} className={css(styles.linkButton)}>
+            Apply
+          </Link>
           <Link
             to={'https://www.facebook.com/events/112518222782092/'}
             className={css(styles.linkButton)}
             target="blank"
           >
-            I'm going!
+            RSVP
           </Link>
         </div>
         <div className={css(styles.closeContainer)} onClick={this.closeBanner}>
@@ -89,6 +92,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: '0.875em',
+    margin: '0 10px',
     padding: '3px 10px',
     textDecoration: 'none',
     textTransform: 'uppercase',

@@ -20,7 +20,7 @@ const contactList = [
   },
   {
     for: 'recruitment questions or concerns',
-    email: 'berkeleypse.recruitment@gmail.com'
+    email: 'berkeleypse.recruiting@gmail.com'
   },
   {
     for: 'social media or technical issues',
