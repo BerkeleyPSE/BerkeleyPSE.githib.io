@@ -12,7 +12,7 @@ export default class Application extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      appOpen: true
+      appOpen: false
     };
   }
 
@@ -21,7 +21,7 @@ export default class Application extends React.Component {
 
     return (
       <div className={css(styles.appContainer, animations.fadeIn)}>
-        <h1 className={css(styles.header)}>Fall 2017 Application</h1>
+        <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
         {this.state.appOpen
           ? <div>
               <p className={css(styles.description)}>
@@ -46,7 +46,7 @@ export default class Application extends React.Component {
                 >
                   <img
                     src={'../images/app_image.jpg'}
-                    alt={'image link to application'}
+                    alt={'link to application'}
                     className={css(styles.appImage)}
                   />
                 </Link>
@@ -54,17 +54,15 @@ export default class Application extends React.Component {
             </div>
           : <div>
               <p className={css(styles.description)}>
-                The Fall 2017 Application will open after our Meet the Chapter
-                event.
+                Our Fall 2017 Application is now closed. Thank you for applying!
                 <br />
-                If you would like notifications for our recruitment events,
-                please enter your email below.
+                If you would like notifications for our Spring 2018 recruitment
+                events, please enter your email below.
               </p>
               <div className={css(styles.formContainer)}>
                 <iframe
-                  title="Fall 2017 Pre-Registration"
-                  className="center-block"
-                  src="https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSfua72kmqeFJYEpLEZiuUd30vMqJWxUuqKxCQ_tHExJoerndg/viewform?embedded=true"
+                  title="Spring 2018 Pre-Registration"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfxJ_d4BCstJX-Cr8F22owitnbLyQs3Udzn2vHq8Lfz7VWpqw/viewform?embedded=true"
                   width="100%"
                   height="950"
                   frameBorder="0"

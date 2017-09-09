@@ -25,12 +25,10 @@ const brotherList = [
   'dallas_taylor',
   'dhakshi_balakumar',
   'emma_tsuneishi',
-  // 'esther_choe',
   'eva_su',
   'harika_kalluri',
   'howard_huang',
   'jacqueline_tsang',
-  'jeanine_liu',
   'jonathan_duan',
   'justin_tan',
   'kailin_li',
@@ -43,9 +41,9 @@ const brotherList = [
   'max_seltzer',
   'melody_wan',
   'nancy_zhu',
-  'nathan_kelleher',
   'nicholas_chun',
   'nick_cheng',
+  'peter_vu',
   'rahul_rangnekar',
   'rose_min',
   'rushil_desai',
@@ -245,23 +243,6 @@ const brotherInfo = {
     linkedin: 'https://linkedin.com/in/emmatsuneishi'
   },
 
-  /* 11 */
-  esther_choe: {
-    img: `${imagePath}/esther_choe.jpg`,
-    name: 'Esther Choe',
-    position: 'Active',
-    year: 'Senior',
-    hometown: 'Los Angeles, CA',
-    class: 'Eta',
-    major: 'Media Studies',
-    minor: 'Korean Studies',
-    career_interests: 'Advertising & Content Marketing',
-    previous_positions: '',
-    bio:
-      "PSE has taught Esther to learn and appreciate not just the diverse fields in business but also the diverse group of people that we engage with everyday. PSE is stitched with people from all over Cal, with the same interests in sales, marketing and management. This brings PSE closer together yet helps PSE grow at our own pace through new perspectives and horizons offered to PSE via our diversity. She believes that this is what truly makes PSE unique. Her role models are vlogger Casey Neistat and 'The Flash' Barry Allen. Esther is the Education Chair at Liberty in North Korea, an Administrative Assistant at Department of Music, and a Student Ambassador for Berkeley Study Abroad. She was on the Dean's Honor List in both 2015 and 2016, and loves to jet ski, cook, and travel.",
-    linkedin: 'https://linkedin.com/in/estherchoe'
-  },
-
   /* 12 */
   eva_su: {
     img: `${imagePath}/eva_su.jpg`,
@@ -329,23 +310,6 @@ const brotherInfo = {
     bio:
       'PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.',
     linkedin: 'https://linkedin.com/in/tsangjacqueline'
-  },
-
-  /* 16 */
-  jeanine_liu: {
-    // img: 'images/brothers/jeanine_liu.jpg', // TODO
-    img: `${imagePath}/bro-placeholder.jpg`,
-    name: 'Jeanine Liu',
-    position: 'Active',
-    year: 'Senior',
-    hometown: '',
-    class: 'Eta',
-    major: '',
-    minor: '',
-    career_interests: '',
-    previous_positions: '',
-    bio: '',
-    linkedin: ''
   },
 
   /* 17 */
@@ -601,6 +565,21 @@ const brotherInfo = {
     bio:
       'PSE has taught Nick about the power and importance of marketing. His role model is politician and environmentalist Al Gore. Nick won 5th place in the CMYK Designathon, and is an active member of FEMTech, Thai Student Association, and dance team AFX. Nick loves photography, web design, and playing music in his free time.',
     linkedin: 'https://linkedin.com/in/chengnick'
+  },
+
+  peter_vu: {
+    img: `${imagePath}/bro-placeholder.jpg`,
+    name: 'Peter Vu',
+    position: 'Active',
+    year: 'Senior',
+    hometown: '',
+    class: 'Zeta',
+    major: 'Business Administration',
+    minor: '',
+    career_interests: '',
+    previous_positions: 'Vice President of Professional Development',
+    bio: '',
+    linkedin: ''
   },
 
   /* 32 */

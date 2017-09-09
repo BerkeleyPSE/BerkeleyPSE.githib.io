@@ -54,7 +54,7 @@ export const faq_constants = [
   },
   {
     question: 'Where can I ask more questions?',
-    answer: 'Please direct all questions to berkeleypse.recruitment@gmail.com.'
+    answer: 'Please direct all questions to berkeleypse.recruiting@gmail.com.'
   },
   {
     question: '',

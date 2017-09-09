@@ -12,7 +12,7 @@ export default class AppBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true
+      show: false
     };
   }
 
