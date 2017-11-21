@@ -34,7 +34,7 @@ import Error404 from './Error404';
 
 // Other Local Components
 import Navbar from './Navbar/Navbar';
-import Footer from './Footer/Footer';
+import Footer from './Footer';
 import AppBanner from './reusable_components/AppBanner.jsx';
 
 // Page URLs

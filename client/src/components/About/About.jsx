@@ -12,7 +12,7 @@ export default class About extends React.Component {
     document.title = 'About - Pi Sigma Epsilon | Zeta Chi Chapter';
 
     return (
-      <div className={css(animations.fadeIn) + ' about-container'}>
+      <div className={css(animations.fadeIn)} id="about-container">
         <h1 className={css(styles.header)}>About Us</h1>
         <div className={css(styles.zetaChiContainer)}>
           <h2 className={css(styles.sectionHeader, styles.zcHeader)}>
@@ -99,11 +99,10 @@ export default class About extends React.Component {
               roles in all levels of the fraternity and in fact make up a slight
               majority of the membership in most chapters.
               <br /> <br />
-              PSE does not use term "pledge" is not used, as it portrays a
-              negative stereotype that goes against the ideals of the
-              Fraternity. Hazing is strictly forbidden and all of those taking
-              the steps to become full members are "prospective members" (PMs)
-              until initiation.
+              PSE does not use term "pledge", as it portrays a negative
+              stereotype that goes against the ideals of the Fraternity. Hazing
+              is strictly forbidden and all of those taking the steps to become
+              full members are "prospective members" (PMs) until initiation.
               <br /> <br />
               Pi Sigma Epsilon is the only national, co-ed, professional
               business fraternity in sales, marketing, and management. PSE

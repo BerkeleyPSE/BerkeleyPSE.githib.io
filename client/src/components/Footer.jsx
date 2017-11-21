@@ -4,46 +4,13 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
+import SocialMediaBar from 'react-social-media-bar';
 
 // Local Helper Files & Components
-import { animations } from '../../stylesheets/Animations.js';
-
-const mediaLinkItems = [
-  {
-    media: 'facebook',
-    link: 'https://www.facebook.com/berkeleypse',
-    icon: 'fa-facebook-official'
-  },
-  {
-    media: 'instagram',
-    link: 'https://www.instagram.com/berkeleypse',
-    icon: 'fa-instagram'
-  },
-  {
-    media: 'twitter',
-    link: 'https://www.twitter.com/berkeleypse',
-    icon: 'fa-twitter'
-  }
-];
+import { animations } from '../stylesheets/Animations.js';
 
 export default class Footer extends React.Component {
   render() {
-    const mediaLinks = mediaLinkItems.map(item => {
-      return (
-        <Link
-          className={css(styles.link, styles.mediaLink)}
-          to={item.link}
-          target="blank"
-          key={item.media}
-        >
-          <i
-            className={css(styles.icon) + ` fa ${item.icon}`}
-            aria-hidden="true"
-          />
-        </Link>
-      );
-    });
-
     return (
       <div className={css(styles.footerContainer, animations.fadeInUp)}>
         <div className={css(styles.copyrightContainer)}>
@@ -51,9 +18,13 @@ export default class Footer extends React.Component {
             &#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.
           </p>
         </div>
-        <div className={css(styles.mediaContainer)}>
-          {mediaLinks}
-        </div>
+        <SocialMediaBar
+          icons={MEDIA_ICONS}
+          iconColor={'#FFF'}
+          iconSize={'1.25em'}
+          hoverColor={'#895FAD'}
+          margin={{ top: '5px', right: '7.5px', bottom: '5px', left: '7.5px' }}
+        />
         <div className={css(styles.creditContainer)}>
           <p className={css(styles.credit, styles.text)}>
             Developed by
@@ -62,7 +33,8 @@ export default class Footer extends React.Component {
               to={'http://www.rahrang.xyz'}
               target="blank"
             >
-              {' '}Rahul Rangnekar
+              {' '}
+              Rahul Rangnekar
             </Link>
           </p>
         </div>
@@ -70,6 +42,21 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+const MEDIA_ICONS = [
+  {
+    media: 'facebook-official',
+    link: 'https://www.facebook.com/berkeleypse'
+  },
+  {
+    media: 'instagram',
+    link: 'https://www.instagram.com/berkeleypse'
+  },
+  {
+    media: 'twitter',
+    link: 'https://www.twitter.com/berkeleypse'
+  }
+];
 
 const styles = StyleSheet.create({
   footerContainer: {
@@ -95,10 +82,6 @@ const styles = StyleSheet.create({
     padding: '5px 10px'
   },
 
-  mediaContainer: {
-    padding: '5px 0'
-  },
-
   creditContainer: {
     padding: '5px 10px'
   },
@@ -111,13 +94,5 @@ const styles = StyleSheet.create({
     ':hover': {
       color: '#895FAD'
     }
-  },
-
-  mediaLink: {
-    padding: '0 10px'
-  },
-
-  icon: {
-    fontSize: '1.5em'
   }
 });
