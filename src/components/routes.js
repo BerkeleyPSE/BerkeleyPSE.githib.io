@@ -19,23 +19,23 @@ import { Switch, Route } from 'react-router-dom';
 // import { MainActions } from '../../actions/main-actions';
 
 // Local Page Components
-import Home from '../Home';
-import About from '../About/About';
-import Careers from '../About/Careers';
-import Recruitment from '../Recruitment/Recruitment';
-import WhyPSE from '../Recruitment/WhyPSE';
-import FAQs from '../Recruitment/FAQs';
-import Application from '../Recruitment/Application';
-import Brotherhood from '../Brothers/Brotherhood';
-import Brother from '../Brothers/Brother';
-import Executives from '../Brothers/Executives';
-import Contact from '../Contact';
-import Error404 from '../Error404';
+import Home from './Home';
+import About from './About/About';
+import Careers from './About/Careers';
+import Recruitment from './Recruitment/Recruitment';
+import WhyPSE from './Recruitment/WhyPSE';
+import FAQs from './Recruitment/FAQs';
+import Application from './Recruitment/Application';
+import Brotherhood from './Brothers/Brotherhood';
+import Brother from './Brothers/Brother';
+import Executives from './Brothers/Executives';
+import Contact from './Contact';
+import Error404 from './Error404';
 
 // Other Local Components
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import AppBanner from '../reusable_components/AppBanner.jsx';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
+import AppBanner from './reusable_components/AppBanner.jsx';
 
 // Page URLs
 import {
@@ -49,7 +49,7 @@ import {
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
-} from '../Navbar/navbar_constants.jsx';
+} from './Navbar/navbar_constants.jsx';
 
 export default class Routes extends React.Component {
   render() {
