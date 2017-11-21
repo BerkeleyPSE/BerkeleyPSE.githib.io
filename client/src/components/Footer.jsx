@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
           icons={MEDIA_ICONS}
           iconColor={'#FFF'}
           iconSize={'1.25em'}
-          hoverColor={'#895FAD'}
+          hoverColor={'#FFD700'}
           margin={{ top: '5px', right: '7.5px', bottom: '5px', left: '7.5px' }}
         />
         <div className={css(styles.creditContainer)}>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     height: '100%',
     textDecoration: 'none',
     ':hover': {
-      color: '#895FAD'
+      color: '#FFD700'
     }
   }
 });
