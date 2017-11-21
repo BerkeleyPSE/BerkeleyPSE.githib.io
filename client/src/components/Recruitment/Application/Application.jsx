@@ -6,7 +6,7 @@ import { StyleSheet, css } from 'aphrodite';
 // import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
-import { animations } from '../../stylesheets/Animations.js';
+import { animations } from '../../../stylesheets/Animations.js';
 
 export default class Application extends React.Component {
   constructor(props) {

@@ -5,9 +5,9 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
 // Local Helper Files & Components
-import { animations } from '../../stylesheets/Animations.js';
+import { animations } from '../../../stylesheets/Animations.js';
 import { faq_constants } from './faq_constants.js';
-import AccordionItem from '../reusable_components/AccordionItem.jsx';
+import AccordionItem from '../../reusable_components/AccordionItem.jsx';
 
 export default class FAQs extends React.Component {
   render() {
@@ -31,9 +31,7 @@ export default class FAQs extends React.Component {
     return (
       <div className={css(animations.fadeIn) + ' faqs-container'}>
         <h1 className={css(styles.header)}>Frequently Asked Questions</h1>
-        <div className={css(styles.accordionContainer)}>
-          {faqs}
-        </div>
+        <div className={css(styles.accordionContainer)}>{faqs}</div>
       </div>
     );
   }
