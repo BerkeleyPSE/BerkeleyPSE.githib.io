@@ -3,31 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://berkeleypse.github.io",
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.5.1"
+  },
   "dependencies": {
-    "aphrodite": "^1.2.3",
-    "gh-pages": "^1.0.0",
+    "aphrodite": "^1.2.5",
+    "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.0.1",
-    "prettier": "^1.5.3",
-    "query-string": "^5.0.0",
-    "react": "^15.6.1",
-    "react-animations": "^0.1.0",
-    "react-bootstrap": "^0.31.2",
-    "react-burger-menu": "^2.1.4",
-    "react-dd-menu": "^2.0.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "react-router-dom": "^4.1.2",
-    "react-router-redux": "^4.0.8",
-    "react-scripts": "1.0.10",
-    "react-slick": "^0.14.11",
-    "react-table": "^6.5.3",
-    "react-transition-group": "^2.2.0",
-    "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0",
-    "semantic-ui-css": "^2.2.11",
-    "semantic-ui-react": "^0.71.1"
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2",
+    "query-string": "^5.0.1",
+    "react": "^16.1.1",
+    "react-animations": "^1.0.0",
+    "react-burger-menu": "^2.1.11",
+    "react-dd-menu": "^2.0.2",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17",
+    "react-table": "^6.7.4"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -40,8 +34,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   }
 }

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // NPM Modules
-import { StyleSheet, css } from 'aphrodite'; // remove this later
+import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
 
 // Local Helper Files & Components
@@ -42,9 +42,7 @@ export default class Navbar extends React.Component {
             <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
           </div>
         </Link>
-        <div className={css(styles.dropdownUnitContainer)}>
-          {dropdownUnits}
-        </div>
+        <div className={css(styles.dropdownUnitContainer)}>{dropdownUnits}</div>
         <div className={css(styles.hamburgerMenu)}>
           <HamburgerMenu />
         </div>
