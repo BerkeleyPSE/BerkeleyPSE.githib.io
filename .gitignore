@@ -1,5 +1,11 @@
-build
 node_modules
 
-.npm
-.DS_store
+build
+
+config/dev.js
+
+client/node_modules
+
+client/build
+
+.DS_Store
