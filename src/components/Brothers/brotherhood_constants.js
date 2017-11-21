@@ -22,7 +22,7 @@ const brotherList = [
   'charissa_saputra',
   'clevian_hsia',
   'connor_smith',
-  'dallas_taylor',
+  // 'dallas_taylor',
   'dhakshi_balakumar',
   'emma_tsuneishi',
   'eva_su',
@@ -39,7 +39,6 @@ const brotherList = [
   'kyle_lu',
   'linda_li',
   'max_seltzer',
-  'melody_wan',
   'nancy_zhu',
   'nicholas_chun',
   'nick_cheng',
@@ -480,23 +479,6 @@ const brotherInfo = {
     bio:
       'PSE taught Max the value of learning to work with individuals from such diverse backgrounds, and how everyone can contribute to a team. His role model is professional baseball player Derek Jeter. Max is a Birthright Excel Fellow, world traveler, and back-to-back Intramural Softball Champion. He is involved in EnableTech, Intramural sports, is a brother of Phi Kappa Psi social fraternity. Max loves to watch and play sports, read the newspaper, and cultivate above-average Spotify playlists.',
     linkedin: 'https://linkedin.com/in/maxsseltzer'
-  },
-
-  /* 27 */
-  melody_wan: {
-    img: `${imagePath}/melody_wan.jpg`,
-    name: 'Melody Wan',
-    position: 'Active',
-    year: 'Junior',
-    hometown: 'Arcadia, CA',
-    class: 'Iota',
-    major: 'Business Administration',
-    minor: '',
-    career_interests: 'Content & Digital Marketing',
-    previous_positions: '',
-    bio:
-      'PSE has allowed Melody to improve on her leadership, teamwork, and communication skills, and helped her get over her fear of case competitions. She is involved in the Livingwater Passion Fellowship and Business Careers in Entertainment Club. Melody enjoys acting, cooking, dancing, and playwriting in her free time.',
-    linkedin: 'https://linkedin.com/in/wanmelody'
   },
 
   /* 28 */
