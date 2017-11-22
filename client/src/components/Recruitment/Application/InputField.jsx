@@ -7,8 +7,10 @@ import { StyleSheet, css } from 'aphrodite';
 export default ({ input, label, placeholder, meta: { error, touched } }) => {
   return (
     <div className={css(styles.inputContainer)}>
-      <label className={css(styles.label)}>{label}</label>
-      {touched && error}
+      <div className={css(styles.labelContainer)}>
+        <label className={css(styles.label)}>{label}</label>
+        {touched && <label className={css(styles.error)}>{error}</label>}
+      </div>
       <input
         className={css(styles.input)}
         placeholder={placeholder}
@@ -25,6 +27,13 @@ const styles = StyleSheet.create({
     alignItems: 'baseline',
     justifyContent: 'center',
     margin: '20px 0'
+  },
+
+  labelContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 
   label: {
@@ -48,5 +57,13 @@ const styles = StyleSheet.create({
       border: 'none',
       borderBottom: '2px solid #895FAD'
     }
+  },
+
+  error: {
+    color: 'red',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '0.875em',
+    margin: '5px 10px',
+    textTransform: 'uppercase'
   }
 });

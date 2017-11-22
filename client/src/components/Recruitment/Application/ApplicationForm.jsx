@@ -172,17 +172,14 @@ function validate(values) {
   const errors = {};
   NAMES.forEach(name => {
     if (!values[name]) {
-      errors[name] = 'Please fill this out.';
+      errors[name] = 'This field is required.';
     }
   });
-
-  console.log(errors);
-
   return errors;
 }
 
 export default reduxForm({
-  // validate,
+  validate,
   form: 'applicationForm'
 })(ApplicationForm);
 

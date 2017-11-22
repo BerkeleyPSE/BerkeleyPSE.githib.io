@@ -8,7 +8,7 @@ export default ({ input, label, placeholder, meta: { error, touched } }) => {
   return (
     <div className={css(styles.textareaContainer)}>
       <label className={css(styles.label)}>{label}</label>
-      {touched && error}
+      {touched && <label className={css(styles.error)}>{error}</label>}
       <textarea
         className={css(styles.textarea)}
         placeholder={placeholder}
@@ -50,5 +50,13 @@ const styles = StyleSheet.create({
     ':focus': {
       border: '2px solid #895FAD'
     }
+  },
+
+  error: {
+    color: 'red',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '0.875em',
+    margin: '5px 0',
+    textTransform: 'uppercase'
   }
 });
