@@ -10,7 +10,7 @@ import ApplicationForm from './ApplicationForm';
 import ApplicationReview from './ApplicationReview';
 import PreregistrationForm from './PreregistrationForm';
 
-const IS_APP_OPEN = false;
+const IS_APP_OPEN = true;
 
 export default class Application extends React.Component {
   render() {
@@ -18,13 +18,19 @@ export default class Application extends React.Component {
 
     return (
       <div className={css(styles.appContainer, animations.fadeIn)}>
-        <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
         {IS_APP_OPEN ? (
           <div>
+            <h1 className={css(styles.header)}>Spring 2018 Application</h1>
+            <p className={css(styles.description)}>
+              Please fill out all fields.
+              <br />
+              The deadline is January 31st, 2018 at 11:59pm. Good luck!
+            </p>
             <ApplicationForm />
           </div>
         ) : (
           <div>
+            <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
             <p className={css(styles.description)}>
               Our Fall 2017 Application is now closed. Thank you for applying!
               <br />

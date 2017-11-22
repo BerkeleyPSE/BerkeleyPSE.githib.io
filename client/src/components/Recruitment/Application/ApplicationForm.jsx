@@ -112,38 +112,30 @@ const FIELDS = [
   },
   {
     label: 'State your preferred time slot for an interview.',
-    type: 'checkbox',
-    name: 'interview',
+    type: 'radio',
+    name: 'interview1',
     options: [
-      {
-        label: 'Saturday (9/9) -- 9am-12pm',
-        value: 'sat_9/9_9-12'
-      },
-      {
-        label: 'Saturday (9/9) -- 12pm-3pm',
-        value: 'sat_9/9_12-3'
-      },
-      {
-        label: 'Saturday (9/9) -- 3pm-6pm',
-        value: 'sat_9/9_3-6'
-      },
-      {
-        label: 'Sunday (9/10) -- 9am-12pm',
-        value: 'sun_9/10_9-12'
-      },
-      {
-        label: 'Sunday (9/10) -- 12pm-3pm',
-        value: 'sun_9/10_12-3'
-      },
-      {
-        label: 'Sunday (9/10) -- 3pm-6pm',
-        value: 'sun_9/10_3-6'
-      },
-      {
-        label:
-          'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.',
-        value: 'no_times'
-      }
+      'Saturday (9/9) -- 9am-12pm',
+      'Saturday (9/9) -- 12pm-3pm',
+      'Saturday (9/9) -- 3pm-6pm',
+      'Sunday (9/10) -- 9am-12pm',
+      'Sunday (9/10) -- 12pm-3pm',
+      'Sunday (9/10) -- 3pm-6pm',
+      'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.'
+    ]
+  },
+  {
+    label: 'State your secondary time slot for an interview.',
+    type: 'radio',
+    name: 'interview2',
+    options: [
+      'Saturday (9/9) -- 9am-12pm',
+      'Saturday (9/9) -- 12pm-3pm',
+      'Saturday (9/9) -- 3pm-6pm',
+      'Sunday (9/10) -- 9am-12pm',
+      'Sunday (9/10) -- 12pm-3pm',
+      'Sunday (9/10) -- 3pm-6pm',
+      'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.'
     ]
   },
   {
