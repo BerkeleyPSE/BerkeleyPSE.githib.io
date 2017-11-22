@@ -46,35 +46,6 @@ class ApplicationForm extends React.Component {
   }
 }
 
-export default reduxForm({
-  form: 'applicationForm'
-})(ApplicationForm);
-
-const formStyles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'baseline',
-    justifyContent: 'center',
-    margin: '15px 0'
-  },
-
-  submit: {
-    backgroundColor: '#895FAD',
-    border: 'none',
-    borderRadius: '3px',
-    color: '#FFF',
-    cursor: 'pointer',
-    fontFamily: 'Lato, sans-serif',
-    fontSize: '1em',
-    padding: '7px 12px',
-    textTransform: 'uppercase',
-    ':hover': {
-      opacity: '0.75'
-    }
-  }
-});
-
 const FIELDS = [
   {
     label: 'Name',
@@ -179,7 +150,63 @@ const FIELDS = [
     label:
       'Are you available every Monday from 7:30-10pm for Prospective Member Training?',
     type: 'radio',
-    name: 'PMT_availability',
+    name: 'pmt_availability',
     options: ['Yes', 'No']
   }
 ];
+
+let NAMES = [];
+FIELDS.forEach(field => {
+  switch (field.type) {
+    case 'checkbox':
+      field.options.forEach(option => {
+        NAMES.push(`${field.name}_${option.value}`);
+      });
+      return;
+    default:
+      NAMES.push(field.name);
+  }
+});
+
+function validate(values) {
+  const errors = {};
+  NAMES.forEach(name => {
+    if (!values[name]) {
+      errors[name] = 'Please fill this out.';
+    }
+  });
+
+  console.log(errors);
+
+  return errors;
+}
+
+export default reduxForm({
+  // validate,
+  form: 'applicationForm'
+})(ApplicationForm);
+
+const formStyles = StyleSheet.create({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'baseline',
+    justifyContent: 'center',
+    margin: '15px 0'
+  },
+
+  submit: {
+    backgroundColor: '#895FAD',
+    border: 'none',
+    borderRadius: '3px',
+    color: '#FFF',
+    cursor: 'pointer',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '1em',
+    padding: '7px 12px',
+    textTransform: 'uppercase',
+    ':hover': {
+      opacity: '0.75'
+    }
+  }
+});

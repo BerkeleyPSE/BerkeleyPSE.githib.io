@@ -4,10 +4,11 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 
-export default ({ input, label, placeholder }) => {
+export default ({ input, label, placeholder, meta: { error, touched } }) => {
   return (
     <div className={css(styles.textareaContainer)}>
       <label className={css(styles.label)}>{label}</label>
+      {touched && error}
       <textarea
         className={css(styles.textarea)}
         placeholder={placeholder}

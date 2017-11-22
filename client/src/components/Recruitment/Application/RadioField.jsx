@@ -18,16 +18,15 @@ export default ({ label, options, name }) => {
   );
 };
 
-const RadioButton = ({ input, option, name }) => {
+const RadioButton = ({ input, option }) => {
   return (
     <div className={css(styles.radioButton)}>
       <label className={css(styles.optLabel)}>
         <input
           className={css(styles.radio)}
-          name={name}
           type="radio"
+          {...input} // this must be over value, else the name won't be defined
           value={option}
-          {...input}
         />
         {option}
       </label>

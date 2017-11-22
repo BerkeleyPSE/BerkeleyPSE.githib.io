@@ -23,7 +23,7 @@ export default ({ label, options, name }) => {
   );
 };
 
-const CheckButton = ({ input, option, name }) => {
+const CheckButton = ({ input, option, name, meta: { error, touched } }) => {
   return (
     <div className={css(styles.checkboxButton)}>
       <label className={css(styles.optLabel)}>
@@ -31,8 +31,8 @@ const CheckButton = ({ input, option, name }) => {
           className={css(styles.checkbox)}
           name={name}
           type="checkbox"
+          {...input} // this must be over 'value'
           value={option.value}
-          {...input}
         />
         {option.label}
       </label>
