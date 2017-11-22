@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'baseline',
     justifyContent: 'center',
-    margin: '15px 0'
+    margin: '20px 0'
   },
 
   label: {

@@ -45,12 +45,14 @@ export default class Navbar extends React.Component {
             {item.pages &&
               item.pages.map(page => {
                 return (
-                  <div className={css(styles.pageContainer)}>
+                  <div
+                    className={css(styles.pageContainer)}
+                    key={`${item.header}_${page.page}`}
+                  >
                     <NavLink
                       to={page.pageLink}
                       className={css(styles.link, styles.pageLink)}
                       activeClassName={css(styles.activeLink)}
-                      key={`${item.header}_${page.page}`}
                     >
                       {page.page}
                     </NavLink>

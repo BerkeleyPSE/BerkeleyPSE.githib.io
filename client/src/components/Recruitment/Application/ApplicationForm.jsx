@@ -10,15 +10,20 @@ import { animations } from '../../../stylesheets/Animations.js';
 import InputField from './InputField';
 import TextAreaField from './TextAreaField';
 import RadioField from './RadioField';
+import CheckBoxField from './CheckBoxField';
 
 class ApplicationForm extends React.Component {
   renderFields() {
     return (
-      <div>
+      <div id="fields-container">
         {FIELDS.map((field, index) => {
           switch (field.type) {
             case 'radio':
               return <RadioField {...field} key={`${index}_${field.name}`} />;
+            case 'checkbox':
+              return (
+                <CheckBoxField {...field} key={`${index}_${field.name}`} />
+              );
             default:
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
@@ -133,5 +138,48 @@ const FIELDS = [
     name: 'commitments',
     placeholder: '',
     component: TextAreaField
+  },
+  {
+    label: 'State your preferred time slot for an interview.',
+    type: 'checkbox',
+    name: 'interview',
+    options: [
+      {
+        label: 'Saturday (9/9) -- 9am-12pm',
+        value: 'sat_9/9_9-12'
+      },
+      {
+        label: 'Saturday (9/9) -- 12pm-3pm',
+        value: 'sat_9/9_12-3'
+      },
+      {
+        label: 'Saturday (9/9) -- 3pm-6pm',
+        value: 'sat_9/9_3-6'
+      },
+      {
+        label: 'Sunday (9/10) -- 9am-12pm',
+        value: 'sun_9/10_9-12'
+      },
+      {
+        label: 'Sunday (9/10) -- 12pm-3pm',
+        value: 'sun_9/10_12-3'
+      },
+      {
+        label: 'Sunday (9/10) -- 3pm-6pm',
+        value: 'sun_9/10_3-6'
+      },
+      {
+        label:
+          'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.',
+        value: 'no_times'
+      }
+    ]
+  },
+  {
+    label:
+      'Are you available every Monday from 7:30-10pm for Prospective Member Training?',
+    type: 'radio',
+    name: 'PMT_availability',
+    options: ['Yes', 'No']
   }
 ];

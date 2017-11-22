@@ -7,36 +7,41 @@ import { Field } from 'redux-form';
 
 export default ({ label, options, name }) => {
   return (
-    <div className={css(styles.radioContainer)}>
+    <div className={css(styles.checkboxContainer)}>
       <label className={css(styles.label)}>{label}</label>
       {options.map((opt, index) => {
         return (
-          <Field key={opt} name={name} option={opt} component={RadioButton} />
+          <Field
+            key={opt.value}
+            name={`${name}_${opt.value}`}
+            option={opt}
+            component={CheckButton}
+          />
         );
       })}
     </div>
   );
 };
 
-const RadioButton = ({ input, option, name }) => {
+const CheckButton = ({ input, option, name }) => {
   return (
-    <div className={css(styles.radioButton)}>
+    <div className={css(styles.checkboxButton)}>
       <label className={css(styles.optLabel)}>
         <input
-          className={css(styles.radio)}
+          className={css(styles.checkbox)}
           name={name}
-          type="radio"
-          value={option}
+          type="checkbox"
+          value={option.value}
           {...input}
         />
-        {option}
+        {option.label}
       </label>
     </div>
   );
 };
 
 const styles = StyleSheet.create({
-  radioContainer: {
+  checkboxContainer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'baseline',
@@ -54,7 +59,7 @@ const styles = StyleSheet.create({
     wordSpacing: '0.025em'
   },
 
-  radioButton: {
+  checkboxButton: {
     margin: '3px 0'
   },
 
@@ -63,7 +68,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato, sans-serif'
   },
 
-  radio: {
+  checkbox: {
     fontFamily: 'Open Sans, sans-serif',
     outline: 'none',
     margin: '0 10px',
