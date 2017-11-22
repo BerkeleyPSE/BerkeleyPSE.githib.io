@@ -156,15 +156,23 @@ const FIELDS = [
 ];
 
 let NAMES = [];
+// FIELDS.forEach(field => {
+//   switch (field.type) {
+//     case 'checkbox':
+//       field.options.forEach(option => {
+//         NAMES.push(`${field.name}_${option.value}`);
+//       });
+//       return;
+//     default:
+//       return NAMES.push(field.name);
+//   }
+// });
 FIELDS.forEach(field => {
   switch (field.type) {
     case 'checkbox':
-      field.options.forEach(option => {
-        NAMES.push(`${field.name}_${option.value}`);
-      });
       return;
     default:
-      NAMES.push(field.name);
+      return NAMES.push(field.name);
   }
 });
 
@@ -200,6 +208,7 @@ const formStyles = StyleSheet.create({
     cursor: 'pointer',
     fontFamily: 'Lato, sans-serif',
     fontSize: '1em',
+    outline: 'none',
     padding: '7px 12px',
     textTransform: 'uppercase',
     ':hover': {

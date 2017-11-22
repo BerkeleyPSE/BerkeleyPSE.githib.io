@@ -45,7 +45,19 @@ class PreregistrationForm extends React.Component {
   }
 }
 
+function validate(values) {
+  const errors = {};
+  let fields = ['name', 'email'];
+  fields.forEach(field => {
+    if (!values[field]) {
+      errors[field] = `Please enter your ${field}.`;
+    }
+  });
+  return errors;
+}
+
 export default reduxForm({
+  validate,
   form: 'preregistrationForm'
 })(PreregistrationForm);
 
@@ -66,6 +78,7 @@ const formStyles = StyleSheet.create({
     cursor: 'pointer',
     fontFamily: 'Lato, sans-serif',
     fontSize: '1em',
+    outline: 'none',
     padding: '7px 12px',
     textTransform: 'uppercase',
     ':hover': {

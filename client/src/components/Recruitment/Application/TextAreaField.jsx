@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato, sans-serif',
     fontSize: '1em',
     letterSpacing: '0.0125em',
-    margin: '5px 0',
+    margin: '5px 0 2.5px',
     wordSpacing: '0.025em'
   },
 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     color: 'red',
     fontFamily: 'Lato, sans-serif',
     fontSize: '0.875em',
-    margin: '5px 0',
+    margin: '2.5px 0',
     textTransform: 'uppercase'
   }
 });

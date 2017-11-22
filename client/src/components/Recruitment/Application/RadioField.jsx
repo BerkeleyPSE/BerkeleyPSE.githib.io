@@ -11,14 +11,20 @@ export default ({ label, options, name }) => {
       <label className={css(styles.label)}>{label}</label>
       {options.map((opt, index) => {
         return (
-          <Field key={opt} name={name} option={opt} component={RadioButton} />
+          <Field
+            key={opt}
+            index={index}
+            name={name}
+            option={opt}
+            component={RadioButton}
+          />
         );
       })}
     </div>
   );
 };
 
-const RadioButton = ({ input, option }) => {
+const RadioButton = ({ input, option, index, meta: { touched, error } }) => {
   return (
     <div className={css(styles.radioButton)}>
       <label className={css(styles.optLabel)}>
@@ -30,6 +36,8 @@ const RadioButton = ({ input, option }) => {
         />
         {option}
       </label>
+      {index === 0 &&
+        touched && <label className={css(styles.error)}>{error}</label>}
     </div>
   );
 };
@@ -59,7 +67,7 @@ const styles = StyleSheet.create({
 
   optLabel: {
     color: '#333',
-    fontFamily: 'Lato, sans-serif'
+    fontFamily: 'Open Sans, sans-serif'
   },
 
   radio: {
@@ -67,5 +75,13 @@ const styles = StyleSheet.create({
     outline: 'none',
     margin: '0 10px',
     padding: '2px 3px'
+  },
+
+  error: {
+    color: 'red',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '0.875em',
+    margin: '5px 10px',
+    textTransform: 'uppercase'
   }
 });

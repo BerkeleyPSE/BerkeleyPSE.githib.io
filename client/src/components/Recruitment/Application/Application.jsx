@@ -10,7 +10,7 @@ import ApplicationForm from './ApplicationForm';
 import ApplicationReview from './ApplicationReview';
 import PreregistrationForm from './PreregistrationForm';
 
-const IS_APP_OPEN = true;
+const IS_APP_OPEN = false;
 
 export default class Application extends React.Component {
   render() {
