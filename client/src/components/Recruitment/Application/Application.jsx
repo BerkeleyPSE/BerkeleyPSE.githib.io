@@ -13,6 +13,9 @@ import PreregistrationForm from './PreregistrationForm';
 const IS_APP_OPEN = true;
 
 export default class Application extends React.Component {
+  state = {
+    showAppReview: false
+  };
   render() {
     document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
 
@@ -21,12 +24,27 @@ export default class Application extends React.Component {
         {IS_APP_OPEN ? (
           <div>
             <h1 className={css(styles.header)}>Spring 2018 Application</h1>
-            <p className={css(styles.description)}>
-              Please fill out all fields.
-              <br />
-              The deadline is January 31st, 2018 at 11:59pm. Good luck!
-            </p>
-            <ApplicationForm />
+            {this.state.showAppReview ? (
+              <div>
+                <p className={css(styles.description)}>
+                  Please review your application, then submit.
+                </p>
+                <ApplicationReview
+                  onCancel={() => this.setState({ showAppReview: false })}
+                />
+              </div>
+            ) : (
+              <div>
+                <p className={css(styles.description)}>
+                  Please fill out all fields.
+                  <br />
+                  The deadline is January 31st, 2018 at 11:59pm. Good luck!
+                </p>
+                <ApplicationForm
+                  onSurveySubmit={() => this.setState({ showAppReview: true })}
+                />
+              </div>
+            )}
           </div>
         ) : (
           <div>

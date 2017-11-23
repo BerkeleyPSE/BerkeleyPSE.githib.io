@@ -6,24 +6,18 @@ import { StyleSheet, css } from 'aphrodite';
 import { reduxForm, Field } from 'redux-form';
 
 // Local Helper Files & Components
-import { animations } from '../../../stylesheets/Animations.js';
-import InputField from './InputField';
-import TextAreaField from './TextAreaField';
+import { animations } from '../../../stylesheets/Animations';
+import { APP_FIELDS } from './ApplicationFields';
 import RadioField from './RadioField';
-import CheckBoxField from './CheckBoxField';
 
 class ApplicationForm extends React.Component {
   renderFields() {
     return (
       <div id="fields-container">
-        {FIELDS.map((field, index) => {
+        {APP_FIELDS.map((field, index) => {
           switch (field.type) {
             case 'radio':
               return <RadioField {...field} key={`${index}_${field.name}`} />;
-            case 'checkbox':
-              return (
-                <CheckBoxField {...field} key={`${index}_${field.name}`} />
-              );
             default:
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
@@ -35,9 +29,9 @@ class ApplicationForm extends React.Component {
   render() {
     return (
       <div className={css(formStyles.container, animations.fadeIn)}>
-        <form onSubmit={this.props.handleSubmit(values => console.log(values))}>
+        <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
           {this.renderFields()}
-          <button className={css(formStyles.submit)} type="submit">
+          <button className={css(formStyles.review)} type="submit">
             Submit
           </button>
         </form>
@@ -46,133 +40,11 @@ class ApplicationForm extends React.Component {
   }
 }
 
-const FIELDS = [
-  {
-    label: 'Name',
-    type: 'text',
-    name: 'name',
-    placeholder: 'Oski Bear',
-    component: InputField
-  },
-  {
-    label: 'Email',
-    type: 'email',
-    name: 'email',
-    placeholder: 'oski@berkeley.edu',
-    component: InputField
-  },
-  {
-    label: 'Phone',
-    type: 'phone',
-    name: 'phone',
-    placeholder: '(123) 456-7890',
-    component: InputField
-  },
-  {
-    label: 'Year',
-    type: 'radio',
-    name: 'year',
-    options: ['Freshman', 'Sophomore', 'Junior', 'Junior Transfer', 'Senior']
-  },
-  {
-    label: 'Major(s)',
-    type: 'text',
-    name: 'major',
-    placeholder: 'Intended and/or Declared',
-    component: InputField
-  },
-  {
-    label: 'Minor(s)',
-    type: 'text',
-    name: 'minor',
-    placeholder: '',
-    component: InputField
-  },
-  {
-    label: 'What interests you about marketing and business?',
-    type: 'text',
-    name: 'interests',
-    placeholder: '',
-    component: TextAreaField
-  },
-  {
-    label:
-      'Describe a marketing campaign or advertisement from anywhere in the world that has stood out to you in the past. Why were you drawn to it? Include an article/video link to the campaign.',
-    type: 'text',
-    name: 'campaign',
-    placeholder: '',
-    component: TextAreaField
-  },
-  {
-    label: 'List your current commitments (both on and off campus).',
-    type: 'text',
-    name: 'commitments',
-    placeholder: '',
-    component: TextAreaField
-  },
-  {
-    label: 'State your preferred time slot for an interview.',
-    type: 'radio',
-    name: 'interview1',
-    options: [
-      'Saturday (9/9) -- 9am-12pm',
-      'Saturday (9/9) -- 12pm-3pm',
-      'Saturday (9/9) -- 3pm-6pm',
-      'Sunday (9/10) -- 9am-12pm',
-      'Sunday (9/10) -- 12pm-3pm',
-      'Sunday (9/10) -- 3pm-6pm',
-      'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.'
-    ]
-  },
-  {
-    label: 'State your secondary time slot for an interview.',
-    type: 'radio',
-    name: 'interview2',
-    options: [
-      'Saturday (9/9) -- 9am-12pm',
-      'Saturday (9/9) -- 12pm-3pm',
-      'Saturday (9/9) -- 3pm-6pm',
-      'Sunday (9/10) -- 9am-12pm',
-      'Sunday (9/10) -- 12pm-3pm',
-      'Sunday (9/10) -- 3pm-6pm',
-      'I cannot make any of these times. I will email berkeleypse.recruiting to reschedule.'
-    ]
-  },
-  {
-    label:
-      'Are you available every Monday from 7:30-10pm for Prospective Member Training?',
-    type: 'radio',
-    name: 'pmt_availability',
-    options: ['Yes', 'No']
-  }
-];
-
-let NAMES = [];
-// FIELDS.forEach(field => {
-//   switch (field.type) {
-//     case 'checkbox':
-//       field.options.forEach(option => {
-//         NAMES.push(`${field.name}_${option.value}`);
-//       });
-//       return;
-//     default:
-//       return NAMES.push(field.name);
-//   }
-// });
-FIELDS.forEach(field => {
-  switch (field.type) {
-    case 'checkbox':
-      return;
-    default:
-      return NAMES.push(field.name);
-  }
-});
-
 function validate(values) {
   const errors = {};
-  NAMES.forEach(name => {
-    if (!values[name]) {
-      errors[name] = 'This field is required.';
+  APP_FIELDS.forEach(field => {
+    if (!values[field.name]) {
+      errors[field.name] = field.errorMsg;
     }
   });
   return errors;
@@ -180,7 +52,8 @@ function validate(values) {
 
 export default reduxForm({
   validate,
-  form: 'applicationForm'
+  form: 'applicationForm',
+  destroyOnUnmount: false
 })(ApplicationForm);
 
 const formStyles = StyleSheet.create({
@@ -192,7 +65,7 @@ const formStyles = StyleSheet.create({
     margin: '15px 0'
   },
 
-  submit: {
+  review: {
     backgroundColor: '#895FAD',
     border: 'none',
     borderRadius: '3px',

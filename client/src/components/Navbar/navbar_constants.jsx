@@ -6,6 +6,7 @@ export const RECRUITMENT_PATH = '/recruitment';
 export const WHYPSE_PATH = '/why-pse';
 export const FAQS_PATH = '/faqs';
 export const APPLICATION_PATH = '/app';
+export const APPLICATION_REVIEW_PATH = '/app/review';
 export const BROTHERS_PATH = '/brothers';
 export const EXECUTIVES_PATH = '/eboard';
 export const CONTACT_PATH = '/contact';
