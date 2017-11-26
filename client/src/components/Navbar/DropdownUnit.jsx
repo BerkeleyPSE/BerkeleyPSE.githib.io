@@ -65,9 +65,7 @@ export default class DropdownUnit extends React.Component {
           activeClassName={css(styles.activeHeaderLink)}
           isActive={this.checkActive}
         >
-          <h3 className={css(styles.header)}>
-            {this.props.header}
-          </h3>
+          <h3 className={css(styles.header)}>{this.props.header}</h3>
         </NavLink>
         <DropdownMenu
           {...menuOptions}
@@ -102,8 +100,7 @@ const styles = StyleSheet.create({
     height: 'auto',
     textDecoration: 'none',
     textTransform: 'uppercase',
-    padding: '10px',
-
+    padding: '5px 10px',
     ':hover': {
       color: '#FFD700'
     }
@@ -128,7 +125,6 @@ const styles = StyleSheet.create({
   pageLi: {
     padding: '0 20px 0 5px',
     backgroundColor: '#303030',
-
     ':hover': {
       color: '#FFD700'
     }
@@ -143,11 +139,9 @@ const styles = StyleSheet.create({
     padding: '10px 10px 10px 5px',
     textDecoration: 'none',
     textTransform: 'uppercase',
-
     ':hover': {
       color: '#FFD700'
     },
-
     ':active': {
       backgroundColor: '#303030',
       color: '#FFD700'
@@ -156,7 +150,6 @@ const styles = StyleSheet.create({
 
   activeHeaderLink: {
     borderBottom: '2px solid #FFD700'
-    // color: '#FFD700'
   },
 
   activeLink: {

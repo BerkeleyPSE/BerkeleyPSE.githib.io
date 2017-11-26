@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     padding: '5px 2px',
     textDecoration: 'none',
     ':hover': {
-      color: '#818181'
+      color: '#895FAD'
       // borderBottom: '3px solid #818181',
     }
   },

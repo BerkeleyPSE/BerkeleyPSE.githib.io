@@ -61,12 +61,8 @@ export default class Brother extends React.Component {
       if (bro[item]) {
         return (
           <div className={css(table.infoRow)} key={`${bro.name}_${item}`}>
-            <p className={css(table.infoTitle)}>
-              {infoMap[item]}
-            </p>
-            <p className={css(table.infoValue)}>
-              {bro[item]}
-            </p>
+            <p className={css(table.infoTitle)}>{infoMap[item]}</p>
+            <p className={css(table.infoValue)}>{bro[item]}</p>
           </div>
         );
       } else {
@@ -91,25 +87,17 @@ export default class Brother extends React.Component {
               brotherInfo={brotherInfo}
             />
             <div className={css(styles.broHeader)}>
-              <h1 className={css(styles.name)}>
-                {bro.name}
-              </h1>
-              <h2 className={css(styles.position)}>
-                {bro.position}
-              </h2>
+              <h1 className={css(styles.name)}>{bro.name}</h1>
+              <h2 className={css(styles.position)}>{bro.position}</h2>
             </div>
             <div className={css(table.tableContainer)}>
-              <div className={css(table.infoTableContainer)}>
-                {infoTable}
-              </div>
+              <div className={css(table.infoTableContainer)}>{infoTable}</div>
               {/* TODO: TABLE OF EXPERIENCES */}
             </div>
             <div className={css(styles.broBody)}>
               <div className={css(styles.broTable)} />
               <div className={css(styles.broBio)}>
-                <p className={css(styles.bio)}>
-                  {bro.bio}
-                </p>
+                <p className={css(styles.bio)}>{bro.bio}</p>
               </div>
               <div className={css(styles.broMedia)}>
                 <Link

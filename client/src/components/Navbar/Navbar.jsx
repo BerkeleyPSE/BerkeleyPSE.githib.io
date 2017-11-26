@@ -12,11 +12,6 @@ import HamburgerMenu from './HamburgerMenu.jsx';
 import { navbar_constants } from './navbar_constants.jsx';
 
 export default class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     const dropdownUnits = navbar_constants.map(item => {
       return (

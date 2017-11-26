@@ -75,15 +75,17 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: 'Open Sans, sans-serif',
     fontSize: '0.875em',
-    fontWeight: '500'
+    fontWeight: '500',
+    margin: '0',
+    padding: '0'
   },
 
   copyrightContainer: {
-    padding: '5px 10px'
+    margin: '5px 10px'
   },
 
   creditContainer: {
-    padding: '5px 10px'
+    margin: '5px 10px'
   },
 
   link: {
