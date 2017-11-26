@@ -34,7 +34,7 @@ class PreregistrationForm extends React.Component {
   render() {
     return (
       <div className={css(formStyles.container, animations.fadeIn)}>
-        <form onSubmit={this.props.handleSubmit(values => console.log(values))}>
+        <form onSubmit={this.props.handleSubmit(this.props.submitForm)}>
           {this.renderFields()}
           <button className={css(formStyles.submit)} type="submit">
             Submit

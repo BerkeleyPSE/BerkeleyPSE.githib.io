@@ -19,7 +19,6 @@ import Recruitment from './Recruitment/Recruitment';
 import WhyPSE from './Recruitment/WhyPSE';
 import FAQs from './Recruitment/FAQs/FAQs';
 import Application from './Recruitment/Application/Application.jsx';
-import ApplicationReview from './Recruitment/Application/ApplicationReview.jsx';
 import Brotherhood from './Brothers/Brotherhood';
 import Brother from './Brothers/Brother';
 import Executives from './Brothers/Executives';
@@ -40,7 +39,6 @@ import {
   WHYPSE_PATH,
   FAQS_PATH,
   APPLICATION_PATH,
-  APPLICATION_REVIEW_PATH,
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
@@ -61,10 +59,6 @@ export default class Routes extends React.Component {
             <Route path={WHYPSE_PATH} component={WhyPSE} />
             <Route path={FAQS_PATH} component={FAQs} />
             <Route path={APPLICATION_PATH} component={Application} />
-            <Route
-              path={APPLICATION_REVIEW_PATH}
-              component={ApplicationReview}
-            />
             <Route exact path={BROTHERS_PATH} component={Brotherhood} />
             <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
             <Route path={EXECUTIVES_PATH} component={Executives} />

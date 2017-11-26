@@ -1,15 +1,25 @@
 import axios from 'axios';
 
 export const AppConstants = {
-  SUBMIT_APP: 'SUBMIT_APP'
+  SUBMIT_APP: 'SUBMIT_APP',
+  SUBMIT_FORM: 'SUBMIT_FORM'
 };
 
 export const AppActions = {
   submitApplication: values => async dispatch => {
-    const res = await axios.post('/api/apps', values);
+    const res = await axios.post('/api/applications', values);
     return dispatch({
       type: AppConstants.SUBMIT_APP,
-      submitAppSuccess: res.data
+      appSubmitSuccess: res.data
+    });
+  },
+
+  submitForm: values => async dispatch => {
+    console.log(values);
+    const res = await axios.post('/api/regforms', values);
+    return dispatch({
+      type: AppConstants.SUBMIT_FORM,
+      formSubmitSuccess: res.data
     });
   }
 };

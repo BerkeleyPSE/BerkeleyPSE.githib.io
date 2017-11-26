@@ -29,7 +29,7 @@ class ApplicationForm extends React.Component {
   render() {
     return (
       <div className={css(formStyles.container, animations.fadeIn)}>
-        <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
+        <form onSubmit={this.props.handleSubmit(this.props.submitApp)}>
           {this.renderFields()}
           <button className={css(formStyles.review)} type="submit">
             Submit

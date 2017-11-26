@@ -3,47 +3,38 @@ import React from 'react';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
+import { connect } from 'react-redux';
+import * as _ from 'lodash';
 
 // Local Helper Files & Components
 import { animations } from '../../../stylesheets/Animations.js';
 import ApplicationForm from './ApplicationForm';
-import ApplicationReview from './ApplicationReview';
 import PreregistrationForm from './PreregistrationForm';
+import { AppActions } from '../../../actions/app-actions.js';
 
-const IS_APP_OPEN = true;
+const IS_APP_OPEN = false;
 
-export default class Application extends React.Component {
-  state = {
-    showAppReview: false
-  };
+class Application extends React.Component {
   render() {
     document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
-
+    let { appReducer } = this.props;
     return (
       <div className={css(styles.appContainer, animations.fadeIn)}>
         {IS_APP_OPEN ? (
           <div>
             <h1 className={css(styles.header)}>Spring 2018 Application</h1>
-            {this.state.showAppReview ? (
-              <div>
-                <p className={css(styles.description)}>
-                  Please review your application, then submit.
-                </p>
-                <ApplicationReview
-                  onCancel={() => this.setState({ showAppReview: false })}
-                />
-              </div>
+            <p className={css(styles.description)}>
+              Please fill out all fields.
+              <br />
+              The deadline is January 31st, 2018 at 11:59pm. Good luck!
+            </p>
+            {!_.isUndefined(appReducer.appSubmitSuccess) ? (
+              <p className={css(styles.successMessage)}>
+                Your application was submitted successfully. We will notify you
+                about the steps going forward on February 1st. Thanks!
+              </p>
             ) : (
-              <div>
-                <p className={css(styles.description)}>
-                  Please fill out all fields.
-                  <br />
-                  The deadline is January 31st, 2018 at 11:59pm. Good luck!
-                </p>
-                <ApplicationForm
-                  onSurveySubmit={() => this.setState({ showAppReview: true })}
-                />
-              </div>
+              <ApplicationForm submitApp={this.props.submitApplication} />
             )}
           </div>
         ) : (
@@ -55,13 +46,26 @@ export default class Application extends React.Component {
               If you would like notifications for our Spring 2018 recruitment
               events, please enter your name and email below.
             </p>
-            <PreregistrationForm />
+            {!_.isUndefined(appReducer.formSubmitSuccess) ? (
+              <p className={css(styles.successMessage)}>
+                Your information was submitted successfully. We'll notify you
+                when our recruitment calendar is released. Thanks!
+              </p>
+            ) : (
+              <PreregistrationForm submitForm={this.props.submitForm} />
+            )}
           </div>
         )}
       </div>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { appReducer: state.app };
+}
+
+export default connect(mapStateToProps, AppActions)(Application);
 
 const styles = StyleSheet.create({
   appContainer: {
@@ -86,6 +90,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans, sans-serif',
     fontSize: '1em',
     margin: '0',
+    textAlign: 'center'
+  },
+
+  successMessage: {
+    color: '#895FAD',
+    fontFamily: 'Open Sans, sans-serif',
+    fontSize: '1.5em',
+    margin: '40px 20px',
     textAlign: 'center'
   }
 });

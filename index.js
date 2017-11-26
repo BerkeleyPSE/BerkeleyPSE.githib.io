@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 
 // Local Imports
 const keys = require('./config/keys.js');
-// REQUIRE MODELS HERE
+require('./models/Application.js');
+require('./models/RegForm.js');
 
 const app = express();
 
@@ -16,8 +17,8 @@ mongoose.connect(keys.mongoURI, {
 /*** MIDDLEWARE ***/
 
 app.use(bodyParser.json());
-
-// REQUIRE ROUTES HERE
+require('./routes/applicationRoutes.js')(app);
+require('./routes/regformRoutes.js')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
