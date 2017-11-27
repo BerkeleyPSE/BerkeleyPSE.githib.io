@@ -9,39 +9,39 @@ import SocialMediaBar from 'react-social-media-bar';
 // Local Helper Files & Components
 import { animations } from '../stylesheets/Animations.js';
 
-export default class Footer extends React.Component {
-  render() {
-    return (
-      <div className={css(styles.footerContainer, animations.fadeInUp)}>
-        <div className={css(styles.copyrightContainer)}>
-          <p className={css(styles.copyright, styles.text)}>
-            &#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.
-          </p>
-        </div>
-        <SocialMediaBar
-          icons={MEDIA_ICONS}
-          iconColor={'#FFF'}
-          iconSize={'1.25em'}
-          hoverColor={'#FFD700'}
-          margin={{ top: '5px', right: '7.5px', bottom: '5px', left: '7.5px' }}
-        />
-        <div className={css(styles.creditContainer)}>
-          <p className={css(styles.credit, styles.text)}>
-            Developed by
-            <Link
-              className={css(styles.link)}
-              to={'http://www.rahrang.xyz'}
-              target="blank"
-            >
-              {' '}
-              Rahul Rangnekar
-            </Link>
-          </p>
-        </div>
+const Footer = props => {
+  return (
+    <div className={css(styles.footerContainer, animations.fadeInUp)}>
+      <div className={css(styles.copyrightContainer)}>
+        <p className={css(styles.copyright, styles.text)}>
+          &#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.
+        </p>
       </div>
-    );
-  }
-}
+      <SocialMediaBar
+        icons={MEDIA_ICONS}
+        iconColor={'#FFF'}
+        iconSize={'1.25em'}
+        hoverColor={'#FFD700'}
+        margin={{ top: '5px', right: '7.5px', bottom: '5px', left: '7.5px' }}
+      />
+      <div className={css(styles.creditContainer)}>
+        <p className={css(styles.credit, styles.text)}>
+          Developed by
+          <Link
+            className={css(styles.link)}
+            to={'http://www.rahrang.xyz'}
+            target="blank"
+          >
+            {' '}
+            Rahul Rangnekar
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
 
 const MEDIA_ICONS = [
   {

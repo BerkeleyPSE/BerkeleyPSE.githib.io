@@ -18,7 +18,7 @@ import {
   BROTHERS_PATH
 } from './Navbar/navbar_constants.jsx';
 
-const homeInfo = [
+const HOME_INFO = [
   {
     imgSrc: '/images/home/pi_sigma_epsilon.jpg',
     message: "UC Berkeley's Marketing & Business Fraternity",
@@ -57,61 +57,59 @@ const homeInfo = [
   }
 ];
 
-export default class Home extends React.Component {
-  render() {
-    document.title = 'Pi Sigma Epsilon | Zeta Chi Chapter';
+const Home = props => {
+  document.title = 'Pi Sigma Epsilon | Zeta Chi Chapter';
 
-    const slideItems = homeInfo.map((item, index) => {
-      return (
-        <div className={css(styles.slide)} key={index}>
-          <img
-            src={item.imgSrc}
-            className={css(styles.image)}
-            alt={item.message}
-          />
-          <div className={css(styles.overlayContainer)}>
-            <h1 className={css(styles.header)}>
-              {item.message}
-            </h1>
-            <Link className={css(styles.link)} to={item.link}>
-              {item.text}
-            </Link>
-          </div>
-        </div>
-      );
-    });
-
+  const slideItems = HOME_INFO.map((item, index) => {
     return (
-      <div className={css(styles.homeContainer, animations.fadeIn)}>
-        <div className={css(styles.sliderContainer)}>
-          <Slider
-            accessibility={true}
-            className={css(styles.innerSlider)}
-            adaptiveHeight={false}
-            arrows={false}
-            autoplay={true}
-            autoplaySpeed={4500}
-            centerMode={false}
-            draggable={false}
-            dots={true}
-            dotsClass={css(styles.dots) + ' slick-dots'}
-            fade={true}
-            focusOnSelect={true}
-            infinite={true}
-            initialSlide={0}
-            lazyLoad={true}
-            pauseOnHover={false}
-            slidesToShow={1}
-            slidesToScroll={1}
-            swipe={true}
-          >
-            {slideItems}
-          </Slider>
+      <div className={css(styles.slide)} key={index}>
+        <img
+          src={item.imgSrc}
+          className={css(styles.image)}
+          alt={item.message}
+        />
+        <div className={css(styles.overlayContainer)}>
+          <h1 className={css(styles.header)}>{item.message}</h1>
+          <Link className={css(styles.link)} to={item.link}>
+            {item.text}
+          </Link>
         </div>
       </div>
     );
-  }
-}
+  });
+
+  return (
+    <div className={css(styles.homeContainer, animations.fadeIn)}>
+      <div className={css(styles.sliderContainer)}>
+        <Slider
+          accessibility={true}
+          className={css(styles.innerSlider)}
+          adaptiveHeight={false}
+          arrows={false}
+          autoplay={true}
+          autoplaySpeed={4500}
+          centerMode={false}
+          draggable={false}
+          dots={true}
+          dotsClass={css(styles.dots) + ' slick-dots'}
+          fade={true}
+          focusOnSelect={true}
+          infinite={true}
+          initialSlide={0}
+          lazyLoad={true}
+          pauseOnHover={false}
+          slidesToShow={1}
+          slidesToScroll={1}
+          swipe={true}
+        >
+          {slideItems}
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
 
 const styles = StyleSheet.create({
   homeContainer: {

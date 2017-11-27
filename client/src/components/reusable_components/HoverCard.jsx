@@ -8,24 +8,20 @@ import { Link } from 'react-router-dom';
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
 
-export default class HoverCard extends React.Component {
-  render() {
-    return (
-      <Link
-        className={css(styles.hoverCard, animations.zoomIn)}
-        to={this.props.link}
-      >
-        <h1 className={css(styles.header)}>
-          {this.props.header}
-        </h1>
-        <hr className={css(styles.hr)} />
-        <p className={css(styles.description)}>
-          {this.props.description}
-        </p>
-      </Link>
-    );
-  }
-}
+const HoverCard = props => {
+  return (
+    <Link
+      className={css(styles.hoverCard, animations.zoomIn)}
+      to={this.props.link}
+    >
+      <h1 className={css(styles.header)}>{this.props.header}</h1>
+      <hr className={css(styles.hr)} />
+      <p className={css(styles.description)}>{this.props.description}</p>
+    </Link>
+  );
+};
+
+export default HoverCard;
 
 const styles = StyleSheet.create({
   hoverCard: {

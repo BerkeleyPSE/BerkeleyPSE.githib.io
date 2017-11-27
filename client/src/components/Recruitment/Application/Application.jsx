@@ -12,54 +12,52 @@ import ApplicationForm from './ApplicationForm';
 import PreregistrationForm from './PreregistrationForm';
 import { AppActions } from '../../../actions/app-actions.js';
 
-const IS_APP_OPEN = false;
+const IS_APP_OPEN = true;
 
-class Application extends React.Component {
-  render() {
-    document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
-    let { appReducer } = this.props;
-    return (
-      <div className={css(styles.appContainer, animations.fadeIn)}>
-        {IS_APP_OPEN ? (
-          <div>
-            <h1 className={css(styles.header)}>Spring 2018 Application</h1>
-            <p className={css(styles.description)}>
-              Please fill out all fields.
-              <br />
-              The deadline is January 31st, 2018 at 11:59pm. Good luck!
+const Application = props => {
+  document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
+  let { appReducer } = props;
+  return (
+    <div className={css(styles.appContainer, animations.fadeIn)}>
+      {IS_APP_OPEN ? (
+        <div>
+          <h1 className={css(styles.header)}>Spring 2018 Application</h1>
+          <p className={css(styles.description)}>
+            Please fill out all fields.
+            <br />
+            The deadline is January 31st, 2018 at 11:59pm. Good luck!
+          </p>
+          {!_.isUndefined(appReducer.appSubmitSuccess) ? (
+            <p className={css(styles.successMessage)}>
+              Your application was submitted successfully. We will notify you
+              about the steps going forward on February 1st. Thanks!
             </p>
-            {!_.isUndefined(appReducer.appSubmitSuccess) ? (
-              <p className={css(styles.successMessage)}>
-                Your application was submitted successfully. We will notify you
-                about the steps going forward on February 1st. Thanks!
-              </p>
-            ) : (
-              <ApplicationForm submitApp={this.props.submitApplication} />
-            )}
-          </div>
-        ) : (
-          <div>
-            <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
-            <p className={css(styles.description)}>
-              Our Fall 2017 Application is now closed. Thank you for applying!
-              <br />
-              If you would like notifications for our Spring 2018 recruitment
-              events, please enter your name and email below.
+          ) : (
+            <ApplicationForm submitApp={props.submitApplication} />
+          )}
+        </div>
+      ) : (
+        <div>
+          <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
+          <p className={css(styles.description)}>
+            Our Fall 2017 Application is now closed. Thank you for applying!
+            <br />
+            If you would like notifications for our Spring 2018 recruitment
+            events, please enter your name and email below.
+          </p>
+          {!_.isUndefined(appReducer.formSubmitSuccess) ? (
+            <p className={css(styles.successMessage)}>
+              Your information was submitted successfully. We'll notify you when
+              our recruitment calendar is released. Thanks!
             </p>
-            {!_.isUndefined(appReducer.formSubmitSuccess) ? (
-              <p className={css(styles.successMessage)}>
-                Your information was submitted successfully. We'll notify you
-                when our recruitment calendar is released. Thanks!
-              </p>
-            ) : (
-              <PreregistrationForm submitForm={this.props.submitForm} />
-            )}
-          </div>
-        )}
-      </div>
-    );
-  }
-}
+          ) : (
+            <PreregistrationForm submitForm={props.submitForm} />
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
 
 function mapStateToProps(state) {
   return { appReducer: state.app };

@@ -9,33 +9,33 @@ import { animations } from '../../../stylesheets/Animations.js';
 import { faq_constants } from './faq_constants.js';
 import AccordionItem from '../../reusable_components/AccordionItem.jsx';
 
-export default class FAQs extends React.Component {
-  render() {
-    document.title = 'FAQs - Pi Sigma Epsilon | Zeta Chi Chapter';
+const FAQs = props => {
+  document.title = 'FAQs - Pi Sigma Epsilon | Zeta Chi Chapter';
 
-    const faqs = faq_constants.map((item, index) => {
-      if (item.question && item.answer) {
-        return (
-          <AccordionItem
-            key={index}
-            index={index}
-            question={item.question}
-            answer={item.answer}
-          />
-        );
-      } else {
-        return null;
-      }
-    });
+  const faqs = faq_constants.map((item, index) => {
+    if (item.question && item.answer) {
+      return (
+        <AccordionItem
+          key={index}
+          index={index}
+          question={item.question}
+          answer={item.answer}
+        />
+      );
+    } else {
+      return null;
+    }
+  });
 
-    return (
-      <div className={css(animations.fadeIn) + ' faqs-container'}>
-        <h1 className={css(styles.header)}>Frequently Asked Questions</h1>
-        <div className={css(styles.accordionContainer)}>{faqs}</div>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={css(animations.fadeIn) + ' faqs-container'}>
+      <h1 className={css(styles.header)}>Frequently Asked Questions</h1>
+      <div className={css(styles.accordionContainer)}>{faqs}</div>
+    </div>
+  );
+};
+
+export default FAQs;
 
 const styles = StyleSheet.create({
   header: {

@@ -14,7 +14,7 @@ import {
 } from '../Navbar/navbar_constants.jsx';
 
 // constants
-const hoverCardItems = [
+const HOVER_CARD_ITEMS = [
   {
     header: 'Why PSE?',
     description: 'What sets us apart.',
@@ -32,43 +32,41 @@ const hoverCardItems = [
   }
 ];
 
-export default class Recruitment extends React.Component {
-  render() {
-    document.title = 'Recruitment - Pi Sigma Epsilon | Zeta Chi Chapter';
+const Recruitment = props => {
+  document.title = 'Recruitment - Pi Sigma Epsilon | Zeta Chi Chapter';
 
-    const hoverCards = hoverCardItems.map((item, index) => {
-      return (
-        <HoverCard
-          key={index}
-          link={item.link}
-          header={item.header}
-          description={item.description}
-        />
-      );
-    });
-
+  const hoverCards = HOVER_CARD_ITEMS.map((item, index) => {
     return (
-      <div className={css(animations.fadeIn) + ' recruitment-container'}>
-        <div className="timeline-container">
-          {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
-          <iframe
-            title="Fall 2017 Recruitment Timeline"
-            src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
-            width="100%"
-            height="650px"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-            frameBorder="0"
-          />
-        </div>
-        <div className={css(styles.hoverCardContainer)}>
-          {hoverCards}
-        </div>
-      </div>
+      <HoverCard
+        key={index}
+        link={item.link}
+        header={item.header}
+        description={item.description}
+      />
     );
-  }
-}
+  });
+
+  return (
+    <div className={css(animations.fadeIn) + ' recruitment-container'}>
+      <div className="timeline-container">
+        {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
+        <iframe
+          title="Fall 2017 Recruitment Timeline"
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
+          width="100%"
+          height="650px"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+          frameBorder="0"
+        />
+      </div>
+      <div className={css(styles.hoverCardContainer)}>{hoverCards}</div>
+    </div>
+  );
+};
+
+export default Recruitment;
 
 const styles = StyleSheet.create({
   hoverCardContainer: {

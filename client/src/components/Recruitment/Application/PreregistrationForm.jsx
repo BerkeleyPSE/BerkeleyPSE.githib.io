@@ -9,8 +9,8 @@ import { reduxForm, Field } from 'redux-form';
 import { animations } from '../../../stylesheets/Animations.js';
 import InputField from './InputField';
 
-class PreregistrationForm extends React.Component {
-  renderFields() {
+const PreregistrationForm = props => {
+  const renderFields = () => {
     return (
       <div>
         <Field
@@ -29,21 +29,19 @@ class PreregistrationForm extends React.Component {
         />
       </div>
     );
-  }
+  };
 
-  render() {
-    return (
-      <div className={css(formStyles.container, animations.fadeIn)}>
-        <form onSubmit={this.props.handleSubmit(this.props.submitForm)}>
-          {this.renderFields()}
-          <button className={css(formStyles.submit)} type="submit">
-            Submit
-          </button>
-        </form>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={css(formStyles.container, animations.fadeIn)}>
+      <form onSubmit={props.handleSubmit(props.submitForm)}>
+        {renderFields()}
+        <button className={css(formStyles.submit)} type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
 
 function validate(values) {
   const errors = {};

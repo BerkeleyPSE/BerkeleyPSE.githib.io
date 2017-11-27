@@ -10,8 +10,8 @@ import { animations } from '../../../stylesheets/Animations';
 import { APP_FIELDS } from './ApplicationFields';
 import RadioField from './RadioField';
 
-class ApplicationForm extends React.Component {
-  renderFields() {
+const ApplicationForm = props => {
+  const renderFields = () => {
     return (
       <div id="fields-container">
         {APP_FIELDS.map((field, index) => {
@@ -24,21 +24,19 @@ class ApplicationForm extends React.Component {
         })}
       </div>
     );
-  }
+  };
 
-  render() {
-    return (
-      <div className={css(formStyles.container, animations.fadeIn)}>
-        <form onSubmit={this.props.handleSubmit(this.props.submitApp)}>
-          {this.renderFields()}
-          <button className={css(formStyles.review)} type="submit">
-            Submit
-          </button>
-        </form>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={css(formStyles.container, animations.fadeIn)}>
+      <form onSubmit={props.handleSubmit(props.submitApp)}>
+        {renderFields()}
+        <button className={css(formStyles.review)} type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
 
 function validate(values) {
   const errors = {};

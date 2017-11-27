@@ -4,7 +4,12 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 
-export default ({ input, label, placeholder, meta: { error, touched } }) => {
+const TextAreaField = ({
+  input,
+  label,
+  placeholder,
+  meta: { error, touched }
+}) => {
   return (
     <div className={css(styles.textareaContainer)}>
       <label className={css(styles.label)}>{label}</label>
@@ -17,6 +22,8 @@ export default ({ input, label, placeholder, meta: { error, touched } }) => {
     </div>
   );
 };
+
+export default TextAreaField;
 
 const styles = StyleSheet.create({
   textareaContainer: {

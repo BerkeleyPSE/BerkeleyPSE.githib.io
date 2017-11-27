@@ -5,7 +5,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Field } from 'redux-form';
 
-export default ({ label, options, name }) => {
+const RadioField = ({ label, options, name }) => {
   return (
     <div className={css(styles.radioContainer)}>
       <label className={css(styles.label)}>{label}</label>
@@ -41,6 +41,8 @@ const RadioButton = ({ input, option, index, meta: { touched, error } }) => {
     </div>
   );
 };
+
+export default RadioField;
 
 const styles = StyleSheet.create({
   radioContainer: {

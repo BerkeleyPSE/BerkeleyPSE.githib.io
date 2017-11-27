@@ -4,7 +4,12 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 
-export default ({ input, label, placeholder, meta: { error, touched } }) => {
+const InputField = ({
+  input,
+  label,
+  placeholder,
+  meta: { error, touched }
+}) => {
   return (
     <div className={css(styles.inputContainer)}>
       <div className={css(styles.labelContainer)}>
@@ -19,6 +24,8 @@ export default ({ input, label, placeholder, meta: { error, touched } }) => {
     </div>
   );
 };
+
+export default InputField;
 
 const styles = StyleSheet.create({
   inputContainer: {

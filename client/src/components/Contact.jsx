@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { animations } from '../stylesheets/Animations.js';
 
 // Constants
-const contactList = [
+const CONTACT_LIST = [
   {
     for: 'general questions or inquiries',
     email: 'berkeleypse.president@gmail.com'
@@ -28,44 +28,43 @@ const contactList = [
   }
 ];
 
-export default class Contact extends React.Component {
-  render() {
-    document.title = 'Contact - Pi Sigma Epsilon | Zeta Chi Chapter';
+const Contact = props => {
+  document.title = 'Contact - Pi Sigma Epsilon | Zeta Chi Chapter';
 
-    const contactInfo = contactList.map((item, index) => {
-      return (
-        <p className={css(styles.contactInfo)}>
-          For {item.for}, please email
-          <Link
-            to={`mailto:${item.email}`}
-            className={css(styles.link)}
-            target="blank"
-            key={index}
-          >
-            {' '}{item.email}
-          </Link>
-          .
-        </p>
-      );
-    });
-
+  const contactInfo = CONTACT_LIST.map((item, index) => {
     return (
-      <div className={css(animations.fadeIn) + ' contact-container'}>
-        <div className={css(styles.landingContainer)}>
-          <img
-            src={'../images/campanile.jpg'}
-            className={css(styles.image)}
-            alt={'Pi Sigma Epsilon brotherhood'}
-          />
-          <h1 className={css(styles.header)}>Contact Us</h1>
-        </div>
-        <div className={css(styles.infoContainer)}>
-          {contactInfo}
-        </div>
-      </div>
+      <p className={css(styles.contactInfo)}>
+        For {item.for}, please email
+        <Link
+          to={`mailto:${item.email}`}
+          className={css(styles.link)}
+          target="blank"
+          key={index}
+        >
+          {' '}
+          {item.email}
+        </Link>
+        .
+      </p>
     );
-  }
-}
+  });
+
+  return (
+    <div className={css(animations.fadeIn) + ' contact-container'}>
+      <div className={css(styles.landingContainer)}>
+        <img
+          src={'../images/campanile.jpg'}
+          className={css(styles.image)}
+          alt={'Pi Sigma Epsilon brotherhood'}
+        />
+        <h1 className={css(styles.header)}>Contact Us</h1>
+      </div>
+      <div className={css(styles.infoContainer)}>{contactInfo}</div>
+    </div>
+  );
+};
+
+export default Contact;
 
 const styles = StyleSheet.create({
   landingContainer: {

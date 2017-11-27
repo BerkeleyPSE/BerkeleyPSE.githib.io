@@ -11,40 +11,40 @@ import DropdownUnit from './DropdownUnit.jsx';
 import HamburgerMenu from './HamburgerMenu.jsx';
 import { navbar_constants } from './navbar_constants.jsx';
 
-export default class Navbar extends React.Component {
-  render() {
-    const dropdownUnits = navbar_constants.map(item => {
-      return (
-        <DropdownUnit
-          header={item.header}
-          headerLink={item.headerLink}
-          pages={item.pages}
-          key={`nav_${item.header}`}
-        />
-      );
-    });
-
+const Navbar = props => {
+  const dropdownUnits = navbar_constants.map(item => {
     return (
-      <div className={css(styles.mainContainer, animations.fadeInDown)}>
-        <Link to={'/'} className={css(styles.logoContainer)}>
-          <img
-            className={css(styles.logo)}
-            src="/images/logo.png"
-            alt="Pi Sigma Epsilon logo"
-          />
-          <div className={css(styles.textContainer)}>
-            <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
-            <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
-          </div>
-        </Link>
-        <div className={css(styles.dropdownUnitContainer)}>{dropdownUnits}</div>
-        <div className={css(styles.hamburgerMenu)}>
-          <HamburgerMenu />
-        </div>
-      </div>
+      <DropdownUnit
+        header={item.header}
+        headerLink={item.headerLink}
+        pages={item.pages}
+        key={`nav_${item.header}`}
+      />
     );
-  }
-}
+  });
+
+  return (
+    <div className={css(styles.mainContainer, animations.fadeInDown)}>
+      <Link to={'/'} className={css(styles.logoContainer)}>
+        <img
+          className={css(styles.logo)}
+          src="/images/logo.png"
+          alt="Pi Sigma Epsilon logo"
+        />
+        <div className={css(styles.textContainer)}>
+          <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
+          <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
+        </div>
+      </Link>
+      <div className={css(styles.dropdownUnitContainer)}>{dropdownUnits}</div>
+      <div className={css(styles.hamburgerMenu)}>
+        <HamburgerMenu />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
 
 const styles = StyleSheet.create({
   mainContainer: {

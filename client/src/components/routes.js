@@ -44,33 +44,33 @@ import {
   CONTACT_PATH
 } from './Navbar/navbar_constants.jsx';
 
-export default class Routes extends React.Component {
-  render() {
-    return (
-      <div className={css(styles.routerContainer)}>
-        <Navbar />
-        <AppBanner />
-        <div className={css(styles.mainContainer)}>
-          <Switch>
-            <Route exact path={HOME_PATH} component={Home} />
-            <Route path={ABOUT_PATH} component={About} />
-            <Route path={CAREERS_PATH} component={Careers} />
-            <Route path={RECRUITMENT_PATH} component={Recruitment} />
-            <Route path={WHYPSE_PATH} component={WhyPSE} />
-            <Route path={FAQS_PATH} component={FAQs} />
-            <Route path={APPLICATION_PATH} component={Application} />
-            <Route exact path={BROTHERS_PATH} component={Brotherhood} />
-            <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
-            <Route path={EXECUTIVES_PATH} component={Executives} />
-            <Route path={CONTACT_PATH} component={Contact} />
-            <Route component={Error404} />
-          </Switch>
-        </div>
-        <Footer />
+const Routes = props => {
+  return (
+    <div id="router-container">
+      <Navbar />
+      <AppBanner />
+      <div className={css(styles.mainContainer)}>
+        <Switch>
+          <Route exact path={HOME_PATH} component={Home} />
+          <Route path={ABOUT_PATH} component={About} />
+          <Route path={CAREERS_PATH} component={Careers} />
+          <Route path={RECRUITMENT_PATH} component={Recruitment} />
+          <Route path={WHYPSE_PATH} component={WhyPSE} />
+          <Route path={FAQS_PATH} component={FAQs} />
+          <Route path={APPLICATION_PATH} component={Application} />
+          <Route exact path={BROTHERS_PATH} component={Brotherhood} />
+          <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
+          <Route path={EXECUTIVES_PATH} component={Executives} />
+          <Route path={CONTACT_PATH} component={Contact} />
+          <Route component={Error404} />
+        </Switch>
       </div>
-    );
-  }
-}
+      <Footer />
+    </div>
+  );
+};
+
+export default Routes;
 
 const styles = StyleSheet.create({
   mainContainer: {

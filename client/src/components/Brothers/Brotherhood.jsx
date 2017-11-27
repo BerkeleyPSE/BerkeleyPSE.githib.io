@@ -9,31 +9,29 @@ import { animations } from '../../stylesheets/Animations.js';
 import { brotherList } from './brotherhood_constants';
 import { BrotherImage } from './BrotherImage.jsx';
 
-export default class Brotherhood extends React.Component {
-  render() {
-    document.title = 'Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter';
+const Brotherhood = props => {
+  document.title = 'Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter';
 
-    const allBrothers = brotherList.map(brother => {
-      return <BrotherImage brother={brother} key={brother} page="bros" />;
-    });
+  const allBrothers = brotherList.map(brother => {
+    return <BrotherImage brother={brother} key={brother} page="bros" />;
+  });
 
-    return (
-      <div className={css(animations.fadeIn) + ' brotherhood-container'}>
-        <div className={css(styles.landingContainer)}>
-          <img
-            src={'../images/brotherhood.jpg'}
-            className={css(styles.image)}
-            alt={'Pi Sigma Epsilon brotherhood'}
-          />
-          <h1 className={css(styles.header)}>Our Brotherhood</h1>
-        </div>
-        <div className={css(styles.allBrosContainer)}>
-          {allBrothers}
-        </div>
+  return (
+    <div className={css(animations.fadeIn) + ' brotherhood-container'}>
+      <div className={css(styles.landingContainer)}>
+        <img
+          src={'../images/brotherhood.jpg'}
+          className={css(styles.image)}
+          alt={'Pi Sigma Epsilon brotherhood'}
+        />
+        <h1 className={css(styles.header)}>Our Brotherhood</h1>
       </div>
-    );
-  }
-}
+      <div className={css(styles.allBrosContainer)}>{allBrothers}</div>
+    </div>
+  );
+};
+
+export default Brotherhood;
 
 const styles = StyleSheet.create({
   landingContainer: {

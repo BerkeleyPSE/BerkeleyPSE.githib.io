@@ -5,7 +5,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import { Field } from 'redux-form';
 
-export default ({ label, options, name }) => {
+const CheckBoxField = ({ label, options, name }) => {
   return (
     <div className={css(styles.checkboxContainer)}>
       <label className={css(styles.label)}>{label}</label>
@@ -39,6 +39,8 @@ const CheckButton = ({ input, option, name, meta: { error, touched } }) => {
     </div>
   );
 };
+
+export default CheckBoxField;
 
 const styles = StyleSheet.create({
   checkboxContainer: {
