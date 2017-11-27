@@ -1,5 +1,5 @@
 # Berkeley Pi Sigma Epsilon
-A website for UC Berkeley's marketing & business fraternity Pi Sigma Epsilon, Zeta Chi Chapter.
+The website for UC Berkeley's marketing & business fraternity Pi Sigma Epsilon, Zeta Chi Chapter.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -25,14 +25,25 @@ A website for UC Berkeley's marketing & business fraternity Pi Sigma Epsilon, Ze
   - [Changes between Semesters](#changes-between-semesters)
   - [Future Changes](#future-changes)
 - [Appendix](#appendix)
-  - [Packages Used](#packages-used)
+  - [Packages Dependencies](#package-dependencies)
   - [Authors](#authors)
 
 ## Getting Started
 
 ### GitHub
+- Create a personal GitHub account, if you do not already have one
+- As VP of Marketing, add your personal GitHub account as a collaborator (follow the directions in [Contributing](#contributing))
 
 ### Installing Node & npm
+Node and npm are required to contribute to this repository.
+
+You can download them both [here](https://nodejs.org/en/download/)
+
+After download, ensure installation. Open a new terminal window, then run:
+```bash
+node -v # Confirm node is installed
+npm -v  # Confirm npm is installed
+```
 
 ### Cloning this Repository
 To clone this repository, open a terminal window and run
@@ -89,21 +100,30 @@ server
 
 ## Contributing
 
+I recommend all Collaborators on this repository use their personal GitHub account to contribute to this repository, rather than the BerkeleyPSE account. 
+
+You must be a Collaborator on this repository to contribute officially.
+As VP of Marketing, you can add a Collaborator by logging into the BerkeleyPSE GitHub account.
+
+Then, click on the `Settings` tab in the navigation bar. Click on the `Collaborators` option in the side bar. Add a Collaborator by their username. This new collaborator must accept access to contribute to this repository -- they will then have "push access".
+
 ### How to Contribute
+Once added as a Collaborator on this repository:
 - Clone the repository as explained in [Cloning this Repository](#cloning-this-repository)
 - Open a terminal and navigate to where you cloned the repository.
 - Run:
 ```bash
 cd berkeleypse
-npm install // install the node_modules for the server
+npm install # install the node_modules for the server
 cd client
-npm install // install the node_modules for the client
+npm install # install the node_modules for the client
 cd ..
-npm run dev // this starts the server and client concurrently
+npm run dev # this starts the server and client concurrently
 ```
 - A new browser window should `localhost:3000`. Do this manually, if necessary.
 
 ### Immediate Changes
+- Connect the mLab MongoDB databases to Google Spreadsheets for easier collaboration
 
 ### Changes within a Semester
 - Open & close the recruitment application 
@@ -115,33 +135,35 @@ npm run dev // this starts the server and client concurrently
 - Update the executive board page with the new members (if necessary)
 
 ### Future Changes
+- An "Experiences" table should be added to each brother's profile in the `Brother` component
+- An "Internships" table should be added to the `Careers` page
 
 ## Appendix
 
-### Packages Used
+### Package Dependencies
 
-This project uses the following npm packages. 
+This project depends on the following npm packages. 
 
 #### Client
-- [aphrodite]
-- [axios]
-- [query-string]
-- [react-animations]
-- [react-burger-menu]
-- [react-dd-menu]
-- [react-slick]
-- [react-social-media-bar]
-- [react-table]
-- [redux-form]
+- [aphrodite](https://github.com/Khan/aphrodite)
+- [axios](https://github.com/axios/axios)
+- [query-string](https://github.com/sindresorhus/query-string)
+- [react-animations](https://github.com/FormidableLabs/react-animations)
+- [react-burger-menu](https://github.com/negomi/react-burger-menu)
+- [react-dd-menu](https://github.com/mlaursen/react-dd-menu)
+- [react-slick](https://github.com/akiran/react-slick)
+- [react-social-media-bar](https://github.com/rahrang/react-social-media-bar)
+- [react-table](https://github.com/react-tools/react-table)
+- [redux-form](https://github.com/erikras/redux-form)
 
 #### Server
-- [body-parser]
-- [concurrently]
-- [express]
-- [lodash]
-- [mongodb]
-- [mongoose]
-- [nodemon]
+- [body-parser](https://github.com/expressjs/body-parser)
+- [concurrently](https://github.com/kimmobrunfeldt/concurrently)
+- [express](https://github.com/expressjs/express)
+- [lodash](https://github.com/lodash/lodash)
+- [mongodb](https://github.com/mongodb/node-mongodb-native)
+- [mongoose](https://github.com/Automattic/mongoose)
+- [nodemon](https://github.com/remy/nodemon)
 
 ### Authors
 - Rahul Rangnekar
