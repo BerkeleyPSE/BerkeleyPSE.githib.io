@@ -126,13 +126,14 @@ npm run dev # this starts the server and client concurrently
 - Connect the mLab MongoDB databases to Google Spreadsheets for easier collaboration
 
 ### Changes within a Semester
-- Open & close the recruitment application 
-- When the recruitment application is closed, be sure to update the Pre-Registration form and mLab database with the next semester
+- When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component
+- Open & close the recruitment application as necessary
+- When the recruitment application is closed, be sure to update the Pre-Registration form and mLab MongoDB database with the next semester's information
 
 ### Changes between Semesters
-- Update the recruitment timeline
-- Update the brotherhood page with the newly-crossed class members
-- Update the executive board page with the new members (if necessary)
+- Update the [Recruitment](https://github.com/BerkeleyPSE/BerkeleyPSE.github.io/blob/5923f9a479e63f94b6e41fe3b523f4928b0788f3/client/src/components/Recruitment/Recruitment.jsx) timeline
+- Update the [Brotherhood](https://github.com/BerkeleyPSE/BerkeleyPSE.github.io/blob/5923f9a479e63f94b6e41fe3b523f4928b0788f3/client/src/components/Brothers/Brotherhood.jsx) page with the newly-crossed class members
+- Update the [Executives](https://github.com/BerkeleyPSE/BerkeleyPSE.github.io/blob/5923f9a479e63f94b6e41fe3b523f4928b0788f3/client/src/components/Brothers/Executives.jsx) page with the new members (if necessary)
 
 ### Future Changes
 - An "Experiences" table should be added to each brother's profile in the `Brother` component
@@ -142,7 +143,7 @@ npm run dev # this starts the server and client concurrently
 
 ### Package Dependencies
 
-This project depends on the following npm packages. 
+This project was bootstrapped with [`create-react-app`](https://github.com/facebookincubator/create-react-app) and depends on the following npm packages. 
 
 #### Client
 - [aphrodite](https://github.com/Khan/aphrodite)
