@@ -12,7 +12,7 @@ import ApplicationForm from './ApplicationForm';
 import PreregistrationForm from './PreregistrationForm';
 import { AppActions } from '../../../actions/app-actions.js';
 
-const IS_APP_OPEN = true;
+const IS_APP_OPEN = false;
 
 const Application = props => {
   document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
