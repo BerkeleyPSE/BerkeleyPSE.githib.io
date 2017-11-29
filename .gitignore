@@ -1,7 +1,11 @@
-# Dependency directories
 node_modules
 
-# Optional npm cache directory
-.npm
+build
 
-.DS_store
+config/dev.js
+
+client/node_modules
+
+client/build
+
+.DS_Store
