@@ -6,13 +6,13 @@ import { StyleSheet, css } from 'aphrodite';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
-import { executiveList } from './brotherhood_constants';
+import { vpList } from './brotherhood_constants';
 import { BrotherImage } from './BrotherImage.jsx';
 
 const Executives = props => {
   document.title = 'Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter';
 
-  const executives = executiveList.map(brother => {
+  const vps = vpList.map(brother => {
     return <BrotherImage brother={brother} key={brother} page="execs" />;
   });
 
@@ -29,7 +29,7 @@ const Executives = props => {
       <div className={css(styles.container, animations.fadeIn)}>
         <BrotherImage brother={'kevin_phan'} key={'kevin_phan'} page="execs" />
         <br />
-        <div className={css(styles.executiveContainer)}>{executives}</div>
+        <div className={css(styles.executiveContainer)}>{vps}</div>
       </div>
     </div>
   );

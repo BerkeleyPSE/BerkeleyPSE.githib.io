@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
 import { brotherInfo } from './brotherhood_constants';
-import { BROTHERS_PATH } from '../Navbar/navbar_constants.jsx';
+import { BROTHERS_PATH, EXECUTIVES_PATH } from '../Navbar/navbar_constants.jsx';
 
 export class BrotherImage extends React.Component {
   constructor(props) {
@@ -19,16 +19,19 @@ export class BrotherImage extends React.Component {
   }
 
   render() {
-    let { brother } = this.props;
+    let { brother, page } = this.props;
+    let { hover } = this.state;
     var bro = brotherInfo[brother];
 
     if (!bro) {
       return null;
     }
 
+    let toPath = page === 'bros' ? BROTHERS_PATH : EXECUTIVES_PATH;
+
     return (
       <Link
-        to={BROTHERS_PATH + '/' + brother}
+        to={toPath + '/' + brother}
         className={css(styles.broLink)}
         onMouseEnter={() => this.setState({ hover: true })}
         onMouseLeave={() => {
@@ -37,7 +40,7 @@ export class BrotherImage extends React.Component {
       >
         <div className={css(styles.broContainer)}>
           <img src={bro.img} className={css(styles.broImg)} alt={bro.name} />
-          {(this.state.hover || this.props.page === 'execs') &&
+          {(hover || page === 'execs') && (
             <div className={css(styles.overlay)}>
               <p className={css(styles.broName, animations.slideInLeft)}>
                 {bro.name}
@@ -46,17 +49,15 @@ export class BrotherImage extends React.Component {
               <p className={css(styles.broPosition, animations.slideInRight)}>
                 {bro.position}
               </p>
-            </div>}
-          {this.props.page === 'bros' &&
+            </div>
+          )}
+          {page === 'bros' && (
             <div className={css(styles.mobileBro)}>
-              <p className={css(styles.mobileName)}>
-                {bro.name}
-              </p>
+              <p className={css(styles.mobileName)}>{bro.name}</p>
               <hr className={css(styles.hr)} />
-              <p className={css(styles.mobilePosition)}>
-                {bro.position}
-              </p>
-            </div>}
+              <p className={css(styles.mobilePosition)}>{bro.position}</p>
+            </div>
+          )}
         </div>
       </Link>
     );

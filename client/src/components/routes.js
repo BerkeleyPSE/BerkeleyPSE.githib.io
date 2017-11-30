@@ -60,7 +60,8 @@ const Routes = props => {
           <Route path={APPLICATION_PATH} component={Application} />
           <Route exact path={BROTHERS_PATH} component={Brotherhood} />
           <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
-          <Route path={EXECUTIVES_PATH} component={Executives} />
+          <Route exact path={EXECUTIVES_PATH} component={Executives} />
+          <Route path={`${EXECUTIVES_PATH}/:name`} component={Brother} />
           <Route path={CONTACT_PATH} component={Contact} />
           <Route component={Error404} />
         </Switch>

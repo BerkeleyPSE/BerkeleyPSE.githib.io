@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { animations } from '../../stylesheets/Animations.js';
 
 // Local Helper Files  & Components
-import { BROTHERS_PATH } from '../Navbar/navbar_constants.jsx';
+import { BROTHERS_PATH, EXECUTIVES_PATH } from '../Navbar/navbar_constants.jsx';
 
 export class PageHandler extends React.Component {
   getIndices = index => {
@@ -33,11 +33,11 @@ export class PageHandler extends React.Component {
   };
 
   render() {
-    let { brotherInfo } = this.props;
+    let { brotherInfo, page } = this.props;
 
-    var bros = this.getIndices(this.props.index);
-    var prevBro = '';
-    var nextBro = '';
+    let bros = this.getIndices(this.props.index);
+    let prevBro = '';
+    let nextBro = '';
     if (!bros) {
       return null;
     } else {
@@ -45,10 +45,12 @@ export class PageHandler extends React.Component {
       nextBro = bros[1];
     }
 
+    let toPath = page === 'bros' ? BROTHERS_PATH : EXECUTIVES_PATH;
+
     return (
       <div className={css(styles.pageHandlerContainer, animations.fadeIn)}>
         <Link
-          to={BROTHERS_PATH + '/' + prevBro}
+          to={toPath + '/' + prevBro}
           className={css(styles.prevContainer, styles.link)}
         >
           <i
@@ -58,7 +60,7 @@ export class PageHandler extends React.Component {
           {brotherInfo[bros[0]].name}
         </Link>
         <Link
-          to={BROTHERS_PATH + '/' + nextBro}
+          to={toPath + '/' + nextBro}
           className={css(styles.nextContainer, styles.link)}
         >
           {brotherInfo[bros[1]].name}

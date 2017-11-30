@@ -4,13 +4,14 @@ import React from 'react';
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-router-dom';
+import * as _ from 'lodash';
 
 // Local Helper Files & Components
 import { animations } from '../../stylesheets/Animations.js';
 import {
   brotherInfo,
-  brotherList
-  // executiveList
+  brotherList,
+  allExecsList
 } from './brotherhood_constants';
 import { PageHandler } from './PageHandler.jsx';
 
@@ -45,10 +46,21 @@ export default class Brother extends React.Component {
     );
   };
 
+  isExecsPath = () => {
+    let { match } = this.props;
+    return _.includes(match.path, '/eboard/');
+  };
+
   render() {
-    var brother = this.props.match.params.name;
-    var broIndex = brotherList.indexOf(brother);
-    var bro = brotherInfo[brother];
+    let brother = this.props.match.params.name;
+    let broList = brotherList;
+    let page = 'bros';
+    if (this.isExecsPath()) {
+      broList = allExecsList;
+      page = 'execs';
+    }
+    let broIndex = broList.indexOf(brother);
+    let bro = brotherInfo[brother];
 
     if (!bro) {
       this.broNotFound();
@@ -83,8 +95,9 @@ export default class Brother extends React.Component {
           <div className={css(styles.broInfo)}>
             <PageHandler
               index={broIndex}
-              brotherList={brotherList}
+              brotherList={broList}
               brotherInfo={brotherInfo}
+              page={page}
             />
             <div className={css(styles.broHeader)}>
               <h1 className={css(styles.name)}>{bro.name}</h1>

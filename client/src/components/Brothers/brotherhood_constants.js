@@ -59,11 +59,20 @@ const brotherList = [
 these MUST match EXACTLY the name "keys" in the brotherInfo Object,
 or else the brother will not be rendered in Executives
 ***/
-const executiveList = [
+const vpList = [
   'aaron_corona',
   'taylor_lee',
   'kailin_li',
-  // 'kevin_phan',
+  'rahul_rangnekar',
+  'nicholas_chun',
+  'sean_yu'
+];
+
+const allExecsList = [
+  'aaron_corona',
+  'taylor_lee',
+  'kailin_li',
+  'kevin_phan',
   'rahul_rangnekar',
   'nicholas_chun',
   'sean_yu'
@@ -738,4 +747,4 @@ const brotherInfo = {
   }
 };
 
-export { brotherList, executiveList, brotherInfo };
+export { brotherList, vpList, allExecsList, brotherInfo };
