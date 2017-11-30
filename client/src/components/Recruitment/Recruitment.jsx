@@ -55,9 +55,6 @@ const Recruitment = props => {
           src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
           width="100%"
           height="650px"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
           frameBorder="0"
         />
       </div>

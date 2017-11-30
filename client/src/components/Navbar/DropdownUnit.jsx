@@ -96,6 +96,7 @@ const styles = StyleSheet.create({
   },
 
   headerLink: {
+    borderBottom: '2px solid #303030',
     color: '#FFF',
     height: 'auto',
     textDecoration: 'none',

@@ -15,7 +15,6 @@ export const AppActions = {
   },
 
   submitForm: values => async dispatch => {
-    console.log(values);
     const res = await axios.post('/api/regforms', values);
     return dispatch({
       type: AppConstants.SUBMIT_FORM,

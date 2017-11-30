@@ -28,10 +28,17 @@ const Application = props => {
             The deadline is January 31st, 2018 at 11:59pm. Good luck!
           </p>
           {!_.isUndefined(appReducer.appSubmitSuccess) ? (
-            <p className={css(styles.successMessage)}>
-              Your application was submitted successfully. We will notify you
-              about the steps going forward on February 1st. Thanks!
-            </p>
+            appReducer.formSubmitSuccess === true ? (
+              <p className={css(styles.successMessage)}>
+                Your application was submitted successfully. We'll notify you
+                about the next steps on February 1st. Thanks!
+              </p>
+            ) : (
+              <p className={css(styles.successMessage)}>
+                Something went wrong with your application submission. Please
+                refresh this page and try again.
+              </p>
+            )
           ) : (
             <ApplicationForm submitApp={props.submitApplication} />
           )}
@@ -46,10 +53,17 @@ const Application = props => {
             events, please enter your name and email below.
           </p>
           {!_.isUndefined(appReducer.formSubmitSuccess) ? (
-            <p className={css(styles.successMessage)}>
-              Your information was submitted successfully. We'll notify you when
-              our recruitment calendar is released. Thanks!
-            </p>
+            appReducer.formSubmitSuccess === true ? (
+              <p className={css(styles.successMessage)}>
+                Your information was submitted successfully. We'll notify you
+                when our recruitment calendar is released. Thanks!
+              </p>
+            ) : (
+              <p className={css(styles.successMessage)}>
+                Something went wrong with your submission. Please refresh this
+                page and try again.
+              </p>
+            )
           ) : (
             <PreregistrationForm submitForm={props.submitForm} />
           )}
