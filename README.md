@@ -50,8 +50,37 @@ To clone this repository, open a terminal window and run
 ```bash
 git clone https://github.com/BekreleyPSE/berkeleypse
 ```
+As VP of Marketing, or if you've been added as a collaborator on the heroku app (see [Heroku](#heroku) below for more details), you'll need to add a remote to the heroku/github repository.
+```bash
+git remote add heroku https://git.heroku.com/berkeleypse.git
+```
+Verify this remote has been added:
+```bash
+git remote
+# heroku
+# origin
+```
 
 ### Heroku
+- This website is hosted (for free) via Heroku: https://heroku.com
+- As VP of Marketing, sign into the account using the information in the `Accounts Information` spreadsheet in your Drive account.
+- OPTIONAL: Add your personal heroku account as a collaborator (Access > Add Collaborator).
+
+In your terminal, navigate to the `berkeleypse` folder linked to the GitHub repository.
+```bash
+cd berkeleypse
+```
+
+Then, sign into heroku using either (1) the VP of Marketing credentials or (2) your personal heroku account credentials.
+```bash
+heroku login
+```
+
+When you're ready to deploy changes to the live website at http://berkeleypse.org.
+```bash
+git push heroku master
+```
+This will push whatever changes are reflected in the `master` branch.
 
 ## File Structure
 This project is structured as such
