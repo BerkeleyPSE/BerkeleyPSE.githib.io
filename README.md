@@ -6,7 +6,8 @@ The website for UC Berkeley's marketing & business fraternity Pi Sigma Epsilon, 
   - [Github](#github)
   - [Installing Node & npm](#installing-node-&-npm)
   - [Cloning this Repository](#cloning-this-repository)
-  - [Heroku](#heroku) 
+  - [Heroku](#heroku)
+  - [GoDaddy](#godaddy)
 - [File Structure](#file-structure)
   - [The Client](#the-client)
   - [The Server](#the-server)
@@ -81,6 +82,13 @@ When you're ready to deploy changes to the live website at http://berkeleypse.or
 git push heroku master
 ```
 This will push whatever changes are reflected in the `master` branch.
+
+### GoDaddy
+The website's domain name server is hosted via [GoDaddy](https://godaddy.com).
+
+Login information can be found in the `Accounts Information` spreadsheet in the Drive folder.
+
+You should not need to make any settings changes here.
 
 ## File Structure
 This project is structured as such
