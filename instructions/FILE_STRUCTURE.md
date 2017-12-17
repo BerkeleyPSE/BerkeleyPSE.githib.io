@@ -3,6 +3,7 @@
 This project is structured as such
 ```
 server
+  instructions
   client
     src
       actions
