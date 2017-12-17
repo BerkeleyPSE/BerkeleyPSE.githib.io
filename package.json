@@ -26,9 +26,9 @@
     "express": "^4.16.2",
     "lodash": "^4.17.4",
     "mongodb": "^2.2.33",
-    "mongoose": "^4.13.4"
+    "mongoose": "^4.13.7"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.13.3"
   }
 }
