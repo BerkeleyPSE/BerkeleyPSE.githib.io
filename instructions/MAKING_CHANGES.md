@@ -9,8 +9,35 @@
 
 ## Git & GitHub
 
+As you contribute to this website, use Git and GitHub as follows.
+
+If you're making simple one-time updates -- changing Links, opening/closing the application, adding new images, etc. -- work directly on the `master` branch.
+
+If you're spending more than a day or two designing new features -- adding brother profiles for the new class, making a new application, improving the home landing page, etc. -- work on a branch separate from master.
+
+To create a new branch:
+```bash
+git checkout master # ensure you're on the master branch
+
+git pull origin master # ensure your master is up-to-date
+
+git checkout -b new-branch # create a new branch separate from master
+```
+
+Your new branch should be named after the feature you're designing -- e.g. `lambda`, `new-app`, `home-redesign`.
+
+To commit and push to the repository:
+```bash
+git status # ensure you're on the correct branch and changes have been made
+
+git add -A # add all changed files to the commit -- you may want to add files individually
+
+git commit -m "made changes" # commit your changes with a message describing the changes since the most recent commit
+
+git push origin BRANCH # push your changes to your branch (e.g. `master`, `new-branch`)
+```
+
 ## Immediate Changes
-- Connect the mLab MongoDB databases to Google Spreadsheets for easier collaboration
 
 ## Changes within a Semester
 - When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component

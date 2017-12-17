@@ -1,7 +1,6 @@
 # Infrastructure
 
 ## Table of Contents
-- [High-Level Overview](#high-level-overview)
 - [React](#react)
   - [Aphrodite](#aphrodite)
   - [Redux](#redux)
@@ -12,8 +11,6 @@
 - [GoDaddy](#godaddy)
 - [npm](#npm)
 - [Git & GitHub](#git-&-github)
-
-## High-Level Overview
 
 ## React
 
