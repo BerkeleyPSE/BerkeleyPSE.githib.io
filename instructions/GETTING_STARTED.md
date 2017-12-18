@@ -60,7 +60,7 @@ A new browser window should open `localhost:3000`. Do this manually, if necessar
 ## Heroku
 [Heroku](#https://heroku.com) is used to deploy this website live at [berkeleypse.org](http://berkeleypse.org).
 
-You must be a Collaborator on application to deploy it. The VP of Marketing must add a Collaborator via the BerkeleyPSE Heroku account.
+You must be a Collaborator on the Heroku application to deploy it. The VP of Marketing must add a Collaborator via the BerkeleyPSE Heroku account.
 
 1. As VP of Marketing, log into the BerkeleyPSE Heroku account.
 2. Click on the `Access` tab.
