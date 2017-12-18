@@ -57,4 +57,4 @@ The `routes` directory contains endpoints for the `ApplicationForm` and Registra
 
 `index.js` is the root of the back-end of the website. All page changes, endpoint requests, etc. are routed through this file.
 
-`package.json` contains all dependencies and scripts for the back-end. `nodemon` and `concurrently` are development dependencies -- they're helpful for developing the website but not necessary in the production version. 
+`package.json` contains all dependencies and scripts for the back-end.

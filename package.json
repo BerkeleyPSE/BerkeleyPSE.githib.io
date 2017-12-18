@@ -25,7 +25,8 @@
       "prettier --use-tabs --write",
       "prettier --tab-width 2 --write",
       "git add"
-    ]
+    ],
+    "**/*.{md}": ["prettier --parser markdown", "git add"]
   },
   "repository": {
     "type": "git",
@@ -37,13 +38,12 @@
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
     "lodash": "^4.17.4",
-    "mongodb": "^2.2.33",
-    "mongoose": "^4.13.7",
-    "prettier": "^1.9.2"
+    "mongoose": "^4.13.7"
   },
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
-    "nodemon": "^1.13.3"
+    "nodemon": "^1.13.3",
+    "prettier": "^1.9.2"
   }
 }

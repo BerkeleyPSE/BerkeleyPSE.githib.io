@@ -19,10 +19,12 @@ This project was bootstrapped with [`create-react-app`](https://github.com/faceb
 - [concurrently](https://github.com/kimmobrunfeldt/concurrently)
 - [express](https://github.com/expressjs/express)
 - [lodash](https://github.com/lodash/lodash)
-- [mongodb](https://github.com/mongodb/node-mongodb-native)
 - [mongoose](https://github.com/Automattic/mongoose)
 
 ## Development Dependencies
+
+These packages are helpful when developing the website, but unnecessary for the production version.
+
 - [husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [nodemon](https://github.com/remy/nodemon)
