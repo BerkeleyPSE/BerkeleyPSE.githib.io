@@ -9,4 +9,4 @@ The website for UC Berkeley's marketing & business fraternity Pi Sigma Epsilon, 
 - [Dependencies](https://github.com/BerkeleyPSE/berkeleypse/blob/master/instructions/DEPENDENCIES.md)
 - [Contributors](https://github.com/BerkeleyPSE/berkeleypse/blob/master/instructions/CONTRIBUTORS.md)
 
-Visit us at [berkeleypse.org](http://berkeleypse.org)!
+Visit us at [berkeleypse.org](http://berkeleypse.org)! 
