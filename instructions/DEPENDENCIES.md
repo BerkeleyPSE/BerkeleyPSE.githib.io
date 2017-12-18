@@ -21,4 +21,9 @@ This project was bootstrapped with [`create-react-app`](https://github.com/faceb
 - [lodash](https://github.com/lodash/lodash)
 - [mongodb](https://github.com/mongodb/node-mongodb-native)
 - [mongoose](https://github.com/Automattic/mongoose)
+
+## Development Dependencies
+- [husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
 - [nodemon](https://github.com/remy/nodemon)
+- [prettier](https://github.com/prettier/prettier)

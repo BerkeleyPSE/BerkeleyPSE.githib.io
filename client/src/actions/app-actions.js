@@ -1,13 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const AppConstants = {
-  SUBMIT_APP: 'SUBMIT_APP',
-  SUBMIT_FORM: 'SUBMIT_FORM'
+  SUBMIT_APP: "SUBMIT_APP",
+  SUBMIT_FORM: "SUBMIT_FORM"
 };
 
 export const AppActions = {
   submitApplication: values => async dispatch => {
-    const res = await axios.post('/api/applications', values);
+    const res = await axios.post("/api/applications", values);
     return dispatch({
       type: AppConstants.SUBMIT_APP,
       appSubmitSuccess: res.data
@@ -15,7 +15,7 @@ export const AppActions = {
   },
 
   submitForm: values => async dispatch => {
-    const res = await axios.post('/api/regforms', values);
+    const res = await axios.post("/api/regforms", values);
     return dispatch({
       type: AppConstants.SUBMIT_FORM,
       formSubmitSuccess: res.data
