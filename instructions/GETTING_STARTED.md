@@ -119,3 +119,5 @@ module.exports = {
   mongoURI: 'mongodb://rahul:lovesPSE@ds113736.mlab.com:13736/pse-website-dev'
 }
 ```
+
+Once you've created `dev.js`, **NEVER ADD IT TO THE GITHUB REPOSITORY**. This would compromise the private key, necessitating every database user change their password. `dev.js` should __not__ be added to the repository by default -- the file is included in `.gitignore`.
