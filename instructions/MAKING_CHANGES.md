@@ -38,11 +38,14 @@ git push origin BRANCH # push your changes to your branch (e.g. `master`, `new-b
 ```
 
 ## Immediate Changes
+- Add the Lambdas' headshots & biographies
+- Update existing brother profiles, if necessary
 
 ## Changes within a Semester
 - When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component
-- Open & close the recruitment application as necessary
-- When the recruitment application is closed, be sure to update the Pre-Registration form and mLab MongoDB database with the next semester's information
+- Modify the recruitment application `ApplicationForm` as per the discretion of Recruitment directions, Prospective Member Trainers, and the Executive Board
+- Open & close the recruitment application as necessary, in the `Application` component
+- When the recruitment application is closed, be sure to update the `PreregistrationForm` component and mLab MongoDB database with the next semester's information
 
 ## Changes between Semesters
 - Update the [Recruitment](https://github.com/BerkeleyPSE/BerkeleyPSE.github.io/blob/5923f9a479e63f94b6e41fe3b523f4928b0788f3/client/src/components/Recruitment/Recruitment.jsx) timeline

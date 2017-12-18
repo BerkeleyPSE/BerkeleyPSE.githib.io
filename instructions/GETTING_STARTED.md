@@ -94,7 +94,7 @@ heroku login
 These must be the credentials given Collaborator access.
 
 ## mLab
-In order to properly develop the `Application` page forms (`RegForm` and `ApplicationForm`), you must be a Database User on the [mLab](https://mlab.com) MongoDB database.
+In order to properly develop the `Application` page forms (`PreregistrationForm` and `ApplicationForm`), you must be a Database User on the [mLab](https://mlab.com) MongoDB database.
 
 1. As VP of Marketing, log into the mLab account.
 2. Click on the `pse-website-dev` deployment.

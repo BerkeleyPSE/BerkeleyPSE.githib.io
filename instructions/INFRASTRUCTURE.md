@@ -24,13 +24,13 @@ React -- [a JavaScript library](https://reactjs.org/) -- is used on the front-en
 Aphrodite, [developed by Khan Academy](https://github.com/Khan/aphrodite) is a tool for writing CSS-in-JS. We chose to use it because we found it easier to declare styles in the same file/component in which they are used, rather than importing a CSS file for every component.
 
 ### Redux
-[Redux](https://redux.js.org/) is a "predictable state container". It's used in this website along with [Redux Form](https://redux-form.com/7.2.0/) for the `ApplicationForm` and `RegForm` prospective member applications. The `app-reducer` redux store holds information for each form until it is submitted to the back-end and into the MongoDB.
+[Redux](https://redux.js.org/) is a "predictable state container". It's used in this website along with [Redux Form](https://redux-form.com/7.2.0/) for the `ApplicationForm` and `PreregistrationForm` prospective member applications. The `app-reducer` redux store holds information for each form until it is submitted to the back-end and into the MongoDB.
 
 ## Node
 Our simple back-end server is built on [Node](https://nodejs.org/en/) via [Express](https://expressjs.com/).
 
 ## MongoDB
-We use a [MongoDB](https://www.mongodb.com/) database hosted by [mLab](https://mlab.com) to store our `ApplicationForm` and `RegForm` responses.
+We use a [MongoDB](https://www.mongodb.com/) database hosted by [mLab](https://mlab.com) to store our `ApplicationForm` and `PreregistrationForm` responses.
 
 ## Heroku
 [Heroku](https://heroku.com) is used to deploy our website to [berkeleypse.org](http://berkeleypse.org). It's free, easy-to-use via its command line interface, and supports dynamic websites. The final reason is why we migrated from GitHub Pages to Heroku -- we needed a server to receive application responses. Heroku was the best choice. 
