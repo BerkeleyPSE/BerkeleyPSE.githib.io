@@ -40,6 +40,7 @@ git push origin BRANCH # push your changes to your branch (e.g. `master`, `new-b
 ## Immediate Changes
 - Add the Lambdas' headshots & biographies
 - Update existing brother profiles, if necessary
+- Create centralized stylesheets for styles used throughout the website -- e.g. one for colors, one for flex layouts, one for headers, paragraphs, and anchor texts, etc.
 
 ## Changes within a Semester
 - When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component
