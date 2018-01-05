@@ -48,7 +48,7 @@ export default class Brother extends React.Component {
 
   isExecsPath = () => {
     let { match } = this.props;
-    return _.includes(match.path, "/eboard/");
+    return includes(match.path, "/eboard/");
   };
 
   render() {

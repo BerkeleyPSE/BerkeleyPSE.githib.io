@@ -27,7 +27,7 @@ const Application = props => {
             <br />
             The deadline is January 31st, 2018 at 11:59pm. Good luck!
           </p>
-          {!_.isUndefined(appReducer.appSubmitSuccess) ? (
+          {!isUndefined(appReducer.appSubmitSuccess) ? (
             appReducer.formSubmitSuccess === true ? (
               <p className={css(styles.successMessage)}>
                 Your application was submitted successfully. We'll notify you
@@ -52,7 +52,7 @@ const Application = props => {
             If you would like notifications for our Spring 2018 recruitment
             events, please enter your name and email below.
           </p>
-          {!_.isUndefined(appReducer.formSubmitSuccess) ? (
+          {!isUndefined(appReducer.formSubmitSuccess) ? (
             appReducer.formSubmitSuccess === true ? (
               <p className={css(styles.successMessage)}>
                 Your information was submitted successfully. We'll notify you

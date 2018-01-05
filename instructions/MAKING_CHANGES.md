@@ -46,6 +46,8 @@ git push origin BRANCH # push your changes to your branch (e.g. `master`, `new-b
 - Convert `Why PSE?` page into testimonials page -- get more brothers to write testimonials
 - Add more information about PMT on the `Recruitment` information page
 - Convert from `aphrodite` to `styled-components` to simplify style guide
+- Convert the Careers tables to regular HTML/CSS instead of `react-table` to reduce bundle size
+- Use native CSS transitions & remove `react-animations`
 
 ## Changes within a Semester
 - When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component
