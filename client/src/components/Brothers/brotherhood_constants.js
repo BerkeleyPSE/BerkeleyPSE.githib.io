@@ -699,7 +699,7 @@ const brotherInfo = {
   tim_cheng: {
     img: `${imagePath}/tim_cheng.jpg`,
     name: "Tim Cheng",
-    position: "Active",
+    position: "Director of Technology",
     year: "Sophomore",
     hometown: "Oak Park, CA",
     class: "Kappa",
@@ -708,7 +708,7 @@ const brotherInfo = {
     career_interests: "Software Development",
     previous_positions: "",
     bio:
-      "Through PSE, Tim learned to effectively utilize his soft skills in public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying n.",
+      "Through PSE, Tim learned to effectively utilize his soft skills in public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods.",
     linkedin: "https://www.linkedin.com/in/tim-cheng/"
   },
 
