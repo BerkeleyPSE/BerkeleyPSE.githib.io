@@ -45,6 +45,7 @@ git push origin BRANCH # push your changes to your branch (e.g. `master`, `new-b
 - Convert `About Us` page into `History` page, `About Us` page will become more about brotherhood statistics & what we do throughout a semester (projects, PMT, etc.)
 - Convert `Why PSE?` page into testimonials page -- get more brothers to write testimonials
 - Add more information about PMT on the `Recruitment` information page
+- Convert from `aphrodite` to `styled-components` to simplify style guide
 
 ## Changes within a Semester
 - When the Facebook recruitment application goes live, update the `FB_EVENT_LINK` in the `AppBanner` component

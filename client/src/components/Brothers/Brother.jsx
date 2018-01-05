@@ -1,46 +1,46 @@
 // React
-import React from 'react';
+import React from "react";
 
 // NPM Modules
-import { StyleSheet, css } from 'aphrodite';
-import { Link } from 'react-router-dom';
-import * as _ from 'lodash';
+import { StyleSheet, css } from "aphrodite";
+import { Link } from "react-router-dom";
+import includes from "lodash/includes";
 
 // Local Helper Files & Components
-import { animations } from '../../stylesheets/Animations.js';
+import { animations } from "../../stylesheets/Animations.js";
 import {
   brotherInfo,
   brotherList,
   allExecsList
-} from './brotherhood_constants';
-import { PageHandler } from './PageHandler.jsx';
+} from "./brotherhood_constants";
+import { PageHandler } from "./PageHandler.jsx";
 
 // Constants
 const infoList = [
-  'year',
-  'hometown',
-  'class',
-  'major',
-  'minor',
-  'career_interests',
-  'previous_positions'
+  "year",
+  "hometown",
+  "class",
+  "major",
+  "minor",
+  "career_interests",
+  "previous_positions"
 ];
 
 const infoMap = {
-  year: 'Year',
-  hometown: 'Hometown',
-  class: 'Class',
-  major: 'Major',
-  minor: 'Minor',
-  career_interests: 'Career Interests',
-  previous_positions: 'Previous Positions'
+  year: "Year",
+  hometown: "Hometown",
+  class: "Class",
+  major: "Major",
+  minor: "Minor",
+  career_interests: "Career Interests",
+  previous_positions: "Previous Positions"
 };
 
 export default class Brother extends React.Component {
   broNotFound = () => {
     this.broNotFound = setTimeout(
       function() {
-        this.props.history.push('/brothers');
+        this.props.history.push("/brothers");
       }.bind(this),
       250
     );
@@ -48,16 +48,16 @@ export default class Brother extends React.Component {
 
   isExecsPath = () => {
     let { match } = this.props;
-    return _.includes(match.path, '/eboard/');
+    return _.includes(match.path, "/eboard/");
   };
 
   render() {
     let brother = this.props.match.params.name;
     let broList = brotherList;
-    let page = 'bros';
+    let page = "bros";
     if (this.isExecsPath()) {
       broList = allExecsList;
-      page = 'execs';
+      page = "execs";
     }
     let broIndex = broList.indexOf(brother);
     let bro = brotherInfo[brother];
@@ -83,12 +83,12 @@ export default class Brother extends React.Component {
     });
 
     return (
-      <div className={css(animations.fadeIn) + ' brother-container'}>
+      <div className={css(animations.fadeIn) + " brother-container"}>
         <div className={css(styles.profileContainer)}>
           <div className={css(styles.imageContainer, animations.slideInLeft)}>
             <img
               className={css(styles.image)}
-              src={'../' + bro.img}
+              src={"../" + bro.img}
               alt={bro.name}
             />
           </div>
@@ -119,7 +119,7 @@ export default class Brother extends React.Component {
                   className={css(styles.mediaLink)}
                 >
                   <i
-                    className={css(styles.icon) + ' fa fa-linkedin'}
+                    className={css(styles.icon) + " fa fa-linkedin"}
                     aria-hidden="true"
                   />
                 </Link>
@@ -134,139 +134,139 @@ export default class Brother extends React.Component {
 
 const styles = StyleSheet.create({
   profileContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: '10px 0',
-    '@media (max-width: 900px)': {
-      flexDirection: 'column',
-      textAlign: 'center'
+    display: "flex",
+    flexDirection: "row",
+    padding: "10px 0",
+    "@media (max-width: 900px)": {
+      flexDirection: "column",
+      textAlign: "center"
     }
   },
 
   broInfo: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '100%'
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    width: "100%"
   },
 
   broHeader: {
-    fontFamily: 'Lato, sans-serif',
-    letterSpacing: '0.035em',
-    padding: '10px 20px',
-    textAlign: 'center'
+    fontFamily: "Lato, sans-serif",
+    letterSpacing: "0.035em",
+    padding: "10px 20px",
+    textAlign: "center"
   },
 
   name: {
-    color: '#895FAD',
-    fontSize: '3em',
-    margin: '0',
-    padding: '10px 0 5px 0',
-    textAlign: 'center'
+    color: "#895FAD",
+    fontSize: "3em",
+    margin: "0",
+    padding: "10px 0 5px 0",
+    textAlign: "center"
   },
 
   position: {
-    color: '#818181',
-    fontSize: '1.25em',
-    margin: '0',
-    textTransform: 'uppercase'
+    color: "#818181",
+    fontSize: "1.25em",
+    margin: "0",
+    textTransform: "uppercase"
   },
 
   imageContainer: {
-    padding: '0 20px',
-    display: 'flex',
-    justifyContent: 'center'
+    padding: "0 20px",
+    display: "flex",
+    justifyContent: "center"
   },
 
   image: {
-    border: '3px solid #895FAD',
-    '@media (min-width: 325px)': {
-      width: '325px',
-      height: '485px'
+    border: "3px solid #895FAD",
+    "@media (min-width: 325px)": {
+      width: "325px",
+      height: "485px"
     },
-    '@media (min-width: 425px)': {
-      width: '402px',
-      height: '600px'
+    "@media (min-width: 425px)": {
+      width: "402px",
+      height: "600px"
     }
   },
 
   broBio: {
-    fontFamily: 'Open Sans, sans-serif',
-    fontSize: '1.125em',
-    fontWeight: '500',
-    lineHeight: '1.5em',
-    margin: 'auto',
-    width: '80%'
+    fontFamily: "Open Sans, sans-serif",
+    fontSize: "1.125em",
+    fontWeight: "500",
+    lineHeight: "1.5em",
+    margin: "auto",
+    width: "80%"
   },
 
   bio: {
-    color: '#818181'
+    color: "#818181"
   },
 
   broMedia: {
-    display: 'flex',
-    justifyContent: 'center'
+    display: "flex",
+    justifyContent: "center"
   },
 
   mediaLink: {
-    backgroundColor: 'rgba(0, 0, 0, 0)',
-    color: '#895FAD',
-    textDecoration: 'none',
-    border: '2px solid #895FAD',
-    borderRadius: '3px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '5px',
-    height: '30px',
-    width: '30px',
-    ':hover': {
-      backgroundColor: '#895FAD',
-      color: '#FFF'
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    color: "#895FAD",
+    textDecoration: "none",
+    border: "2px solid #895FAD",
+    borderRadius: "3px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "5px",
+    height: "30px",
+    width: "30px",
+    ":hover": {
+      backgroundColor: "#895FAD",
+      color: "#FFF"
     }
   },
 
   icon: {
-    fontSize: '1.5em'
+    fontSize: "1.5em"
   }
 });
 
 const table = StyleSheet.create({
   tableContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: '10px 0'
+    display: "flex",
+    flexDirection: "row",
+    padding: "10px 0"
   },
 
   infoTableContainer: {},
 
   infoRow: {
-    borderBottom: '1px solid #303030',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '8px 0'
+    borderBottom: "1px solid #303030",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "8px 0"
   },
 
   infoTitle: {
-    color: '#895FAD',
-    fontFamily: 'Open Sans, sans-serif',
-    fontSize: '1em',
-    fontWeight: 'bold',
-    letterSpacing: '0.025em',
-    margin: '0',
-    padding: '0 10px',
-    textAlign: 'left',
-    textTransform: 'uppercase'
+    color: "#895FAD",
+    fontFamily: "Open Sans, sans-serif",
+    fontSize: "1em",
+    fontWeight: "bold",
+    letterSpacing: "0.025em",
+    margin: "0",
+    padding: "0 10px",
+    textAlign: "left",
+    textTransform: "uppercase"
   },
 
   infoValue: {
-    color: '#818181',
-    fontFamily: 'Open Sans, sans-serif',
-    fontSize: '1em',
-    margin: '0',
-    padding: '0 10px',
-    textAlign: 'right'
+    color: "#818181",
+    fontFamily: "Open Sans, sans-serif",
+    fontSize: "1em",
+    margin: "0",
+    padding: "0 10px",
+    textAlign: "right"
   }
 });

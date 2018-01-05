@@ -1,21 +1,21 @@
 // React
-import React from 'react';
+import React from "react";
 
 // NPM Modules
-import { StyleSheet, css } from 'aphrodite';
-import { connect } from 'react-redux';
-import * as _ from 'lodash';
+import { StyleSheet, css } from "aphrodite";
+import { connect } from "react-redux";
+import isUndefined from "lodash/isUndefined";
 
 // Local Helper Files & Components
-import { animations } from '../../../stylesheets/Animations.js';
-import ApplicationForm from './ApplicationForm';
-import PreregistrationForm from './PreregistrationForm';
-import { AppActions } from '../../../actions/app-actions.js';
+import { animations } from "../../../stylesheets/Animations.js";
+import ApplicationForm from "./ApplicationForm";
+import PreregistrationForm from "./PreregistrationForm";
+import { AppActions } from "../../../actions/app-actions.js";
 
 const IS_APP_OPEN = false;
 
 const Application = props => {
-  document.title = 'Application - Pi Sigma Epsilon | Zeta Chi Chapter';
+  document.title = "Application - Pi Sigma Epsilon | Zeta Chi Chapter";
   let { appReducer } = props;
   return (
     <div className={css(styles.appContainer, animations.fadeIn)}>
@@ -81,35 +81,35 @@ export default connect(mapStateToProps, AppActions)(Application);
 
 const styles = StyleSheet.create({
   appContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
   },
 
   header: {
-    color: '#895FAD',
-    fontFamily: 'Lato, sans-serif',
-    fontSize: '3em',
-    fontWeight: '500',
-    margin: '0',
-    padding: '30px 0',
-    textAlign: 'center'
+    color: "#895FAD",
+    fontFamily: "Lato, sans-serif",
+    fontSize: "3em",
+    fontWeight: "500",
+    margin: "0",
+    padding: "30px 0",
+    textAlign: "center"
   },
 
   description: {
-    color: '#303030',
-    fontFamily: 'Open Sans, sans-serif',
-    fontSize: '1em',
-    margin: '0',
-    textAlign: 'center'
+    color: "#303030",
+    fontFamily: "Open Sans, sans-serif",
+    fontSize: "1em",
+    margin: "0",
+    textAlign: "center"
   },
 
   successMessage: {
-    color: '#895FAD',
-    fontFamily: 'Open Sans, sans-serif',
-    fontSize: '1.5em',
-    margin: '40px 20px',
-    textAlign: 'center'
+    color: "#895FAD",
+    fontFamily: "Open Sans, sans-serif",
+    fontSize: "1.5em",
+    margin: "40px 20px",
+    textAlign: "center"
   }
 });
