@@ -25,7 +25,7 @@ Collaborators should contribute to this repository using their personal GitHub a
 ## Cloning this Repository
 To clone this repository, open a terminal window and run
 ```bash
-git clone https://github.com/BerkeleyPSE/berkeleypse
+git clone https://github.com/BerkeleyPSE/berkeleypse.git
 ```
 
 ## Installing Node & npm
