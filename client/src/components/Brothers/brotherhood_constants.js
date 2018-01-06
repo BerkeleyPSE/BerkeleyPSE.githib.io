@@ -44,6 +44,7 @@ const brotherList = [
   "nick_cheng",
   "peter_vu",
   "rahul_rangnekar",
+  "rick_choi",
   "rose_min",
   "rushil_desai",
   "sean_yu",
@@ -591,6 +592,25 @@ const brotherInfo = {
     medium: "https://medium.com/@rahrang",
     github: "https://github.com/rahrang",
     website: "http://rahrang.xyz"
+  },
+
+  /* 32 */
+  rick_choi: {
+    img: `${imagePath}/bro-placeholder.jpg`,
+    name: "Rick Choi",
+    position: "Active",
+    year: "Freshman",
+    hometown: "",
+    class: "Lambda",
+    major: "",
+    minor: "",
+    career_interests: "",
+    previous_positions: "",
+    bio: "",
+    linkedin: "",
+    medium: "",
+    github: "",
+    website: ""
   },
 
   /* 33 */
