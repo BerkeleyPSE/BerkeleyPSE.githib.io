@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const IntLink = styled(Link)`
   color: #895fad;
+  cursor: pointer;
   letter-spacing: 0.025rem;
 
   &:hover {
@@ -15,6 +16,7 @@ const ExtLink = styled.a.attrs({
   rel: "noopener noreferrer"
 })`
   color: #ffd700;
+  cursor: pointer;
   text-decoration: none;
 
   &:hover {

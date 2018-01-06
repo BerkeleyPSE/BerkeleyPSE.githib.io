@@ -1,23 +1,23 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 
-// Local Helper Files
-import { animations } from "../../stylesheets/Animations.js";
+// components
+import { RowContainer } from "../components/ContainerStyles";
+import { PageHeader, SectionHeader } from "../components/HeaderStyles";
+import { ParaText } from "../components/TextStyles";
+import { Image } from "../components/ImageStyles";
 
 const About = props => {
   document.title = "About - Pi Sigma Epsilon | Zeta Chi Chapter";
   return (
-    <div className={css(animations.fadeIn)} id="about-container">
-      <h1 className={css(styles.header)}>About Us</h1>
-      <div className={css(styles.zetaChiContainer)}>
-        <h2 className={css(styles.sectionHeader, styles.zcHeader)}>
-          The Zeta Chi Chapter
-        </h2>
-        <div className={css(styles.descriptionContainer)}>
-          <p className={css(styles.description)}>
+    <AboutContainer>
+      <PageHeader>About Us</PageHeader>
+      <ZetaChiContainer>
+        <ZCHeader>The Zeta Chi Chapter</ZCHeader>
+        <DescriptionContainer>
+          <Text alt>
             The Zeta Chi chapter of Pi Sigma Epsilon was founded in March 2013.
             Then-campus junior Sabrina Ruiz observed a lack of marketing and
             retail management courses and organizations on Berkeley’s campus
@@ -48,39 +48,39 @@ const About = props => {
             Now in its fourth year and recruiting for the prospective Lambda
             class, Zeta Chi boasts a diverse brotherhood of over 40 active
             members in the Phan administration.
-          </p>
-          <div className={css(styles.imageContainer)}>
-            <p className={css(styles.caption)}>
+          </Text>
+          <ImageContainer>
+            <Caption>
               <strong>OUR FOUNDERS</strong>
               <br />
               Lydia Kim, Cynthia Huang, Peggy Lin
               <br />
               Hiu Ngan, Sabrina Ruiz, Kelly Chao
-            </p>
-            <img
+            </Caption>
+            <ZCImage
               src="/images/zc_founders.jpg"
-              alt={"Zeta Chi founding class"}
-              className={css(styles.image)}
+              alt="Zeta Chi founding class"
+              height="640px"
+              width="427px"
             />
-          </div>
-        </div>
-      </div>
-      <div className={css(styles.nationalContainer)}>
-        <h2 className={css(styles.sectionHeader, styles.nationalHeader)}>
-          Pi Sigma Epsilon
-        </h2>
-        <div className={css(styles.descriptionContainer)}>
-          <div className={css(styles.imageContainer)}>
-            <p className={css(styles.caption)}>
+          </ImageContainer>
+        </DescriptionContainer>
+      </ZetaChiContainer>
+      <NationalContainer>
+        <NationalHeader alt>Pi Sigma Epsilon</NationalHeader>
+        <DescriptionContainer>
+          <ImageContainer>
+            <Caption>
               <strong>NATIONAL LOGO</strong>
-            </p>
-            <img
+            </Caption>
+            <NationalImage
               src="/images/national_logo.jpg"
               alt={"Pi Sigma Epsilon national logo"}
-              className={css(styles.image2)}
+              height="507px"
+              width="400px"
             />
-          </div>
-          <p className={css(styles.description)}>
+          </ImageContainer>
+          <Text>
             In 1951, Lloyd L. Antle, an Ohio University graduate and Professor
             of Marketing at Georgia State University, conceived of the idea that
             the sales profession should have a professional fraternity of its
@@ -106,118 +106,97 @@ const About = props => {
             sales and marketing experience to members through active involvement
             in sales and marketing projects, marketing research, professional
             programs, and social events.
-          </p>
-        </div>
-      </div>
-    </div>
+          </Text>
+        </DescriptionContainer>
+      </NationalContainer>
+    </AboutContainer>
   );
 };
 
 export default About;
 
-const styles = StyleSheet.create({
-  zetaChiContainer: {
-    backgroundColor: "#303030",
-    color: "#FFF",
-    padding: "40px"
-  },
+const AboutContainer = styled.div``;
 
-  zcHeader: {
-    borderBottom: "3px solid #FFF"
-  },
+const ZetaChiContainer = styled.div`
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+`;
 
-  header: {
-    color: "#895FAD",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "3em",
-    fontWeight: "500",
-    margin: "0",
-    padding: "30px 0",
-    textAlign: "center"
-  },
+const ZCHeader = SectionHeader.extend`
+  border-bottom: 3px solid #fff;
+`;
 
-  sectionHeader: {
-    fontFamily: "Lato, sans-serif",
-    fontSize: "2em",
-    fontWeight: "500",
-    margin: "auto",
-    padding: "30px 0",
-    textAlign: "center"
-  },
-
-  descriptionContainer: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    width: "100%",
-    margin: "auto",
-    textAlign: "left",
-    "@media (max-width: 1200px)": {
-      flexDirection: "column"
-    }
-  },
-
-  description: {
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1.25em",
-    fontWeight: "500",
-    padding: "0 5px",
-    textAlign: "center",
-    "@media (min-width: 768px)": {
-      padding: "0 20px",
-      textAlign: "left"
-    }
-  },
-
-  imageContainer: {
-    padding: "0 10px"
-  },
-
-  caption: {
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1em",
-    fontWeight: "light",
-    letterSpacing: "0.035em",
-    textAlign: "right"
-  },
-
-  image: {
-    width: "640px",
-    height: "427px",
-    outline: "3px solid #895FAD",
-    "@media (min-width: 325px)": {
-      width: "325px",
-      height: "217px"
-    },
-    "@media (min-width: 425px)": {
-      width: "425px",
-      height: "284px"
-    },
-    "@media (min-width: 768px)": {
-      width: "640px",
-      height: "427px"
-    }
-  },
-
-  image2: {
-    width: "400px",
-    height: "507px",
-    outline: "3px solid #895FAD",
-    "@media (min-width: 325px)": {
-      width: "325px",
-      height: "412px"
-    },
-    "@media (min-width: 425px)": {
-      width: "400px",
-      height: "507px"
-    }
-  },
-
-  nationalContainer: {
-    padding: "40px"
-  },
-
-  nationalHeader: {
-    borderBottom: "3px solid #303030"
+const DescriptionContainer = RowContainer.extend`
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  justify-content: baseline;
+  @media (max-width: 1200px) {
+    flex-direction: column;
   }
-});
+`;
+
+const Text = ParaText.extend`
+  flex: 1;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding: 0 5px;
+  text-align: left;
+  @media (min-width: 768px) {
+    padding: 0 20px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  flex: 1;
+  padding: 0 10px;
+`;
+
+const Caption = styled.p`
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+  text-align: center;
+`;
+
+const ImageTemplate = Image.extend`
+  border: 3px solid #895fad;
+`;
+
+const ZCImage = ImageTemplate.extend`
+  @media (min-width: 325px) {
+    width: 325px;
+    height: 217px;
+  }
+
+  @media (min-width: 425px) {
+    width: 425px;
+    height: 284px;
+  }
+
+  @media (min-width: 768px) {
+    width: 640px;
+    height: 427px;
+  }
+`;
+
+const NationalImage = ImageTemplate.extend`
+  @media (min-width: 325px) {
+    width: 325px;
+    height: 412px;
+  }
+
+  @media (min-width: 425px) {
+    width: 400px;
+    height: 507px;
+  }
+`;
+
+const NationalContainer = styled.div`
+  padding: 40px;
+`;
+
+const NationalHeader = SectionHeader.extend`
+  border-bottom: 3px solid #333;
+`;

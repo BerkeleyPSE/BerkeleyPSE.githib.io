@@ -25,7 +25,7 @@ import Error404 from "./Error404";
 
 // other components
 import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import AppBanner from "./components/AppBanner.jsx";
 
 // page paths
