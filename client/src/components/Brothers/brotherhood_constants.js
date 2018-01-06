@@ -18,6 +18,7 @@ const brotherList = [
   "aaron_corona",
   "abhi_nathan",
   "akshay_madane",
+  "alex_dao",
   "catie_fan",
   "charissa_saputra",
   "clevian_hsia",
@@ -29,6 +30,8 @@ const brotherList = [
   "harika_kalluri",
   "howard_huang",
   "jacqueline_tsang",
+  "john_van",
+  "joshua_nuesca",
   "jonathan_duan",
   "justin_tan",
   "kailin_li",
@@ -44,6 +47,7 @@ const brotherList = [
   "nick_cheng",
   "peter_vu",
   "rahul_rangnekar",
+  "reina_zhang",
   "rick_choi",
   "rose_min",
   "rushil_desai",
@@ -132,6 +136,26 @@ const brotherInfo = {
     bio:
       "In addition to invaluable business skills, PSE has taught Akshay to develop a healthy balance of fun and professionalism, and to let his charming character shine in the workplace. His role model is Punit Renjen, CEO of Deloitte. Akshay is a member of the International Students at Berkeley, and a Marketing Director for both Google@Berkeley and the ASUC Office of the Chief Technology Officer. He was a finalist for the Deloitte Consulting case competition, and attended both the Deloitte Freshman Leadership Conference and FullBridge Leadership Summit. Akshay loves to read, swim, and travel throughout Southeast Asia.",
     linkedin: "https://linkedin.com/in/madaneakshay"
+  },
+
+  /* 32 */
+  alex_dao: {
+    img: `${imagePath}/alex_dao.jpg`,
+    name: "Alex Dao",
+    position: "Active",
+    year: "Junior",
+    hometown: "Irvine, CA",
+    class: "Lambda",
+    major: "EECS",
+    minor: "",
+    career_interests: "Software Development, Product Management",
+    previous_positions: "",
+    bio:
+      "Through PSE, Alex learned the foundations of brotherhood, consulting, and finance. His role models are his parents. Alex is involved in AFX and VSA. He loves to golf, listen to music, and travel.",
+    linkedin: "www.linkedin.com/in/adao1",
+    medium: "",
+    github: "",
+    website: ""
   },
 
   /* 4 */
@@ -319,6 +343,44 @@ const brotherInfo = {
     bio:
       "PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.",
     linkedin: "https://linkedin.com/in/tsangjacqueline"
+  },
+
+  john_van: {
+    img: `${imagePath}/john_van.jpg`,
+    name: "John Van",
+    position: "Active",
+    year: "Freshman",
+    hometown: "San Marino, CA",
+    class: "Lambda",
+    major: "Intended Business & Intended Computer Science",
+    minor: "",
+    career_interests: "Software Development",
+    previous_positions: "",
+    bio:
+      "Through PSE, I developed professionalism as well as analytical and public speaking skills. His role model is his father. John is in the Cal Aquatics Swim Club. He enjoys swimming, playing the piano, and eating.",
+    linkedin: "www.linkedin.com/in/johnvan1",
+    medium: "",
+    github: "",
+    website: ""
+  },
+
+  joshua_nuesca: {
+    img: `${imagePath}/joshua_nuesca.jpg`,
+    name: "Joshua Nuesca",
+    position: "Active",
+    year: "Sophomore",
+    hometown: "Redlands, CA",
+    class: "Lambda",
+    major: "Environmental Economics & Intended Data Science",
+    minor: "Certificate in Entrepreneurship and Technology",
+    career_interests: "Management Consulting, Product Management",
+    previous_positions: "",
+    bio:
+      "Josh was able to unlock his creative potential and presentation skills with numerous case study presentations answering complex questions spanning a variety of industries. PSE also taught him the meaning of brotherhood through teamwork and trust. His role model is Mark Zuckerberg. Josh is in the student-run newspaper group of Cal, The Daily Californian, and is a Resident Assistant. He enjoys exploring new cultures, reading novels, and philosophical conversations on long car rides.",
+    linkedin: "www.linkedin.com/in/johnvan1",
+    medium: "",
+    github: "",
+    website: ""
   },
 
   /* 17 */
@@ -595,6 +657,26 @@ const brotherInfo = {
   },
 
   /* 32 */
+  reina_zhang: {
+    img: `${imagePath}/reina_zhang.jpg`,
+    name: "Reina Zhang",
+    position: "Active",
+    year: "Sophomore",
+    hometown: "Beijing, China",
+    class: "Lambda",
+    major: "Economics & Media Studies",
+    minor: "Theater",
+    career_interests: "Advertising and Brand Marketing",
+    previous_positions: "",
+    bio:
+      "Reina gained both professional knowledge and brotherhood from PSE. Aside from learning about different fields of business such as finance, she also acquired applicable skills such as public speaking and decking. Being in a marketing fraternity has given Reina insights on potential positions in companies and strengthened her interest in the marketing profession. Her role model is her father. Reina is in the Berkeley Advertising Agency. She enjoys theater lighting design, music, and reading.",
+    linkedin: "",
+    medium: "",
+    github: "",
+    website: ""
+  },
+
+  /* 32 */
   rick_choi: {
     img: `${imagePath}/bro-placeholder.jpg`,
     name: "Rick Choi",
@@ -728,7 +810,7 @@ const brotherInfo = {
     career_interests: "Software Development",
     previous_positions: "",
     bio:
-      "Through PSE, Tim learned to effectively utilize his soft skills in public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods.",
+      "Through PSE, Tim learned to effectively utilize his soft skills such as public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods.",
     linkedin: "https://www.linkedin.com/in/tim-cheng/"
   },
 
