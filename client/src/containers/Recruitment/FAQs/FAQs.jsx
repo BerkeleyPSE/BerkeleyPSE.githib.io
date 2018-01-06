@@ -7,7 +7,7 @@ import { StyleSheet, css } from "aphrodite";
 // Local Helper Files & Components
 import { animations } from "../../../stylesheets/Animations.js";
 import { faq_constants } from "./faq_constants.js";
-import AccordionItem from "../../reusable_components/AccordionItem.jsx";
+import AccordionItem from "../../components/AccordionItem.jsx";
 
 const FAQs = props => {
   document.title = "FAQs - Pi Sigma Epsilon | Zeta Chi Chapter";

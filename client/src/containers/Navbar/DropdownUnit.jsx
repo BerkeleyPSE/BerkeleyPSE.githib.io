@@ -1,20 +1,19 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import DropdownMenu from "react-dd-menu";
 import "../../stylesheets/react-dd.css";
-import { navbar_map } from "./navbar_constants.jsx";
+
+// components
+import { NAVBAR_MAP } from "./Navbar_Info";
+import { RowContainer } from "../components/ContainerStyles.js";
 
 export default class DropdownUnit extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isOpen: false,
-      parentLink: this.props.headerLink
-    };
+    this.state = { isOpen: false };
   }
 
   close = () => {
@@ -26,134 +25,133 @@ export default class DropdownUnit extends React.Component {
   };
 
   checkActive = (match, location) => {
-    const parentLink = navbar_map[location.pathname];
-    return parentLink === this.state.parentLink;
+    let { headerLink } = this.props;
+    const realParentLink = NAVBAR_MAP[location.pathname];
+    return realParentLink === headerLink;
   };
 
   render() {
     let menuOptions = {
       isOpen: this.state.isOpen,
       close: this.close,
-      toggle: <button className={css(styles.hidden)} onClick={this.toggle} />,
+      toggle: <HiddenButton onClick={this.toggle} />,
       align: "right",
       menuAlign: "right"
     };
 
     var pageLinks = this.props.pages.map(page => {
       return (
-        <li className={css(styles.pageLi)} key={page.page}>
-          <NavLink
-            to={page.pageLink}
-            className={css(styles.pageLink)}
-            activeClassName={css(styles.activeLink)}
-          >
+        <PageItem key={page.page}>
+          <PageLink to={page.pageLink} activeClassName={activeClassName}>
             {page.page}
-          </NavLink>
-        </li>
+          </PageLink>
+        </PageItem>
       );
     });
 
     return (
-      <div
-        className={css(styles.mainContainer)}
+      <DropdownUnitContainer
         onMouseEnter={() => this.setState({ isOpen: true })}
         onMouseLeave={() => this.setState({ isOpen: false })}
       >
-        <NavLink
+        <HeaderLink
           to={this.props.headerLink}
-          className={css(styles.headerLink)}
-          activeClassName={css(styles.activeHeaderLink)}
+          activeClassName={activeClassName}
           isActive={this.checkActive}
         >
-          <h3 className={css(styles.header)}>{this.props.header}</h3>
-        </NavLink>
-        <DropdownMenu
+          <Header>{this.props.header}</Header>
+        </HeaderLink>
+        <DropdownContainer
           {...menuOptions}
-          className={css(styles.dropdownContainer)}
           enterTimeout={400}
           leaveTimeout={400}
         >
           {pageLinks}
-        </DropdownMenu>
-      </div>
+        </DropdownContainer>
+      </DropdownUnitContainer>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    cursor: "pointer",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "auto",
-    padding: "0 5px"
-  },
+const DropdownUnitContainer = RowContainer.extend`
+  cursor: pointer;
+  height: auto;
+  padding: 0 5px;
+`;
 
-  hidden: {
-    display: "none"
-  },
+const HiddenButton = styled.button`
+  display: none;
+`;
 
-  headerLink: {
-    borderBottom: "2px solid #303030",
-    color: "#FFF",
-    height: "auto",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    padding: "5px 10px",
-    ":hover": {
-      color: "#FFD700"
-    }
-  },
+const activeClassName = "nav-item-active";
+const HeaderLink = styled(NavLink).attrs({
+  activeClassName
+})`
+  border-bottom: 2px solid #333;
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  height: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
 
-  header: {
-    fontFamily: "Lato, sans-serif",
-    fontSize: "0.85em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    margin: 0
-  },
-
-  dropdownContainer: {
-    display: "flex",
-    flexDirection: "column",
-    marginTop: "10px",
-    position: "relative",
-    height: "100%"
-  },
-
-  pageLi: {
-    padding: "0 20px 0 5px",
-    backgroundColor: "#303030",
-    ":hover": {
-      color: "#FFD700"
-    }
-  },
-
-  pageLink: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "0.85em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    padding: "10px 10px 10px 5px",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    ":hover": {
-      color: "#FFD700"
-    },
-    ":active": {
-      backgroundColor: "#303030",
-      color: "#FFD700"
-    }
-  },
-
-  activeHeaderLink: {
-    borderBottom: "2px solid #FFD700"
-  },
-
-  activeLink: {
-    color: "#FFD700"
+  &:hover {
+    color: #ffd700;
   }
-});
+
+  &.${activeClassName} {
+    border-bottom: 2px solid #ffd700;
+  }
+`;
+
+const Header = styled.h3`
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0;
+`;
+
+const PageLink = styled(NavLink).attrs({
+  activeClassName
+})`
+  color: #fff !important;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  padding: 10px 10px 10px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ffd700 !important;
+  }
+
+  &:active {
+    background-color: #333 !important;
+    color: #ffd700;
+  }
+
+  &.${activeClassName} {
+    color: #ffd700 !important;
+  }
+`;
+
+const DropdownContainer = styled(DropdownMenu)`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 0.625rem;
+  position: relative;
+`;
+
+const PageItem = styled.li`
+  background-color: #333 !important;
+  padding: 0 1rem;
+
+  &:hover {
+    color: #ffd700 !important;
+  }
+`;

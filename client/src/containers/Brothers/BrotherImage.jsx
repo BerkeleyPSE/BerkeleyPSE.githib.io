@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // Local Helper Files & Components
 import { animations } from "../../stylesheets/Animations.js";
 import { brotherInfo } from "./brotherhood_constants";
-import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants.jsx";
+import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
 
 export class BrotherImage extends React.Component {
   constructor(props) {

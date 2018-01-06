@@ -8,7 +8,7 @@ import { stack as Menu } from "react-burger-menu";
 
 // Local Helper Files & Components
 import { animations } from "../../stylesheets/Animations.js";
-import { navbar_constants } from "./navbar_constants.jsx";
+import { NAVBAR_INFO } from "./Navbar_Info";
 
 const MENU_WIDTH = 275;
 
@@ -25,7 +25,7 @@ export default class Navbar extends React.Component {
   };
 
   render() {
-    const menuItems = navbar_constants.map(item => {
+    const menuItems = NAVBAR_INFO.map(item => {
       return (
         <div
           className={css(styles.sectionContainer)}

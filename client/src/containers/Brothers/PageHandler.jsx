@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { animations } from "../../stylesheets/Animations.js";
 
 // Local Helper Files  & Components
-import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants.jsx";
+import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
 
 export class PageHandler extends React.Component {
   getIndices = index => {

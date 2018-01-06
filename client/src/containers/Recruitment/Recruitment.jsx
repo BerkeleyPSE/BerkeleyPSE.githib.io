@@ -6,12 +6,12 @@ import { StyleSheet, css } from "aphrodite";
 
 // Local Helper Files & Components
 import { animations } from "../../stylesheets/Animations.js";
-import HoverCard from "../reusable_components/HoverCard.jsx";
+import HoverCard from "../components/HoverCard.jsx";
 import {
   WHYPSE_PATH,
   FAQS_PATH,
   APPLICATION_PATH
-} from "../Navbar/navbar_constants.jsx";
+} from "../Navbar/Navbar_Info";
 
 // constants
 const HOVER_CARD_ITEMS = [

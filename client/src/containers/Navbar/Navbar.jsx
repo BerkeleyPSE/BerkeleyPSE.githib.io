@@ -1,18 +1,20 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// Local Helper Files & Components
-import { animations } from "../../stylesheets/Animations.js";
-import DropdownUnit from "./DropdownUnit.jsx";
-import HamburgerMenu from "./HamburgerMenu.jsx";
-import { navbar_constants } from "./navbar_constants.jsx";
+// components
+import DropdownUnit from "./DropdownUnit";
+import HamburgerMenu from "./HamburgerMenu";
+import { NAVBAR_INFO } from "./Navbar_Info";
+import { RowContainer } from "../components/ContainerStyles";
+import { Image } from "../components/ImageStyles";
+import { SiteHeader } from "../components/HeaderStyles";
+import { ParaText } from "../components/TextStyles";
 
 const Navbar = props => {
-  const dropdownUnits = navbar_constants.map(item => {
+  const dropdownUnits = NAVBAR_INFO.map(item => {
     return (
       <DropdownUnit
         header={item.header}
@@ -24,93 +26,70 @@ const Navbar = props => {
   });
 
   return (
-    <div className={css(styles.mainContainer, animations.fadeInDown)}>
-      <Link to={"/"} className={css(styles.logoContainer)}>
-        <img
-          className={css(styles.logo)}
+    <NavbarContainer bgColor="#333">
+      <LogoContainer to="/">
+        <Image
           src="/images/logo.png"
           alt="Pi Sigma Epsilon logo"
+          height="50px"
+          width="89px"
         />
-        <div className={css(styles.textContainer)}>
-          <p className={css(styles.PSEText)}>Pi Sigma Epsilon</p>
-          <p className={css(styles.chapterText)}>Zeta Chi Chapter</p>
-        </div>
-      </Link>
-      <div className={css(styles.dropdownUnitContainer)}>{dropdownUnits}</div>
-      <div className={css(styles.hamburgerMenu)}>
+        <TextContainer>
+          <SiteHeader>Pi Sigma Epsilon</SiteHeader>
+          <Text alt>Zeta Chi Chapter</Text>
+        </TextContainer>
+      </LogoContainer>
+      <DropdownUnitContainer>{dropdownUnits}</DropdownUnitContainer>
+      <HamburgerMenuContainer>
         <HamburgerMenu />
-      </div>
-    </div>
+      </HamburgerMenuContainer>
+    </NavbarContainer>
   );
 };
 
 export default Navbar;
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    backgroundColor: "#303030",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    height: "75px",
-    "@media (max-width: 768px)": {
-      justifyContent: "center"
-    },
-    "@media (max-width: 425px)": {
-      justifyContent: "left"
-    }
-  },
-
-  logoContainer: {
-    cursor: "pointer",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    padding: "20px",
-    textDecoration: "none",
-    "@media (max-width: 768px)": {
-      textAlign: "center"
-    }
-  },
-
-  logo: {
-    height: "50px",
-    width: "89px"
-  },
-
-  textContainer: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    paddingLeft: "20px"
-  },
-
-  PSEText: {
-    fontSize: "1.25em",
-    letterSpacing: "-0.025em",
-    margin: 0,
-    textTransform: "uppercase"
-  },
-
-  chapterText: {
-    fontSize: "1em",
-    margin: 0
-  },
-
-  dropdownUnitContainer: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    position: "absolute",
-    right: 0,
-    paddingRight: "10px",
-    "@media (max-width: 768px)": {
-      display: "none"
-    }
-  },
-
-  hamburgerMenu: {
-    "@media (min-width: 769px)": {
-      display: "none"
-    }
+const NavbarContainer = RowContainer.extend`
+  height: 75px;
+  justify-content: baseline;
+  @media (max-width: 768px) {
+    text-align: center;
   }
-});
+  @media (max-width: 425px) {
+    justify-content: left;
+  }
+`;
+
+const LogoContainer = RowContainer.withComponent(Link).extend`
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+const TextContainer = styled.div`
+  color: #fff;
+  padding-left: 20px;
+`;
+
+const Text = ParaText.extend`
+  font-size: 1rem;
+  margin: 0;
+`;
+
+const DropdownUnitContainer = RowContainer.extend`
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  @media (max-width: 769px) {
+    display: none;
+  }
+`;
+
+const HamburgerMenuContainer = styled.div`
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;

@@ -1,18 +1,16 @@
 /*** 
 UC Berkeley Pi Sigma Epsilon -- Zeta Chi Chapter
-This is the routes of the app. Static Pages go here and utilize the Components.
 author: @rahrang, @berkeleypse
 ***/
 
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 import { Switch, Route } from "react-router-dom";
 
-// Local Page Components
-import Home from "./Home";
+// page components
+import Home from "./Home/Home";
 import About from "./About/About";
 import Careers from "./About/Careers";
 import Recruitment from "./Recruitment/Recruitment";
@@ -25,12 +23,12 @@ import Executives from "./Brothers/Executives";
 import Contact from "./Contact";
 import Error404 from "./Error404";
 
-// Other Local Components
+// other components
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
-import AppBanner from "./reusable_components/AppBanner.jsx";
+import AppBanner from "./components/AppBanner.jsx";
 
-// Page URLs
+// page paths
 import {
   HOME_PATH,
   ABOUT_PATH,
@@ -42,14 +40,14 @@ import {
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
-} from "./Navbar/navbar_constants.jsx";
+} from "./Navbar/Navbar_Info";
 
 const Routes = props => {
   return (
     <div id="router-container">
       <Navbar />
       <AppBanner />
-      <div className={css(styles.mainContainer)}>
+      <MainContainer>
         <Switch>
           <Route exact path={HOME_PATH} component={Home} />
           <Route path={ABOUT_PATH} component={About} />
@@ -65,7 +63,7 @@ const Routes = props => {
           <Route path={CONTACT_PATH} component={Contact} />
           <Route component={Error404} />
         </Switch>
-      </div>
+      </MainContainer>
       <Footer />
     </div>
   );
@@ -73,8 +71,6 @@ const Routes = props => {
 
 export default Routes;
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    minHeight: `calc(100vh - 118px)`
-  }
-});
+const MainContainer = styled.div`
+  min-height: calc(100vh - 118px);
+`;
