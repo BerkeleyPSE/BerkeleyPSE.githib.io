@@ -18,9 +18,9 @@ const Footer = props => {
       </MarginContainer>
       <SocialMediaBar
         icons={FOOTER_INFO}
-        iconColor={"#FFF"}
-        iconSize={"1.125rem"}
-        hoverColor={"#FFD700"}
+        iconColor="#FFF"
+        iconSize="1.125rem"
+        hoverColor="#FFD700"
         margin={{ top: "5px", right: "7.5px", bottom: "5px", left: "7.5px" }}
       />
       <MarginContainer>
