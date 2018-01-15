@@ -158,15 +158,12 @@ const brotherInfo = {
     previous_positions: "",
     bio:
       "Through PSE, Alex learned the foundations of brotherhood, consulting, and finance. His role models are his parents. Alex is involved in AFX and VSA. He loves to golf, listen to music, and travel.",
-    linkedin: "www.linkedin.com/in/adao1",
-    medium: "",
-    github: "",
-    website: ""
+    linkedin: "www.linkedin.com/in/adao1"
   },
 
   cathy_an: {
     img: `${imagePath}/cathy_an.jpg`,
-    name: "Alex Dao",
+    name: "Cathy An",
     position: "Active",
     year: "Sophomore",
     hometown: "Philadelphia, Pennsylvania",
@@ -176,11 +173,8 @@ const brotherInfo = {
     career_interests: "Consulting, Finance",
     previous_positions: "",
     bio:
-      "Through PSE, Cathy has learned how to collaborate with others in professional environments as well as gained insights into the different industries in business. She looks to activist Malala Yousifazi as a role model.Cathy is in Dance Maraton and AFX. She enjoys dancing, playing soccer, and listening to music.",
-    linkedin: "https://www.linkedin.com/in/cathy-an/",
-    medium: "",
-    github: "",
-    website: ""
+      "Through PSE, Cathy has learned how to collaborate with others in professional environments as well as gained insights into the different industries in business. She looks to activist Malala Yousifazi as a role model. Cathy is in Dance Maraton and AFX. She enjoys dancing, playing soccer, and listening to music.",
+    linkedin: "https://www.linkedin.com/in/cathy-an/"
   },
 
   /* 4 */
@@ -401,11 +395,8 @@ const brotherInfo = {
     career_interests: "Software Development",
     previous_positions: "",
     bio:
-      "Through PSE, I developed professionalism as well as analytical and public speaking skills. His role model is his father. John is in the Cal Aquatics Swim Club. He enjoys swimming, playing the piano, and eating.",
-    linkedin: "www.linkedin.com/in/johnvan1",
-    medium: "",
-    github: "",
-    website: ""
+      "Through PSE, John developed professionalism as well as analytical and public speaking skills. His role model is his father. John is in the Cal Aquatics Swim Club. He enjoys swimming, playing the piano, and eating.",
+    linkedin: "www.linkedin.com/in/johnvan1"
   },
 
   joshua_nuesca: {
@@ -421,10 +412,7 @@ const brotherInfo = {
     previous_positions: "",
     bio:
       "Josh was able to unlock his creative potential and presentation skills with numerous case study presentations answering complex questions spanning a variety of industries. PSE also taught him the meaning of brotherhood through teamwork and trust. His role model is Mark Zuckerberg. Josh is in the student-run newspaper group of Cal, The Daily Californian, and is a Resident Assistant. He enjoys exploring new cultures, reading novels, and philosophical conversations on long car rides.",
-    linkedin: "www.linkedin.com/in/johnvan1",
-    medium: "",
-    github: "",
-    website: ""
+    linkedin: "www.linkedin.com/in/joshnuesca"
   },
 
   /* 17 */
@@ -578,8 +566,8 @@ const brotherInfo = {
     previous_positions:
       "Director of Professional Development, Director of Projects",
     bio:
-      "PSE has given Liona knowledge of various industries and skills such as time mangament. Her role model is Austrian-American actor and politician Arnold Schwarzenegger. Liona is also involved in ASUC. Her hobbies include hiking, baking, and scrapbooking.",
-    linkedin: "www.linkedin.com/in/LionaLi"
+      "PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.",
+    linkedin: "www.linkedin.com/in/li-linda"
   },
 
   /* 25 */
@@ -595,8 +583,8 @@ const brotherInfo = {
     career_interests: "Management Consulting, Marketing",
     previous_positions: "",
     bio:
-      "PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.",
-    linkedin: "https://linkedin.com/in/li-linda"
+      "PSE has given Liona knowledge of various industries and skills such as time mangament. Her role model is Austrian-American actor and politician Arnold Schwarzenegger. Liona is also involved in ASUC. Her hobbies include hiking, baking, and scrapbooking.",
+    linkedin: "https://linkedin.com/in/lionali"
   },
 
   /* 26 */
@@ -787,7 +775,7 @@ const brotherInfo = {
     career_interests: "Marketing, Communications",
     previous_positions: "",
     bio:
-      "From PSE, Reshman learned the value of community and professional development. Her role model is her brother Varun Belur. Reshma works for the Center on the Economics and Demographics of Aging and the Hass Alumni Association. She also won the Rotary Student Achievement Award. She enjoys meeting new people, taking walks, and online shopping. ",
+      "From PSE, Reshma learned the value of community and professional development. Her role model is her brother Varun. Reshma works for the Center on the Economics and Demographics of Aging and the Haas Alumni Association. She also won the Rotary Student Achievement Award. She enjoys meeting new people, taking walks, and online shopping. ",
     linkedin: "https://www.linkedin.com/in/reshmabelur",
     medium: "",
     github: "",
@@ -807,7 +795,7 @@ const brotherInfo = {
     career_interests: "Management Consulting, Corporate Law",
     previous_positions: "",
     bio:
-      "Through PSE, Rick learned Basic information about business and gained important tips in preparing for interviews, resumes, and internships. His role model is South Korean diplomat Ban Ki-moon. Rick is invovled in KASA and Dentro. He also won the China Marchants Art Mural.",
+      "Through PSE, Rick learned basic information about business and gained important tips in preparing for interviews, resumes, and internships. His role model is South Korean diplomat Ban Ki-moon. Rick is invovled in KASA and Dentro. He also won the China Marchants Art Mural. Rick enjoys playing basketball, sketching, and exercising in his free time.",
     linkedin: "www.linkedin.com/in/rick-choi",
     medium: "",
     github: "",
