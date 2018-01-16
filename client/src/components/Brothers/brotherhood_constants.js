@@ -591,7 +591,7 @@ const brotherInfo = {
   max_seltzer: {
     img: `${imagePath}/max_seltzer.jpg`,
     name: "Max Seltzer",
-    position: "Prospective Member Trainer",
+    position: "Active",
     year: "Senior",
     hometown: "Los Angeles, CA",
     class: "Delta",
