@@ -5,6 +5,7 @@ const IntLink = styled(Link)`
   color: #895fad;
   cursor: pointer;
   letter-spacing: 0.025rem;
+  text-decoration: none;
 
   &:hover {
     color: #ffd700;

@@ -1,40 +1,23 @@
 // React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
-import { Link } from "react-router-dom";
+// node modules
+import styled from "styled-components";
 import includes from "lodash/includes";
 
-// Local Helper Files & Components
-import { animations } from "../../stylesheets/Animations.js";
+// components
 import {
   brotherInfo,
   brotherList,
   allExecsList
 } from "./brotherhood_constants";
-import { PageHandler } from "./PageHandler.jsx";
-
-// Constants
-const infoList = [
-  "year",
-  "hometown",
-  "class",
-  "major",
-  "minor",
-  "career_interests",
-  "previous_positions"
-];
-
-const infoMap = {
-  year: "Year",
-  hometown: "Hometown",
-  class: "Class",
-  major: "Major",
-  minor: "Minor",
-  career_interests: "Career Interests",
-  previous_positions: "Previous Positions"
-};
+import PageHandler from "./PageHandler";
+import BrotherTable from "./BrotherTable";
+import { ColumnContainer } from "../components/ContainerStyles";
+import { PageHeader } from "../components/HeaderStyles";
+import { Image } from "../components/ImageStyles";
+import { ParaText } from "../components/TextStyles";
+import MediaLink from "../components/MediaLink";
 
 export default class Brother extends React.Component {
   broNotFound = () => {
@@ -69,204 +52,98 @@ export default class Brother extends React.Component {
 
     document.title = `${bro.name} - Pi Sigma Epsilon | Zeta Chi Chapter`;
 
-    const infoTable = infoList.map(item => {
-      if (bro[item]) {
-        return (
-          <div className={css(table.infoRow)} key={`${bro.name}_${item}`}>
-            <p className={css(table.infoTitle)}>{infoMap[item]}</p>
-            <p className={css(table.infoValue)}>{bro[item]}</p>
-          </div>
-        );
-      } else {
-        return null;
-      }
-    });
-
     return (
-      <div className={css(animations.fadeIn) + " brother-container"}>
-        <div className={css(styles.profileContainer)}>
-          <div className={css(styles.imageContainer, animations.slideInLeft)}>
-            <img
-              className={css(styles.image)}
-              src={"../" + bro.img}
-              alt={bro.name}
-            />
-          </div>
-          <div className={css(styles.broInfo)}>
+      <div id="brother-container">
+        <ProfileContainer>
+          <ImageContainer>
+            <BroImage src={`../${bro.img}`} border alt={bro.name} />
+          </ImageContainer>
+          <BroInfoContainer>
             <PageHandler
               index={broIndex}
               brotherList={broList}
               brotherInfo={brotherInfo}
               page={page}
             />
-            <div className={css(styles.broHeader)}>
-              <h1 className={css(styles.name)}>{bro.name}</h1>
-              <h2 className={css(styles.position)}>{bro.position}</h2>
-            </div>
-            <div className={css(table.tableContainer)}>
-              <div className={css(table.infoTableContainer)}>{infoTable}</div>
-              {/* TODO: TABLE OF EXPERIENCES */}
-            </div>
-            <div className={css(styles.broBody)}>
-              <div className={css(styles.broTable)} />
-              <div className={css(styles.broBio)}>
-                <p className={css(styles.bio)}>{bro.bio}</p>
-              </div>
-              <div className={css(styles.broMedia)}>
-                <Link
-                  to={bro.linkedin}
-                  target="blank"
-                  className={css(styles.mediaLink)}
-                >
-                  <i
-                    className={css(styles.icon) + " fa fa-linkedin"}
-                    aria-hidden="true"
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+            <BroHeaderContainer>
+              <Name>{bro.name}</Name>
+              <Position>{bro.position}</Position>
+            </BroHeaderContainer>
+            <BrotherTable bro={bro} />
+            <BroBio>{bro.bio}</BroBio>
+            <BroMediaContainer>
+              <MediaLink href={bro.linkedin} media="linkedin" />
+            </BroMediaContainer>
+          </BroInfoContainer>
+        </ProfileContainer>
       </div>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  profileContainer: {
-    display: "flex",
-    flexDirection: "row",
-    padding: "10px 0",
-    "@media (max-width: 900px)": {
-      flexDirection: "column",
-      textAlign: "center"
-    }
-  },
-
-  broInfo: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "100%"
-  },
-
-  broHeader: {
-    fontFamily: "Lato, sans-serif",
-    letterSpacing: "0.035em",
-    padding: "10px 20px",
-    textAlign: "center"
-  },
-
-  name: {
-    color: "#895FAD",
-    fontSize: "3em",
-    margin: "0",
-    padding: "10px 0 5px 0",
-    textAlign: "center"
-  },
-
-  position: {
-    color: "#818181",
-    fontSize: "1.25em",
-    margin: "0",
-    textTransform: "uppercase"
-  },
-
-  imageContainer: {
-    padding: "0 20px",
-    display: "flex",
-    justifyContent: "center"
-  },
-
-  image: {
-    border: "3px solid #895FAD",
-    "@media (min-width: 325px)": {
-      width: "325px",
-      height: "485px"
-    },
-    "@media (min-width: 425px)": {
-      width: "402px",
-      height: "600px"
-    }
-  },
-
-  broBio: {
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1.125em",
-    fontWeight: "500",
-    lineHeight: "1.5em",
-    margin: "auto",
-    width: "80%"
-  },
-
-  bio: {
-    color: "#818181"
-  },
-
-  broMedia: {
-    display: "flex",
-    justifyContent: "center"
-  },
-
-  mediaLink: {
-    backgroundColor: "rgba(0, 0, 0, 0)",
-    color: "#895FAD",
-    textDecoration: "none",
-    border: "2px solid #895FAD",
-    borderRadius: "3px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "5px",
-    height: "30px",
-    width: "30px",
-    ":hover": {
-      backgroundColor: "#895FAD",
-      color: "#FFF"
-    }
-  },
-
-  icon: {
-    fontSize: "1.5em"
+const ProfileContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
   }
-});
+`;
 
-const table = StyleSheet.create({
-  tableContainer: {
-    display: "flex",
-    flexDirection: "row",
-    padding: "10px 0"
-  },
+const BroInfoContainer = ColumnContainer.extend`
+  justify-content: normal;
+  width: 100%;
+`;
 
-  infoTableContainer: {},
+const BroHeaderContainer = styled.div`
+  letter-spacing: 0.025rem;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+`;
 
-  infoRow: {
-    borderBottom: "1px solid #303030",
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "8px 0"
-  },
+const Name = PageHeader.extend`
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0.625rem 0 0.3125rem 0;
+`;
 
-  infoTitle: {
-    color: "#895FAD",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1em",
-    fontWeight: "bold",
-    letterSpacing: "0.025em",
-    margin: "0",
-    padding: "0 10px",
-    textAlign: "left",
-    textTransform: "uppercase"
-  },
+const Position = styled.h3`
+  color: #818181;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+`;
 
-  infoValue: {
-    color: "#818181",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1em",
-    margin: "0",
-    padding: "0 10px",
-    textAlign: "right"
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+`;
+
+const BroImage = Image.extend`
+  @media (min-width: 325px) {
+    width: 325px;
+    height: 485px;
   }
-});
+
+  @media (min-width: 425px) {
+    width: 402px;
+    height: 600px;
+  }
+`;
+
+const BroBio = ParaText.extend`
+  color: #818181;
+  line-height: 1.65rem;
+  margin: 15px auto;
+  width: 80%;
+`;
+
+const BroMediaContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
