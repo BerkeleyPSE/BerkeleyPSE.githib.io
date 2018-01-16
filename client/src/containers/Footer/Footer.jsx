@@ -25,11 +25,11 @@ const Footer = props => {
       />
       <MarginContainer>
         <Text alt>
-          Developed by
           <SelfLink to={"http://www.rahrang.xyz"} target="blank">
             {" "}
             Rahul Rangnekar
           </SelfLink>
+          , Tim Cheng
         </Text>
       </MarginContainer>
     </FooterContainer>
@@ -51,7 +51,7 @@ const MarginContainer = styled.div`
 `;
 
 const Text = ParaText.extend`
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   margin: 0;
 `;

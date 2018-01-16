@@ -84,7 +84,7 @@ const DropdownUnitContainer = RowContainer.extend`
   right: 0;
   padding-right: 10px;
   @media (max-width: 769px) {
-    display: none;
+    display: none !important;
   }
 `;
 

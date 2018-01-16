@@ -1,13 +1,14 @@
-// React
 import React from "react";
 
-// NPM Modules
+// node modules
 import { StyleSheet, css } from "aphrodite";
+import styled from "styled-components";
 
-// Local Helper Files & Components
+// components
 import { animations } from "../../../stylesheets/Animations.js";
 import { faq_constants } from "./faq_constants.js";
 import AccordionItem from "../../components/AccordionItem.jsx";
+import { PageHeader } from "../../components/HeaderStyles";
 
 const FAQs = props => {
   document.title = "FAQs - Pi Sigma Epsilon | Zeta Chi Chapter";
@@ -28,29 +29,22 @@ const FAQs = props => {
   });
 
   return (
-    <div className={css(animations.fadeIn) + " faqs-container"}>
-      <h1 className={css(styles.header)}>Frequently Asked Questions</h1>
-      <div className={css(styles.accordionContainer)}>{faqs}</div>
+    <div id="faqs-container">
+      <Header>Frequently Asked Questions</Header>
+      <AccordionItemsContainer>{faqs}</AccordionItemsContainer>
     </div>
   );
 };
 
 export default FAQs;
 
-const styles = StyleSheet.create({
-  header: {
-    color: "#895FAD",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "3em",
-    fontWeight: "500",
-    margin: "0",
-    padding: "30px 0",
-    textAlign: "center"
-  },
+const AccordionItemsContainer = styled.div`
+  margin: auto;
+  padding: 1.25rem 0;
+  width: 100%;
+`;
 
-  accordionContainer: {
-    width: "100%",
-    margin: "auto",
-    padding: "20px 0"
-  }
-});
+const Header = PageHeader.extend`
+  font-size: 3rem;
+  margin: 0.5rem 0;
+`;

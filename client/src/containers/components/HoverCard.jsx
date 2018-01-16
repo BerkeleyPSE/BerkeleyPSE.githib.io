@@ -1,68 +1,60 @@
-// React
 import React from "react";
 
-// NPM Modules
+// node modules
 import { StyleSheet, css } from "aphrodite";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// Local Helper Files & Components
-import { animations } from "../../stylesheets/Animations.js";
+// components
+import { ColumnContainer } from "../components/ContainerStyles";
 
 const HoverCard = props => {
   return (
-    <Link className={css(styles.hoverCard, animations.zoomIn)} to={props.link}>
-      <h1 className={css(styles.header)}>{props.header}</h1>
-      <hr className={css(styles.hr)} />
-      <p className={css(styles.description)}>{props.description}</p>
-    </Link>
+    <HoverCardContainer to={props.link}>
+      <Header>{props.header}</Header>
+      <HR />
+      <Description>{props.description}</Description>
+    </HoverCardContainer>
   );
 };
 
 export default HoverCard;
 
-const styles = StyleSheet.create({
-  hoverCard: {
-    backgroundColor: "#FFF",
-    border: "3px solid #303030",
-    color: "#303030",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "10px",
-    margin: "20px",
-    textAlign: "center",
-    textDecoration: "none",
-    minHeight: "80px",
-    minWidth: "210px",
-    ":hover": {
-      border: "3px solid #895FAD",
-      backgroundColor: "#303030",
-      color: "#FFF"
-    }
-  },
+const HoverCardContainer = ColumnContainer.withComponent(Link).extend`
+  border: 3px solid #333;
+  color: #333;
+  margin: 1.25rem;
+  padding: 0.625rem;
+  text-align: center;
+  text-decoration: none;
+  min-height: 80px;
+  min-width: 210px;
 
-  header: {
-    fontFamily: "Lato, sans-serif",
-    fontSize: "1.5em",
-    fontWeight: "300",
-    margin: "0",
-    padding: "10px 0"
-  },
-
-  hr: {
-    border: "2px solid #895FAD",
-    width: "90%",
-    padding: "0",
-    margin: "0"
-  },
-
-  description: {
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1em",
-    fontWeight: "400",
-    padding: "10px 0",
-    margin: "0",
-    textTransform: "uppercase"
+  &:hover {
+    background-color: #333;
+    border: 3px solid #895fad;
+    color: #fff;
   }
-});
+`;
+
+const Header = styled.h1`
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 0.625rem 0;
+`;
+
+const HR = styled.hr`
+  border: 2px solid #895fad;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+`;
+
+const Description = styled.p`
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.625rem 0;
+  text-transform: uppercase;
+`;

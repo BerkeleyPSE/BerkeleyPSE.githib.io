@@ -1,17 +1,13 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
-
-// Local Helper Files & Components
-import { animations } from "../../stylesheets/Animations.js";
+// components
 import HoverCard from "../components/HoverCard.jsx";
 import {
   WHYPSE_PATH,
   FAQS_PATH,
   APPLICATION_PATH
 } from "../Navbar/Navbar_Info";
+import { RowContainer } from "../components/ContainerStyles";
 
 // constants
 const HOVER_CARD_ITEMS = [
@@ -36,19 +32,12 @@ const Recruitment = props => {
   document.title = "Recruitment - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const hoverCards = HOVER_CARD_ITEMS.map((item, index) => {
-    return (
-      <HoverCard
-        key={index}
-        link={item.link}
-        header={item.header}
-        description={item.description}
-      />
-    );
+    return <HoverCard key={index} {...item} />;
   });
 
   return (
-    <div className={css(animations.fadeIn) + " recruitment-container"}>
-      <div className="timeline-container">
+    <div id="recruitment-container">
+      <div id="timeline-container">
         {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
         <iframe
           title="Fall 2017 Recruitment Timeline"
@@ -58,22 +47,13 @@ const Recruitment = props => {
           frameBorder="0"
         />
       </div>
-      <div className={css(styles.hoverCardContainer)}>{hoverCards}</div>
+      <HoverCardContainer>{hoverCards}</HoverCardContainer>
     </div>
   );
 };
 
 export default Recruitment;
 
-const styles = StyleSheet.create({
-  hoverCardContainer: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "40px",
-    "@media (max-width: 768px)": {
-      flexDirection: "column"
-    }
-  }
-});
+const HoverCardContainer = RowContainer.extend`
+  padding: 2.5rem;
+`;
