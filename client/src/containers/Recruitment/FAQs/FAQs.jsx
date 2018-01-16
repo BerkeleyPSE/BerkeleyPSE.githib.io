@@ -1,11 +1,9 @@
 import React from "react";
 
 // node modules
-import { StyleSheet, css } from "aphrodite";
 import styled from "styled-components";
 
 // components
-import { animations } from "../../../stylesheets/Animations.js";
 import { faq_constants } from "./faq_constants.js";
 import AccordionItem from "../../components/AccordionItem.jsx";
 import { PageHeader } from "../../components/HeaderStyles";

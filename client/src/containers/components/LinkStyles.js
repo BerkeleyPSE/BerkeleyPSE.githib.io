@@ -57,8 +57,8 @@ const ExtButtonLink = ExtLink.extend`
 
   &:hover {
     background-color: #fff;
-    border: 2px solid #895fad;
-    color: #895fad;
+    border: 2px solid #ffd700;
+    color: #ffd700;
   }
 `;
 

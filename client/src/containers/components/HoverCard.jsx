@@ -1,7 +1,6 @@
 import React from "react";
 
 // node modules
-import { StyleSheet, css } from "aphrodite";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
