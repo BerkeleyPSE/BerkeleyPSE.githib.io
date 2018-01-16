@@ -1,14 +1,16 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
-import { Link } from "react-router-dom";
+// node modules
+import styled from "styled-components";
 
-// Local Helper Files & Components
-import { animations } from "../stylesheets/Animations.js";
+// components
+import { RowContainer } from "./components/ContainerStyles";
+import { ExtLink } from "./components/LinkStyles";
+import { PageHeader } from "./components/HeaderStyles";
+import { ParaText } from "./components/TextStyles";
+import { Image } from "./components/ImageStyles";
 
-// Constants
+// constants
 const CONTACT_LIST = [
   {
     for: "general questions or inquiries",
@@ -33,84 +35,48 @@ const Contact = props => {
 
   const contactInfo = CONTACT_LIST.map((item, index) => {
     return (
-      <p className={css(styles.contactInfo)}>
-        For {item.for}, please email
-        <Link
-          to={`mailto:${item.email}`}
-          className={css(styles.link)}
-          target="blank"
-          key={index}
-        >
-          {" "}
+      <Text>
+        For {item.for}, please email{" "}
+        <ExtLink href={`mailto:${item.email}`} key={index}>
           {item.email}
-        </Link>
+        </ExtLink>
         .
-      </p>
+      </Text>
     );
   });
 
   return (
-    <div className={css(animations.fadeIn) + " contact-container"}>
-      <div className={css(styles.landingContainer)}>
-        <img
-          src={"../images/campanile.jpg"}
-          className={css(styles.image)}
-          alt={"Pi Sigma Epsilon brotherhood"}
+    <div id="contact-container">
+      <RowContainer>
+        <Image
+          src="../images/campanile.jpg"
+          alt="Pi Sigma Epsilon brotherhood"
         />
-        <h1 className={css(styles.header)}>Contact Us</h1>
-      </div>
-      <div className={css(styles.infoContainer)}>{contactInfo}</div>
+        <Header alt>Contact Us</Header>
+      </RowContainer>
+      <InfoContainer>{contactInfo}</InfoContainer>
     </div>
   );
 };
 
 export default Contact;
 
-const styles = StyleSheet.create({
-  landingContainer: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  },
+const Header = PageHeader.extend`
+  font-size: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+`;
 
-  image: {
-    maxWidth: "100%",
-    position: "relative"
-  },
+const Text = ParaText.extend`
+  margin: 1rem 0;
+`;
 
-  header: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "3em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    margin: "0",
-    padding: "30px 0",
-    textAlign: "center",
-
-    position: "absolute",
-    width: "100%"
-  },
-
-  infoContainer: {
-    padding: "20px 40px",
-    textAlign: "center",
-    "@media (min-width: 768px)": {
-      textAlign: "left"
-    }
-  },
-
-  contactInfo: {
-    color: "#303030",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "1.125em"
-  },
-
-  link: {
-    color: "#895FAD",
-    textDecoration: "none",
-    ":hover": {
-      color: "#FFD700"
-    }
+const InfoContainer = styled.div`
+  padding: 1.25rem 2.5rem;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
   }
-});
+`;

@@ -13,7 +13,7 @@ export default class AppBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: true
+      show: false
     };
   }
 
@@ -26,7 +26,7 @@ export default class AppBanner extends React.Component {
       this.state.show && (
         <BannerContainer>
           <MessageContainer>
-            <ParaText alt>Our Fall 2017 Application is open!</ParaText>
+            <ParaText alt>Our Spring 2018 Application is open!</ParaText>
             <IntLink to={"/app"}>Apply</IntLink>
             <ExtLink href={"https://www.facebook.com/events/112518222782092/"}>
               RSVP
