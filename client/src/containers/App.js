@@ -1,13 +1,12 @@
-// import React
-import React, { Component } from "react";
+import React from "react";
 
-// import routers
+// node modules
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-// import local components
+// components
 import Routes from "./routes";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Router>

@@ -9,11 +9,13 @@ import { RowContainer, ColumnContainer } from "../components/ContainerStyles";
 import { IntButtonLink, ExtButtonLink } from "../components/LinkStyles";
 import { ParaText } from "../components/TextStyles";
 
+const FB_EVENT_LINK = "https://www.facebook.com/events/866686896845315/";
+
 export default class AppBanner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: true
     };
   }
 
@@ -26,11 +28,9 @@ export default class AppBanner extends React.Component {
       this.state.show && (
         <BannerContainer>
           <MessageContainer>
-            <ParaText alt>Our Spring 2018 Application is open!</ParaText>
-            <IntLink to={"/app"}>Apply</IntLink>
-            <ExtLink href={"https://www.facebook.com/events/112518222782092/"}>
-              RSVP
-            </ExtLink>
+            <ParaText alt>Our Facebook Event is live!</ParaText>
+            {/* <IntLink to={"/app"}>Apply</IntLink> */}
+            <ExtLink href={FB_EVENT_LINK}>RSVP</ExtLink>
           </MessageContainer>
           <CloseContainer onClick={this.closeBanner}>
             <i className="fa fa-times" aria-hidden="true" />
@@ -45,6 +45,7 @@ const BannerContainer = RowContainer.extend`
   background-color: #818181;
   margin: auto;
   text-align: center;
+  padding: 5px 0;
   width: 100%;
   z-index: 2;
 `;
