@@ -2,12 +2,15 @@ import React from "react";
 
 // node modules
 import { StyleSheet, css } from "aphrodite";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components
 import { animations } from "../../stylesheets/Animations.js";
 import { brotherInfo } from "./brotherhood_constants";
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
+import { ColumnContainer } from "../components/ContainerStyles";
+import { Image } from "../components/ImageStyles";
 
 export class BrotherImage extends React.Component {
   constructor(props) {
@@ -26,20 +29,29 @@ export class BrotherImage extends React.Component {
       return null;
     }
 
-    let toPath = page === "bros" ? BROTHERS_PATH : EXECUTIVES_PATH;
+    let isBrosPage = page === "bros";
+    let toPath = isBrosPage ? BROTHERS_PATH : EXECUTIVES_PATH;
 
     return (
-      <Link
-        to={toPath + "/" + brother}
-        className={css(styles.broLink)}
+      <BrotherImageContainer
+        to={`${toPath}/${brother}`}
         onMouseEnter={() => this.setState({ hover: true })}
         onMouseLeave={() => {
           this.setState({ hover: false });
         }}
       >
-        <div className={css(styles.broContainer)}>
-          <img src={bro.img} className={css(styles.broImg)} alt={bro.name} />
-          {(hover || page === "execs") && (
+        <BroContainer>
+          <Image src={bro.img} alt={bro.name} height="100%" width="100%" />
+          <Overlay hover={hover} isBrosPage>
+            <p className={css(styles.broName, animations.slideInLeft)}>
+              {bro.name}
+            </p>
+            <hr className={css(styles.hr)} />
+            <p className={css(styles.broPosition, animations.slideInRight)}>
+              {bro.position}
+            </p>
+          </Overlay>
+          {/* {(hover || !isBrosPage) && (
             <div className={css(styles.overlay)}>
               <p className={css(styles.broName, animations.slideInLeft)}>
                 {bro.name}
@@ -50,47 +62,44 @@ export class BrotherImage extends React.Component {
               </p>
             </div>
           )}
-          {page === "bros" && (
+          {isBrosPage && (
             <div className={css(styles.mobileBro)}>
               <p className={css(styles.mobileName)}>{bro.name}</p>
               <hr className={css(styles.hr)} />
               <p className={css(styles.mobilePosition)}>{bro.position}</p>
             </div>
-          )}
-        </div>
-      </Link>
+          )} */}
+        </BroContainer>
+      </BrotherImageContainer>
     );
   }
 }
 
+const BrotherImageContainer = styled(Link)`
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+`;
+
+const BroContainer = ColumnContainer.extend`
+  position: relative;
+`;
+
+const Overlay = styled.div`
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 135px;
+  width: 100%;
+
+  display: ${props => (props.hover || !props.isBrosPage ? "block" : "none")};
+`;
+// the media query is problematic when applied to Overlay
+// @media (min-device-width: 425px) {
+//   display: none
+// }
+
 const styles = StyleSheet.create({
-  broLink: {
-    display: "inline-block",
-    textAlign: "center",
-    textDecoration: "none"
-  },
-
-  broContainer: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "relative"
-  },
-
-  broImg: {
-    width: "100%",
-    height: "100%"
-  },
-
-  overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    position: "absolute",
-    bottom: "0",
-    height: "135px",
-    width: "100%"
-  },
-
   broName: {
     color: "#FFF",
     fontFamily: "Lato, sans-serif",
