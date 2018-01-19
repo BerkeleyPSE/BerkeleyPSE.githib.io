@@ -47,10 +47,12 @@ const Application = props => {
         <div>
           <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
           <p className={css(styles.description)}>
-            Our Fall 2017 Application is now closed. Thank you for applying!
+            Our Spring 2018 Application will open after our Meet the Chapter
+            event, Saturday (1/20) night, 7pm in the ASUC Student Union Tilden
+            Room.
             <br />
-            If you would like notifications for our Spring 2018 recruitment
-            events, please enter your name and email below.
+            If you would like notifications for our recruitment events in the
+            meantime, please enter your name and email below.
           </p>
           {!isUndefined(appReducer.formSubmitSuccess) ? (
             appReducer.formSubmitSuccess === true ? (
