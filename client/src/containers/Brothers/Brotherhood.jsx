@@ -21,8 +21,8 @@ const Brotherhood = props => {
     <div id="brotherhood-container">
       <LandingContainer>
         <Image
-          src={"../images/brotherhood.jpg"}
-          alt={"Pi Sigma Epsilon brotherhood"}
+          src="../images/brotherhood.jpg"
+          alt="Pi Sigma Epsilon brotherhood"
         />
         <Header alt>Our Brotherhood</Header>
       </LandingContainer>

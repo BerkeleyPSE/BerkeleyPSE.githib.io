@@ -21,16 +21,16 @@ export class BrotherImage extends React.Component {
   }
 
   render() {
-    let { brother, page } = this.props;
+    const { brother, page } = this.props;
     let { hover } = this.state;
-    var bro = brotherInfo[brother];
+    const bro = brotherInfo[brother];
 
     if (!bro) {
       return null;
     }
 
-    let isBrosPage = page === "bros";
-    let toPath = isBrosPage ? BROTHERS_PATH : EXECUTIVES_PATH;
+    const isBrosPage = page === "bros";
+    const toPath = isBrosPage ? BROTHERS_PATH : EXECUTIVES_PATH;
 
     return (
       <BrotherImageContainer
@@ -43,32 +43,10 @@ export class BrotherImage extends React.Component {
         <BroContainer>
           <Image src={bro.img} alt={bro.name} height="100%" width="100%" />
           <Overlay hover={hover} isBrosPage>
-            <p className={css(styles.broName, animations.slideInLeft)}>
-              {bro.name}
-            </p>
-            <hr className={css(styles.hr)} />
-            <p className={css(styles.broPosition, animations.slideInRight)}>
-              {bro.position}
-            </p>
+            <Name>{bro.name}</Name>
+            <DividerLine />
+            <Position>{bro.position}</Position>
           </Overlay>
-          {/* {(hover || !isBrosPage) && (
-            <div className={css(styles.overlay)}>
-              <p className={css(styles.broName, animations.slideInLeft)}>
-                {bro.name}
-              </p>
-              <hr className={css(styles.hr)} />
-              <p className={css(styles.broPosition, animations.slideInRight)}>
-                {bro.position}
-              </p>
-            </div>
-          )}
-          {isBrosPage && (
-            <div className={css(styles.mobileBro)}>
-              <p className={css(styles.mobileName)}>{bro.name}</p>
-              <hr className={css(styles.hr)} />
-              <p className={css(styles.mobilePosition)}>{bro.position}</p>
-            </div>
-          )} */}
         </BroContainer>
       </BrotherImageContainer>
     );
@@ -93,69 +71,33 @@ const Overlay = styled.div`
   width: 100%;
 
   display: ${props => (props.hover || !props.isBrosPage ? "block" : "none")};
-`;
-// the media query is problematic when applied to Overlay
-// @media (min-device-width: 425px) {
-//   display: none
-// }
-
-const styles = StyleSheet.create({
-  broName: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "1.25em",
-    letterSpacing: "0.025em",
-    margin: "15px auto"
-  },
-
-  mobileName: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "1.25em",
-    letterSpacing: "0.025em",
-    padding: "5px 0",
-    margin: "15px auto"
-  },
-
-  hr: {
-    color: "#FFF",
-    border: "1px solid #895FAD",
-    width: "60%"
-  },
-
-  broPosition: {
-    color: "#FFF",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "0.9em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    margin: "15px auto",
-    padding: "0 10px",
-    textTransform: "uppercase"
-  },
-
-  mobilePosition: {
-    color: "#FFF",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "0.9em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    padding: "5px 0",
-    margin: "15px auto",
-    textTransform: "uppercase"
-  },
-
-  mobileBro: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
-    color: "#303030",
-    position: "absolute",
-    bottom: "0",
-    margin: "0",
-    padding: "20px 0",
-    height: "135px",
-    width: "100%",
-    "@media (min-device-width: 425px)": {
-      display: "none"
-    }
+  @media (max-device-width: 425px) {
+    display: block;
   }
-});
+`;
+
+const Name = styled.p`
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.025rem;
+  padding: 0.3125rem 0;
+  margin: 1rem 0;
+`;
+
+const DividerLine = styled.hr`
+  color: #fff;
+  border: 1px solid #895fad;
+  width: 60%;
+`;
+
+const Position = styled.p`
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  margin: 1rem auto;
+  padding: 0 0.625rem;
+  text-transform: uppercase;
+`;

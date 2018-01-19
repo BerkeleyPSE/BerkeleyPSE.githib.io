@@ -87,7 +87,6 @@ const ProfileContainer = styled.div`
   padding: 10px 0;
   @media (max-width: 900px) {
     flex-direction: column;
-    text-align: center;
   }
 `;
 

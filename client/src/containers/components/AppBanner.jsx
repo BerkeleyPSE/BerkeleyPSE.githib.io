@@ -73,12 +73,13 @@ const MessageContainer = ColumnContainer.extend`
 `;
 
 const CloseContainer = styled.div`
+  color: #fff;
   cursor: pointer;
   font-size: 1.125rem;
   margin: 0 1.25rem 0 auto;
   padding: 0 0.625rem;
 
   &:hover {
-    opacity: 0.5;
+    color: #ffd700;
   }
 `;
