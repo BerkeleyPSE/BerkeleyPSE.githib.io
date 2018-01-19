@@ -1,7 +1,6 @@
 import React from "react";
 
 // node modules
-import styled from "styled-components";
 import isUndefined from "lodash/isUndefined";
 
 // components
@@ -13,24 +12,24 @@ import { ParaText } from "../../../components/TextStyles";
 const Application = props => {
   let { appReducer, submitApp } = props;
   return (
-    <ColumnContainer>
+    <ColumnContainer id="recruitment-application">
       <PageHeader>Spring 2018 Application</PageHeader>
-      <ParaText>
+      <Text>
         Please fill out all fields.
         <br />
         The deadline is January 25th, 2018 at 12pm noon. Good luck!
-      </ParaText>
+      </Text>
       {!isUndefined(appReducer.appSubmitSuccess) ? (
-        appReducer.formSubmitSuccess === true ? (
-          <ParaText>
+        appReducer.appSubmitSuccess ? (
+          <SubmissionText>
             Your application was submitted successfully. We'll notify you about
             the next steps on the night of January 25th. Thanks!
-          </ParaText>
+          </SubmissionText>
         ) : (
-          <ParaText>
+          <SubmissionText>
             Something went wrong with your application submission. Please
             refresh this page and try again.
-          </ParaText>
+          </SubmissionText>
         )
       ) : (
         <ApplicationForm submitApp={submitApp} appReducer={appReducer} />
@@ -40,3 +39,13 @@ const Application = props => {
 };
 
 export default Application;
+
+const Text = ParaText.extend`
+  font-size: 1rem;
+  text-align: center;
+`;
+
+const SubmissionText = Text.extend`
+  border-top: 3px solid #895fad;
+  padding: 1rem 0;
+`;
