@@ -1,13 +1,13 @@
 // React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 import { reduxForm, Field } from "redux-form";
 
-// Local Helper Files & Components
-import { animations } from "../../../stylesheets/Animations.js";
-import InputField from "./InputField";
+// components
+import { ColumnContainer } from "../../../components/ContainerStyles";
+import InputField from "../input_components/InputField";
 
 const PreregistrationForm = props => {
   const renderFields = () => {
@@ -32,14 +32,12 @@ const PreregistrationForm = props => {
   };
 
   return (
-    <div className={css(formStyles.container, animations.fadeIn)}>
+    <FormContainer>
       <form onSubmit={props.handleSubmit(props.submitForm)}>
         {renderFields()}
-        <button className={css(formStyles.submit)} type="submit">
-          Submit
-        </button>
+        <SubmitButton type="submit">Submit</SubmitButton>
       </form>
-    </div>
+    </FormContainer>
   );
 };
 
@@ -59,28 +57,24 @@ export default reduxForm({
   form: "preregistrationForm"
 })(PreregistrationForm);
 
-const formStyles = StyleSheet.create({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "baseline",
-    justifyContent: "center",
-    margin: "15px 0"
-  },
+const FormContainer = ColumnContainer.extend`
+  align-items: baseline;
+  margin: 1rem 0;
+`;
 
-  submit: {
-    backgroundColor: "#895FAD",
-    border: "none",
-    borderRadius: "3px",
-    color: "#FFF",
-    cursor: "pointer",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "1em",
-    outline: "none",
-    padding: "7px 12px",
-    textTransform: "uppercase",
-    ":hover": {
-      opacity: "0.75"
-    }
+const SubmitButton = styled.button`
+  background-color: #895fad;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Lato, sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.75;
   }
-});
+`;

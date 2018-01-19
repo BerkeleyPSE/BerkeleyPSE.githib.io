@@ -1,5 +1,5 @@
-import InputField from "./InputField";
-import TextAreaField from "./TextAreaField";
+import InputField from "../input_components/InputField";
+import TextAreaField from "../input_components/TextAreaField";
 
 export const APP_FIELDS = [
   {

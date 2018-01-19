@@ -8,11 +8,11 @@ import isUndefined from "lodash/isUndefined";
 
 // Local Helper Files & Components
 import { animations } from "../../../stylesheets/Animations.js";
-import ApplicationForm from "./ApplicationForm";
-import PreregistrationForm from "./PreregistrationForm";
+import ApplicationForm from "./app_is_open/ApplicationForm";
+import PreregistrationForm from "./app_is_closed/PreregistrationForm";
 import { AppActions } from "../../../actions/app-actions.js";
 
-const IS_APP_OPEN = false;
+const IS_APP_OPEN = true;
 
 const Application = props => {
   document.title = "Application - Pi Sigma Epsilon | Zeta Chi Chapter";
