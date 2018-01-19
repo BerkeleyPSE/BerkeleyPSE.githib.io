@@ -8,41 +8,22 @@ import isUndefined from "lodash/isUndefined";
 
 // Local Helper Files & Components
 import { animations } from "../../../stylesheets/Animations.js";
-import ApplicationForm from "./app_is_open/ApplicationForm";
+import Application from "./app_is_open/Application";
 import PreregistrationForm from "./app_is_closed/PreregistrationForm";
 import { AppActions } from "../../../actions/app-actions.js";
 
-const IS_APP_OPEN = true;
+const APP_IS_OPEN = true;
 
-const Application = props => {
+const ApplicationHandler = props => {
   document.title = "Application - Pi Sigma Epsilon | Zeta Chi Chapter";
   let { appReducer } = props;
   return (
     <div className={css(styles.appContainer, animations.fadeIn)}>
-      {IS_APP_OPEN ? (
-        <div>
-          <h1 className={css(styles.header)}>Spring 2018 Application</h1>
-          <p className={css(styles.description)}>
-            Please fill out all fields.
-            <br />
-            The deadline is January 31st, 2018 at 11:59pm. Good luck!
-          </p>
-          {!isUndefined(appReducer.appSubmitSuccess) ? (
-            appReducer.formSubmitSuccess === true ? (
-              <p className={css(styles.successMessage)}>
-                Your application was submitted successfully. We'll notify you
-                about the next steps on February 1st. Thanks!
-              </p>
-            ) : (
-              <p className={css(styles.successMessage)}>
-                Something went wrong with your application submission. Please
-                refresh this page and try again.
-              </p>
-            )
-          ) : (
-            <ApplicationForm submitApp={props.submitApplication} />
-          )}
-        </div>
+      {APP_IS_OPEN ? (
+        <Application
+          appReducer={appReducer}
+          submitApp={props.submitApplication}
+        />
       ) : (
         <div>
           <h1 className={css(styles.header)}>Spring 2018 Pre-Registration</h1>
@@ -77,7 +58,7 @@ function mapStateToProps(state) {
   return { appReducer: state.app };
 }
 
-export default connect(mapStateToProps, AppActions)(Application);
+export default connect(mapStateToProps, AppActions)(ApplicationHandler);
 
 const styles = StyleSheet.create({
   appContainer: {

@@ -16,7 +16,7 @@ import Careers from "./About/Careers";
 import Recruitment from "./Recruitment/Recruitment";
 import WhyPSE from "./Recruitment/WhyPSE";
 import FAQs from "./Recruitment/FAQs/FAQs";
-import Application from "./Recruitment/Application/Application.jsx";
+import ApplicationHandler from "./Recruitment/Application/ApplicationHandler.jsx";
 import Brotherhood from "./Brothers/Brotherhood";
 import Brother from "./Brothers/Brother";
 import Executives from "./Brothers/Executives";
@@ -55,7 +55,7 @@ const Routes = props => {
           <Route path={RECRUITMENT_PATH} component={Recruitment} />
           <Route path={WHYPSE_PATH} component={WhyPSE} />
           <Route path={FAQS_PATH} component={FAQs} />
-          <Route path={APPLICATION_PATH} component={Application} />
+          <Route path={APPLICATION_PATH} component={ApplicationHandler} />
           <Route exact path={BROTHERS_PATH} component={Brotherhood} />
           <Route path={`${BROTHERS_PATH}/:name`} component={Brother} />
           <Route exact path={EXECUTIVES_PATH} component={Executives} />
