@@ -1,12 +1,12 @@
 // React
 import React from "react";
 
-// NPM Modules
+// node modules
 import { StyleSheet, css } from "aphrodite";
 import { NavLink } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
 
-// Local Helper Files & Components
+// components
 import { animations } from "../../stylesheets/Animations.js";
 import { NAVBAR_INFO } from "./Navbar_Info";
 

@@ -1,74 +1,55 @@
-// React
 import React from "react";
 
-// NPM Modules
-import { StyleSheet, css } from "aphrodite";
+// node modules
+import styled from "styled-components";
 
-// Local Helper Files & Components
-import { animations } from "../../stylesheets/Animations.js";
+// components
 import { vpList } from "./brotherhood_constants";
 import { BrotherImage } from "./BrotherImage.jsx";
+import { RowContainer } from "../components/ContainerStyles";
+import { PageHeader } from "../components/HeaderStyles";
+import { Image } from "../components/ImageStyles";
 
 const Executives = props => {
   document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
 
-  const vps = vpList.map(brother => {
+  const topRowVPs = vpList.slice(0, 3).map(brother => {
+    return <BrotherImage brother={brother} key={brother} page="execs" />;
+  });
+
+  const bottomRowVPs = vpList.slice(3).map(brother => {
     return <BrotherImage brother={brother} key={brother} page="execs" />;
   });
 
   return (
-    <div className={css(animations.fadeIn) + " brotherhood-container"}>
-      <div className={css(styles.landingContainer)}>
-        <img
-          src={"../images/executive_board.JPG"}
-          className={css(styles.image)}
-          alt={"Pi Sigma Epsilon executive board"}
+    <div id="brotherhood-container">
+      <LandingContainer>
+        <Image
+          src="../images/executive_board.JPG"
+          alt="Pi Sigma Epsilon executive board"
         />
-        <h1 className={css(styles.header)}>Executive Board</h1>
-      </div>
-      <div className={css(styles.container, animations.fadeIn)}>
-        <BrotherImage brother={"kevin_phan"} key={"kevin_phan"} page="execs" />
-        <br />
-        <div className={css(styles.executiveContainer)}>{vps}</div>
-      </div>
+        <Header alt>Executive Board</Header>
+      </LandingContainer>
+      <CenterTextContainer>
+        <BrotherImage brother="kevin_phan" key="kevin_phan" page="execs" />
+        <div id="VPs-top-row">{topRowVPs}</div>
+        <div id="VPs-bottom-row">{bottomRowVPs}</div>
+      </CenterTextContainer>
     </div>
   );
 };
 
 export default Executives;
 
-const styles = StyleSheet.create({
-  container: {
-    textAlign: "center"
-  },
+const LandingContainer = RowContainer.extend`
+  margin-bottom: 2rem;
+`;
 
-  landingContainer: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: "30px"
-  },
+const CenterTextContainer = styled.div`
+  text-align: center;
+`;
 
-  header: {
-    color: "#FFF",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "3em",
-    fontWeight: "500",
-    letterSpacing: "0.025em",
-    margin: "0",
-    padding: "30px 0",
-    textAlign: "center",
-
-    position: "absolute",
-    width: "100%"
-  },
-
-  executiveContainer: {
-    display: "inline"
-  },
-
-  image: {
-    maxWidth: "100%",
-    position: "relative"
-  }
-});
+const Header = PageHeader.extend`
+  position: absolute;
+  width: 100%;
+`;

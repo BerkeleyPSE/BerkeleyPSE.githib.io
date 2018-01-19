@@ -1,11 +1,10 @@
-// React
 import React from "react";
 
-// NPM Modules
+// node modules
 import { StyleSheet, css } from "aphrodite";
 import { Link } from "react-router-dom";
 
-// Local Helper Files & Components
+// components
 import { animations } from "../../stylesheets/Animations.js";
 import { brotherInfo } from "./brotherhood_constants";
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
