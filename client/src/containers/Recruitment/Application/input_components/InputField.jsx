@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import {
@@ -62,3 +63,13 @@ const Input = styled.input`
     border-bottom: 2px solid #895fad;
   }
 `;
+
+// PropTypes
+
+InputField.propTypes = {
+  input: PropTypes.object.isRequired,
+  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  error: PropTypes.bool,
+  touched: PropTypes.bool
+};

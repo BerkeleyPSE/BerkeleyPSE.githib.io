@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import isUndefined from "lodash/isUndefined";
+import PropTypes from "prop-types";
 
 // components
 import ApplicationForm from "./ApplicationForm";
@@ -49,3 +50,10 @@ const SubmissionText = Text.extend`
   border-top: 3px solid #895fad;
   padding: 1rem 0;
 `;
+
+// PropTypes
+
+Application.propTypes = {
+  appReducer: PropTypes.object.isRequired,
+  submitApp: PropTypes.func.isRequired
+};

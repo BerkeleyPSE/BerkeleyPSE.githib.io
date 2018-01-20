@@ -3,6 +3,7 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import { reduxForm, Field } from "redux-form";
+import PropTypes from "prop-types";
 
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
@@ -77,3 +78,9 @@ const SubmitButton = styled.button`
     opacity: 0.75;
   }
 `;
+
+// PropTypes
+
+PreregistrationForm.propTypes = {
+  submitForm: PropTypes.func.isRequired
+};
