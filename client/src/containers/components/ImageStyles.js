@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Image = styled.img`
   border: ${props => (props.border ? "3px solid #895fad" : "none")};
@@ -7,3 +8,9 @@ const Image = styled.img`
 `;
 
 export { Image };
+
+Image.propTypes = {
+  border: PropTypes.bool,
+  height: PropTypes.string,
+  width: PropTypes.string
+};

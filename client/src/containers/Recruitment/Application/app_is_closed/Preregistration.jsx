@@ -11,7 +11,6 @@ import { ParaText } from "../../../components/TextStyles";
 
 const Preregistration = props => {
   let { appReducer, submitForm } = props;
-  console.log(props);
   return (
     <ColumnContainer id="preregistration-form">
       <PageHeader>Spring 2018 Pre-Registration</PageHeader>

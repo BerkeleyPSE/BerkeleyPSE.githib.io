@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const MediaLink = props => {
   return (
@@ -32,3 +33,8 @@ const Anchor = styled.a`
     color: #fff;
   }
 `;
+
+MediaLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  media: PropTypes.string.isRequired
+};

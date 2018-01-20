@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const ParaText = styled.p`
   color: ${props => (props.alt ? "#FFF" : "#333")};
@@ -7,3 +8,9 @@ const ParaText = styled.p`
 `;
 
 export { ParaText };
+
+// PropTypes
+
+ParaText.propTypes = {
+  alt: PropTypes.bool
+};

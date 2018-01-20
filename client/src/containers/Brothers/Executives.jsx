@@ -10,7 +10,7 @@ import { RowContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
 import { Image } from "../components/ImageStyles";
 
-const Executives = props => {
+const Executives = () => {
   document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const topRowVPs = VP_LIST.slice(0, 3).map(brother => {

@@ -3,6 +3,7 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 // components
 import { ColumnContainer } from "../components/ContainerStyles";
@@ -57,3 +58,11 @@ const Description = styled.p`
   padding: 0.625rem 0;
   text-transform: uppercase;
 `;
+
+// PropTypes
+
+HoverCard.propTypes = {
+  link: PropTypes.string.isRequired,
+  header: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};

@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import { PageHeader } from "../components/HeaderStyles";
@@ -16,14 +17,18 @@ export default class AccordionItem extends React.Component {
     };
   }
 
-  generateAnswer = answerItem => {
+  generateAnswer = (answerItem, index) => {
     switch (answerItem.type) {
       case "text":
-        return <span>{answerItem.content}</span>;
+        return <span key={`faq_answer_${index}`}>{answerItem.content}</span>;
       case "link":
-        return <ExtLink href={answerItem.href}>{answerItem.content}</ExtLink>;
+        return (
+          <ExtLink key={`faq_answer_${index}`} href={answerItem.href}>
+            {answerItem.content}
+          </ExtLink>
+        );
       default:
-        return <span>{answerItem.content}</span>;
+        return <span key={`faq_answer_${index}`}>{answerItem.content}</span>;
     }
   };
 
@@ -45,8 +50,8 @@ export default class AccordionItem extends React.Component {
         </HeaderContainer>
         <BodyContainer isOpen={isOpen}>
           <Answer alt>
-            {answer.map(answerItem => {
-              return this.generateAnswer(answerItem);
+            {answer.map((answerItem, index) => {
+              return this.generateAnswer(answerItem, index);
             })}
           </Answer>
         </BodyContainer>
@@ -102,3 +107,10 @@ const Answer = ParaText.extend`
   margin: 0;
   padding: 1.25rem 3.75rem;
 `;
+
+// PropTypes
+
+AccordionItem.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.arrayOf(PropTypes.object).isRequired
+};

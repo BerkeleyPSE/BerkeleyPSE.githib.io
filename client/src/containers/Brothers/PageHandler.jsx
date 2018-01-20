@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
@@ -30,9 +31,9 @@ export default class PageHandler extends React.Component {
   };
 
   render() {
-    let { page } = this.props;
+    let { page, index } = this.props;
 
-    let bros = this.getIndices(this.props.index);
+    let bros = this.getIndices(index);
     let prevBro = "";
     let nextBro = "";
     if (!bros) {
@@ -89,3 +90,11 @@ const RightIcon = styled.i`
   font-size: 0.9rem;
   padding: 0 0 0 0.3125rem;
 `;
+
+// PropTypes
+
+PageHandler.propTypes = {
+  brotherList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  index: PropTypes.number.isRequired,
+  page: PropTypes.oneOf(["execs", "bros"]).isRequired
+};

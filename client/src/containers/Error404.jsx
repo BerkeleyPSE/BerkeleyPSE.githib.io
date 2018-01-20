@@ -1,5 +1,8 @@
 import React from "react";
 
+// node modules
+import PropTypes from "prop-types";
+
 // components
 import { ColumnContainer } from "./components/ContainerStyles";
 import { Image } from "./components/ImageStyles";
@@ -31,6 +34,7 @@ export default class Error404 extends React.Component {
         <Image
           src="images/error404.jpg"
           alt="Page not found!"
+          border
           height="500px"
           width="333px"
         />
@@ -42,3 +46,10 @@ export default class Error404 extends React.Component {
 const ErrorContainer = ColumnContainer.extend`
   padding: 1.25rem 0;
 `;
+
+// PropTypes
+
+Error404.propTypes = {
+  location: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+};

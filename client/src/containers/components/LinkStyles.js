@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const IntLink = styled(Link)`
   color: #895fad;
@@ -63,3 +64,11 @@ const ExtButtonLink = ExtLink.extend`
 `;
 
 export { IntLink, ExtLink, IntButtonLink, ExtButtonLink };
+
+IntLink.propTypes = {
+  to: PropTypes.string.isRequired
+};
+
+ExtLink.propTypes = {
+  href: PropTypes.string.isRequired
+};

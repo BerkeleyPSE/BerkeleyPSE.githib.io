@@ -8,7 +8,7 @@ import { PageHeader, SectionHeader } from "../../components/HeaderStyles";
 import CareersTable from "./CareersTable";
 import { FULLTIME_COLUMNS, FULLTIME_CAREERS } from "./fulltime_constants";
 
-const Careers = props => {
+const Careers = () => {
   document.title = "Careers - Pi Sigma Epsilon | Zeta Chi Chapter";
   return (
     <div id="careers-container">

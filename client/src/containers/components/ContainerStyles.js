@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const ColumnContainer = styled.div`
   background-color: ${props => props.bgColor || "inherit"};
@@ -18,3 +19,11 @@ const RowContainer = styled.div`
 `;
 
 export { ColumnContainer, RowContainer };
+
+ColumnContainer.propTypes = {
+  bgColor: PropTypes.string
+};
+
+RowContainer.propTypes = {
+  bgColor: PropTypes.string
+};

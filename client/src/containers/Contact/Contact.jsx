@@ -4,38 +4,19 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { RowContainer } from "./components/ContainerStyles";
-import { ExtLink } from "./components/LinkStyles";
-import { PageHeader } from "./components/HeaderStyles";
-import { ParaText } from "./components/TextStyles";
-import { Image } from "./components/ImageStyles";
+import { RowContainer } from "../components/ContainerStyles";
+import { ExtLink } from "../components/LinkStyles";
+import { PageHeader } from "../components/HeaderStyles";
+import { ParaText } from "../components/TextStyles";
+import { Image } from "../components/ImageStyles";
+import CONTACT_LIST from "./contact_constants.js";
 
-// constants
-const CONTACT_LIST = [
-  {
-    for: "general questions or inquiries",
-    email: "berkeleypse.president@gmail.com"
-  },
-  {
-    for: "corporate projects or sponsorship questions and inquiries",
-    email: "berkeleypse.pr@gmail.com"
-  },
-  {
-    for: "recruitment questions or concerns",
-    email: "berkeleypse.recruiting@gmail.com"
-  },
-  {
-    for: "social media or technical issues",
-    email: "berkeleypse.marketing@gmail.com"
-  }
-];
-
-const Contact = props => {
+const Contact = () => {
   document.title = "Contact - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const contactInfo = CONTACT_LIST.map((item, index) => {
     return (
-      <Text>
+      <Text key={`contact_${index}`}>
         For {item.for}, please email{" "}
         <ExtLink href={`mailto:${item.email}`} key={index}>
           {item.email}

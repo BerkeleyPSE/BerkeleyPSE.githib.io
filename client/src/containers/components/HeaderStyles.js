@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const SiteHeader = styled.h1`
   color: #fff;
@@ -29,3 +30,9 @@ const SectionHeader = PageHeader.withComponent("h3").extend`
 const SubSectionHeader = styled.h4``;
 
 export { SiteHeader, PageHeader, SectionHeader, SubSectionHeader };
+
+// PropTypes
+
+PageHeader.propTypes = {
+  alt: PropTypes.bool
+};
