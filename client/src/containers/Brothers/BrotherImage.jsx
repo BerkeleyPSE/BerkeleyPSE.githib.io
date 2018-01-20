@@ -1,12 +1,10 @@
 import React from "react";
 
 // node modules
-import { StyleSheet, css } from "aphrodite";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components
-import { animations } from "../../stylesheets/Animations.js";
 import { brotherInfo } from "./brotherhood_constants";
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
 import { ColumnContainer } from "../components/ContainerStyles";

@@ -1,110 +1,16 @@
-import { StyleSheet, css } from "aphrodite";
+const FULLTIME_COLUMNS = {
+  name: "Name",
+  // year: "Year",
+  industry: "Industry",
+  company: "Company",
+  position: "Position",
+  location: "Location"
+};
 
-const styles = StyleSheet.create({
-  table: {
-    border: "none"
-  },
-
-  columnName: {
-    border: "none",
-    color: "#303030",
-    fontFamily: "Lato, sans-serif",
-    fontSize: "0.9em",
-    fontWeight: "bold",
-    letterSpacing: "0.025em",
-    textTransform: "uppercase"
-  },
-
-  cell: {
-    display: "flex",
-    alignItems: "center",
-    color: "#818181",
-    fontFamily: "Open Sans, sans-serif",
-    fontSize: "0.9em",
-    fontWeight: "400",
-    overflowX: "auto",
-    overflowY: "hidden",
-    padding: "7px 15px"
-  },
-
-  centered: {
-    display: "flex",
-    justifyContent: "center",
-    textAlign: "center"
-  },
-
-  name: {
-    color: "#895FAD",
-    fontWeight: "bold"
-  }
-});
-
-const fulltime_columns = [
-  {
-    Header: "Name",
-    accessor: "name",
-    className: css(styles.table, styles.cell, styles.name),
-    headerClassName: css(styles.columnName),
-    minWidth: 175
-    // maxWidth: 200
-    // maxWidth: 250,
-  },
-
-  {
-    Header: "Year",
-    accessor: "grad_year",
-    className: css(styles.table, styles.cell, styles.centered),
-    headerClassName: css(styles.columnName),
-    minWidth: 100,
-    maxWidth: 150,
-    show: false
-  },
-
-  {
-    Header: "Industry",
-    accessor: "industry",
-    className: css(styles.table, styles.cell),
-    headerClassName: css(styles.columnName),
-    minWidth: 200
-    // maxWidth: 250
-  },
-
-  {
-    Header: "Company",
-    accessor: "company",
-    className: css(styles.table, styles.cell),
-    headerClassName: css(styles.columnName),
-    minWidth: 250
-    // maxWidth: 275
-    // maxWidth: 300
-  },
-
-  {
-    Header: "Position",
-    accessor: "position",
-    className: css(styles.table, styles.cell),
-    headerClassName: css(styles.columnName),
-    minWidth: 250
-    // maxWidth: 275
-    // maxWidth: 325
-  },
-
-  {
-    Header: "Location",
-    accessor: "location",
-    className: css(styles.table, styles.cell),
-    headerClassName: css(styles.columnName),
-    minWidth: 175
-    // maxWidth: 225
-    // maxWidth: 275
-  }
-];
-
-const fulltime_careers = [
-  // 7 items
+const FULLTIME_CAREERS = [
   {
     name: "Sabrina Ruiz",
-    grad_year: "2014",
+    year: "2014",
     industry: "Marketing",
     company: "Pacific Arts Movement",
     position: "Marketing Coordinator",
@@ -112,7 +18,7 @@ const fulltime_careers = [
   },
   {
     name: "Cynthia Huang",
-    grad_year: "2016",
+    year: "2016",
     industry: "Marketing",
     company: "Benefit Cosmetics",
     position: "Marketing Coordinator",
@@ -120,7 +26,7 @@ const fulltime_careers = [
   },
   {
     name: "Peggy Lin",
-    grad_year: "2016",
+    year: "2016",
     industry: "Marketing",
     company: "Smule",
     position: "User Acquisition Manager",
@@ -129,7 +35,7 @@ const fulltime_careers = [
 
   {
     name: "Sara Lim",
-    grad_year: "2016",
+    year: "2016",
     industry: "Marketing",
     company: "CJ Affiliate",
     position: "Account Coordinator",
@@ -137,7 +43,7 @@ const fulltime_careers = [
   },
   {
     name: "Eva Chen",
-    grad_year: "2017",
+    year: "2017",
     industry: "Sales",
     company: "Oracle",
     position: "Cloud Applications Consultant",
@@ -145,7 +51,7 @@ const fulltime_careers = [
   },
   {
     name: "Shreya Jerath",
-    grad_year: "2017",
+    year: "2017",
     industry: "Business Analytics",
     company: "DigitasLBi",
     position: "Analyst",
@@ -153,7 +59,7 @@ const fulltime_careers = [
   },
   {
     name: "Reann Pham",
-    grad_year: "2017",
+    year: "2017",
     industry: "Business Analytics",
     company: "PricewaterhouseCoopers",
     position: "Data Analyst",
@@ -161,7 +67,7 @@ const fulltime_careers = [
   },
   {
     name: "Dorene Zhou",
-    grad_year: "2017",
+    year: "2017",
     industry: "Consulting",
     company: "Infosys Consulting",
     position: "Analyst",
@@ -169,7 +75,7 @@ const fulltime_careers = [
   },
   {
     name: "Jane Suk",
-    grad_year: "2017",
+    year: "2017",
     industry: "Consulting",
     company: "ZS Associates",
     position: "Analyst",
@@ -177,7 +83,7 @@ const fulltime_careers = [
   },
   {
     name: "Melody Chu",
-    grad_year: "2017",
+    year: "2017",
     industry: "Consulting",
     company: "Triage Consulting",
     position: "Analyst",
@@ -185,7 +91,7 @@ const fulltime_careers = [
   },
   {
     name: "Lydia Kim",
-    grad_year: "2016",
+    year: "2016",
     industry: "Finance",
     company: "McKinsey & Company",
     position: "Associate Analyst",
@@ -193,7 +99,7 @@ const fulltime_careers = [
   },
   {
     name: "Hiu Ngan",
-    grad_year: "2016",
+    year: "2016",
     industry: "Finance",
     company: "Bank of America Merrill Lynch",
     position: "Analyst",
@@ -201,7 +107,7 @@ const fulltime_careers = [
   },
   {
     name: "Farhan Lokman",
-    grad_year: "2016",
+    year: "2016",
     industry: "Finance",
     company: "Bank Negara Malaysia",
     position: "Associate Supervisor",
@@ -209,7 +115,7 @@ const fulltime_careers = [
   },
   {
     name: "Anh Thai",
-    grad_year: "2015",
+    year: "2015",
     industry: "Technology",
     company: "Darktrace",
     position: "Cybersecurity Technologist",
@@ -217,7 +123,7 @@ const fulltime_careers = [
   },
   {
     name: "Nathan Aminpour",
-    grad_year: "2017",
+    year: "2017",
     industry: "Technology",
     company: "Driver",
     position: "Product Operations Associate",
@@ -225,7 +131,7 @@ const fulltime_careers = [
   },
   {
     name: "Judy Fang",
-    grad_year: "2015",
+    year: "2015",
     industry: "Business Analytics",
     company: "Medallia",
     position: "Analyst",
@@ -233,7 +139,7 @@ const fulltime_careers = [
   },
   {
     name: "Kent Chen",
-    grad_year: "2016",
+    year: "2016",
     industry: "Business Analytics",
     company: "SoCalGas",
     position: "Business Analyst",
@@ -241,7 +147,7 @@ const fulltime_careers = [
   },
   {
     name: "Kelly Chao",
-    grad_year: "2015",
+    year: "2015",
     industry: "Human Resources",
     company: "Target",
     position: "Executive Team Leader",
@@ -249,7 +155,7 @@ const fulltime_careers = [
   },
   {
     name: "David Javidzad",
-    grad_year: "2017",
+    year: "2017",
     industry: "Graduate School",
     company: "USC Gould School of Law",
     position: "Law Student",
@@ -257,7 +163,7 @@ const fulltime_careers = [
   },
   {
     name: "Anne-Ting Chen",
-    grad_year: "2017",
+    year: "2017",
     industry: "Consulting",
     company: "PricewaterhouseCoopers",
     position: "Analyst",
@@ -265,7 +171,7 @@ const fulltime_careers = [
   },
   {
     name: "Lily Li",
-    grad_year: "2017",
+    year: "2017",
     industry: "",
     company: "",
     position: "",
@@ -273,7 +179,7 @@ const fulltime_careers = [
   },
   {
     name: "Young Hoon Kim",
-    grad_year: "2017",
+    year: "2017",
     industry: "",
     company: "",
     position: "",
@@ -281,7 +187,7 @@ const fulltime_careers = [
   },
   {
     name: "Lily Muñoz",
-    grad_year: "2014",
+    year: "2014",
     industry: "Sales",
     company: "Oracle",
     position: "SMB Application Sales Executive",
@@ -289,7 +195,7 @@ const fulltime_careers = [
   },
   {
     name: "Jina Yoo",
-    grad_year: "2014",
+    year: "2014",
     industry: "Human Resources",
     company: "Slack",
     position: "Technical Recruiter",
@@ -297,7 +203,7 @@ const fulltime_careers = [
   },
   {
     name: "Sarah Virani",
-    grad_year: "2015",
+    year: "2015",
     industry: "Business Analytics",
     company: "Adobe",
     position: "Financial Analyst",
@@ -305,4 +211,4 @@ const fulltime_careers = [
   }
 ];
 
-export { fulltime_columns, fulltime_careers };
+export { FULLTIME_COLUMNS, FULLTIME_CAREERS };

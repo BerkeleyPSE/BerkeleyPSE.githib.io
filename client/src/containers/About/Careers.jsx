@@ -1,49 +1,34 @@
-// React
 import React from "react";
 
 // node modules
 import styled from "styled-components";
-import ReactTable from "react-table";
-import "react-table/react-table.css";
 
 // components
 import { PageHeader, SectionHeader } from "../components/HeaderStyles";
-import { fulltime_columns, fulltime_careers } from "./fulltime_constants";
+import CareersTable from "./CareersTable";
+import { FULLTIME_COLUMNS, FULLTIME_CAREERS } from "./fulltime_constants";
 
 const Careers = props => {
   document.title = "Careers - Pi Sigma Epsilon | Zeta Chi Chapter";
   return (
-    <CareersContainer>
+    <div id="careers-container">
       <PageHeader>Careers</PageHeader>
-      <FullTimeContainer>
+      <TableContainer>
         <SectionHeader alt>Full-Time</SectionHeader>
-        <TableContainer>
-          <ReactTable
-            className="-striped"
-            columns={fulltime_columns}
-            data={fulltime_careers}
-            showPagination={false}
-            resizable={false}
-            filterable={false}
-            filterMethod={this.filterTable}
-            pageSize={fulltime_careers.length}
-            defaultSorted={[{ id: "name", desc: false }]}
-          />
-        </TableContainer>
-      </FullTimeContainer>
-    </CareersContainer>
+        <CareersTable
+          id="fulltime-table"
+          columns={FULLTIME_COLUMNS}
+          data={FULLTIME_CAREERS}
+        />
+      </TableContainer>
+    </div>
   );
 };
 
 export default Careers;
 
-const CareersContainer = styled.div``;
-
-const FullTimeContainer = styled.div`
-  padding: 0 0 40px;
-`;
-
 const TableContainer = styled.div`
-  margin: 0;
+  margin: 0 0 2rem 0;
   padding: 0;
+  overflow-x: scroll;
 `;
