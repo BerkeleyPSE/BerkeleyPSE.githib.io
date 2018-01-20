@@ -5,8 +5,8 @@
     "A website for UC Berkeley Pi Sigma Epsilon, Zeta Chi chapter.",
   "main": "index.js",
   "engines": {
-    "node": "8.4.0",
-    "npm": "5.5.1"
+    "node": "8.9.3",
+    "npm": "5.6.0"
   },
   "license": "MIT",
   "scripts": {
