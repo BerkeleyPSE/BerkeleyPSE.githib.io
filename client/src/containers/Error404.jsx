@@ -7,12 +7,19 @@ import { ParaText } from "./components/TextStyles";
 
 export default class Error404 extends React.Component {
   componentDidMount() {
-    this.error404 = setTimeout(
-      function() {
-        this.props.history.push("/");
-      }.bind(this),
-      3000
-    );
+    switch (this.props.location.pathname) {
+      case "/apply":
+        this.props.history.replace("/app");
+        break;
+      default:
+        this.error404 = setTimeout(
+          function() {
+            this.props.history.replace("/");
+          }.bind(this),
+          3000
+        );
+        break;
+    }
   }
 
   render() {

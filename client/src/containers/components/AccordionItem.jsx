@@ -6,6 +6,7 @@ import styled from "styled-components";
 // components
 import { PageHeader } from "../components/HeaderStyles";
 import { ParaText } from "../components/TextStyles";
+import { ExtLink } from "../components/LinkStyles";
 
 export default class AccordionItem extends React.Component {
   constructor(props) {
@@ -15,16 +16,27 @@ export default class AccordionItem extends React.Component {
     };
   }
 
+  generateAnswer = answerItem => {
+    switch (answerItem.type) {
+      case "text":
+        return <span>{answerItem.content}</span>;
+      case "link":
+        return <ExtLink href={answerItem.href}>{answerItem.content}</ExtLink>;
+      default:
+        return <span>{answerItem.content}</span>;
+    }
+  };
+
   render() {
     let { isOpen } = this.state;
-
+    let { question, answer } = this.props;
     return (
       <AccordionContainer>
         <HeaderContainer
           isOpen={isOpen}
           onClick={() => this.setState({ isOpen: !isOpen })}
         >
-          <Header>{this.props.question}</Header>
+          <Header>{question}</Header>
           {isOpen ? (
             <Chevron className="fa fa-chevron-up" aria-hidden="true" />
           ) : (
@@ -32,7 +44,11 @@ export default class AccordionItem extends React.Component {
           )}
         </HeaderContainer>
         <BodyContainer isOpen={isOpen}>
-          <Answer alt>{this.props.answer}</Answer>
+          <Answer alt>
+            {answer.map(answerItem => {
+              return this.generateAnswer(answerItem);
+            })}
+          </Answer>
         </BodyContainer>
       </AccordionContainer>
     );

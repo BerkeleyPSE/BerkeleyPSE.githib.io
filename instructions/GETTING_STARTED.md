@@ -25,7 +25,7 @@ Collaborators should contribute to this repository using their personal GitHub a
 ## Cloning this Repository
 To clone this repository, open a terminal window and run
 ```bash
-git clone https://github.com/BekreleyPSE/berkeleypse
+git clone https://github.com/BerkeleyPSE/berkeleypse.git
 ```
 
 ## Installing Node & npm
@@ -72,7 +72,7 @@ Collaborators must use their personal Heroku accounts.
 Once you are given access a Collaborator, open a terminal and navigate to where you cloned this repository. Then, run:
 ```bash
 cd berkeleypse
-git add remote heroku https://git.heroku.com/berkeleypse.git
+git remote add heroku https://git.heroku.com/berkeleypse.git
 ```
 
 Ensure this new remote was added:

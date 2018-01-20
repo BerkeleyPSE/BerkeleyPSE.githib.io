@@ -38,10 +38,10 @@ const Recruitment = props => {
   return (
     <div id="recruitment-container">
       <div id="timeline-container">
-        {/* Timeline URL: https://docs.google.com/spreadsheets/d/1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY */}
+        {/* Timeline URL: https://docs.google.com/spreadsheets/d/1Zr01Q2fci0Z1Hd1oCGPz8M_gtnIv6Prr_0AjKqNiqjE/ */}
         <iframe
-          title="Fall 2017 Recruitment Timeline"
-          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1C54v0HU7JkbkaS4DSj8aFWsu6g9McOwI6AXb7jnraJY&font=Default&lang=en&initial_zoom=2&height=100%"
+          title="Spring 2018 Recruitment Timeline"
+          src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Zr01Q2fci0Z1Hd1oCGPz8M_gtnIv6Prr_0AjKqNiqjE&font=Default&lang=en&initial_zoom=2&height=100%"
           width="100%"
           height="650px"
           frameBorder="0"

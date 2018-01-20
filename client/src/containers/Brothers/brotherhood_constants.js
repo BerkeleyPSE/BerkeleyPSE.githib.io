@@ -7,93 +7,43 @@ THIS FILE CONTAINS ALL INFORMATION NEEDED FOR THE COMPONENTS:
 - PageHandler
 ***/
 
-/***
-these MUST match EXACTLY the name "keys" in the brotherInfo Object,
-or else the brother will not be rendered in Brotherhood
-***/
+const IMAGE_PATH = "images/brothers";
 
-const imagePath = "images/brothers";
-
-const BROTHERS_LIST = [
-  "aaron_corona",
-  "abhi_nathan",
-  "akshay_madane",
+const VP_LIST = [
   "catie_fan",
-  "charissa_saputra",
-  "clevian_hsia",
-  "connor_smith",
-  // 'dallas_taylor',
   "dhakshi_balakumar",
-  "emma_tsuneishi",
-  "eva_su",
   "harika_kalluri",
-  "howard_huang",
-  "jacqueline_tsang",
-  "jonathan_duan",
-  "justin_tan",
-  "kailin_li",
   "kelvin_xu",
   "kevin_lee",
-  "kevin_phan",
-  "kian_kiasaleh",
-  "kyle_lu",
-  "linda_li",
-  "max_seltzer",
-  "nancy_zhu",
-  "nicholas_chun",
-  "nick_cheng",
-  "peter_vu",
-  "rahul_rangnekar",
-  "rose_min",
-  "rushil_desai",
+  "yixuan_lu"
+];
+
+const ALL_EXECS_LIST = [
   "sean_yu",
-  "syed_adil",
-  "taylor_lee",
-  "tia_chen_wong",
-  "tim_cheng",
-  "varsha_sundar",
+  "catie_fan",
+  "dhakshi_balakumar",
+  "harika_kalluri",
+  "kelvin_xu",
+  "kevin_lee",
   "yixuan_lu"
 ];
 
 /***
-these MUST match EXACTLY the name "keys" in the brotherInfo Object,
-or else the brother will not be rendered in Executives
-***/
-const VP_LIST = [
-  "aaron_corona",
-  "taylor_lee",
-  "kailin_li",
-  "rahul_rangnekar",
-  "nicholas_chun",
-  "sean_yu"
-];
-
-const ALL_EXECS_LIST = [
-  "aaron_corona",
-  "taylor_lee",
-  "kailin_li",
-  "kevin_phan",
-  "rahul_rangnekar",
-  "nicholas_chun",
-  "sean_yu"
-];
-
-/***
-this is an Object of information for every brother
+this is an Object of every brother's information
 ***/
 const BROTHER_INFO = {
   /* 1 */
   aaron_corona: {
-    img: `${imagePath}/aaron_corona.jpg`,
+    img: `${IMAGE_PATH}/aaron_corona.jpg`,
     name: "Aaron Corona",
-    position: "Vice President of Public Relations",
+    position: "Active",
     year: "Senior",
     hometown: "Los Angeles, CA",
     class: "Iota",
     major: "Political Economy",
     minor: "",
     career_interests: "Management Consulting & Marketing",
-    previous_positions: "",
+    previous_positions: "Vice President of Public Relations",
     bio:
       "Aaron greatly values the consulting and marketing interview skills he learned as a prospective member last semester. His role model is Nathan Aminpour, PSE's former president. Aaron spends the majority of his free time working out and playing basketball at the RSF in his free time.",
     linkedin: "https://linkedin.com/in/aaronmcorona"
@@ -101,16 +51,16 @@ const BROTHER_INFO = {
 
   /* 2 */
   abhi_nathan: {
-    img: `${imagePath}/abhi_nathan.jpg`,
+    img: `${IMAGE_PATH}/abhi_nathan.jpg`,
     name: "Abhi Nathan",
-    position: "Director of External Recruitment",
+    position: "Director of Alumni Relations",
     year: "Sophomore",
     hometown: "San Diego, CA",
     class: "Iota",
     major: "Intended Business & Cognitive Science",
     minor: "",
     career_interests: "Technology Consulting",
-    previous_positions: "",
+    previous_positions: "Director of External Recruitment",
     bio:
       "PSE has helped Abhi grow personally and professionally. She initially joined with hopes of learning the skills she would need to be successful in the business world. She has gained that and more. In addition to her newfound communication skills and exposure to the various fields within business, PSE has given Abhi the opportunity to make lasting friendships with people who inspire her to be her best self. Her role model is her mother. Abhi loves to make art, run, and explore new places in her free time.",
     linkedin: "https://linkedin.com/in/abhinathan"
@@ -118,7 +68,7 @@ const BROTHER_INFO = {
 
   /* 3 */
   akshay_madane: {
-    img: `${imagePath}/akshay_madane.jpg`,
+    img: `${IMAGE_PATH}/akshay_madane.jpg`,
     name: "Akshay Madane",
     position: "Active",
     year: "Senior",
@@ -134,44 +84,78 @@ const BROTHER_INFO = {
   },
 
   /* 4 */
+  alex_dao: {
+    img: `${IMAGE_PATH}/alex_dao.jpg`,
+    name: "Alex Dao",
+    position: "Active",
+    year: "Junior",
+    hometown: "Irvine, CA",
+    class: "Lambda",
+    major: "EECS",
+    minor: "",
+    career_interests: "Software Development, Product Management",
+    previous_positions: "",
+    bio:
+      "Through PSE, Alex learned the foundations of brotherhood, consulting, and finance. His role models are his parents. Alex is involved in AFX and VSA. He loves to golf, listen to music, and travel.",
+    linkedin: "www.linkedin.com/in/adao1"
+  },
+
+  /* 5 */
+  cathy_an: {
+    img: `${IMAGE_PATH}/cathy_an.jpg`,
+    name: "Cathy An",
+    position: "Active",
+    year: "Sophomore",
+    hometown: "Philadelphia, Pennsylvania",
+    class: "Lambda",
+    major: "Economics",
+    minor: "",
+    career_interests: "Consulting, Finance",
+    previous_positions: "",
+    bio:
+      "Through PSE, Cathy has learned how to collaborate with others in professional environments as well as gained insights into the different industries in business. She looks to activist Malala Yousifazi as a role model. Cathy is in Dance Maraton and AFX. She enjoys dancing, playing soccer, and listening to music.",
+    linkedin: "https://www.linkedin.com/in/cathy-an/"
+  },
+
+  /* 6 */
   catie_fan: {
-    img: `${imagePath}/catie_fan.jpg`,
+    img: `${IMAGE_PATH}/catie_fan.jpg`,
     name: "Catie Fan",
-    position: "Prospective Member Mom",
+    position: "Vice President of Public Relations",
     year: "Sophomore",
     hometown: "San Diego, CA",
     class: "Iota",
     major: "Intended Business",
     minor: "",
     career_interests: "Management Consulting",
-    previous_positions: "Director of Projects",
+    previous_positions: "Director of Projects, Prospective Member Trainer",
     bio:
       "Through PSE, Catie has learned invaluable professional skills to help her tackle interviews, presentations, and more. She's also learned the value of hard work, and every brother inspires her in a unique way to be a better person every day. She looks to Beyonce as a role model. Catie is also on the Cal Mock Trial team here at Berkeley, and won 2nd place at the 2016 PwC case competition. She loves to sing, travel, and visit art museums.",
     linkedin: "https://linkedin.com/in/catie-fan"
   },
 
-  /* 5 */
+  /* 7 */
   charissa_saputra: {
-    img: `${imagePath}/charissa_saputra.jpg`,
+    img: `${IMAGE_PATH}/charissa_saputra.jpg`,
     name: "Charissa Saputra",
-    position: "Director of Technology",
+    position: "",
     year: "Junior",
     hometown: "Irvine, CA",
     class: "Kappa",
     major: "Media Studies",
     minor: "Environmental Science",
     career_interests: "Brand Marketing & Social Impact Consulting",
-    previous_positions: "",
+    previous_positions: "Director of Technology",
     bio:
       "PSE has allowed Charissa to grow personally and professionally. When joining PSE, she acquired many skills applicable in the workforce that classes never taught her, such as interview and networking tips. Learning from her peers, Charissa became more aware of different fields of business that she was not comfortable with, such as finance. Learning from the companies PSE has networked with, she gained exposure to the many positions available within one sector of business that she is interested in. Personally, PSE allowed Charissa to see her potential and become more confident in her abilities. Charissa's role model is Michelle Obama, and enjoys running and reading in her free time. She is also involved in CalTV.",
     linkedin: "https://linkedin.com/in/charissasaputra"
   },
 
-  /* 6 */
+  /* 8 */
   clevian_hsia: {
-    img: `${imagePath}/clevian_hsia.jpg`,
+    img: `${IMAGE_PATH}/clevian_hsia.jpg`,
     name: "Clevian Hsia",
-    position: "Active",
+    position: "Director of Projects",
     year: "Sophomore",
     hometown: "San Ramon, CA",
     class: "Kappa",
@@ -184,26 +168,43 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/clevianhsia"
   },
 
-  /* 7 */
+  /* 9 */
   connor_smith: {
-    img: `${imagePath}/connor_smith.jpg`,
+    img: `${IMAGE_PATH}/connor_smith.jpg`,
     name: "Connor Smith",
-    position: "Director of Scholarship",
+    position: "Active",
     year: "Sophomore",
     hometown: "Los Angeles, CA",
     class: "Iota",
     major: "Intended Business & Economics",
     minor: "",
     career_interests: "Investment Banking & Consulting",
-    previous_positions: "Director of Brotherhood",
+    previous_positions: "Director of Brotherhood, Director of Scholarship",
     bio:
       "Through PSE, Connor has learned to improve upon his weaknesses and capitalize on his strengths. PSE has taught him the importance of cooperation in group settings and the essential role of leadership in all situations. Everything he has learned from PSE gives him a deeper understanding of business and prepares him for the real world. His role model is serial entrepreneur and businessman Elon Musk. Connor is also a member of Enactus, an entrepreneurship club at Berkeley, and works in the Office of the Registrar. He has received the Eagle Scout Award, and spends his free time running, camping, or woodworking.",
     linkedin: "https://linkedin.com/in/connordsmith"
   },
 
-  /* 8 */
+  /* 10 */
+  daniel_yoon: {
+    img: `${IMAGE_PATH}/daniel_yoon.jpg`,
+    name: "Daniel Yoon",
+    position: "Active",
+    year: "Sophomore",
+    hometown: "Chino Hills, CA",
+    class: "Lambda",
+    major: "Economics",
+    minor: "",
+    career_interests: "Consulting, Marketing",
+    previous_positions: "",
+    bio:
+      "PSE has given Daniel the tools to help him achieve his future goals. He looks to his mother as his role model. Daniel enjoys listening to music, trying new food, and traveling. ",
+    linkedin: "https://www.linkedin.com/in/daniel-yoon-6738a6141/"
+  },
+
+  /* 11 */
   dallas_taylor: {
-    img: `${imagePath}/dallas_taylor.jpg`,
+    img: `${IMAGE_PATH}/dallas_taylor.jpg`,
     name: "Dallas Taylor",
     position: "Active",
     year: "Senior",
@@ -217,28 +218,29 @@ const BROTHER_INFO = {
     linkedin: ""
   },
 
-  /* 9 */
+  /* 12 */
   dhakshi_balakumar: {
-    img: `${imagePath}/dhakshi_balakumar.jpg`,
+    img: `${IMAGE_PATH}/dhakshi_balakumar.jpg`,
     name: "Dhakshi Balakumar",
-    position: "Director of Philanthropy",
+    position: "Vice President of Human Resources",
     year: "Sophomore",
     hometown: "Alpharetta, GA",
     class: "Iota",
     major: "Cognitive Science",
     minor: "",
     career_interests: "Consulting",
-    previous_positions: "Director of External Recruitment",
+    previous_positions:
+      "Director of External Recruitment, Director of Philanthropy",
     bio:
       "PSE has helped Dhakshi develop her professional skills and expose her to several industries in the business world. She has made new friends with diverse backgrounds and interests, enhancing her college experience with broadened perspectives. Her role model is former Starbucks CEO Howard Schultz. She is a facilitator for the Introduction to Leadership & Culture Decal, a dancer in Maya at Cal, a Golder Bear Orientation Leader, and involved in the Cal Rotaract organization at Berkeley. She loves to cook, sing karaoke, and travel in her free time.",
     linkedin: "https://linkedin.com/in/dhakshib"
   },
 
-  /* 10 */
+  /* 13 */
   emma_tsuneishi: {
-    img: `${imagePath}/emma_tsuneishi.jpg`,
+    img: `${IMAGE_PATH}/emma_tsuneishi.jpg`,
     name: "Emma Tsuneishi",
-    position: "Active",
+    position: "Director of Internal Recruitment",
     year: "Sophomore",
     hometown: "Torrance, CA",
     class: "Kappa",
@@ -251,11 +253,11 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/emmatsuneishi"
   },
 
-  /* 12 */
+  /* 14 */
   eva_su: {
-    img: `${imagePath}/eva_su.jpg`,
+    img: `${IMAGE_PATH}/eva_su.jpg`,
     name: "Eva Su",
-    position: "Active",
+    position: "Director of Scholarship",
     year: "Sophomore",
     hometown: "Kansas City, Missouri",
     class: "Iota",
@@ -268,61 +270,96 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/sueva"
   },
 
-  /* 13 */
+  /* 15 */
   harika_kalluri: {
-    img: `${imagePath}/harika_kalluri.jpg`,
+    img: `${IMAGE_PATH}/harika_kalluri.jpg`,
     name: "Harika Kalluri",
-    position: "Director of Professional Development",
+    position: "Vice President of Professional Development",
     year: "Sophomore",
     hometown: "San Jose, CA",
     class: "Iota",
     major: "Intended Business & Economics",
     minor: "Technology & Entrepreneurship Certificate",
     career_interests: "Management Consulting",
-    previous_positions: "Prospective Member Trainer",
+    previous_positions:
+      "Prospective Member Trainer, Director of Professional Development",
     bio:
       "PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models are Rushil Desai, her big in PSE, and Saad Hirani, a leader in her other campus organization Berkeley Business Society. Harika was awarded 2nd place in the 2016 PwC case competition. She enjoys hand lettering, dance, and photography in her free time.",
     linkedin: "https://linkedin.com/in/harikakalluri"
   },
 
-  /* 14 */
+  /* 16 */
   howard_huang: {
     // img: 'images/brothers/howard_huang.jpg', // TODO
-    img: `${imagePath}/bro-placeholder.jpg`,
+    img: `${IMAGE_PATH}/bro-placeholder.jpg`,
     name: "Howard Huang",
-    position: "Director of Brotherhood",
+    position: "Prospective Member Trainer",
     year: "Senior",
     hometown: "Arcadia, CA",
     class: "Kappa",
     major: "Economics",
     minor: "",
     career_interests: "Consulting",
-    previous_positions: "",
+    previous_positions: "Director of Brotherhood",
     bio:
       "As a transfer student, PSE has given Howard the confidence and skills that helped him transition socially and professionally into a new environment at Cal. Cases, info sessions, and mock interviews have better prepared him for real-world experiences. Howard's role models are his parents. He is an avid musician and athlete - he collects vinyls, and plays piano and volleyball. Howard is also a member of Voyager Consulting, and was a brother of PSE Beta Kappa at Cal Poly Pomona.",
     linkedin: "https://linkedin.com/in/chinhaohowardhuang"
   },
 
-  /* 15 */
+  /* 17 */
   jacqueline_tsang: {
-    img: `${imagePath}/jacqueline_tsang.jpg`,
+    img: `${IMAGE_PATH}/jacqueline_tsang.jpg`,
     name: "Jacqueline Tsang",
-    position: "Director of Internal Recruitment",
+    position: "Director of Social Media",
     year: "Junior",
     hometown: "La Canada, CA",
     class: "Iota",
     major: "Business Administration",
     minor: "",
     career_interests: "Product Management & Digital Marketing",
-    previous_positions: "",
+    previous_positions: "Director of Internal Recruitment",
     bio:
       "PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.",
     linkedin: "https://linkedin.com/in/tsangjacqueline"
   },
 
-  /* 17 */
+  /* 18 */
+  john_van: {
+    img: `${IMAGE_PATH}/john_van.jpg`,
+    name: "John Van",
+    position: "Director of Brotherhood",
+    year: "Freshman",
+    hometown: "San Marino, CA",
+    class: "Lambda",
+    major: "Intended Business & Intended Computer Science",
+    minor: "",
+    career_interests: "Software Development",
+    previous_positions: "",
+    bio:
+      "Through PSE, John developed professionalism as well as analytical and public speaking skills. His role model is his father. John is in the Cal Aquatics Swim Club. He enjoys swimming, playing the piano, and eating.",
+    linkedin: "www.linkedin.com/in/johnvan1"
+  },
+
+  /* 19 */
+  joshua_nuesca: {
+    img: `${IMAGE_PATH}/joshua_nuesca.jpg`,
+    name: "Joshua Nuesca",
+    position: "Director of External Recruitment",
+    year: "Sophomore",
+    hometown: "Redlands, CA",
+    class: "Lambda",
+    major: "Environmental Economics & Intended Data Science",
+    minor: "Certificate in Entrepreneurship and Technology",
+    career_interests: "Management Consulting, Product Management",
+    previous_positions: "",
+    bio:
+      "Josh was able to unlock his creative potential and presentation skills with numerous case study presentations answering complex questions spanning a variety of industries. PSE also taught him the meaning of brotherhood through teamwork and trust. His role model is Mark Zuckerberg. Josh is in the student-run newspaper group of Cal, The Daily Californian, and is a Resident Assistant. He enjoys exploring new cultures, reading novels, and philosophical conversations on long car rides.",
+    linkedin: "www.linkedin.com/in/joshnuesca"
+  },
+
+  /* 20 */
   jonathan_duan: {
-    img: `${imagePath}/jonathan_duan.jpg`,
+    img: `${IMAGE_PATH}/jonathan_duan.jpg`,
     name: "Jonathan Duan",
     position: "Active",
     year: "Senior",
@@ -337,45 +374,46 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/jonduan"
   },
 
-  /* 18 */
+  /* 21 */
   justin_tan: {
-    img: `${imagePath}/justin_tan.JPG`,
+    img: `${IMAGE_PATH}/justin_tan.JPG`,
     name: "Justin Tan",
-    position: "Director of Brotherhood",
+    position: "Active",
     year: "Junior",
     hometown: "Newbury Park, CA",
     class: "Kappa",
     major: "Intended Business & Environmental Economics",
     minor: "",
     career_interests: "Investment Banking & Consulting",
-    previous_positions: "",
+    previous_positions: "Director of Brotherhood",
     bio:
       "Justin's biggest lesson from PSE is that communication is the key to holding a group together. In PSE, he's found a family that will motivate him and push him to do his best. Justin's role model is his father. He enjoys traveling around the world, meeting new people and hearing their stories, and playing sports such as soccer and volleyball. He is one of Berkeley's three MicMen and an active member in Cal Rotaract.",
     linkedin: "https://linkedin.com/in/justintan14"
   },
 
-  /* 19 */
+  /* 22 */
   kailin_li: {
-    img: `${imagePath}/kailin_li.jpg`,
+    img: `${IMAGE_PATH}/kailin_li.jpg`,
     name: "Kailin Li",
-    position: "Vice President of Human Relations",
+    position: "Active",
     year: "Senior",
     hometown: "Granada Hills, CA",
     class: "Theta",
     major: "Economics & Cognitive Science",
     minor: "",
     career_interests: "Human Resources Consulting & Product Design",
-    previous_positions: "Director of External Recruitment",
+    previous_positions:
+      "Director of External Recruitment, Vice President of Human Relations",
     bio:
       "Kailin has learned to stay curious; professionally, PSE has exposed her to new career paths with its networking dinners and info sessions. And socially, she loves the fact that she gets to work and grow with the PSE family. Whether it's going to a Kanye concert together or heading to the city together, getting to know her brothers has been the most rewarding aspect PSE has given her. Her role model is professional player Rafael Nadal. Kailin won 2nd place at the Infosys Design Thinking competition, and is involved in the Philosophy Forum at Berkeley. Her hobbies include hiking, photography, and learning new languages.",
     linkedin: "https://linkedin.com/in/kailinli"
   },
 
-  /* 20 */
+  /* 23 */
   kelvin_xu: {
-    img: `${imagePath}/kelvin_xu.jpg`,
+    img: `${IMAGE_PATH}/kelvin_xu.jpg`,
     name: "Kelvin Xu",
-    position: "Active",
+    position: "Vice President of Administration",
     year: "Sophomore",
     hometown: "Shanghai, China",
     class: "Kappa",
@@ -388,60 +426,43 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kelvinxu97"
   },
 
-  /* 21 */
+  /* 24 */
   kevin_lee: {
-    img: `${imagePath}/kevin_lee.jpg`,
+    img: `${IMAGE_PATH}/kevin_lee.jpg`,
     name: "Kevin Lee",
-    position: "Chapter Secretary",
+    position: "Vice President of Finance",
     year: "Junior",
     hometown: "Fullerton, CA",
     class: "Kappa",
     major: "Economics",
     minor: "",
     career_interests: "Tax Advisory",
-    previous_positions: "",
+    previous_positions: "Chapter Secretary",
     bio:
       "PSE has taught Kevin that the people you meet mold and shape your future; PSE has given him the opportunity to realize his dreams. Kevin's role model is his father. He enjoys playing tennis, trying out new food, and singing. Kevin is also an active member of Korean American Student Association (KASA) and Coaching Corps.",
     linkedin: "https://linkedin.com/in/kevinkeyhyunlee/"
   },
 
-  /* 22 */
-  kevin_phan: {
-    img: `${imagePath}/kevin_phan.jpg`,
-    name: "Kevin Phan",
-    position: "President",
-    year: "Senior",
-    hometown: "Palo Alto, CA",
-    class: "Eta",
-    major: "Business Administration",
-    minor: "",
-    career_interests: "Venture Capital & Investment Banking",
-    previous_positions: "Director of Professional Development",
-    bio:
-      "Through PSE, Kevin has learned to draw on and apply his past experiences while working with real companies. His role models are serial entrepreneur and investors Gary Vaynercuk and Mark Cuban. Kevin is also a brother of Chi Psi social fraternity, and the Director of Sales for computer science non-profit Paradigm Shift. His hobbies include running, hiking, and listening to music.",
-    linkedin: "https://linkedin.com/in/kevin-phan1"
-  },
-
-  /* 23 */
+  /* 25 */
   kian_kiasaleh: {
-    img: `${imagePath}/kian_kiasaleh.jpg`,
+    img: `${IMAGE_PATH}/kian_kiasaleh.jpg`,
     name: "Kian Kiasaleh",
-    position: "Director of Alumni Relations",
+    position: "Director of Professional Development",
     year: "Sophomore",
     hometown: "San Clemente, CA",
     class: "Kappa",
     major: "Economics",
     minor: "",
     career_interests: "Brand Consulting & Product Marketing",
-    previous_positions: "",
+    previous_positions: "Director of Alumni Relations",
     bio:
       "PSE introduced Kian to a community that inspires him to improve himself, and taught him to develop his personal brand. His role models are Robert Downey Jr. and Tyra Banks. He enjoys trying new foods, riding roller coasters, and doing impressions. Kian is also a member of the Film Committee in Business Careers in Entertainment Club (BCEC).",
     linkedin: "https://linkedin.com/in/kiankiasaleh"
   },
 
-  /* 24 */
+  /* 26 */
   kyle_lu: {
-    img: `${imagePath}/kyle_lu.jpg`,
+    img: `${IMAGE_PATH}/kyle_lu.jpg`,
     name: "Kyle Lu",
     position: "Active",
     year: "Junior",
@@ -450,32 +471,50 @@ const BROTHER_INFO = {
     major: "Economics & Statistics",
     minor: "",
     career_interests: "Consulting & Investment Banking",
-    previous_positions: "Director of Technology",
+    previous_positions: "Director of Technology, Prospective Member Trainer",
     bio:
       "Through PSE, Kyle has learned many professional skills, especially how to market himself. His role model is Chinese martial artist Ip Man, mentor to Bruce Lee. Kyle is also involved in Cal Dragon Boat and Innovative Design. He won 2nd place in the Fall 2016 PwC case competition, and was a finalist in the Spring 2016 Deloitte case competition. He hobbies include photography, graphic design, and paddling.",
     linkedin: "https://linkedin.com/in/kylewongkailu"
   },
 
-  /* 25 */
+  /* 27 */
   linda_li: {
-    img: `${imagePath}/linda_li.jpg`,
+    img: `${IMAGE_PATH}/linda_li.jpg`,
     name: "Linda Li",
-    position: "Director of Projects",
+    position: "Director of Philanthropy",
     year: "Junior",
     hometown: "Davis, CA",
     class: "Iota",
     major: "Business",
     minor: "Public Health",
     career_interests: "Healthtech Consulting & Marketing",
-    previous_positions: "Director of Professional Development",
+    previous_positions:
+      "Director of Professional Development, Director of Projects",
     bio:
       "PSE has provided Linda with professional development in decking presentations, competing in case competitions, interviewing, and resume-building. She has expanded her network and created a space she can truly call home here at Cal. Her role models are Beyonce and Michelle Obama. Linda is a scheduling supervisor for the ASUC Event Services team, and a member of Spoon University. She was a marketing intern at healthtech startup Stroll Health, and loves to hike, play the piano, and attend music festivals whenever she can.",
-    linkedin: "https://linkedin.com/in/li-linda"
+    linkedin: "www.linkedin.com/in/li-linda"
   },
 
-  /* 26 */
+  /* 28 */
+  liona_li: {
+    img: `${IMAGE_PATH}/liona_li.jpg`,
+    name: "Liona Li",
+    position: "Active",
+    year: "Freshman",
+    hometown: "Alameda, CA",
+    class: "Lambda",
+    major: "Political Economy",
+    minor: "",
+    career_interests: "Management Consulting, Marketing",
+    previous_positions: "",
+    bio:
+      "PSE has given Liona knowledge of various industries and skills such as time mangament. Her role model is Austrian-American actor and politician Arnold Schwarzenegger. Liona is also involved in ASUC. Her hobbies include hiking, baking, and scrapbooking.",
+    linkedin: "https://linkedin.com/in/lionali"
+  },
+
+  /* 29 */
   max_seltzer: {
-    img: `${imagePath}/max_seltzer.jpg`,
+    img: `${IMAGE_PATH}/max_seltzer.jpg`,
     name: "Max Seltzer",
     position: "Active",
     year: "Senior",
@@ -490,9 +529,26 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/maxsseltzer"
   },
 
-  /* 28 */
+  /* 30 */
+  michael_hillsman: {
+    img: `${IMAGE_PATH}/michael_hillsman.jpg`,
+    name: "Michael Hillsman",
+    position: "Active",
+    year: "Freshman",
+    hometown: "Tulsa, Oklahoma",
+    class: "Lambda",
+    major: "Cognitive Science & Computer Science",
+    minor: "",
+    career_interests: "Software Development, Product Management",
+    previous_positions: "",
+    bio:
+      "Michael has learned ways in which he can better himself professionally as well as how to more effectively work with others towards a common goal. His role models are tech visionaries Elon Musk and Steve Jobs. Michael enjoys software development, day-trading, and tennis.",
+    linkedin: "www.linkedin.com/in/MichaelHillsman"
+  },
+
+  /* 31 */
   nancy_zhu: {
-    img: `${imagePath}/nancy_zhu.jpg`,
+    img: `${IMAGE_PATH}/nancy_zhu.jpg`,
     name: "Nancy Zhu",
     position: "Active",
     year: "Senior",
@@ -508,42 +564,44 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/nancyzy"
   },
 
-  /* 29 */
-  nathan_kelleher: {
-    img: `${imagePath}/nathan_kelleher.jpg`,
-    name: "Nathan Kelleher",
-    position: "Active",
-    year: "Senior",
-    hometown: "",
-    class: "Zeta",
-    major: "",
+  /* 32 */
+  olivia_lee: {
+    img: `${IMAGE_PATH}/olivia_lee.jpg`,
+    name: "Olivia Lee",
+    position: "Director of Brotherhood",
+    year: "Freshman",
+    hometown: "Fullerton, CA",
+    class: "Lambda",
+    major: "Economics & Computer Science",
     minor: "",
-    career_interests: "",
+    career_interests: "Technology Consulting & Marketing",
     previous_positions: "",
-    bio: "",
-    linkedin: ""
+    bio:
+      "Through PSE, Olivia learned about the finer details of the various industries within the business world and the expectations of them. As a result, She found my interest in consulting and marketing, and was able to receive proper support and guidance. Through the constantly ongoing professional development and collaborative projects, She is able to challenge herself to different ideas and perspectives that contribute to her personal growth. Her role model are her parents. Olivia was a CSF Seymour Award Finalist. She loves digital design, journalism, and cooking.",
+    linkedin: "https://www.linkedin.com/in/oliviasulee/"
   },
 
-  /* 30 */
+  /* 33 */
   nicholas_chun: {
-    img: `${imagePath}/nicholas_chun.JPG`,
+    img: `${IMAGE_PATH}/nicholas_chun.JPG`,
     name: "Nicholas Chun",
-    position: "Vice President of Finance",
+    position: "Active",
     year: "Junior",
     hometown: "Carmel, IN",
     class: "Theta",
     major: "Economics",
     minor: "",
     career_interests: "Consulting",
-    previous_positions: "Director of Internal Recruitment",
+    previous_positions:
+      "Director of Internal Recruitment, Vice President of Finance",
     bio:
       "Through PSE, Nicholas now has a better understanding of what it means to effectively work with others professionally while also maintaining close, personal relationships. College is a great time to explore oneself and reach new heights while also forming strong friendships with others and he believes PSE helps him achieve this. His role model is professional wrestler and actor Dwayne 'The Rock' Johnson. Nicholas co-wrote several articles at the American Chamber of Commerce in South Korea, and is involved in the ASUC Office of the Academic Affairs Vice President. He plays the electric guitar, longboards around Berkeley, and listens to music whenever he can.",
     linkedin: "https://linkedin.com/in/nicholas-chun-188a98113"
   },
 
-  /* 31 */
+  /* 34 */
   nick_cheng: {
-    img: `${imagePath}/nick_cheng.jpg`,
+    img: `${IMAGE_PATH}/nick_cheng.jpg`,
     name: "Nick Cheng",
     position: "Active",
     year: "Senior",
@@ -558,10 +616,11 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/chengnick"
   },
 
+  /* 35 */
   peter_vu: {
-    img: `${imagePath}/bro-placeholder.jpg`,
+    img: `${IMAGE_PATH}/bro-placeholder.jpg`,
     name: "Peter Vu",
-    position: "Active",
+    position: "Prospective Member Trainer",
     year: "Senior",
     hometown: "",
     class: "Zeta",
@@ -573,18 +632,18 @@ const BROTHER_INFO = {
     linkedin: ""
   },
 
-  /* 32 */
+  /* 36 */
   rahul_rangnekar: {
-    img: `${imagePath}/rahul_rangnekar.jpg`,
+    img: `${IMAGE_PATH}/rahul_rangnekar.jpg`,
     name: "Rahul Rangnekar",
-    position: "Vice President of Marketing",
+    position: "Prospective Member Trainer",
     year: "Senior",
     hometown: "Claremont, CA",
     class: "Theta",
     major: "Computer Science & Economics",
-    minor: "Technology & Entrepreneurship Certificate",
+    minor: "",
     career_interests: "Product Management & Software Development",
-    previous_positions: "Director of Brotherhood",
+    previous_positions: "Director of Brotherhood, Vice President of Marketing",
     bio:
       "Through PSE, Rahul has learned to adapt his leadership style and 'fill the gaps' when working with team members who have distinct work ethics and skillsets. He enjoys the experiences PSE has given him - the Under Armour project, the opportunity to code this entire website, and the brotherhood of a lifetime. His role models are retired NBA player Tim Duncan and entrepreneur Tim Ferriss. Rahul was previously involved in the ASUC and American Red Cross at Cal. He enjoys working out daily, writing on Medium and LinkedIn, trying and reviewing restaurants on Yelp, and developing applications for others to enjoy.",
     linkedin: "https://linkedin.com/in/rahrang",
@@ -593,9 +652,60 @@ const BROTHER_INFO = {
     website: "http://rahrang.xyz"
   },
 
-  /* 33 */
+  /* 37 */
+  reina_zhang: {
+    img: `${IMAGE_PATH}/reina_zhang.jpg`,
+    name: "Reina Zhang",
+    position: "Active",
+    year: "Sophomore",
+    hometown: "Beijing, China",
+    class: "Lambda",
+    major: "Economics & Media Studies",
+    minor: "Theater",
+    career_interests: "Advertising and Brand Marketing",
+    previous_positions: "",
+    bio:
+      "Reina gained both professional knowledge and brotherhood from PSE. Aside from learning about different fields of business such as finance, she also acquired applicable skills such as public speaking and decking. Being in a marketing fraternity has given Reina insights on potential positions in companies and strengthened her interest in the marketing profession. Her role model is her father. Reina is in the Berkeley Advertising Agency. She enjoys theater lighting design, music, and reading.",
+    linkedin: "https://www.linkedin.com/in/reinazhang"
+  },
+
+  /* 38 */
+  reshma_belur: {
+    img: `${IMAGE_PATH}/reshma_belur.jpg`,
+    name: "Reshma Belur",
+    position: "Director of Projects",
+    year: "Freshman",
+    hometown: "Collegeville, PA",
+    class: "Lambda",
+    major: "Economics",
+    minor: "",
+    career_interests: "Marketing, Communications",
+    previous_positions: "",
+    bio:
+      "From PSE, Reshma learned the value of community and professional development. Her role model is her brother Varun. Reshma works for the Center on the Economics and Demographics of Aging and the Haas Alumni Association. She also won the Rotary Student Achievement Award. She enjoys meeting new people, taking walks, and online shopping. ",
+    linkedin: "https://www.linkedin.com/in/reshmabelur"
+  },
+
+  /* 39 */
+  rick_choi: {
+    img: `${IMAGE_PATH}/rick_choi.jpg`,
+    name: "Rick Choi",
+    position: "Active",
+    year: "Freshman",
+    hometown: "Seoul, Korea",
+    class: "Lambda",
+    major: "Intended Business & Economics",
+    minor: "Art Practice",
+    career_interests: "Management Consulting, Corporate Law",
+    previous_positions: "",
+    bio:
+      "Through PSE, Rick learned basic information about business and gained important tips in preparing for interviews, resumes, and internships. His role model is South Korean diplomat Ban Ki-moon. Rick is invovled in KASA and Dentro. He also won the China Marchants Art Mural. Rick enjoys playing basketball, sketching, and exercising in his free time.",
+    linkedin: "www.linkedin.com/in/rick-choi"
+  },
+
+  /* 40 */
   rose_min: {
-    img: `${imagePath}/rose_min.jpg`,
+    img: `${IMAGE_PATH}/rose_min.jpg`,
     name: "Rose Min",
     position: "Director of Projects",
     year: "Sophomore",
@@ -610,43 +720,45 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/rosemin"
   },
 
-  /* 34 */
+  /* 41 */
   rushil_desai: {
-    img: `${imagePath}/rushil_desai.jpg`,
+    img: `${IMAGE_PATH}/rushil_desai.jpg`,
     name: "Rushil Desai",
-    position: "Prospective Member Dad",
+    position: "Active",
     year: "Senior",
     hometown: "Santa Cruz, CA",
     class: "Zeta",
     major: "Economics",
     minor: "",
     career_interests: "Investment Banking & Corporate Banking",
-    previous_positions: "Vice President of Administration",
+    previous_positions:
+      "Vice President of Administration, Prospective Member Trainer",
     bio:
       "PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team.",
     linkedin: "https://linkedin.com/in/rushil-desai-29a825a7"
   },
 
-  /* 35 */
+  /* 42 */
   sean_yu: {
-    img: `${imagePath}/sean_yu.jpg`,
+    img: `${IMAGE_PATH}/sean_yu.jpg`,
     name: "Sean Yu",
-    position: "Vice President of Professional Development",
+    position: "President",
     year: "Junior",
     hometown: "Manila, Philippines",
     class: "Theta",
     major: "Economics",
     minor: "",
     career_interests: "Corporate Strategy & Financial Technology",
-    previous_positions: "Prospective Member Trainer",
+    previous_positions:
+      "Prospective Member Trainer, Vice President of Professional Development",
     bio:
       "PSE has taught Sean to be a great communicator. From networking with professionals at career fairs, to public speaking and giving presentations, and to casual chats with strangers, communication has unlocked multiple doors for him and has helped him to develop as an individual. His parents are his role models. Sean was previously involved in Berkeley ABA (Asian Business Association), and his hobbies include playing golf, fishing, and traveling.",
     linkedin: "https://linkedin.com/in/seanjcyu"
   },
 
-  /* 36 */
+  /* 43 */
   syed_adil: {
-    img: `${imagePath}/syed_adil.jpg`,
+    img: `${IMAGE_PATH}/syed_adil.jpg`,
     name: "Syed Adil",
     position: "Active",
     year: "Senior",
@@ -661,26 +773,26 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/syedadilemirputra"
   },
 
-  /* 37 */
+  /* 44 */
   taylor_lee: {
-    img: `${imagePath}/taylor_lee.jpg`,
+    img: `${IMAGE_PATH}/taylor_lee.jpg`,
     name: "Taylor Lee",
-    position: "Vice President of Administration",
+    position: "Chapter Secretary",
     year: "Senior",
     hometown: "Danville, California",
     class: "Theta",
     major: "Economics",
     minor: "",
     career_interests: "Accounting & Consulting",
-    previous_positions: "",
+    previous_positions: "Vice President of Administration",
     bio:
       "PSE has taught Taylor a variety of skills, including public speaking, interview skills, and, most importantly, how to get an internship. His role model is Kevin Phan, current president of PSE. Taylor is also actively involved in Cal Rotaract and The Green Initiative Fund. He is knowledgeable in LLC formation, and enjoys distance running (with dogs), playing the guitar, and ice skating.",
     linkedin: "https://linkedin.com/in/taylorthomaslee"
   },
 
-  /* 38 */
+  /* 45 */
   tia_chen_wong: {
-    img: `${imagePath}/tia_chen_wong.jpg`,
+    img: `${IMAGE_PATH}/tia_chen_wong.jpg`,
     name: "Tia Chen-Wong",
     position: "Active",
     year: "Sophomore",
@@ -695,11 +807,11 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/tiare-chen-wong"
   },
 
-  /* 39 */
+  /* 46 */
   tim_cheng: {
-    img: `${imagePath}/tim_cheng.jpg`,
+    img: `${IMAGE_PATH}/tim_cheng.jpg`,
     name: "Tim Cheng",
-    position: "Active",
+    position: "Director of Technology",
     year: "Sophomore",
     hometown: "Oak Park, CA",
     class: "Kappa",
@@ -708,15 +820,15 @@ const BROTHER_INFO = {
     career_interests: "Software Development",
     previous_positions: "",
     bio:
-      "Through PSE, Tim learned to effectively utilize his soft skills in public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods. He works in Berkeley's Educational Technology Services Department.",
+      "Through PSE, Tim learned to effectively utilize his soft skills such as public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods.",
     linkedin: "https://www.linkedin.com/in/tim-cheng/"
   },
 
-  /* 40 */
+  /* 47 */
   varsha_sundar: {
-    img: `${imagePath}/varsha_sundar.jpg`,
+    img: `${IMAGE_PATH}/varsha_sundar.jpg`,
     name: "Varsha Sundar",
-    position: "Active",
+    position: "Director of Projects",
     year: "Sophomore",
     hometown: "Irvine, CA",
     class: "Kappa",
@@ -729,11 +841,11 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/varsha-sundar"
   },
 
-  /* 41 */
+  /* 48 */
   yixuan_lu: {
-    img: `${imagePath}/yixuan_lu.jpg`,
+    img: `${IMAGE_PATH}/yixuan_lu.jpg`,
     name: "Yixuan Lu",
-    position: "Active",
+    position: "Vice President of Marketing",
     year: "Junior",
     hometown: "Fremont, CA",
     class: "Iota",
@@ -747,4 +859,4 @@ const BROTHER_INFO = {
   }
 };
 
-export { BROTHERS_LIST, VP_LIST, ALL_EXECS_LIST, BROTHER_INFO };
+export { VP_LIST, ALL_EXECS_LIST, BROTHER_INFO };

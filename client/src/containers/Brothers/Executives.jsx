@@ -24,14 +24,14 @@ const Executives = props => {
   return (
     <div id="brotherhood-container">
       <LandingContainer>
-        <Image
+        {/* <Image
           src="../images/executive_board.JPG"
           alt="Pi Sigma Epsilon executive board"
-        />
-        <Header alt>Executive Board</Header>
+        /> */}
+        <PageHeader>Executive Board</PageHeader>
       </LandingContainer>
       <CenterTextContainer>
-        <BrotherImage brother="kevin_phan" key="kevin_phan" page="execs" />
+        <BrotherImage brother="sean_yu" key="sean_yu" page="execs" />
         <div id="VPs-top-row">{topRowVPs}</div>
         <div id="VPs-bottom-row">{bottomRowVPs}</div>
       </CenterTextContainer>
@@ -49,7 +49,7 @@ const CenterTextContainer = styled.div`
   text-align: center;
 `;
 
-const Header = PageHeader.extend`
-  position: absolute;
-  width: 100%;
-`;
+// const Header = PageHeader.extend`
+//   position: absolute;
+//   width: 100%;
+// `;
