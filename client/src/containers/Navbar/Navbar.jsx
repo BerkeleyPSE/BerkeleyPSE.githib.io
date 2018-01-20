@@ -13,16 +13,9 @@ import { Image } from "../components/ImageStyles";
 import { SiteHeader } from "../components/HeaderStyles";
 import { ParaText } from "../components/TextStyles";
 
-const Navbar = props => {
+const Navbar = () => {
   const dropdownUnits = NAVBAR_INFO.map(item => {
-    return (
-      <DropdownUnit
-        header={item.header}
-        headerLink={item.headerLink}
-        pages={item.pages}
-        key={`nav_${item.header}`}
-      />
-    );
+    return <DropdownUnit {...item} key={`nav_${item.header}`} />;
   });
 
   return (

@@ -89,12 +89,6 @@ const SinglePageContainer = styled.div`
   padding: 0.25rem 0;
 `;
 
-/*
-  the activeClassName is defined as such in NavLink documentation
-  we include logic to make use of it, but we dont actually use it
-  if we want to use it, look for the checkActive function defined
-  in ./DropdownUnit.jsx
-*/
 const activeClassName = "nav-item-active";
 const Link = styled(NavLink).attrs({
   activeClassName
