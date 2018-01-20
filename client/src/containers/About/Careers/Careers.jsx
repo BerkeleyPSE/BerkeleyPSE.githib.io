@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { PageHeader, SectionHeader } from "../components/HeaderStyles";
+import { PageHeader, SectionHeader } from "../../components/HeaderStyles";
 import CareersTable from "./CareersTable";
 import { FULLTIME_COLUMNS, FULLTIME_CAREERS } from "./fulltime_constants";
 

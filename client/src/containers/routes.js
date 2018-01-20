@@ -12,7 +12,7 @@ import { Switch, Route } from "react-router-dom";
 // page components
 import Home from "./Home/Home";
 import About from "./About/About";
-import Careers from "./About/Careers";
+import Careers from "./About/Careers/Careers";
 import Recruitment from "./Recruitment/Recruitment";
 import WhyPSE from "./Recruitment/WhyPSE";
 import FAQs from "./Recruitment/FAQs/FAQs";
