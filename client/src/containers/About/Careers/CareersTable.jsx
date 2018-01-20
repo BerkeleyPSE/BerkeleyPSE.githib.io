@@ -67,7 +67,8 @@ const Row = styled.tr`
 
 const Cell = styled.td`
   font-size: 0.9rem;
+  letter-spacing: 0.0125rem;
   margin: 0;
-  padding: 0.25rem;
+  padding: 0.5rem 0.25rem;
   min-width: 150px;
 `;

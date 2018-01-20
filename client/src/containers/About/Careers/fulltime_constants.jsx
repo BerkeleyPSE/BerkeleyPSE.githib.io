@@ -172,9 +172,9 @@ const FULLTIME_CAREERS = [
   {
     name: "Lily Li",
     year: "2017",
-    industry: "",
-    company: "",
-    position: "",
+    industry: "Finance",
+    company: "Progress Investment Management Company",
+    position: "Marketing & Sales Associate",
     location: "San Francisco, CA"
   },
   {
