@@ -9,7 +9,7 @@ import { PageHeader, SectionHeader } from "../components/HeaderStyles";
 import { ParaText } from "../components/TextStyles";
 import { Image } from "../components/ImageStyles";
 
-const About = props => {
+const About = () => {
   document.title = "About - Pi Sigma Epsilon | Zeta Chi Chapter";
   return (
     <AboutContainer>

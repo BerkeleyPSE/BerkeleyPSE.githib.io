@@ -20,7 +20,7 @@ import ApplicationHandler from "./Recruitment/Application/ApplicationHandler.jsx
 import Brotherhood from "./Brothers/Brotherhood";
 import Brother from "./Brothers/Brother";
 import Executives from "./Brothers/Executives";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import Error404 from "./Error404";
 
 // other components
@@ -42,7 +42,7 @@ import {
   CONTACT_PATH
 } from "./Navbar/navbar_constants";
 
-const Routes = props => {
+const Routes = () => {
   return (
     <div id="router-container">
       <Navbar />

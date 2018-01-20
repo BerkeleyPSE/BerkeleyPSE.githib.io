@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 // components
 import { ColumnContainer } from "../../components/ContainerStyles";
@@ -36,3 +37,9 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, AppActions)(ApplicationHandler);
+
+// PropTypes
+
+ApplicationHandler.propTypes = {
+  appReducer: PropTypes.object.isRequired
+};

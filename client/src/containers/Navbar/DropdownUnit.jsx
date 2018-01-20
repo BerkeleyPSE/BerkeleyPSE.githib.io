@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import DropdownMenu from "react-dd-menu";
 import "../../stylesheets/react-dd.css";
+import PropTypes from "prop-types";
 
 // components
 import { NAVBAR_MAP } from "./navbar_constants";
@@ -155,3 +156,11 @@ const PageItem = styled.li`
     color: #ffd700 !important;
   }
 `;
+
+// PropTypes
+
+DropdownUnit.propTypes = {
+  header: PropTypes.string.isRequired,
+  headerLink: PropTypes.string.isRequired,
+  pages: PropTypes.arrayOf(PropTypes.object)
+};

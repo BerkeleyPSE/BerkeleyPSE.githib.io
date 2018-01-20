@@ -9,7 +9,7 @@ import { ParaText } from "../components/TextStyles";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 
-const WhyPSE = props => {
+const WhyPSE = () => {
   document.title = "Why PSE? - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   return (

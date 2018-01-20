@@ -3,6 +3,7 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import includes from "lodash/includes";
+import PropTypes from "prop-types";
 
 // components
 import { BROTHER_INFO, ALL_EXECS_LIST } from "./brotherhood_constants";
@@ -136,3 +137,10 @@ const BroMediaContainer = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+// PropTypes
+
+Brother.propTypes = {
+  history: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
+};

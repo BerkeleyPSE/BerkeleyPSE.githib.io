@@ -3,6 +3,7 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import { Field } from "redux-form";
+import PropTypes from "prop-types";
 
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
@@ -82,3 +83,19 @@ const ErrorLabel = Label.extend`
   color: red;
   margin: 0.3125rem 0.625rem;
 `;
+
+// PropTypes
+
+RadioField.propTypes = {
+  label: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  name: PropTypes.string.isRequired
+};
+
+RadioButton.propTypes = {
+  input: PropTypes.object.isRequired,
+  option: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+  error: PropTypes.bool,
+  touched: PropTypes.bool
+};

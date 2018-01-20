@@ -3,6 +3,7 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 // components
 import { BROTHER_INFO } from "./brotherhood_constants";
@@ -99,3 +100,10 @@ const Position = styled.p`
   padding: 0 0.625rem;
   text-transform: uppercase;
 `;
+
+// PropTypes
+
+BrotherImage.propTypes = {
+  brother: PropTypes.string.isRequired,
+  page: PropTypes.oneOf(["execs", "bros"])
+};

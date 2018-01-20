@@ -10,7 +10,7 @@ import { RowContainer } from "../components/ContainerStyles";
 import { ParaText } from "../components/TextStyles";
 import { ExtLink } from "../components/LinkStyles";
 
-const Footer = props => {
+const Footer = () => {
   return (
     <FooterContainer bgColor="#333">
       <MarginContainer>
@@ -25,8 +25,7 @@ const Footer = props => {
       />
       <MarginContainer>
         <Text alt>
-          <SelfLink to={"http://www.rahrang.xyz"} target="blank">
-            {" "}
+          <SelfLink href="http://www.rahrang.xyz" target="blank">
             Rahul Rangnekar
           </SelfLink>
           , Tim Cheng

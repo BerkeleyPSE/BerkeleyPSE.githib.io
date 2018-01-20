@@ -8,15 +8,14 @@ import FAQ_INFO from "./faq_constants.js";
 import AccordionItem from "../../components/AccordionItem.jsx";
 import { PageHeader } from "../../components/HeaderStyles";
 
-const FAQs = props => {
+const FAQs = () => {
   document.title = "FAQs - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const faqs = FAQ_INFO.map((item, index) => {
     if (item.question && item.answer) {
       return (
         <AccordionItem
-          key={index}
-          index={index}
+          key={`accordion_item_${index}`}
           question={item.question}
           answer={item.answer}
         />

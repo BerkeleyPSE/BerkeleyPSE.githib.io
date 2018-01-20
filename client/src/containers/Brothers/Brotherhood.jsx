@@ -9,7 +9,7 @@ import { BrotherImage } from "./BrotherImage.jsx";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
 
-const Brotherhood = props => {
+const Brotherhood = () => {
   document.title = "Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const allBrothers = Object.keys(BROTHER_INFO).map(brother => {

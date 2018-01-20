@@ -12,7 +12,7 @@ import { ColumnContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
 import { IntButtonLink } from "../components/LinkStyles";
 
-const Home = props => {
+const Home = () => {
   document.title = "Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const slideItems = HOME_INFO.map((item, index) => {

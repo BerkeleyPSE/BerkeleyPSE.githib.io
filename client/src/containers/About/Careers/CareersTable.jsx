@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const CareersTable = props => {
   const columnHeaders = (
@@ -16,7 +17,7 @@ const CareersTable = props => {
 
   const tableRows = props.data.map((person, index) => {
     return (
-      <Row id={`${props.id}_row_${index}`} index={index}>
+      <Row key={`${props.id}_row_${index}`} index={index}>
         {Object.keys(props.columns).map((col, index) => {
           return (
             <Cell key={`${props.id}_${person.name}_${col}`}>
@@ -72,3 +73,14 @@ const Cell = styled.td`
   padding: 0.5rem 0.25rem;
   min-width: 150px;
 `;
+
+// PropTypes
+
+CareersTable.propTypes = {
+  columns: PropTypes.objectOf(PropTypes.string),
+  data: PropTypes.arrayOf(PropTypes.object)
+};
+
+Row.propTypes = {
+  index: PropTypes.number
+};

@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import { RowContainer } from "../components/ContainerStyles";
@@ -79,3 +80,9 @@ const Value = styled.p`
   padding: 0 0.625rem;
   text-align: right;
 `;
+
+// PropTypes
+
+BrotherTable.propTypes = {
+  bro: PropTypes.object
+};

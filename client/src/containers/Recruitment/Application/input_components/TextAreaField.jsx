@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
@@ -61,3 +62,13 @@ const TextArea = styled.textarea`
     border: 2px solid #895fad;
   }
 `;
+
+// PropTypes
+
+TextAreaField.propTypes = {
+  input: PropTypes.object.isRequired,
+  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  error: PropTypes.bool,
+  touched: PropTypes.bool
+};

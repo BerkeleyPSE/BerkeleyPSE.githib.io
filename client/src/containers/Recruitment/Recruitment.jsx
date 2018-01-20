@@ -2,33 +2,10 @@ import React from "react";
 
 // components
 import HoverCard from "../components/HoverCard.jsx";
-import {
-  WHYPSE_PATH,
-  FAQS_PATH,
-  APPLICATION_PATH
-} from "../Navbar/navbar_constants";
 import { RowContainer } from "../components/ContainerStyles";
+import HOVER_CARD_ITEMS from "./recruitment_constants";
 
-// constants
-const HOVER_CARD_ITEMS = [
-  {
-    header: "Why PSE?",
-    description: "What sets us apart.",
-    link: WHYPSE_PATH
-  },
-  {
-    header: "FAQs",
-    description: "What you should know.",
-    link: FAQS_PATH
-  },
-  {
-    header: "Application",
-    description: "How to join us.",
-    link: APPLICATION_PATH
-  }
-];
-
-const Recruitment = props => {
+const Recruitment = () => {
   document.title = "Recruitment - Pi Sigma Epsilon | Zeta Chi Chapter";
 
   const hoverCards = HOVER_CARD_ITEMS.map((item, index) => {

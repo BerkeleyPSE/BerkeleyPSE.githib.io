@@ -2,6 +2,7 @@ import React from "react";
 
 // node modules
 import isUndefined from "lodash/isUndefined";
+import PropTypes from "prop-types";
 
 // components
 import PreregistrationForm from "./PreregistrationForm";
@@ -11,7 +12,6 @@ import { ParaText } from "../../../components/TextStyles";
 
 const Preregistration = props => {
   let { appReducer, submitForm } = props;
-  console.log(props);
   return (
     <ColumnContainer id="preregistration-form">
       <PageHeader>Spring 2018 Pre-Registration</PageHeader>
@@ -52,3 +52,10 @@ const SubmissionText = Text.extend`
   border-top: 3px solid #895fad;
   padding: 1rem 0;
 `;
+
+// PropTypes
+
+Preregistration.propTypes = {
+  appReducer: PropTypes.object.isRequired,
+  submitForm: PropTypes.func.isRequired
+};
