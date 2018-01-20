@@ -1,13 +1,11 @@
-// React
 import React from "react";
 
 // node modules
-import { StyleSheet, css } from "aphrodite";
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { stack as Menu } from "react-burger-menu";
 
 // components
-import { animations } from "../../stylesheets/Animations.js";
 import { NAVBAR_INFO } from "./navbar_constants";
 
 const MENU_WIDTH = 275;
@@ -27,47 +25,38 @@ export default class Navbar extends React.Component {
   render() {
     const menuItems = NAVBAR_INFO.map(item => {
       return (
-        <div
-          className={css(styles.sectionContainer)}
-          key={`ham_${item.header}`}
-        >
-          <div className={css(styles.headerContainer)}>
-            <NavLink
+        <SectionContainer key={`ham_${item.header}`}>
+          <HeaderContainer>
+            <HeaderLink
               to={item.headerLink}
-              className={css(styles.link, styles.headerLink)}
-              activeClassName={css(styles.activeLink)}
+              activeClassName={activeClassName}
               key={`ham_${item.header}`}
             >
               {item.header}
-            </NavLink>
-          </div>
-          <div className={css(styles.pagesContainer)}>
+            </HeaderLink>
+          </HeaderContainer>
+          <PagesContainer>
             {item.pages &&
               item.pages.map(page => {
                 return (
-                  <div
-                    className={css(styles.pageContainer)}
-                    key={`${item.header}_${page.page}`}
-                  >
-                    <NavLink
+                  <SinglePageContainer key={`${item.header}_${page.page}`}>
+                    <PageLink
                       to={page.pageLink}
-                      className={css(styles.link, styles.pageLink)}
-                      activeClassName={css(styles.activeLink)}
+                      activeClassName={activeClassName}
                     >
                       {page.page}
-                    </NavLink>
+                    </PageLink>
                     <br />
-                  </div>
+                  </SinglePageContainer>
                 );
               })}
-          </div>
-        </div>
+          </PagesContainer>
+        </SectionContainer>
       );
     });
 
     return (
       <Menu
-        className={css(styles.menu, animations.slideInLeft) + "menu"}
         width={MENU_WIDTH}
         isOpen={this.state.isMenuOpen}
         onStateChange={() => this.toggle}
@@ -80,54 +69,62 @@ export default class Navbar extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    padding: "0.5em 0",
-    width: "100%",
-    textAlign: "center"
-  },
+const SectionContainer = styled.div`
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+`;
 
-  headerContainer: {
-    borderBottom: "2px solid #895FAD",
-    padding: "0.25em 0"
-  },
+const HeaderContainer = styled.div`
+  border-bottom: 2px solid #895fad;
+  padding: 0.25rem 0;
+`;
 
-  pagesContainer: {
-    padding: "0.375em 0",
-    textAlign: "right"
-  },
+const PagesContainer = styled.div`
+  padding: 0.375rem 0;
+  text-align: right;
+`;
 
-  pageContainer: {
-    padding: "0.25em 0"
-  },
+const SinglePageContainer = styled.div`
+  padding: 0.25rem 0;
+`;
 
-  headerLink: {
-    fontSize: "1.25em",
-    letterSpacing: "0.05em",
-    textAlign: "center",
-    width: "100%"
-  },
+/*
+  the activeClassName is defined as such in NavLink documentation
+  we include logic to make use of it, but we dont actually use it
+  if we want to use it, look for the checkActive function defined
+  in ./DropdownUnit.jsx
+*/
+const activeClassName = "nav-item-active";
+const Link = styled(NavLink).attrs({
+  activeClassName
+})`
+  color: #fff;
+  cursor: pointer;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
 
-  pageLink: {
-    fontSize: "1.075em",
-    letterSpacing: "0.025em"
-  },
-
-  link: {
-    color: "#FFF",
-    cursor: "pointer",
-    fontFamily: "Lato, sans-serif",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    ":hover": {
-      color: "#895FAD"
-    }
-  },
-
-  activeLink: {
-    color: "#FFD700"
+  &:hover {
+    color: #895fad;
   }
-});
+
+  &.${activeClassName} {
+    color: #ffd700;
+  }
+`;
+
+const PageLink = Link.extend`
+  font-size: 1.1rem;
+  letter-spacing: 0.025rem;
+`;
+
+const HeaderLink = Link.extend`
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  width: 100%;
+`;
 
 const menuStyles = {
   bmBurgerButton: {
@@ -153,7 +150,7 @@ const menuStyles = {
 
   bmMenu: {
     background: "#303030",
-    padding: "1.75em 2em 0",
+    padding: "1.75rem 2rem 0",
     fontSize: "1em",
     color: "#FFF",
     width: `${MENU_WIDTH}px`,
@@ -161,7 +158,7 @@ const menuStyles = {
   },
 
   bmItemList: {
-    padding: "0.2em 0.8em"
+    padding: "0.2rem 0.8rem"
   },
 
   bmOverlay: {

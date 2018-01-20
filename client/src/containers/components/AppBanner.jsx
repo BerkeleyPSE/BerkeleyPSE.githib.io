@@ -1,4 +1,3 @@
-// React
 import React from "react";
 
 // node modules
