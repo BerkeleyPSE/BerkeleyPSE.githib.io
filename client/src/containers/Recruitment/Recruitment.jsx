@@ -6,7 +6,7 @@ import {
   WHYPSE_PATH,
   FAQS_PATH,
   APPLICATION_PATH
-} from "../Navbar/Navbar_Info";
+} from "../Navbar/navbar_constants";
 import { RowContainer } from "../components/ContainerStyles";
 
 // constants

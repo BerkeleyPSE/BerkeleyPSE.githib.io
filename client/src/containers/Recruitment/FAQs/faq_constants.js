@@ -1,4 +1,4 @@
-export const faq_constants = [
+const FAQ_INFO = [
   {
     question: "What makes PSE different from other organizations?",
     answer:
@@ -73,3 +73,5 @@ export const faq_constants = [
     answer: ""
   }
 ];
+
+export default FAQ_INFO;

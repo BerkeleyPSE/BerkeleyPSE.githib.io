@@ -14,7 +14,7 @@ or else the brother will not be rendered in Brotherhood
 
 const imagePath = "images/brothers";
 
-const brotherList = [
+const BROTHERS_LIST = [
   "aaron_corona",
   "abhi_nathan",
   "akshay_madane",
@@ -59,7 +59,7 @@ const brotherList = [
 these MUST match EXACTLY the name "keys" in the brotherInfo Object,
 or else the brother will not be rendered in Executives
 ***/
-const vpList = [
+const VP_LIST = [
   "aaron_corona",
   "taylor_lee",
   "kailin_li",
@@ -68,7 +68,7 @@ const vpList = [
   "sean_yu"
 ];
 
-const allExecsList = [
+const ALL_EXECS_LIST = [
   "aaron_corona",
   "taylor_lee",
   "kailin_li",
@@ -81,7 +81,7 @@ const allExecsList = [
 /***
 this is an Object of information for every brother
 ***/
-const brotherInfo = {
+const BROTHER_INFO = {
   /* 1 */
   aaron_corona: {
     img: `${imagePath}/aaron_corona.jpg`,
@@ -747,4 +747,4 @@ const brotherInfo = {
   }
 };
 
-export { brotherList, vpList, allExecsList, brotherInfo };
+export { BROTHERS_LIST, VP_LIST, ALL_EXECS_LIST, BROTHER_INFO };

@@ -6,11 +6,7 @@ import styled from "styled-components";
 import includes from "lodash/includes";
 
 // components
-import {
-  brotherInfo,
-  brotherList,
-  allExecsList
-} from "./brotherhood_constants";
+import { BROTHER_INFO, ALL_EXECS_LIST } from "./brotherhood_constants";
 import PageHandler from "./PageHandler";
 import BrotherTable from "./BrotherTable";
 import { ColumnContainer } from "../components/ContainerStyles";
@@ -36,14 +32,14 @@ export default class Brother extends React.Component {
 
   render() {
     let brother = this.props.match.params.name;
-    let broList = brotherList;
+    let broList = Object.keys(BROTHER_INFO);
     let page = "bros";
     if (this.isExecsPath()) {
-      broList = allExecsList;
+      broList = ALL_EXECS_LIST;
       page = "execs";
     }
     let broIndex = broList.indexOf(brother);
-    let bro = brotherInfo[brother];
+    let bro = BROTHER_INFO[brother];
 
     if (!bro) {
       this.broNotFound();
@@ -59,12 +55,7 @@ export default class Brother extends React.Component {
             <BroImage src={`../${bro.img}`} border alt={bro.name} />
           </ImageContainer>
           <BroInfoContainer>
-            <PageHandler
-              index={broIndex}
-              brotherList={broList}
-              brotherInfo={brotherInfo}
-              page={page}
-            />
+            <PageHandler index={broIndex} brotherList={broList} page={page} />
             <BroHeaderContainer>
               <Name>{bro.name}</Name>
               <Position>{bro.position}</Position>

@@ -5,7 +5,7 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { brotherList } from "./brotherhood_constants";
+import { BROTHER_INFO } from "./brotherhood_constants";
 import { BrotherImage } from "./BrotherImage.jsx";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
@@ -13,7 +13,7 @@ import { PageHeader } from "../components/HeaderStyles";
 const Brotherhood = props => {
   document.title = "Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter";
 
-  const allBrothers = brotherList.map(brother => {
+  const allBrothers = Object.keys(BROTHER_INFO).map(brother => {
     return <BrotherImage brother={brother} key={brother} page="bros" />;
   });
 

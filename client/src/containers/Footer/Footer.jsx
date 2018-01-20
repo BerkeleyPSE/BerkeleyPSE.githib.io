@@ -5,7 +5,7 @@ import styled from "styled-components";
 import SocialMediaBar from "react-social-media-bar";
 
 // components
-import FOOTER_INFO from "./Footer_Info";
+import FOOTER_LINKS from "./footer_constants";
 import { RowContainer } from "../components/ContainerStyles";
 import { ParaText } from "../components/TextStyles";
 import { ExtLink } from "../components/LinkStyles";
@@ -17,7 +17,7 @@ const Footer = props => {
         <Text alt>&#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.</Text>
       </MarginContainer>
       <SocialMediaBar
-        icons={FOOTER_INFO}
+        icons={FOOTER_LINKS}
         iconColor="#FFF"
         iconSize="1.125rem"
         hoverColor="#FFD700"

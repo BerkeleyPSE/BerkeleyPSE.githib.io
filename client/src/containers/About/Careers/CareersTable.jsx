@@ -4,7 +4,6 @@ import React from "react";
 import styled from "styled-components";
 
 const CareersTable = props => {
-  console.log(props);
   const columnHeaders = (
     <Row>
       {Object.values(props.columns).map((col, index) => {
@@ -39,6 +38,8 @@ const CareersTable = props => {
   );
 };
 
+export default CareersTable;
+
 const Table = styled.table`
   border: none;
   border-top: 1px solid #eee;
@@ -70,5 +71,3 @@ const Cell = styled.td`
   padding: 0.25rem;
   min-width: 150px;
 `;
-
-export default CareersTable;

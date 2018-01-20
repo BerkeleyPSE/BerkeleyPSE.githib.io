@@ -40,7 +40,7 @@ import {
   BROTHERS_PATH,
   EXECUTIVES_PATH,
   CONTACT_PATH
-} from "./Navbar/Navbar_Info";
+} from "./Navbar/navbar_constants";
 
 const Routes = props => {
   return (

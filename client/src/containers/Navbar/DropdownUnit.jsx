@@ -7,7 +7,7 @@ import DropdownMenu from "react-dd-menu";
 import "../../stylesheets/react-dd.css";
 
 // components
-import { NAVBAR_MAP } from "./Navbar_Info";
+import { NAVBAR_MAP } from "./navbar_constants";
 import { RowContainer } from "../components/ContainerStyles.js";
 
 export default class DropdownUnit extends React.Component {

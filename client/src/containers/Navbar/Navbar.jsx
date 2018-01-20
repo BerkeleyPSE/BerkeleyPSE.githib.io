@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 // components
 import DropdownUnit from "./DropdownUnit";
 import HamburgerMenu from "./HamburgerMenu";
-import { NAVBAR_INFO } from "./Navbar_Info";
+import { NAVBAR_INFO } from "./navbar_constants";
 import { RowContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 import { SiteHeader } from "../components/HeaderStyles";

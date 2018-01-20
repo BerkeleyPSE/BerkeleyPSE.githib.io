@@ -6,7 +6,7 @@ import { reduxForm, Field } from "redux-form";
 
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
-import { APP_FIELDS } from "./ApplicationFields";
+import { APP_FIELDS } from "./application_fields";
 import RadioField from "../input_components/RadioField";
 
 const ApplicationForm = props => {

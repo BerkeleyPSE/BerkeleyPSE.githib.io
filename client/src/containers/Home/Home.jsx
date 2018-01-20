@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // components
-import HOME_INFO from "./Home_Info";
+import HOME_INFO from "./home_constants";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
 import { IntButtonLink } from "../components/LinkStyles";

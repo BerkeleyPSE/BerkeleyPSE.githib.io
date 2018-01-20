@@ -8,7 +8,7 @@ import { stack as Menu } from "react-burger-menu";
 
 // components
 import { animations } from "../../stylesheets/Animations.js";
-import { NAVBAR_INFO } from "./Navbar_Info";
+import { NAVBAR_INFO } from "./navbar_constants";
 
 const MENU_WIDTH = 275;
 

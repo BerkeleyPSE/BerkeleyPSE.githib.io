@@ -5,8 +5,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // components
-import { brotherInfo } from "./brotherhood_constants";
-import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
+import { BROTHER_INFO } from "./brotherhood_constants";
+import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 
@@ -21,7 +21,7 @@ export class BrotherImage extends React.Component {
   render() {
     const { brother, page } = this.props;
     let { hover } = this.state;
-    const bro = brotherInfo[brother];
+    const bro = BROTHER_INFO[brother];
 
     if (!bro) {
       return null;

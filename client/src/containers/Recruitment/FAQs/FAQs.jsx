@@ -4,14 +4,14 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { faq_constants } from "./faq_constants.js";
+import FAQ_INFO from "./faq_constants.js";
 import AccordionItem from "../../components/AccordionItem.jsx";
 import { PageHeader } from "../../components/HeaderStyles";
 
 const FAQs = props => {
   document.title = "FAQs - Pi Sigma Epsilon | Zeta Chi Chapter";
 
-  const faqs = faq_constants.map((item, index) => {
+  const faqs = FAQ_INFO.map((item, index) => {
     if (item.question && item.answer) {
       return (
         <AccordionItem

@@ -4,7 +4,7 @@ import {
   RECRUITMENT_PATH,
   APPLICATION_PATH,
   BROTHERS_PATH
-} from "../Navbar/Navbar_Info";
+} from "../Navbar/navbar_constants";
 
 const HOME_INFO = [
   {

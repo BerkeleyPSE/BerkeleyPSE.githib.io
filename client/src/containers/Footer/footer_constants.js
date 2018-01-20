@@ -1,4 +1,4 @@
-const FOOTER_INFO = [
+const FOOTER_LINKS = [
   {
     media: "facebook-official",
     link: "https://www.facebook.com/berkeleypse"
@@ -13,4 +13,4 @@ const FOOTER_INFO = [
   }
 ];
 
-export default FOOTER_INFO;
+export default FOOTER_LINKS;

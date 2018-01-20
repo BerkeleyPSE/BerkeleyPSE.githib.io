@@ -4,7 +4,8 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/Navbar_Info";
+import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
+import { BROTHER_INFO } from "./brotherhood_constants";
 import { IntLink } from "../components/LinkStyles";
 
 export default class PageHandler extends React.Component {
@@ -29,7 +30,7 @@ export default class PageHandler extends React.Component {
   };
 
   render() {
-    let { brotherInfo, page } = this.props;
+    let { page } = this.props;
 
     let bros = this.getIndices(this.props.index);
     let prevBro = "";
@@ -47,10 +48,10 @@ export default class PageHandler extends React.Component {
       <PageHandlerContainer>
         <PrevLink to={`${toPath}/${prevBro}`}>
           <LeftIcon className="fa fa-chevron-left" aria-hidden="true" />
-          {brotherInfo[prevBro].name}
+          {BROTHER_INFO[prevBro].name}
         </PrevLink>
         <NextLink to={`${toPath}/${nextBro}`}>
-          {brotherInfo[nextBro].name}
+          {BROTHER_INFO[nextBro].name}
           <RightIcon className="fa fa-chevron-right" aria-hidden="true" />
         </NextLink>
       </PageHandlerContainer>

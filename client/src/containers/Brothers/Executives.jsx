@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 // components
-import { vpList } from "./brotherhood_constants";
+import { VP_LIST } from "./brotherhood_constants";
 import { BrotherImage } from "./BrotherImage.jsx";
 import { RowContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
@@ -13,11 +13,11 @@ import { Image } from "../components/ImageStyles";
 const Executives = props => {
   document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
 
-  const topRowVPs = vpList.slice(0, 3).map(brother => {
+  const topRowVPs = VP_LIST.slice(0, 3).map(brother => {
     return <BrotherImage brother={brother} key={brother} page="execs" />;
   });
 
-  const bottomRowVPs = vpList.slice(3).map(brother => {
+  const bottomRowVPs = VP_LIST.slice(3).map(brother => {
     return <BrotherImage brother={brother} key={brother} page="execs" />;
   });
 
