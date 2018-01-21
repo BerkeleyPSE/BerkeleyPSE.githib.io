@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
-const Application = mongoose.model('applications');
+const mongoose = require("mongoose");
+const Application = mongoose.model("applications");
 
 module.exports = app => {
-  app.post('/api/applications', async (req, res) => {
+  app.post("/api/applications", async (req, res) => {
     const {
       name,
       email,
@@ -10,12 +10,14 @@ module.exports = app => {
       year,
       major,
       minor,
-      interests,
-      campaign,
       commitments,
+      free_weekend,
+      invite_only,
       interview1,
       interview2,
-      pmt_availability
+      pmt_availability,
+      hear,
+      additional_information
     } = req.body;
 
     const app = new Application({
@@ -25,12 +27,14 @@ module.exports = app => {
       year,
       major,
       minor,
-      interests,
-      campaign,
       commitments,
+      free_weekend,
+      invite_only,
       interview1,
       interview2,
       pmt_availability,
+      hear,
+      additional_information,
       submission_time: Date.now()
     });
 
