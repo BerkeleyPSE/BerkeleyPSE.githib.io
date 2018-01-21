@@ -9,6 +9,7 @@ import PropTypes from "prop-types";
 import { ColumnContainer } from "../../../components/ContainerStyles";
 import { APP_FIELDS } from "./application_fields";
 import RadioField from "../input_components/RadioField";
+import { ParaText } from "../../../components/TextStyles";
 
 const ApplicationForm = props => {
   const renderFields = () => {
@@ -22,6 +23,20 @@ const ApplicationForm = props => {
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
         })}
+        <Text>
+          Please email the following items to the Director of Recruiting (<a href="berkeleypse.recruiting@berkeley.edu">
+            berkeleypse.recruiting@berkeley.edu
+          </a>). Please note that your application will be considered INCOMPLETE
+          until you do so.
+          <ol>
+            <li>Resume (in PDF format)</li>
+            <li />
+            <li />
+            <li />
+            <li />
+            <li />
+          </ol>
+        </Text>
       </div>
     );
   };
@@ -72,6 +87,11 @@ const SubmitButton = styled.button`
   &:hover {
     opacity: 0.75;
   }
+`;
+
+const Text = ParaText.extend`
+  font-size: 1rem;
+  text-align: left;
 `;
 
 // PropTypes
