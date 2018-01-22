@@ -740,21 +740,21 @@ const BROTHER_INFO = {
     media_links: { linkedin: "https://linkedin.com/in/taylorthomaslee" }
   },
 
-  /* 44 */
-  tia_chen_wong: {
-    name: "Tia Chen-Wong",
-    position: "",
-    year: "Sophomore",
-    hometown: "Rancho Santa Margarita, CA",
-    class: "Kappa",
-    major: "Intended Business",
-    minor: "English",
-    career_interests: "Marketing",
-    previous_positions: "",
-    bio:
-      "Tia has learned to deck beautiful presentations, the mechanics of case competitions, and public speaking skills through PSE. Her role models are actress Emma Watson and Eleanor Roosevelt. Tia enjoys writing creatively, hiking, and reading literature. She is a Resident Assistant (RA) in the Units.",
-    media_links: { linkedin: "https://linkedin.com/in/tiare-chen-wong" }
-  },
+  // /* 44 */
+  // tia_chen_wong: {
+  //   name: "Tia Chen-Wong",
+  //   position: "",
+  //   year: "Sophomore",
+  //   hometown: "Rancho Santa Margarita, CA",
+  //   class: "Kappa",
+  //   major: "Intended Business",
+  //   minor: "English",
+  //   career_interests: "Marketing",
+  //   previous_positions: "",
+  //   bio:
+  //     "Tia has learned to deck beautiful presentations, the mechanics of case competitions, and public speaking skills through PSE. Her role models are actress Emma Watson and Eleanor Roosevelt. Tia enjoys writing creatively, hiking, and reading literature. She is a Resident Assistant (RA) in the Units.",
+  //   media_links: { linkedin: "https://linkedin.com/in/tiare-chen-wong" }
+  // },
 
   /* 45 */
   tim_cheng: {
