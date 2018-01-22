@@ -44,10 +44,7 @@ export class BrotherImage extends React.Component {
       >
         <BroContainer>
           <Image
-            src={
-              `${IMAGE_PATH}/${brother}.jpg` ||
-              `${IMAGE_PATH}/bro-placeholder.jpg`
-            }
+            src={`${IMAGE_PATH}/${brother}.jpg`}
             alt={bro.name}
             height="425px"
             width="285px"
@@ -55,7 +52,7 @@ export class BrotherImage extends React.Component {
           <Overlay hover={hover} isBrosPage>
             <Name>{bro.name}</Name>
             <DividerLine />
-            <Position>{bro.position}</Position>
+            <Position>{bro.position || "Active"}</Position>
           </Overlay>
         </BroContainer>
       </BrotherImageContainer>

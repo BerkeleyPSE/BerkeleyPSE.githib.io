@@ -25,7 +25,8 @@ const Anchor = styled.a`
   font-size: 1.5rem;
   height: 30px;
   width: 30px;
-  padding: 5px;
+  margin: 0 0.5rem;
+  padding: 0.3125rem;
   text-decoration: none;
 
   &:hover {
