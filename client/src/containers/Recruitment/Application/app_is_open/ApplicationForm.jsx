@@ -8,12 +8,13 @@ import PropTypes from "prop-types";
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
 import { APP_FIELDS } from "./application_fields";
+import AdditionalInfo from "./AdditionalInfo";
 import RadioField from "../input_components/RadioField";
 
 const ApplicationForm = props => {
   const renderFields = () => {
     return (
-      <div id="fields-container">
+      <FieldsContainer>
         {APP_FIELDS.map((field, index) => {
           switch (field.type) {
             case "radio":
@@ -22,7 +23,8 @@ const ApplicationForm = props => {
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
         })}
-      </div>
+        <AdditionalInfo />
+      </FieldsContainer>
     );
   };
 
@@ -55,6 +57,10 @@ export default reduxForm({
 const FormContainer = ColumnContainer.extend`
   align-items: baseline;
   margin: 1rem 0;
+`;
+
+const FieldsContainer = styled.div`
+  padding: 1rem 0;
 `;
 
 const SubmitButton = styled.button`

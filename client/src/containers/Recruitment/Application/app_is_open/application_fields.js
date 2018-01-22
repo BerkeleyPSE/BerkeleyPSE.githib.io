@@ -50,23 +50,6 @@ export const APP_FIELDS = [
     errorMsg: 'Please provide your minor. "N/A" if you do not have a minor.'
   },
   {
-    label: "What interests you about marketing and business?",
-    type: "text",
-    name: "interests",
-    placeholder: "",
-    component: TextAreaField,
-    errorMsg: "Please fill out this question."
-  },
-  {
-    label:
-      "Describe a marketing campaign or advertisement from anywhere in the world that has stood out to you in the past. Why were you drawn to it? Include an article/video link to the campaign.",
-    type: "text",
-    name: "campaign",
-    placeholder: "",
-    component: TextAreaField,
-    errorMsg: "Please fill out this question."
-  },
-  {
     label: "List your current commitments (both on and off campus).",
     type: "text",
     name: "commitments",
@@ -75,16 +58,29 @@ export const APP_FIELDS = [
     errorMsg: "Please fill out this question."
   },
   {
+    label: "What would you do with a free weekend in Berkeley?",
+    type: "text",
+    name: "free_weekend",
+    placeholder: "",
+    component: TextAreaField,
+    errorMsg: "Please fill out this question."
+  },
+  {
+    label:
+      "Are you available January 26, 2018 from 7pm-9pm for an Invite-Only Event?",
+    type: "radio",
+    name: "invite_only",
+    options: ["Yes", "No"],
+    errorMsg: "Please fill out this question."
+  },
+  {
     label: "State your preferred time slot for an interview.",
     type: "radio",
     name: "interview1",
     options: [
-      "Saturday (9/9) -- 9am-12pm",
-      "Saturday (9/9) -- 12pm-3pm",
-      "Saturday (9/9) -- 3pm-6pm",
-      "Sunday (9/10) -- 9am-12pm",
-      "Sunday (9/10) -- 12pm-3pm",
-      "Sunday (9/10) -- 3pm-6pm",
+      "Saturday (1/27) -- 9AM-12PM",
+      "Saturday (1/27) -- 12PM-3PM",
+      "Saturday (1/27) -- 3PM-6PM",
       "I cannot make any of these times. I will email berkeleypse.recruiting to reschedule."
     ],
     errorMsg: "Please fill out this question."
@@ -94,13 +90,10 @@ export const APP_FIELDS = [
     type: "radio",
     name: "interview2",
     options: [
-      "Saturday (9/9) -- 9am-12pm",
-      "Saturday (9/9) -- 12pm-3pm",
-      "Saturday (9/9) -- 3pm-6pm",
-      "Sunday (9/10) -- 9am-12pm",
-      "Sunday (9/10) -- 12pm-3pm",
-      "Sunday (9/10) -- 3pm-6pm",
-      "I cannot make any of these times. I will email berkeleypse.recruiting to reschedule."
+      "Saturday (1/27) -- 9AM-12PM",
+      "Saturday (1/27) -- 12PM-3PM",
+      "Saturday (1/27) -- 3PM-6PM",
+      "I cannot make any of these times."
     ],
     errorMsg: "Please fill out this question."
   },
@@ -110,6 +103,28 @@ export const APP_FIELDS = [
     type: "radio",
     name: "pmt_availability",
     options: ["Yes", "No"],
+    errorMsg: "Please fill out this question."
+  },
+  {
+    label: "How did you hear about us?",
+    type: "radio",
+    name: "hear",
+    options: [
+      "Flyering on Sproul",
+      "Friend",
+      "Social Media",
+      "Website",
+      "Other"
+    ],
+    errorMsg: "Please fill out this question."
+  },
+  {
+    label:
+      "Is there any addition information you would like us to consider when reviewing your application?",
+    type: "text",
+    name: "additional_information",
+    placeholder: "",
+    component: TextAreaField,
     errorMsg: "Please fill out this question."
   }
 ];
