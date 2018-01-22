@@ -23,6 +23,7 @@ const ApplicationForm = props => {
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
         })}
+        <br />
         <Text>
           Please email the following items to the Director of Recruiting (<a href="berkeleypse.recruiting@berkeley.edu">
             berkeleypse.recruiting@berkeley.edu
@@ -30,13 +31,32 @@ const ApplicationForm = props => {
           until you do so.
           <ol>
             <li>Resume (in PDF format)</li>
-            <li />
-            <li />
-            <li />
-            <li />
-            <li />
+            <li>
+              Cover Letter (in PDF format) Please include the following
+              information (in 500 words or less):
+            </li>
+            <ol type="a">
+              <li>Why do you want to join PSE?</li>
+              <li>What will you contribute to PSE?</li>
+              <li>
+                What do you expect to gain from PSE? How will you incorporate
+                this into your future?
+              </li>
+            </ol>
+            <li>
+              Unofficial Transcript with your name (Screenshot via CalCentral
+              Academics)
+            </li>
+            <li>Additional Transcript (applicable to Transfer students)</li>
+            <li>Class Schedule (Screenshot via CalCentral Schedule Planner)</li>
+            <li>Recent Headshot</li>
           </ol>
         </Text>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   };

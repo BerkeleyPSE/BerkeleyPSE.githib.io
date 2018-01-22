@@ -245,8 +245,8 @@ const BROTHER_INFO = {
     hometown: "Torrance, CA",
     class: "Kappa",
     major: "Economics",
-    minor: "",
-    career_interests: "Consulting",
+    minor: "Data Science",
+    career_interests: "Marketing and Public Relations",
     previous_positions: "",
     bio:
       "PSE has improved Emma's public speaking and presentation skills. She's learned to work efficiently and better manage her time. Her role model is actress Emma Watson. She enjoys teaching, singing, and playing basketball. Emma is involved in Wonderworks and Intervarsity, and is a recipient of the Association of Torrance School Administration Scholarship.",
@@ -278,13 +278,13 @@ const BROTHER_INFO = {
     year: "Sophomore",
     hometown: "San Jose, CA",
     class: "Iota",
-    major: "Intended Business & Economics",
-    minor: "Technology & Entrepreneurship Certificate",
+    major: "Economics",
+    minor: "",
     career_interests: "Management Consulting",
     previous_positions:
       "Prospective Member Trainer, Director of Professional Development",
     bio:
-      "PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models are Rushil Desai, her big in PSE, and Saad Hirani, a leader in her other campus organization Berkeley Business Society. Harika was awarded 2nd place in the 2016 PwC case competition. She enjoys hand lettering, dance, and photography in her free time.",
+      "PSE has introduced Harika to a group of intelligent, creative, and determined individuals - each willing to share their experiences to help one another grow professionally and personally. Furthermore, being in a fraternity that focuses on marketing has taught her not only to develop effective marketing strategies, but also to market herself as an individual. Her role models is Rushil Desai, her big in PSE. Harika was awarded 2nd place in both the 2016 PwC case competition and the 2017 Deloitte Case Competition. She enjoys hand lettering, dance, and photography in her free time.",
     linkedin: "https://linkedin.com/in/harikakalluri"
   },
 
@@ -422,7 +422,7 @@ const BROTHER_INFO = {
     career_interests: "Management Consulting & Data Analysis",
     previous_positions: "",
     bio:
-      "Through PSE, Kelvin has learned useful skills in professinal service industries and to utilize his strengths within a team. His role model is film director Stephen Chow, and he plays soccer, basketball, and blackjack whenever he can. Kelvin is the Public Relations Chair of the Chinese People Union.",
+      "Through PSE, Kelvin has learned useful skills in professinal service industries and to utilize his strengths within a team. His role model is film director Stephen Chow, and he is a captain of two intramural soccer teams. Kelvin used to serve as the Public Relations Chair of the Chinese People Union. He also enjoys stock trading in his free time.",
     linkedin: "https://linkedin.com/in/kelvinxu97"
   },
 
@@ -436,7 +436,7 @@ const BROTHER_INFO = {
     class: "Kappa",
     major: "Economics",
     minor: "",
-    career_interests: "Tax Advisory",
+    career_interests: "Tax M&A",
     previous_positions: "Chapter Secretary",
     bio:
       "PSE has taught Kevin that the people you meet mold and shape your future; PSE has given him the opportunity to realize his dreams. Kevin's role model is his father. He enjoys playing tennis, trying out new food, and singing. Kevin is also an active member of Korean American Student Association (KASA) and Coaching Corps.",
@@ -453,10 +453,10 @@ const BROTHER_INFO = {
     class: "Kappa",
     major: "Economics",
     minor: "",
-    career_interests: "Brand Consulting & Product Marketing",
+    career_interests: "Strategy Consulting",
     previous_positions: "Director of Alumni Relations",
     bio:
-      "PSE introduced Kian to a community that inspires him to improve himself, and taught him to develop his personal brand. His role models are Robert Downey Jr. and Tyra Banks. He enjoys trying new foods, riding roller coasters, and doing impressions. Kian is also a member of the Film Committee in Business Careers in Entertainment Club (BCEC).",
+      "PSE introduced Kian to a community that inspires him to improve himself, and taught him to develop his personal brand. His role models are Robert Downey Jr. and Tyra Banks. He enjoys trying new foods, riding roller coasters, and doing impressions. Kian is also working as a Senior Consultant in 180 Degrees Consulting.",
     linkedin: "https://linkedin.com/in/kiankiasaleh"
   },
 
@@ -556,11 +556,11 @@ const BROTHER_INFO = {
     class: "Zeta",
     major: "Applied Mathematics",
     minor: "",
-    career_interests: "Financial Services & Investment Banking",
+    career_interests: "Financial Services",
     previous_positions:
       "Vice President of Human Resources, Director of Brotherhood",
     bio:
-      "No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. Nancy was a Finalist in the 2016 Deloitte case competition. Her hobbies include rooftop photography, singing with an acoustic piano, and traveling.",
+      "No matter what field you are trying to get in, personal branding is important. PSE has taught Nancy to discover her passions and strengths and fully leverage them on her way to achieve her goals in all aspects of life. Her role model is Sheryl Sandberg, COO of Facebook. In her free time, Nancy enjoys traveling, doing Blogilates workouts, and singing her heart out at concerts -- and in the backseat of her friends’ cars. She also volunteers as an elementary school mentor in Oakland Chinatown, and serves as an Executive Team member of Women in Network.",
     linkedin: "https://linkedin.com/in/nancyzy"
   },
 
@@ -730,7 +730,8 @@ const BROTHER_INFO = {
     class: "Zeta",
     major: "Economics",
     minor: "",
-    career_interests: "Investment Banking & Corporate Banking",
+    career_interests:
+      "Career Interests: Corporate Banking and Wholesale Credit Hobbies: Aviation and Golfing ",
     previous_positions:
       "Vice President of Administration, Prospective Member Trainer",
     bio:
@@ -837,7 +838,7 @@ const BROTHER_INFO = {
     career_interests: "Management Consulting",
     previous_positions: "",
     bio:
-      "PSE has provided Varsha with professional development in respect to interviewing, emailing, and networking. She has gained exposure to various business paths and the ability to unlock hidden potential in herself and others. Her role models are her grandmother and Michelle Obama. Varsha is actively involved in Asha for Education and the ASUC Office of the EVP. She is a recipient of the Cal Alumni Leadership Award, and loves to take photos, travel, and review movies in her free time.",
+      "PSE has provided Varsha with professional development in respect to interviewing, emailing, and networking. She has gained exposure to various business paths and the ability to unlock hidden potential in herself and others. Her role models are her grandmother and Michelle Obama. Varsha is actively involved in UCB Model United Nations. She is a recipient of the Cal Alumni Leadership Award, and loves to take photos, travel, and review movies in her free time.",
     linkedin: "https://linkedin.com/in/varsha-sundar"
   },
 
