@@ -11,6 +11,9 @@ import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 
+// constants
+const IMAGE_PATH = "images/brothers";
+
 export class BrotherImage extends React.Component {
   constructor(props) {
     super(props);
@@ -40,11 +43,16 @@ export class BrotherImage extends React.Component {
         }}
       >
         <BroContainer>
-          <Image src={bro.img} alt={bro.name} height="100%" width="100%" />
+          <Image
+            src={`${IMAGE_PATH}/${brother}.jpg`}
+            alt={bro.name}
+            height="425px"
+            width="285px"
+          />
           <Overlay hover={hover} isBrosPage>
             <Name>{bro.name}</Name>
             <DividerLine />
-            <Position>{bro.position}</Position>
+            <Position>{bro.position || "Active"}</Position>
           </Overlay>
         </BroContainer>
       </BrotherImageContainer>

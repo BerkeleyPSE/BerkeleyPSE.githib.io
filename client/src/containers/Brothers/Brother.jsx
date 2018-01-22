@@ -15,6 +15,9 @@ import { Image } from "../components/ImageStyles";
 import { ParaText } from "../components/TextStyles";
 import MediaLink from "../components/MediaLink";
 
+// constants
+const IMAGE_PATH = "../images/brothers";
+
 export default class Brother extends React.Component {
   broNotFound = () => {
     this.broNotFound = setTimeout(
@@ -52,18 +55,24 @@ export default class Brother extends React.Component {
       <div id="brother-container">
         <ProfileContainer>
           <ImageContainer>
-            <BroImage src={`../${bro.img}`} border alt={bro.name} />
+            <BroImage
+              src={`${IMAGE_PATH}/${brother}.jpg`}
+              border
+              alt={bro.name}
+            />
           </ImageContainer>
           <BroInfoContainer>
             <PageHandler index={broIndex} brotherList={broList} page={page} />
             <BroHeaderContainer>
               <Name>{bro.name}</Name>
-              <Position>{bro.position}</Position>
+              <Position>{bro.position || "Active"}</Position>
             </BroHeaderContainer>
             <BrotherTable bro={bro} />
             <BroBio>{bro.bio}</BroBio>
             <BroMediaContainer>
-              <MediaLink href={bro.linkedin} media="linkedin" />
+              {Object.entries(bro.media_links).map(site => {
+                return <MediaLink href={site[1]} media={site[0]} />;
+              })}
             </BroMediaContainer>
           </BroInfoContainer>
         </ProfileContainer>
