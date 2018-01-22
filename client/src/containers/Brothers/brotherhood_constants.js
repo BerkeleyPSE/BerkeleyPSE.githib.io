@@ -266,7 +266,6 @@ const BROTHER_INFO = {
 
   /* 15 */
   howard_huang: {
-    img: "images/brothers/howard_huang.jpg",
     name: "Howard Huang",
     position: "Prospective Member Trainer",
     year: "Senior",
