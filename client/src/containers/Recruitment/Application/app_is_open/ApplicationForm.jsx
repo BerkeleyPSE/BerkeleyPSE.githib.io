@@ -8,13 +8,13 @@ import PropTypes from "prop-types";
 // components
 import { ColumnContainer } from "../../../components/ContainerStyles";
 import { APP_FIELDS } from "./application_fields";
+import AdditionalInfo from "./AdditionalInfo";
 import RadioField from "../input_components/RadioField";
-import { ParaText } from "../../../components/TextStyles";
 
 const ApplicationForm = props => {
   const renderFields = () => {
     return (
-      <div id="fields-container">
+      <FieldsContainer>
         {APP_FIELDS.map((field, index) => {
           switch (field.type) {
             case "radio":
@@ -23,41 +23,8 @@ const ApplicationForm = props => {
               return <Field {...field} key={`${index}_${field.name}`} />;
           }
         })}
-        <br />
-        <Text>
-          Please email the following items to the Director of Recruiting (<a href="berkeleypse.recruiting@berkeley.edu">
-            berkeleypse.recruiting@berkeley.edu
-          </a>). Please note that your application will be considered INCOMPLETE
-          until you do so.
-          <ol>
-            <li>Resume (in PDF format)</li>
-            <li>
-              Cover Letter (in PDF format) Please include the following
-              information (in 500 words or less):
-            </li>
-            <ol type="a">
-              <li>Why do you want to join PSE?</li>
-              <li>What will you contribute to PSE?</li>
-              <li>
-                What do you expect to gain from PSE? How will you incorporate
-                this into your future?
-              </li>
-            </ol>
-            <li>
-              Unofficial Transcript with your name (Screenshot via CalCentral
-              Academics)
-            </li>
-            <li>Additional Transcript (applicable to Transfer students)</li>
-            <li>Class Schedule (Screenshot via CalCentral Schedule Planner)</li>
-            <li>Recent Headshot</li>
-          </ol>
-        </Text>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
+        <AdditionalInfo />
+      </FieldsContainer>
     );
   };
 
@@ -92,6 +59,10 @@ const FormContainer = ColumnContainer.extend`
   margin: 1rem 0;
 `;
 
+const FieldsContainer = styled.div`
+  padding: 1rem 0;
+`;
+
 const SubmitButton = styled.button`
   background-color: #895fad;
   border: none;
@@ -107,11 +78,6 @@ const SubmitButton = styled.button`
   &:hover {
     opacity: 0.75;
   }
-`;
-
-const Text = ParaText.extend`
-  font-size: 1rem;
-  text-align: left;
 `;
 
 // PropTypes

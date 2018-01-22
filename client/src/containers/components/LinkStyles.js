@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const IntLink = styled(Link)`
-  color: #895fad;
+  color: #eac500;
   cursor: pointer;
   letter-spacing: 0.025rem;
   text-decoration: none;
 
   &:hover {
-    color: #ffd700;
+    color: #895fad;
   }
 `;
 
@@ -17,12 +17,12 @@ const ExtLink = styled.a.attrs({
   target: "_blank",
   rel: "noopener noreferrer"
 })`
-  color: #ffd700;
+  color: #895fad;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-    color: #895fad;
+    color: #eac500;
   }
 `;
 
@@ -40,15 +40,15 @@ const IntButtonLink = IntLink.extend`
 
   &:hover {
     background-color: #fff;
-    border: 2px solid #895fad;
-    color: #895fad;
+    border: 2px solid #eac500;
+    color: #eac500;
   }
 `;
 
 const ExtButtonLink = ExtLink.extend`
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #ffd700;
-  color: #ffd700;
+  border: 2px solid #895fad;
+  color: #895fad;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
@@ -58,8 +58,8 @@ const ExtButtonLink = ExtLink.extend`
 
   &:hover {
     background-color: #fff;
-    border: 2px solid #ffd700;
-    color: #ffd700;
+    border: 2px solid #895fad;
+    color: #895fad;
   }
 `;
 
