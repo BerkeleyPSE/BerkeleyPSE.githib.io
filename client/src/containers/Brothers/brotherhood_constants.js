@@ -203,22 +203,6 @@ const BROTHER_INFO = {
   },
 
   /* 11 */
-  dallas_taylor: {
-    img: `${IMAGE_PATH}/dallas_taylor.jpg`,
-    name: "Dallas Taylor",
-    position: "Active",
-    year: "Senior",
-    hometown: "",
-    class: "Epsilon",
-    major: "",
-    minor: "",
-    career_interests: "",
-    previous_positions: "",
-    bio: "",
-    linkedin: ""
-  },
-
-  /* 12 */
   dhakshi_balakumar: {
     img: `${IMAGE_PATH}/dhakshi_balakumar.jpg`,
     name: "Dhakshi Balakumar",
@@ -236,7 +220,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/dhakshib"
   },
 
-  /* 13 */
+  /* 12 */
   emma_tsuneishi: {
     img: `${IMAGE_PATH}/emma_tsuneishi.jpg`,
     name: "Emma Tsuneishi",
@@ -253,7 +237,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/emmatsuneishi"
   },
 
-  /* 14 */
+  /* 13 */
   eva_su: {
     img: `${IMAGE_PATH}/eva_su.jpg`,
     name: "Eva Su",
@@ -270,7 +254,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/sueva"
   },
 
-  /* 15 */
+  /* 14 */
   harika_kalluri: {
     img: `${IMAGE_PATH}/harika_kalluri.jpg`,
     name: "Harika Kalluri",
@@ -288,10 +272,9 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/harikakalluri"
   },
 
-  /* 16 */
+  /* 15 */
   howard_huang: {
-    // img: 'images/brothers/howard_huang.jpg', // TODO
-    img: `${IMAGE_PATH}/bro-placeholder.jpg`,
+    img: "images/brothers/howard_huang.jpg",
     name: "Howard Huang",
     position: "Prospective Member Trainer",
     year: "Senior",
@@ -306,7 +289,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/chinhaohowardhuang"
   },
 
-  /* 17 */
+  /* 16 */
   jacqueline_tsang: {
     img: `${IMAGE_PATH}/jacqueline_tsang.jpg`,
     name: "Jacqueline Tsang",
@@ -323,7 +306,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/tsangjacqueline"
   },
 
-  /* 18 */
+  /* 17 */
   john_van: {
     img: `${IMAGE_PATH}/john_van.jpg`,
     name: "John Van",
@@ -340,7 +323,7 @@ const BROTHER_INFO = {
     linkedin: "www.linkedin.com/in/johnvan1"
   },
 
-  /* 19 */
+  /* 18 */
   joshua_nuesca: {
     img: `${IMAGE_PATH}/joshua_nuesca.jpg`,
     name: "Joshua Nuesca",
@@ -357,7 +340,7 @@ const BROTHER_INFO = {
     linkedin: "www.linkedin.com/in/joshnuesca"
   },
 
-  /* 20 */
+  /* 19 */
   jonathan_duan: {
     img: `${IMAGE_PATH}/jonathan_duan.jpg`,
     name: "Jonathan Duan",
@@ -374,7 +357,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/jonduan"
   },
 
-  /* 21 */
+  /* 20 */
   justin_tan: {
     img: `${IMAGE_PATH}/justin_tan.JPG`,
     name: "Justin Tan",
@@ -391,7 +374,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/justintan14"
   },
 
-  /* 22 */
+  /* 21 */
   kailin_li: {
     img: `${IMAGE_PATH}/kailin_li.jpg`,
     name: "Kailin Li",
@@ -409,7 +392,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kailinli"
   },
 
-  /* 23 */
+  /* 22 */
   kelvin_xu: {
     img: `${IMAGE_PATH}/kelvin_xu.jpg`,
     name: "Kelvin Xu",
@@ -426,7 +409,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kelvinxu97"
   },
 
-  /* 24 */
+  /* 23 */
   kevin_lee: {
     img: `${IMAGE_PATH}/kevin_lee.jpg`,
     name: "Kevin Lee",
@@ -443,7 +426,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kevinkeyhyunlee/"
   },
 
-  /* 25 */
+  /* 24 */
   kian_kiasaleh: {
     img: `${IMAGE_PATH}/kian_kiasaleh.jpg`,
     name: "Kian Kiasaleh",
@@ -460,7 +443,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kiankiasaleh"
   },
 
-  /* 26 */
+  /* 25 */
   kyle_lu: {
     img: `${IMAGE_PATH}/kyle_lu.jpg`,
     name: "Kyle Lu",
@@ -477,7 +460,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/kylewongkailu"
   },
 
-  /* 27 */
+  /* 26 */
   linda_li: {
     img: `${IMAGE_PATH}/linda_li.jpg`,
     name: "Linda Li",
@@ -495,7 +478,7 @@ const BROTHER_INFO = {
     linkedin: "www.linkedin.com/in/li-linda"
   },
 
-  /* 28 */
+  /* 27 */
   liona_li: {
     img: `${IMAGE_PATH}/liona_li.jpg`,
     name: "Liona Li",
@@ -512,7 +495,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/lionali"
   },
 
-  /* 29 */
+  /* 28 */
   max_seltzer: {
     img: `${IMAGE_PATH}/max_seltzer.jpg`,
     name: "Max Seltzer",
@@ -529,7 +512,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/maxsseltzer"
   },
 
-  /* 30 */
+  /* 29 */
   michael_hillsman: {
     img: `${IMAGE_PATH}/michael_hillsman.jpg`,
     name: "Michael Hillsman",
@@ -546,7 +529,7 @@ const BROTHER_INFO = {
     linkedin: "www.linkedin.com/in/MichaelHillsman"
   },
 
-  /* 31 */
+  /* 30 */
   nancy_zhu: {
     img: `${IMAGE_PATH}/nancy_zhu.jpg`,
     name: "Nancy Zhu",
@@ -564,7 +547,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/nancyzy"
   },
 
-  /* 32 */
+  /* 31 */
   olivia_lee: {
     img: `${IMAGE_PATH}/olivia_lee.jpg`,
     name: "Olivia Lee",
@@ -581,7 +564,7 @@ const BROTHER_INFO = {
     linkedin: "https://www.linkedin.com/in/oliviasulee/"
   },
 
-  /* 33 */
+  /* 32 */
   nicholas_chun: {
     img: `${IMAGE_PATH}/nicholas_chun.JPG`,
     name: "Nicholas Chun",
@@ -599,7 +582,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/nicholas-chun-188a98113"
   },
 
-  /* 34 */
+  /* 33 */
   nick_cheng: {
     img: `${IMAGE_PATH}/nick_cheng.jpg`,
     name: "Nick Cheng",
@@ -616,9 +599,9 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/chengnick"
   },
 
-  /* 35 */
+  /* 34 */
   peter_vu: {
-    img: `${IMAGE_PATH}/bro-placeholder.jpg`,
+    img: `${IMAGE_PATH}/peter_vu.jpg`,
     name: "Peter Vu",
     position: "Prospective Member Trainer",
     year: "Senior",
@@ -632,7 +615,7 @@ const BROTHER_INFO = {
     linkedin: ""
   },
 
-  /* 36 */
+  /* 35 */
   rahul_rangnekar: {
     img: `${IMAGE_PATH}/rahul_rangnekar.jpg`,
     name: "Rahul Rangnekar",
@@ -652,7 +635,7 @@ const BROTHER_INFO = {
     website: "http://rahrang.xyz"
   },
 
-  /* 37 */
+  /* 36 */
   reina_zhang: {
     img: `${IMAGE_PATH}/reina_zhang.jpg`,
     name: "Reina Zhang",
@@ -669,7 +652,7 @@ const BROTHER_INFO = {
     linkedin: "https://www.linkedin.com/in/reinazhang"
   },
 
-  /* 38 */
+  /* 37 */
   reshma_belur: {
     img: `${IMAGE_PATH}/reshma_belur.jpg`,
     name: "Reshma Belur",
@@ -686,7 +669,7 @@ const BROTHER_INFO = {
     linkedin: "https://www.linkedin.com/in/reshmabelur"
   },
 
-  /* 39 */
+  /* 38 */
   rick_choi: {
     img: `${IMAGE_PATH}/rick_choi.jpg`,
     name: "Rick Choi",
@@ -703,7 +686,7 @@ const BROTHER_INFO = {
     linkedin: "www.linkedin.com/in/rick-choi"
   },
 
-  /* 40 */
+  /* 39 */
   rose_min: {
     img: `${IMAGE_PATH}/rose_min.jpg`,
     name: "Rose Min",
@@ -720,7 +703,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/rosemin"
   },
 
-  /* 41 */
+  /* 40 */
   rushil_desai: {
     img: `${IMAGE_PATH}/rushil_desai.jpg`,
     name: "Rushil Desai",
@@ -738,7 +721,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/rushil-desai-29a825a7"
   },
 
-  /* 42 */
+  /* 41 */
   sean_yu: {
     img: `${IMAGE_PATH}/sean_yu.jpg`,
     name: "Sean Yu",
@@ -756,7 +739,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/seanjcyu"
   },
 
-  /* 43 */
+  /* 42 */
   syed_adil: {
     img: `${IMAGE_PATH}/syed_adil.jpg`,
     name: "Syed Adil",
@@ -773,7 +756,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/syedadilemirputra"
   },
 
-  /* 44 */
+  /* 43 */
   taylor_lee: {
     img: `${IMAGE_PATH}/taylor_lee.jpg`,
     name: "Taylor Lee",
@@ -790,7 +773,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/taylorthomaslee"
   },
 
-  /* 45 */
+  /* 44 */
   tia_chen_wong: {
     img: `${IMAGE_PATH}/tia_chen_wong.jpg`,
     name: "Tia Chen-Wong",
@@ -807,7 +790,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/tiare-chen-wong"
   },
 
-  /* 46 */
+  /* 45 */
   tim_cheng: {
     img: `${IMAGE_PATH}/tim_cheng.jpg`,
     name: "Tim Cheng",
@@ -824,7 +807,7 @@ const BROTHER_INFO = {
     linkedin: "https://www.linkedin.com/in/tim-cheng/"
   },
 
-  /* 47 */
+  /* 46 */
   varsha_sundar: {
     img: `${IMAGE_PATH}/varsha_sundar.jpg`,
     name: "Varsha Sundar",
@@ -841,7 +824,7 @@ const BROTHER_INFO = {
     linkedin: "https://linkedin.com/in/varsha-sundar"
   },
 
-  /* 48 */
+  /* 47 */
   yixuan_lu: {
     img: `${IMAGE_PATH}/yixuan_lu.jpg`,
     name: "Yixuan Lu",
