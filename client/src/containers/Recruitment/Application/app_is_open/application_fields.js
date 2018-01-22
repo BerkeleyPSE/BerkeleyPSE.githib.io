@@ -93,7 +93,7 @@ export const APP_FIELDS = [
       "Saturday (1/27) -- 9AM-12PM",
       "Saturday (1/27) -- 12PM-3PM",
       "Saturday (1/27) -- 3PM-6PM",
-      "I cannot make any of these times. I will email berkeleypse.recruiting to reschedule."
+      "I cannot make any of these times."
     ],
     errorMsg: "Please fill out this question."
   },
@@ -109,7 +109,13 @@ export const APP_FIELDS = [
     label: "How did you hear about us?",
     type: "radio",
     name: "hear",
-    options: ["Flyering on Sproul", "Friend", "Social Media/Website", "Other"],
+    options: [
+      "Flyering on Sproul",
+      "Friend",
+      "Social Media",
+      "Website",
+      "Other"
+    ],
     errorMsg: "Please fill out this question."
   },
   {
