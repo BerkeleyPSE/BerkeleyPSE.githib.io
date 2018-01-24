@@ -319,7 +319,7 @@ const BROTHER_INFO = {
     career_interests: "Product Management & Digital Marketing",
     previous_positions: "Director of Internal Recruitment",
     bio:
-      "PSE has taught Jacqueline the importance of and practice of bette communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.",
+      "PSE has taught Jacqueline the importance of and practice of better communication, especially when convey messages and ideas or pitching startups and providing case solutions. Her role models are her father, and Facebook COO Sheryl Sandberg. Jacqueline was a finalist in the CITRIS Mobile App Challenge, and is an active member in Dance the Bay and Circle K. She enjoys dancing, drawing, and journaling in her free time.",
     linkedin: "https://linkedin.com/in/tsangjacqueline"
   },
 
@@ -816,8 +816,8 @@ const BROTHER_INFO = {
     year: "Sophomore",
     hometown: "Oak Park, CA",
     class: "Kappa",
-    major: "Computer Science",
-    minor: "",
+    major: "Cognitive Science",
+    minor: "Computer Science",
     career_interests: "Software Development",
     previous_positions: "",
     bio:
