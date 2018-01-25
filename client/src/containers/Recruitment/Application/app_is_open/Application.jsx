@@ -16,8 +16,8 @@ const Application = props => {
     <ColumnContainer id="recruitment-application">
       <PageHeader>Spring 2018 Application</PageHeader>
       <Text>
-        Please answer all questions. The deadline is January 25th, 2018 at 12pm
-        (noon). Good luck!
+        Please answer all questions. The deadline is January 25th, 2018 at 5pm.
+        Good luck!
       </Text>
       {!isUndefined(appReducer.appSubmitSuccess) ? (
         appReducer.appSubmitSuccess ? (
