@@ -30,7 +30,7 @@ const CareersTable = props => {
   });
 
   return (
-    <Table>
+    <Table cellPadding="0" cellSpacing="0">
       <tbody>
         {columnHeaders}
         {tableRows}
