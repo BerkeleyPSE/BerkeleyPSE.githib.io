@@ -28,6 +28,7 @@ const Anchor = styled.a`
   margin: 0 0.5rem;
   padding: 0.3125rem;
   text-decoration: none;
+  transition: all 0.25s ease;
 
   &:hover {
     background-color: #895fad;

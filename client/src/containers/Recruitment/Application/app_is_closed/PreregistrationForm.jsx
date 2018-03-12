@@ -73,6 +73,7 @@ const SubmitButton = styled.button`
   outline: none;
   padding: 0.5rem 0.75rem;
   text-transform: uppercase;
+  transition: all 0.25s ease;
 
   &:hover {
     opacity: 0.75;

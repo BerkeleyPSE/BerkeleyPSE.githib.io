@@ -27,6 +27,7 @@ const HoverCardContainer = ColumnContainer.withComponent(Link).extend`
   padding: 0.625rem;
   text-align: center;
   text-decoration: none;
+  transition: all 0.25s ease;
   min-height: 80px;
   min-width: 210px;
 

@@ -224,7 +224,7 @@ const BROTHER_INFO = {
     class: "Kappa",
     major: "Economics",
     minor: "Data Science",
-    career_interests: "Marketing and Public Relations",
+    career_interests: "Marketing & Public Relations",
     previous_positions: "",
     bio:
       "PSE has improved Emma's public speaking and presentation skills. She's learned to work efficiently and better manage her time. Her role model is actress Emma Watson. She enjoys teaching, singing, and playing basketball. Emma is involved in Wonderworks and Intervarsity, and is a recipient of the Association of Torrance School Administration Scholarship.",
@@ -617,7 +617,7 @@ const BROTHER_INFO = {
     class: "Lambda",
     major: "Economics & Media Studies",
     minor: "Theater",
-    career_interests: "Advertising and Brand Marketing",
+    career_interests: "Advertising & Brand Marketing",
     previous_positions: "",
     bio:
       "Reina gained both professional knowledge and brotherhood from PSE. Aside from learning about different fields of business such as finance, she also acquired applicable skills such as public speaking and decking. Being in a marketing fraternity has given Reina insights on potential positions in companies and strengthened her interest in the marketing profession. Her role model is her father. Reina is in the Berkeley Advertising Agency. She enjoys theater lighting design, music, and reading.",
@@ -633,7 +633,7 @@ const BROTHER_INFO = {
     class: "Lambda",
     major: "Economics",
     minor: "",
-    career_interests: "Marketing, Communications",
+    career_interests: "Marketing & Communications",
     previous_positions: "",
     bio:
       "From PSE, Reshma learned the value of community and professional development. Her role model is her brother Varun. Reshma works for the Center on the Economics and Demographics of Aging and the Haas Alumni Association. She also won the Rotary Student Achievement Award. She enjoys meeting new people, taking walks, and online shopping. ",
@@ -681,12 +681,11 @@ const BROTHER_INFO = {
     class: "Zeta",
     major: "Economics",
     minor: "",
-    career_interests:
-      "Career Interests: Corporate Banking and Wholesale Credit Hobbies: Aviation and Golfing ",
+    career_interests: "Corporate Banking & Wholesale Credit",
     previous_positions:
       "Vice President of Administration, Prospective Member Trainer",
     bio:
-      "PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team.",
+      "PSE has taught Rushil to sell his brand. PSE has given Rushil the tools necessary to overcome barriers in highly competitive industries. PSE has prepared him to break into Investment Banking with interview preparation, networking tips, resume building, and hands-on consulting/marketing projects. Rushil's role model is his mother, Jigisha Desai. He is also involved in Indus South Asian Organization, the ASUC, UC Berkeley Men's Volleyball, and Berkeley College Republicans. Rushil is a Regent's Scholar, and an athlete on the All-Northern California Collegiate Volleyball League 2nd Team. His hobbies include aviation and golfing.",
     media_links: { linkedin: "https://linkedin.com/in/rushil-desai-29a825a7" }
   },
 
@@ -769,6 +768,21 @@ const BROTHER_INFO = {
     bio:
       "Through PSE, Tim learned to effectively utilize his soft skills such as public speaking in a professional setting. His role model is rapper Kanye West. Tim enjoys working out and trying new foods.",
     media_links: { linkedin: "https://www.linkedin.com/in/tim-cheng/" }
+  },
+
+  varsha_kumar: {
+    name: "Varsha Kumar",
+    position: "",
+    year: "Sophomore",
+    hometown: "Irvine, CA",
+    class: "Lambda",
+    major: "Psychology",
+    minor: "",
+    career_interests: "Data Analytics & Marketing Strategy",
+    previous_positions: "",
+    bio:
+      "Varsha has learned to market herself professionally through PSE. Her role model is her grandma. Varsha enjoys dancing, scrapbooking, and serving the community whenever she can. She holds an Associates Degree of Science in Marketing from Santiago Community College, and created and marketed her own podcast. Outside of PSE, Varsha is part of Azaad Bollywood Dance team and the ASUC Office of Dance.",
+    media_links: { linkedin: "https://www.linkedin.com/in/varsha-kumar/" }
   },
 
   /* 46 */

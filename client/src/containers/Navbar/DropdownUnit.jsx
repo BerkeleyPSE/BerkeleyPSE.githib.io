@@ -97,6 +97,7 @@ const HeaderLink = styled(NavLink).attrs({
   height: auto;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.125s ease;
   padding: 5px 10px;
 
   &:hover {
@@ -125,6 +126,7 @@ const PageLink = styled(NavLink).attrs({
   padding: 10px 10px 10px 5px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.125s ease;
 
   &:hover {
     color: #ffd700 !important;
@@ -151,6 +153,7 @@ const DropdownContainer = styled(DropdownMenu)`
 const PageItem = styled.li`
   background-color: #333 !important;
   padding: 0 1rem;
+  transition: all 0.125s ease;
 
   &:hover {
     color: #ffd700 !important;

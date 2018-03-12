@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <FooterContainer bgColor="#333">
       <MarginContainer>
-        <Text alt>&#169;2017. Pi Sigma Epsilon, Zeta Chi Chapter.</Text>
+        <Text alt>&#169;2018. Pi Sigma Epsilon, Zeta Chi Chapter.</Text>
       </MarginContainer>
       <SocialMediaBar
         icons={FOOTER_LINKS}

@@ -7,6 +7,7 @@ const IntLink = styled(Link)`
   cursor: pointer;
   letter-spacing: 0.025rem;
   text-decoration: none;
+  transition: all 0.25s ease;
 
   &:hover {
     color: #895fad;
@@ -20,6 +21,7 @@ const ExtLink = styled.a.attrs({
   color: #895fad;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.25s ease;
 
   &:hover {
     color: #eac500;

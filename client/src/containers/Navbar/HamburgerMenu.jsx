@@ -98,6 +98,7 @@ const Link = styled(NavLink).attrs({
   font-family: Lato, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.25s ease;
 
   &:hover {
     color: #895fad;

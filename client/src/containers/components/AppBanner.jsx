@@ -77,6 +77,7 @@ const CloseContainer = styled.div`
   font-size: 1.125rem;
   margin: 0 1.25rem 0 auto;
   padding: 0 0.625rem;
+  transition: all 0.25s ease;
 
   &:hover {
     color: #ffd700;
