@@ -15,9 +15,6 @@ import { Image } from "../components/ImageStyles";
 import { ParaText } from "../components/TextStyles";
 import MediaLink from "../components/MediaLink";
 
-// constants
-const IMAGE_PATH = "../images/brothers";
-
 export default class Brother extends React.Component {
   broNotFound = () => {
     this.broNotFound = setTimeout(

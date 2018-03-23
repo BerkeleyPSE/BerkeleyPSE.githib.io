@@ -11,9 +11,6 @@ import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 
-// constants
-const IMAGE_PATH = "images/brothers";
-
 export class BrotherImage extends React.Component {
   static propTypes = {
     brother: PropTypes.string.isRequired,
