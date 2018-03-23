@@ -56,7 +56,7 @@ export default class Brother extends React.Component {
         <ProfileContainer>
           <ImageContainer>
             <BroImage
-              src={`${IMAGE_PATH}/${brother}.jpg`}
+              src={`https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers/${brother}.jpg`}
               border
               alt={bro.name}
             />

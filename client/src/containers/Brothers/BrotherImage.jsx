@@ -15,12 +15,18 @@ import { Image } from "../components/ImageStyles";
 const IMAGE_PATH = "images/brothers";
 
 export class BrotherImage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false
-    };
-  }
+  static propTypes = {
+    brother: PropTypes.string.isRequired,
+    page: PropTypes.oneOf(["execs", "bros"])
+  };
+
+  static defaultProps = {
+    page: "bros"
+  };
+
+  state = {
+    hover: false
+  };
 
   render() {
     const { brother, page } = this.props;
@@ -44,7 +50,7 @@ export class BrotherImage extends React.Component {
       >
         <BroContainer>
           <Image
-            src={`${IMAGE_PATH}/${brother}.jpg`}
+            src={`https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers/${brother}.jpg`}
             alt={bro.name}
             height="425px"
             width="285px"
@@ -108,10 +114,3 @@ const Position = styled.p`
   padding: 0 0.625rem;
   text-transform: uppercase;
 `;
-
-// PropTypes
-
-BrotherImage.propTypes = {
-  brother: PropTypes.string.isRequired,
-  page: PropTypes.oneOf(["execs", "bros"])
-};
