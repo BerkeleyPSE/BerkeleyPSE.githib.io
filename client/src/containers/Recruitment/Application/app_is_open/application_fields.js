@@ -10,6 +10,7 @@ export const APP_FIELDS = [
     component: InputField,
     errorMsg: "Please provide your name."
   },
+
   {
     label: "Berkeley Email",
     type: "email",
@@ -18,6 +19,7 @@ export const APP_FIELDS = [
     component: InputField,
     errorMsg: "Please provide your Berkeley email."
   },
+
   {
     label: "Phone",
     type: "phone",
@@ -26,6 +28,7 @@ export const APP_FIELDS = [
     component: InputField,
     errorMsg: "Please provide your phone number."
   },
+
   {
     label: "Year",
     type: "radio",
@@ -33,6 +36,7 @@ export const APP_FIELDS = [
     options: ["Freshman", "Sophomore", "Junior", "Junior Transfer", "Senior"],
     errorMsg: "Please provide your current year."
   },
+
   {
     label: "Major(s)",
     type: "text",
@@ -41,6 +45,7 @@ export const APP_FIELDS = [
     component: InputField,
     errorMsg: "Please provide your major."
   },
+
   {
     label: "Minor(s)",
     type: "text",
@@ -49,6 +54,7 @@ export const APP_FIELDS = [
     component: InputField,
     errorMsg: 'Please provide your minor. "N/A" if you do not have a minor.'
   },
+
   {
     label: "List your current commitments (both on and off campus).",
     type: "text",
@@ -57,22 +63,25 @@ export const APP_FIELDS = [
     component: TextAreaField,
     errorMsg: "Please fill out this question."
   },
+
   {
     label: "What would you do with a free weekend in Berkeley?",
     type: "text",
-    name: "free_weekend",
+    name: "freeWeekend",
     placeholder: "",
     component: TextAreaField,
     errorMsg: "Please fill out this question."
   },
+
   {
     label:
       "Are you available January 26, 2018 from 7pm-9pm for an Invite-Only Event?",
     type: "radio",
-    name: "invite_only",
+    name: "inviteOnly",
     options: ["Yes", "No"],
     errorMsg: "Please fill out this question."
   },
+
   {
     label: "State your preferred time slot for an interview.",
     type: "radio",
@@ -85,6 +94,7 @@ export const APP_FIELDS = [
     ],
     errorMsg: "Please fill out this question."
   },
+
   {
     label: "State your secondary time slot for an interview.",
     type: "radio",
@@ -97,14 +107,16 @@ export const APP_FIELDS = [
     ],
     errorMsg: "Please fill out this question."
   },
+
   {
     label:
       "Are you available every Monday from 7:30-10pm for Prospective Member Training?",
     type: "radio",
-    name: "pmt_availability",
+    name: "pmtAvailability",
     options: ["Yes", "No"],
     errorMsg: "Please fill out this question."
   },
+
   {
     label: "How did you hear about us?",
     type: "radio",
@@ -118,11 +130,12 @@ export const APP_FIELDS = [
     ],
     errorMsg: "Please fill out this question."
   },
+
   {
     label:
       "Is there any addition information you would like us to consider when reviewing your application?",
     type: "text",
-    name: "additional_information",
+    name: "additionalInformation",
     placeholder: "",
     component: TextAreaField,
     errorMsg: "Please fill out this question."

@@ -1,10 +1,7 @@
-const mongoose = require('mongoose');
-const { Schema } = mongoose;
+// node modules
+const { RegformSchema } = require("berkeleypse-schemas");
 
-const regformSchema = new Schema({
-  name: String,
-  email: String,
-  submission_time: Date
-});
+// local
+const mongooseApp = require("../databases/application");
 
-mongoose.model('regforms', regformSchema);
+mongooseApp.model("regforms", RegformSchema);

@@ -1,34 +1,41 @@
-// NPM Modules
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+// node modules
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 
-// Local Imports
-const keys = require('./config/keys.js');
-require('./models/Application.js');
-require('./models/RegForm.js');
+/* mLab MongoDB databases */
+require("./databases/application");
+require("./databases/static");
 
+// local imports
+const keys = require("./config/keys.js");
+
+// start express server instance
 const app = express();
 
-mongoose.connect(keys.mongoURI, {
-  useMongoClient: true
-});
+/* models */
+require("./models/Application");
+require("./models/Brother");
+require("./models/Fulltime");
+require("./models/Internship");
+require("./models/Regform");
 
-/*** MIDDLEWARE ***/
-
+/* middleware */
 app.use(bodyParser.json());
-require('./routes/applicationRoutes.js')(app);
-require('./routes/regformRoutes.js')(app);
 
-if (process.env.NODE_ENV === 'production') {
-  // Express will serve up production assets
-  app.use(express.static('./client/build'));
+/* routes */
+require("./routes/applicationRoutes")(app);
+require("./routes/brotherRoutes")(app);
+require("./routes/fulltimeRoutes")(app);
+require("./routes/internshipRoutes")(app);
+require("./routes/regformRoutes")(app);
 
-  // Express will serve up the index.html file
-  // if it doesn't recognize the route
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './client/build/', 'index.html'));
+/* start the server */
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("./client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./client/build/", "index.html"));
   });
 }
 

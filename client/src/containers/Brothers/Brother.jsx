@@ -15,9 +15,6 @@ import { Image } from "../components/ImageStyles";
 import { ParaText } from "../components/TextStyles";
 import MediaLink from "../components/MediaLink";
 
-// constants
-const IMAGE_PATH = "../images/brothers";
-
 export default class Brother extends React.Component {
   broNotFound = () => {
     this.broNotFound = setTimeout(
@@ -56,7 +53,7 @@ export default class Brother extends React.Component {
         <ProfileContainer>
           <ImageContainer>
             <BroImage
-              src={`${IMAGE_PATH}/${brother}.jpg`}
+              src={`https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers/${brother}.jpg`}
               border
               alt={bro.name}
             />
