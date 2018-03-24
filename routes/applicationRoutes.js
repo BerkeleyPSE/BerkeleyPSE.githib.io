@@ -1,42 +1,13 @@
-const mongoose = require("mongoose");
-const Application = mongoose.model("applications");
+// local
+const mongooseApp = require("../databases/application");
+const API = require("./api");
+
+// MongoDB collection
+const Applications = mongooseApp.model("applications");
 
 module.exports = app => {
-  app.post("/api/applications", async (req, res) => {
-    const {
-      name,
-      email,
-      phone,
-      year,
-      major,
-      minor,
-      commitments,
-      free_weekend,
-      invite_only,
-      interview1,
-      interview2,
-      pmt_availability,
-      hear,
-      additional_information
-    } = req.body;
-
-    const app = new Application({
-      name,
-      email,
-      phone,
-      year,
-      major,
-      minor,
-      commitments,
-      free_weekend,
-      invite_only,
-      interview1,
-      interview2,
-      pmt_availability,
-      hear,
-      additional_information,
-      submission_time: Date.now()
-    });
+  app.post(API.CREATE_APP, async (req, res) => {
+    const app = new Applications({ ...req.body, submission_time: Date.now() });
 
     try {
       await app.save();

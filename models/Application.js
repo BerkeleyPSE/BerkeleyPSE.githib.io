@@ -1,22 +1,7 @@
-const mongoose = require("mongoose");
-const { Schema } = mongoose;
+// node modules
+const { ApplicationSchema } = require("berkeleypse-schemas");
 
-const applicationSchema = new Schema({
-  name: String,
-  email: String,
-  phone: String,
-  year: String,
-  major: String,
-  minor: String,
-  commitments: String,
-  free_weekend: String,
-  invite_only: String,
-  interview1: String,
-  interview2: String,
-  pmt_availability: String,
-  hear: String,
-  additional_information: String,
-  submission_time: Date
-});
+// local
+const mongooseApp = require("../databases/application");
 
-mongoose.model("applications", applicationSchema);
+mongooseApp.model("applications", ApplicationSchema);

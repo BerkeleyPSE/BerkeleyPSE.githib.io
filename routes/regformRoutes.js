@@ -1,13 +1,14 @@
-const mongoose = require('mongoose');
-const RegForm = mongoose.model('regforms');
+// local
+const mongooseApp = require("../databases/application");
+const API = require("./api");
+
+// MongoDB collection
+const Regforms = mongooseApp.model("regforms");
 
 module.exports = app => {
-  app.post('/api/regforms', async (req, res) => {
-    const { name, email } = req.body;
-
-    const regform = new RegForm({
-      name,
-      email,
+  app.post(API.CREATE_REGFORM, async (req, res) => {
+    const regform = new Regforms({
+      ...req.body,
       submission_time: Date.now()
     });
 
