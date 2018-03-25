@@ -13,7 +13,7 @@ module.exports = app => {
   app.get(API.GET_BROTHERS, async (req, res) => {
     const brothers = await Brothers.find().sort({ name: 1 });
     const brothersList = brothers.map(bro => bro.key);
-    const executives = brothers.filter(bro => bro.isExecutive);
+    const executives = brothers.filter(bro => bro.isExecutive.value);
     const executivesList = executives.map(bro => bro.key);
 
     return res.status(200).send({
@@ -23,6 +23,7 @@ module.exports = app => {
       executivesList
     });
   });
+  s;
 
   app.get(API.GET_ACTIVE_BROTHER, async (req, res) => {
     if (isEmpty(req.query) || isUndefined(req.query.key))
