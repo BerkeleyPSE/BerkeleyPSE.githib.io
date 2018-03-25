@@ -28,7 +28,7 @@ class Executives extends Component {
     const president = executives.filter(
       bro => bro.position.value === "president"
     )[0];
-    const presIndex = executives.indexOf(president.key);
+    const vps = executives.filter(bro => bro.position.value !== "president");
     const vps = [
       ...executives.slice(0, presIndex),
       ...executives.slice(presIndex + 1)
