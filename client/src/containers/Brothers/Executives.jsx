@@ -25,22 +25,7 @@ class Executives extends Component {
   render() {
     const { executives } = this.props.data;
 
-    const president = executives.filter(
-      bro => bro.position.value === "president"
-    )[0];
-    const vps = executives.filter(bro => bro.position.value !== "president");
-
-    const topRowVPs = vps.slice(0, 3).map(brother => {
-      return (
-        <BrotherImage
-          brother={brother}
-          key={`${EXECUTIVES_PATH}_${brother._id}`}
-          path={EXECUTIVES_PATH}
-        />
-      );
-    });
-
-    const bottomRowVPs = vps.slice(3).map(brother => {
+    const allExecs = executives.map(bro => {
       return (
         <BrotherImage
           brother={brother}
@@ -59,18 +44,7 @@ class Executives extends Component {
           /> */}
           <PageHeader>Executive Board</PageHeader>
         </LandingContainer>
-        <CenterTextContainer>
-          {!isEmpty(president) &&
-            !isUndefined(president) && (
-              <BrotherImage
-                brother={president}
-                key={president._id}
-                path={EXECUTIVES_PATH}
-              />
-            )}
-          <div id="VPs-top-row">{topRowVPs}</div>
-          <div id="VPs-bottom-row">{bottomRowVPs}</div>
-        </CenterTextContainer>
+        <CenterTextContainer>{allExecs}</CenterTextContainer>
       </div>
     );
   }
