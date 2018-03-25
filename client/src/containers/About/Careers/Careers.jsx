@@ -1,31 +1,46 @@
-import React from "react";
+import React, { Component } from "react";
 
 // node modules
+import { connect } from "react-redux";
 import styled from "styled-components";
 
 // components
 import { PageHeader, SectionHeader } from "../../components/HeaderStyles";
 import CareersTable from "./CareersTable";
-import { FULLTIME_COLUMNS, FULLTIME_CAREERS } from "./fulltime_constants";
+import { FULLTIME_COLUMNS } from "./fulltime_constants";
 
-const Careers = () => {
-  document.title = "Careers - Pi Sigma Epsilon | Zeta Chi Chapter";
-  return (
-    <div id="careers-container">
-      <PageHeader>Careers</PageHeader>
-      <TableContainer>
-        <SectionHeader alt>Full-Time</SectionHeader>
-        <CareersTable
-          id="fulltime-table"
-          columns={FULLTIME_COLUMNS}
-          data={FULLTIME_CAREERS}
-        />
-      </TableContainer>
-    </div>
-  );
-};
+// actions
+import { DataActions } from "../../../actions/data-actions.js";
 
-export default Careers;
+class Careers extends Component {
+  componentDidMount() {
+    document.title = "Careers - Pi Sigma Epsilon | Zeta Chi Chapter";
+    this.props.getFulltimes();
+  }
+
+  render() {
+    const { fulltimes } = this.props.data;
+    return (
+      <div id="careers-container">
+        <PageHeader>Careers</PageHeader>
+        <TableContainer>
+          <SectionHeader alt>Full-Time</SectionHeader>
+          <CareersTable
+            id="fulltime-table"
+            columns={FULLTIME_COLUMNS}
+            data={fulltimes}
+          />
+        </TableContainer>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state, ownProps) => ({
+  data: state.data
+});
+
+export default connect(mapStateToProps, DataActions)(Careers);
 
 const TableContainer = styled.div`
   margin: 0 0 2rem 0;

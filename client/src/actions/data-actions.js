@@ -31,6 +31,7 @@ export const DataActions = {
       type: DataConstants.GET_FULLTIMES,
       fulltimes: res.data
     });
+    debugger;
     return res.data;
   },
 
