@@ -3,6 +3,8 @@ import React, { Component } from "react";
 // node modules
 import { connect } from "react-redux";
 import styled from "styled-components";
+import isEmpty from "lodash/isEmpty";
+import isUndefined from "lodash/isUndefined";
 
 // components
 import { BrotherImage } from "./BrotherImage.jsx";
@@ -62,11 +64,14 @@ class Executives extends Component {
           <PageHeader>Executive Board</PageHeader>
         </LandingContainer>
         <CenterTextContainer>
-          <BrotherImage
-            brother={president}
-            key={president._id}
-            path={EXECUTIVES_PATH}
-          />
+          {!isEmpty(president) &&
+            !isUndefined(president) && (
+              <BrotherImage
+                brother={president}
+                key={president._id}
+                path={EXECUTIVES_PATH}
+              />
+            )}
           <div id="VPs-top-row">{topRowVPs}</div>
           <div id="VPs-bottom-row">{bottomRowVPs}</div>
         </CenterTextContainer>
