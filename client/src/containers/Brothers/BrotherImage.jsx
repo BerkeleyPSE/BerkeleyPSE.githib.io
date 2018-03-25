@@ -6,14 +6,17 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // components
-import { BROTHER_INFO } from "./brotherhood_constants";
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { Image } from "../components/ImageStyles";
 
+// constants
+const IMAGE_URL =
+  "https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers";
+
 export class BrotherImage extends React.Component {
   static propTypes = {
-    brother: PropTypes.string.isRequired,
+    brother: PropTypes.object.isRequired,
     page: PropTypes.oneOf(["execs", "bros"])
   };
 
@@ -28,9 +31,8 @@ export class BrotherImage extends React.Component {
   render() {
     const { brother, page } = this.props;
     let { hover } = this.state;
-    const bro = BROTHER_INFO[brother];
 
-    if (!bro) {
+    if (!brother) {
       return null;
     }
 
@@ -39,23 +41,21 @@ export class BrotherImage extends React.Component {
 
     return (
       <BrotherImageContainer
-        to={`${toPath}/${brother}`}
+        to={`${toPath}/${brother.key}`}
         onMouseEnter={() => this.setState({ hover: true })}
-        onMouseLeave={() => {
-          this.setState({ hover: false });
-        }}
+        onMouseLeave={() => this.setState({ hover: false })}
       >
         <BroContainer>
           <Image
-            src={`https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers/${brother}.jpg`}
-            alt={bro.name}
+            src={`${IMAGE_URL}/${brother.key}.jpg`}
+            alt={brother.name}
             height="425px"
             width="285px"
           />
           <Overlay hover={hover} isBrosPage>
-            <Name>{bro.name}</Name>
+            <Name>{brother.name}</Name>
             <DividerLine />
-            <Position>{bro.position || "Active"}</Position>
+            <Position>{brother.position.label || "Active"}</Position>
           </Overlay>
         </BroContainer>
       </BrotherImageContainer>

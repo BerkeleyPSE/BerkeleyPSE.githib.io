@@ -3,40 +3,45 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import isEmpty from "lodash/isEmpty";
+import isUndefined from "lodash/isUndefined";
+import isObject from "lodash/isObject";
+import isArray from "lodash/isArray";
+import isString from "lodash/isString";
 
 // components
 import { RowContainer } from "../components/ContainerStyles";
 
 // constants
-const INFO_LIST = [
-  "year",
-  "hometown",
-  "class",
-  "major",
-  "minor",
-  "career_interests",
-  "previous_positions"
-];
-
 const INFO_MAP = {
   year: "Year",
   hometown: "Hometown",
   class: "Class",
   major: "Major",
   minor: "Minor",
-  career_interests: "Career Interests",
-  previous_positions: "Previous Positions"
+  careerInterests: "Career Interests",
+  previousPositions: "Previous Positions"
 };
 
 const BrotherTable = props => {
+  const parseValue = value => {
+    if (isArray(value)) {
+      return value.map(i => i.label).join(", ");
+    }
+    if (isObject(value)) return value.label;
+    if (isString(value)) return value;
+  };
+
   return (
     <TableContainer>
-      {INFO_LIST.map(item => {
-        if (props.bro[item]) {
+      {Object.entries(INFO_MAP).map(item => {
+        const [key, title] = item;
+        const value = props[key];
+        if (!isUndefined(value) && !isEmpty(value)) {
           return (
-            <Row key={`${props.bro.name}_${item}`}>
-              <Title>{INFO_MAP[item]}</Title>
-              <Value>{props.bro[item]}</Value>
+            <Row key={`${props.name}_${key}`}>
+              <Title>{title}</Title>
+              <Value>{parseValue(value)}</Value>
             </Row>
           );
         } else {
@@ -82,7 +87,47 @@ const Value = styled.p`
 `;
 
 // PropTypes
-
 BrotherTable.propTypes = {
-  bro: PropTypes.object
+  year: PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.string
+  }),
+
+  hometown: PropTypes.string,
+  class: PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.string
+  }),
+
+  major: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string,
+      label: PropTypes.string,
+      value: PropTypes.string
+    })
+  ),
+
+  minor: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string,
+      label: PropTypes.string,
+      value: PropTypes.string
+    })
+  ),
+
+  careerInterests: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string,
+      label: PropTypes.string,
+      value: PropTypes.string
+    })
+  ),
+
+  previousPositions: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string,
+      label: PropTypes.string,
+      value: PropTypes.string
+    })
+  )
 };

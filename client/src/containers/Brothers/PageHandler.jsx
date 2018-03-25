@@ -3,62 +3,33 @@ import React from "react";
 // node modules
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import isEmpty from "lodash/isEmpty";
 
 // components
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
-import { BROTHER_INFO } from "./brotherhood_constants";
 import { IntLink } from "../components/LinkStyles";
 
-export default class PageHandler extends React.Component {
-  getIndices = index => {
-    let { brotherList } = this.props;
-    var prevIndex = -1;
-    var nextIndex = -1;
-    const numBrothers = brotherList.length - 1;
-    if (index === 0) {
-      prevIndex = numBrothers;
-    } else {
-      prevIndex = index - 1;
-    }
-
-    if (index === numBrothers) {
-      nextIndex = 0;
-    } else {
-      nextIndex = index + 1;
-    }
-
-    return [brotherList[prevIndex], brotherList[nextIndex]];
-  };
-
-  render() {
-    let { page, index } = this.props;
-
-    let bros = this.getIndices(index);
-    let prevBro = "";
-    let nextBro = "";
-    if (!bros) {
-      return null;
-    } else {
-      prevBro = bros[0];
-      nextBro = bros[1];
-    }
-
-    let toPath = page === "bros" ? BROTHERS_PATH : EXECUTIVES_PATH;
-
-    return (
-      <PageHandlerContainer>
-        <PrevLink to={`${toPath}/${prevBro}`}>
+const PageHandler = props => {
+  const { path, prevBro, nextBro } = props;
+  return (
+    <PageHandlerContainer>
+      {!isEmpty(prevBro) && (
+        <PrevLink to={`${path}/${prevBro.key}`}>
           <LeftIcon className="fa fa-chevron-left" aria-hidden="true" />
-          {BROTHER_INFO[prevBro].name}
+          {prevBro.name}
         </PrevLink>
-        <NextLink to={`${toPath}/${nextBro}`}>
-          {BROTHER_INFO[nextBro].name}
+      )}
+      {!isEmpty(nextBro) && (
+        <NextLink to={`${path}/${nextBro.key}`}>
+          {nextBro.name}
           <RightIcon className="fa fa-chevron-right" aria-hidden="true" />
         </NextLink>
-      </PageHandlerContainer>
-    );
-  }
-}
+      )}
+    </PageHandlerContainer>
+  );
+};
+
+export default PageHandler;
 
 const PageHandlerContainer = styled.div`
   display: flex;
@@ -92,9 +63,14 @@ const RightIcon = styled.i`
 `;
 
 // PropTypes
-
 PageHandler.propTypes = {
-  brotherList: PropTypes.arrayOf(PropTypes.string).isRequired,
-  index: PropTypes.number.isRequired,
-  page: PropTypes.oneOf(["execs", "bros"]).isRequired
+  prevBro: PropTypes.shape({
+    key: PropTypes.string,
+    name: PropTypes.string
+  }),
+  nextBro: PropTypes.shape({
+    key: PropTypes.string,
+    name: PropTypes.string
+  }),
+  path: PropTypes.oneOf([BROTHERS_PATH, EXECUTIVES_PATH]).isRequired
 };

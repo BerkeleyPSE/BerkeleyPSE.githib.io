@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 
 const MediaLink = props => {
   return (
-    <Anchor href={props.href} target="_blank" rel="noopener noreferrer">
-      <i className={`fa fa-${props.media}`} aria-hidden="true" />
+    <Anchor href={props.value} target="_blank" rel="noopener noreferrer">
+      <i className={props.iconClass} aria-hidden="true" />
     </Anchor>
   );
 };
@@ -37,6 +37,7 @@ const Anchor = styled.a`
 `;
 
 MediaLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  media: PropTypes.string.isRequired
+  value: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  iconClass: PropTypes.string.isRequired
 };

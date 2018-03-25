@@ -2,10 +2,10 @@ import React from "react";
 
 // node modules
 import styled from "styled-components";
-import SocialMediaBar from "react-social-media-bar";
+// import SocialMediaBar from 'react-social-media-bar';
 
 // components
-import FOOTER_LINKS from "./footer_constants";
+// import FOOTER_LINKS from './footer_constants';
 import { RowContainer } from "../components/ContainerStyles";
 import { ParaText } from "../components/TextStyles";
 import { ExtLink } from "../components/LinkStyles";
@@ -16,13 +16,14 @@ const Footer = () => {
       <MarginContainer>
         <Text alt>&#169;2018. Pi Sigma Epsilon, Zeta Chi Chapter.</Text>
       </MarginContainer>
-      <SocialMediaBar
+      {/* need to upgrade social media bar to Font Awesome v5 before continuing */}
+      {/* <SocialMediaBar
         icons={FOOTER_LINKS}
         iconColor="#FFF"
         iconSize="1.125rem"
         hoverColor="#FFD700"
         margin={{ top: "5px", right: "7.5px", bottom: "5px", left: "7.5px" }}
-      />
+      /> */}
       <MarginContainer>
         <Text alt>
           <SelfLink href="http://www.rahrang.xyz" target="blank">

@@ -1,12 +1,13 @@
 import React from "react";
 
 // node modules
+import { connect } from "react-redux";
 import styled from "styled-components";
 import includes from "lodash/includes";
 import PropTypes from "prop-types";
+import isEmpty from "lodash/isEmpty";
 
 // components
-import { BROTHER_INFO, ALL_EXECS_LIST } from "./brotherhood_constants";
 import PageHandler from "./PageHandler";
 import BrotherTable from "./BrotherTable";
 import { ColumnContainer } from "../components/ContainerStyles";
@@ -14,61 +15,128 @@ import { PageHeader } from "../components/HeaderStyles";
 import { Image } from "../components/ImageStyles";
 import { ParaText } from "../components/TextStyles";
 import MediaLink from "../components/MediaLink";
+import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 
-export default class Brother extends React.Component {
-  broNotFound = () => {
-    this.broNotFound = setTimeout(
-      function() {
-        this.props.history.push("/brothers");
-      }.bind(this),
-      250
-    );
+// actions
+import { DataActions } from "../../actions/data-actions";
+
+// constants
+const IMAGE_URL =
+  "https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers";
+
+class Brother extends React.Component {
+  componentDidMount() {
+    const { brothers, activeBrother } = this.props.data;
+    const { getBrothers, getActiveBrother } = this.props;
+    if (!brothers.length) getBrothers();
+
+    const broKey = this.props.match.params.name;
+    if (isEmpty(activeBrother)) {
+      getActiveBrother(broKey);
+      this.getSurroundingBros(broKey);
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const broKey = this.props.match.params.name;
+    const nextBroKey = nextProps.match.params.name;
+    if (broKey !== nextBroKey) {
+      nextProps.getActiveBrother(nextBroKey);
+      this.getSurroundingBros(nextBroKey);
+    }
+  }
+
+  getPath = () => {
+    const { match } = this.props;
+    if (includes(match.path, EXECUTIVES_PATH)) return EXECUTIVES_PATH;
+    return BROTHERS_PATH;
   };
 
-  isExecsPath = () => {
-    let { match } = this.props;
-    return includes(match.path, "/eboard/");
+  getBrosList = () => {
+    const { match } = this.props;
+    const { brothersList, executivesList } = this.props.data;
+    if (includes(match.path, EXECUTIVES_PATH)) return executivesList;
+    return brothersList;
+  };
+
+  getSurroundingBros = async broKey => {
+    const { getPrevBro, getNextBro } = this.props;
+
+    const brotherList = this.getBrosList();
+    if (!brotherList.length) return null;
+    const index = brotherList.indexOf(broKey);
+    if (index === -1) return null;
+
+    let prevBroKey, nextBroKey;
+    const numBros = brotherList.length - 1;
+
+    if (index === 0) {
+      prevBroKey = brotherList[numBros];
+      nextBroKey = brotherList[index + 1];
+    } else if (index === numBros) {
+      prevBroKey = brotherList[index - 1];
+      nextBroKey = brotherList[0];
+    } else {
+      prevBroKey = brotherList[index - 1];
+      nextBroKey = brotherList[index + 1];
+    }
+
+    await getPrevBro(prevBroKey);
+    await getNextBro(nextBroKey);
+
+    return null;
   };
 
   render() {
-    let brother = this.props.match.params.name;
-    let broList = Object.keys(BROTHER_INFO);
-    let page = "bros";
-    if (this.isExecsPath()) {
-      broList = ALL_EXECS_LIST;
-      page = "execs";
-    }
-    let broIndex = broList.indexOf(brother);
-    let bro = BROTHER_INFO[brother];
+    const { data } = this.props;
+    const { activeBrother, prevBro, nextBro } = data;
 
-    if (!bro) {
-      this.broNotFound();
+    if (isEmpty(activeBrother)) {
       return null;
     }
 
-    document.title = `${bro.name} - Pi Sigma Epsilon | Zeta Chi Chapter`;
+    document.title = `${
+      activeBrother.name
+    } - Pi Sigma Epsilon | Zeta Chi Chapter`;
 
     return (
       <div id="brother-container">
         <ProfileContainer>
           <ImageContainer>
             <BroImage
-              src={`https://res.cloudinary.com/berkeleypse-tech/image/upload/f_auto,fl_force_strip.progressive,q_auto:best/brothers/${brother}.jpg`}
+              src={`${IMAGE_URL}/${activeBrother.key}.jpg`}
+              alt={activeBrother.name}
               border
-              alt={bro.name}
             />
           </ImageContainer>
           <BroInfoContainer>
-            <PageHandler index={broIndex} brotherList={broList} page={page} />
+            <PageHandler
+              path={this.getPath()}
+              prevBro={prevBro || {}}
+              nextBro={nextBro || {}}
+            />
             <BroHeaderContainer>
-              <Name>{bro.name}</Name>
-              <Position>{bro.position || "Active"}</Position>
+              <Name>{activeBrother.name}</Name>
+              <Position>{activeBrother.position.label || "Active"}</Position>
             </BroHeaderContainer>
-            <BrotherTable bro={bro} />
-            <BroBio>{bro.bio}</BroBio>
+            <BrotherTable
+              name={activeBrother.name}
+              year={activeBrother.year}
+              hometown={activeBrother.hometown}
+              class={activeBrother.pseClass}
+              major={activeBrother.majors}
+              minor={activeBrother.minors}
+              careerInterests={activeBrother.careerInterests}
+              previousPositions={activeBrother.previousPositions}
+            />
+            <BroBio>{activeBrother.bio}</BroBio>
             <BroMediaContainer>
-              {Object.entries(bro.media_links).map(site => {
-                return <MediaLink href={site[1]} media={site[0]} />;
+              {Object.entries(activeBrother.mediaUrls).map(site => {
+                const [key, info] = site;
+                if (isEmpty(info.value)) return null;
+                return (
+                  <MediaLink key={`${activeBrother.name}_${key}`} {...info} />
+                );
               })}
             </BroMediaContainer>
           </BroInfoContainer>
@@ -77,6 +145,12 @@ export default class Brother extends React.Component {
     );
   }
 }
+
+const mapStateToProps = (state, ownProps) => ({
+  data: state.data
+});
+
+export default connect(mapStateToProps, DataActions)(Brother);
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -145,7 +219,6 @@ const BroMediaContainer = styled.div`
 `;
 
 // PropTypes
-
 Brother.propTypes = {
   history: PropTypes.object.isRequired,
   match: PropTypes.object.isRequired
