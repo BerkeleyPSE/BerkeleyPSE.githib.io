@@ -29,10 +29,6 @@ class Executives extends Component {
       bro => bro.position.value === "president"
     )[0];
     const vps = executives.filter(bro => bro.position.value !== "president");
-    const vps = [
-      ...executives.slice(0, presIndex),
-      ...executives.slice(presIndex + 1)
-    ];
 
     const topRowVPs = vps.slice(0, 3).map(brother => {
       return (
