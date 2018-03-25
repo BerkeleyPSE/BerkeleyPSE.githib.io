@@ -23,7 +23,6 @@ module.exports = app => {
       executivesList
     });
   });
-  s;
 
   app.get(API.GET_ACTIVE_BROTHER, async (req, res) => {
     if (isEmpty(req.query) || isUndefined(req.query.key))
