@@ -16,13 +16,13 @@ import { DataActions } from "../../actions/data-actions.js";
 class Brotherhood extends Component {
   componentDidMount() {
     document.title = "Brotherhood - Pi Sigma Epsilon | Zeta Chi Chapter";
-    this.props.getBrothers();
+    const { brothers, executives } = this.props.data;
+    if (!brothers.length || !executives.length) this.props.getBrothers();
   }
 
   render() {
     const { brothers } = this.props.data;
-
-    const allBrothers = brothers.map(brother => {
+    const allBrothers = Object.values(brothers).map(brother => {
       return (
         <BrotherImage
           brother={brother}

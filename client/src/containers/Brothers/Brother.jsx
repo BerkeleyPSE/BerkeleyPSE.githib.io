@@ -26,86 +26,78 @@ const IMAGE_URL =
 
 class Brother extends React.Component {
   componentDidMount() {
-    const { brothers, activeBrother } = this.props.data;
-    const { getBrothers, getActiveBrother } = this.props;
-    if (!brothers.length) getBrothers();
-
-    const broKey = this.props.match.params.name;
-    if (isEmpty(activeBrother)) {
-      getActiveBrother(broKey);
-      this.getSurroundingBros(broKey);
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const broKey = this.props.match.params.name;
-    const nextBroKey = nextProps.match.params.name;
-    if (broKey !== nextBroKey) {
-      this.props.getActiveBrother(nextBroKey);
-      this.getSurroundingBros(nextBroKey);
-    }
+    const { brothers, executives } = this.props.data;
+    const { getBrothers } = this.props;
+    if (!brothers.length || !executives.length) getBrothers();
   }
 
   getPath = () => {
     const { match } = this.props;
-    if (includes(match.path, EXECUTIVES_PATH)) return EXECUTIVES_PATH;
-    return BROTHERS_PATH;
+    return includes(match.path, EXECUTIVES_PATH)
+      ? EXECUTIVES_PATH
+      : BROTHERS_PATH;
   };
 
   getBrosList = () => {
     const { match } = this.props;
     const { brothersList, executivesList } = this.props.data;
-    if (includes(match.path, EXECUTIVES_PATH)) return executivesList;
-    return brothersList;
+    return includes(match.path, EXECUTIVES_PATH)
+      ? executivesList
+      : brothersList;
   };
 
-  getSurroundingBros = async broKey => {
-    const { getPrevBro, getNextBro } = this.props;
-
-    const brotherList = this.getBrosList();
-    if (!brotherList.length) return null;
-    const index = brotherList.indexOf(broKey);
+  getSurroundingBros = broKey => {
+    const { brothers } = this.props.data;
+    const broList = this.getBrosList();
+    if (!broList.length) return null;
+    const index = broList.indexOf(broKey);
     if (index === -1) return null;
 
     let prevBroKey, nextBroKey;
-    const numBros = brotherList.length - 1;
+    const numBros = broList.length - 1;
 
     if (index === 0) {
-      prevBroKey = brotherList[numBros];
-      nextBroKey = brotherList[index + 1];
+      prevBroKey = broList[numBros];
+      nextBroKey = broList[index + 1];
     } else if (index === numBros) {
-      prevBroKey = brotherList[index - 1];
-      nextBroKey = brotherList[0];
+      prevBroKey = broList[index - 1];
+      nextBroKey = broList[0];
     } else {
-      prevBroKey = brotherList[index - 1];
-      nextBroKey = brotherList[index + 1];
+      prevBroKey = broList[index - 1];
+      nextBroKey = broList[index + 1];
     }
 
-    await getPrevBro(prevBroKey);
-    await getNextBro(nextBroKey);
+    const prevBro = {
+      key: prevBroKey,
+      name: brothers[prevBroKey].name
+    };
+    const nextBro = {
+      key: nextBroKey,
+      name: brothers[nextBroKey].name
+    };
 
-    return null;
+    return [prevBro, nextBro];
   };
 
   render() {
-    const { data } = this.props;
-    const { activeBrother, prevBro, nextBro } = data;
+    const { brothers } = this.props.data;
+    if (isEmpty(brothers)) return null;
 
-    if (isEmpty(activeBrother)) {
-      return null;
-    }
+    const broKey = this.props.match.params.name;
+    const activeBro = brothers[broKey] || {};
+    if (isEmpty(activeBro)) return null;
 
-    document.title = `${
-      activeBrother.name
-    } - Pi Sigma Epsilon | Zeta Chi Chapter`;
+    const [prevBro, nextBro] = this.getSurroundingBros(broKey);
+
+    document.title = `${activeBro.name} - Pi Sigma Epsilon | Zeta Chi Chapter`;
 
     return (
       <div id="brother-container">
         <ProfileContainer>
           <ImageContainer>
             <BroImage
-              src={`${IMAGE_URL}/${activeBrother.key}.jpg`}
-              alt={activeBrother.name}
+              src={`${IMAGE_URL}/${activeBro.key}.jpg`}
+              alt={activeBro.name}
               border
             />
           </ImageContainer>
@@ -116,27 +108,25 @@ class Brother extends React.Component {
               nextBro={nextBro || {}}
             />
             <BroHeaderContainer>
-              <Name>{activeBrother.name}</Name>
-              <Position>{activeBrother.position.label || "Active"}</Position>
+              <Name>{activeBro.name}</Name>
+              <Position>{activeBro.position.label || "Active"}</Position>
             </BroHeaderContainer>
             <BrotherTable
-              name={activeBrother.name}
-              year={activeBrother.year}
-              hometown={activeBrother.hometown}
-              class={activeBrother.pseClass}
-              major={activeBrother.majors}
-              minor={activeBrother.minors}
-              careerInterests={activeBrother.careerInterests}
-              previousPositions={activeBrother.previousPositions}
+              name={activeBro.name}
+              year={activeBro.year}
+              hometown={activeBro.hometown}
+              class={activeBro.pseClass}
+              major={activeBro.majors}
+              minor={activeBro.minors}
+              careerInterests={activeBro.careerInterests}
+              previousPositions={activeBro.previousPositions}
             />
-            <BroBio>{activeBrother.bio}</BroBio>
+            <BroBio>{activeBro.bio}</BroBio>
             <BroMediaContainer>
-              {Object.entries(activeBrother.mediaUrls).map(site => {
+              {Object.entries(activeBro.mediaUrls).map(site => {
                 const [key, info] = site;
                 if (isEmpty(info.value)) return null;
-                return (
-                  <MediaLink key={`${activeBrother.name}_${key}`} {...info} />
-                );
+                return <MediaLink key={`${activeBro.name}_${key}`} {...info} />;
               })}
             </BroMediaContainer>
           </BroInfoContainer>

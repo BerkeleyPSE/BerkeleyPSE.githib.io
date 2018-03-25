@@ -9,8 +9,7 @@ import isEmpty from "lodash/isEmpty";
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 import { IntLink } from "../components/LinkStyles";
 
-const PageHandler = props => {
-  const { path, prevBro, nextBro } = props;
+const PageHandler = ({ path, prevBro, nextBro }) => {
   return (
     <PageHandlerContainer>
       {!isEmpty(prevBro) && (

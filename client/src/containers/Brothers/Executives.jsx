@@ -17,17 +17,17 @@ import { DataActions } from "../../actions/data-actions.js";
 class Executives extends Component {
   componentDidMount() {
     document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
-    this.props.getBrothers();
+    const { brothers, executives } = this.props.data;
+    if (!brothers.length || !executives.length) this.props.getBrothers();
   }
 
   render() {
     const { executives } = this.props.data;
-
-    const allExecs = executives.map(bro => {
+    const allExecs = Object.values(executives).map(brother => {
       return (
         <BrotherImage
-          brother={bro}
-          key={`${EXECUTIVES_PATH}_${bro._id}`}
+          brother={brother}
+          key={`${EXECUTIVES_PATH}_${brother._id}`}
           path={EXECUTIVES_PATH}
         />
       );

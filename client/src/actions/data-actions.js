@@ -18,38 +18,10 @@ export const DataActions = {
     const res = await axios.get(API.GET_BROTHERS, {});
     dispatch({
       type: DataConstants.GET_BROTHERS,
-      brothers: res.data.brothers,
-      executives: res.data.executives,
+      brothers: restructureData(res.data.brothers),
+      executives: restructureData(res.data.executives),
       brothersList: res.data.brothersList,
       executivesList: res.data.executivesList
-    });
-  },
-
-  getActiveBrother: key => async dispatch => {
-    const params = { key };
-    const res = await axios.get(API.GET_ACTIVE_BROTHER, { params });
-    dispatch({
-      type: DataConstants.GET_ACTIVE_BROTHER,
-      activeBrother: res.data
-    });
-    return res.data;
-  },
-
-  getPrevBro: key => async dispatch => {
-    const params = { key };
-    const res = await axios.get(API.GET_BROTHER_INFO, { params });
-    dispatch({
-      type: DataConstants.GET_PREV_BROTHER,
-      prevBro: res.data
-    });
-  },
-
-  getNextBro: key => async dispatch => {
-    const params = { key };
-    const res = await axios.get(API.GET_BROTHER_INFO, { params });
-    dispatch({
-      type: DataConstants.GET_NEXT_BROTHER,
-      nextBro: res.data
     });
   },
 
@@ -59,6 +31,7 @@ export const DataActions = {
       type: DataConstants.GET_FULLTIMES,
       fulltimes: res.data
     });
+    return res.data;
   },
 
   getInternships: () => async dispatch => {
@@ -67,5 +40,12 @@ export const DataActions = {
       type: DataConstants.GET_INTERNSHIPS,
       internships: res.data
     });
+    return res.data;
   }
 };
+
+function restructureData(data) {
+  let res = {};
+  data.forEach(d => (res[d.key] = d));
+  return res;
+}

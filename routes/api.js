@@ -6,8 +6,6 @@ module.exports = {
 
   // brother endpoints (brotherRoutes)
   GET_BROTHERS: `${BASE_URL}/brother`,
-  GET_ACTIVE_BROTHER: `${BASE_URL}/brother/:key`,
-  GET_BROTHER_INFO: `${BASE_URL}/brother/info/:key`,
 
   // fulltime endpoints (fulltimeRoutes)
   GET_FULLTIMES: `${BASE_URL}/fulltime`,

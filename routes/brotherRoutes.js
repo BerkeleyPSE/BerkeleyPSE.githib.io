@@ -23,23 +23,4 @@ module.exports = app => {
       executivesList
     });
   });
-
-  app.get(API.GET_ACTIVE_BROTHER, async (req, res) => {
-    if (isEmpty(req.query) || isUndefined(req.query.key))
-      return res.status(422).send({});
-    const activeBrother = await Brothers.findOne({ key: req.query.key });
-    return res.status(200).send(activeBrother);
-  });
-
-  app.get(API.GET_BROTHER_INFO, async (req, res) => {
-    if (isEmpty(req.query) || isUndefined(req.query.key)) {
-      return res.status(422).send({});
-    }
-    const info = await Brothers.findOne({ key: req.query.key }).select({
-      key: 1,
-      name: 1
-    });
-    if (isUndefined(info)) return res.status(422).send({});
-    return res.status(200).send(info);
-  });
 };
