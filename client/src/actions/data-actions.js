@@ -19,6 +19,7 @@ export const DataActions = {
     dispatch({
       type: DataConstants.GET_BROTHERS,
       brothers: res.data.brothers,
+      executives: res.data.executives,
       brothersList: res.data.brothersList,
       executivesList: res.data.executivesList
     });

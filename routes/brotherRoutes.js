@@ -13,12 +13,12 @@ module.exports = app => {
   app.get(API.GET_BROTHERS, async (req, res) => {
     const brothers = await Brothers.find().sort({ name: 1 });
     const brothersList = brothers.map(bro => bro.key);
-    const executivesList = brothers
-      .filter(bro => bro.isExecutive)
-      .map(bro => bro.key);
+    const executives = brothers.filter(bro => bro.isExecutive);
+    const executivesList = executives.map(bro => bro.key);
 
     return res.status(200).send({
       brothers,
+      executives,
       brothersList,
       executivesList
     });

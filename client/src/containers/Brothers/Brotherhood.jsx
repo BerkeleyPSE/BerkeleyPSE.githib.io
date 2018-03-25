@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { BrotherImage } from "./BrotherImage.jsx";
 import { ColumnContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
+import { BROTHERS_PATH } from "../Navbar/navbar_constants";
 
 // actions
 import { DataActions } from "../../actions/data-actions.js";
@@ -22,7 +23,13 @@ class Brotherhood extends Component {
     const { brothers } = this.props.data;
 
     const allBrothers = brothers.map(brother => {
-      return <BrotherImage brother={brother} key={brother._id} page="bros" />;
+      return (
+        <BrotherImage
+          brother={brother}
+          key={brother._id}
+          path={BROTHERS_PATH}
+        />
+      );
     });
 
     return (

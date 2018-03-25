@@ -1,45 +1,85 @@
-import React from "react";
+import React, { Component } from "react";
 
 // node modules
+import { connect } from "react-redux";
 import styled from "styled-components";
 
 // components
-import { VP_LIST } from "./brotherhood_constants";
 import { BrotherImage } from "./BrotherImage.jsx";
 import { RowContainer } from "../components/ContainerStyles";
 import { PageHeader } from "../components/HeaderStyles";
-import { Image } from "../components/ImageStyles";
+// import { Image } from '../components/ImageStyles';
+import { EXECUTIVES_PATH } from "../Navbar/navbar_constants";
 
-const Executives = () => {
-  document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
+// actions
+import { DataActions } from "../../actions/data-actions.js";
 
-  const topRowVPs = VP_LIST.slice(0, 3).map(brother => {
-    return <BrotherImage brother={brother} key={brother} page="execs" />;
-  });
+class Executives extends Component {
+  componentDidMount() {
+    document.title = "Executive Board - Pi Sigma Epsilon | Zeta Chi Chapter";
+    this.props.getBrothers();
+  }
 
-  const bottomRowVPs = VP_LIST.slice(3).map(brother => {
-    return <BrotherImage brother={brother} key={brother} page="execs" />;
-  });
+  render() {
+    const { executives } = this.props.data;
 
-  return (
-    <div id="brotherhood-container">
-      <LandingContainer>
-        {/* <Image
-          src="../images/executive_board.JPG"
-          alt="Pi Sigma Epsilon executive board"
-        /> */}
-        <PageHeader>Executive Board</PageHeader>
-      </LandingContainer>
-      <CenterTextContainer>
-        <BrotherImage brother="sean_yu" key="sean_yu" page="execs" />
-        <div id="VPs-top-row">{topRowVPs}</div>
-        <div id="VPs-bottom-row">{bottomRowVPs}</div>
-      </CenterTextContainer>
-    </div>
-  );
-};
+    const president = executives.filter(
+      bro => bro.position.value === "president"
+    );
+    const presIndex = executives.indexOf(president);
+    const vps = [
+      ...executives.slice(0, presIndex),
+      ...executives.slice(presIndex + 1)
+    ];
 
-export default Executives;
+    const topRowVPs = vps.slice(0, 3).map(brother => {
+      return (
+        <BrotherImage
+          brother={brother}
+          key={`${EXECUTIVES_PATH}_${brother._id}`}
+          path={EXECUTIVES_PATH}
+        />
+      );
+    });
+
+    const bottomRowVPs = vps.slice(3).map(brother => {
+      return (
+        <BrotherImage
+          brother={brother}
+          key={`${EXECUTIVES_PATH}_${brother._id}`}
+          path={EXECUTIVES_PATH}
+        />
+      );
+    });
+
+    return (
+      <div id="brotherhood-container">
+        <LandingContainer>
+          {/* <Image
+            src="../images/executive_board.JPG"
+            alt="Pi Sigma Epsilon executive board"
+          /> */}
+          <PageHeader>Executive Board</PageHeader>
+        </LandingContainer>
+        <CenterTextContainer>
+          <BrotherImage
+            brother={president}
+            key={president._id}
+            path={EXECUTIVES_PATH}
+          />
+          <div id="VPs-top-row">{topRowVPs}</div>
+          <div id="VPs-bottom-row">{bottomRowVPs}</div>
+        </CenterTextContainer>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state, ownProps) => ({
+  data: state.data
+});
+
+export default connect(mapStateToProps, DataActions)(Executives);
 
 const LandingContainer = RowContainer.extend`
   margin-bottom: 2rem;

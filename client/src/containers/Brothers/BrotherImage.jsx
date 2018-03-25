@@ -4,6 +4,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import isEmpty from "lodash/isEmpty";
+import isUndefined from "lodash/isUndefined";
 
 // components
 import { BROTHERS_PATH, EXECUTIVES_PATH } from "../Navbar/navbar_constants";
@@ -17,11 +19,11 @@ const IMAGE_URL =
 export class BrotherImage extends React.Component {
   static propTypes = {
     brother: PropTypes.object.isRequired,
-    page: PropTypes.oneOf(["execs", "bros"])
+    path: PropTypes.oneOf([BROTHERS_PATH, EXECUTIVES_PATH])
   };
 
   static defaultProps = {
-    page: "bros"
+    path: BROTHERS_PATH
   };
 
   state = {
@@ -29,19 +31,16 @@ export class BrotherImage extends React.Component {
   };
 
   render() {
-    const { brother, page } = this.props;
+    const { brother, path } = this.props;
     let { hover } = this.state;
 
-    if (!brother) {
+    if (isEmpty(brother) || isUndefined(brother)) {
       return null;
     }
 
-    const isBrosPage = page === "bros";
-    const toPath = isBrosPage ? BROTHERS_PATH : EXECUTIVES_PATH;
-
     return (
       <BrotherImageContainer
-        to={`${toPath}/${brother.key}`}
+        to={`${path}/${brother.key}`}
         onMouseEnter={() => this.setState({ hover: true })}
         onMouseLeave={() => this.setState({ hover: false })}
       >

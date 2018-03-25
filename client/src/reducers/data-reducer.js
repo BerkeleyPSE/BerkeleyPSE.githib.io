@@ -2,6 +2,7 @@ import { DataConstants } from "../actions/data-actions";
 
 const defaultState = {
   brothers: [],
+  executives: [],
   brothersList: [],
   executivesList: [],
   activeBrother: {},
