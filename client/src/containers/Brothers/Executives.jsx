@@ -3,8 +3,6 @@ import React, { Component } from "react";
 // node modules
 import { connect } from "react-redux";
 import styled from "styled-components";
-import isEmpty from "lodash/isEmpty";
-import isUndefined from "lodash/isUndefined";
 
 // components
 import { BrotherImage } from "./BrotherImage.jsx";
@@ -28,8 +26,8 @@ class Executives extends Component {
     const allExecs = executives.map(bro => {
       return (
         <BrotherImage
-          brother={brother}
-          key={`${EXECUTIVES_PATH}_${brother._id}`}
+          brother={bro}
+          key={`${EXECUTIVES_PATH}_${bro._id}`}
           path={EXECUTIVES_PATH}
         />
       );

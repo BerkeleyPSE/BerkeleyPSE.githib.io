@@ -41,7 +41,7 @@ class Brother extends React.Component {
     const broKey = this.props.match.params.name;
     const nextBroKey = nextProps.match.params.name;
     if (broKey !== nextBroKey) {
-      nextProps.getActiveBrother(nextBroKey);
+      this.props.getActiveBrother(nextBroKey);
       this.getSurroundingBros(nextBroKey);
     }
   }
