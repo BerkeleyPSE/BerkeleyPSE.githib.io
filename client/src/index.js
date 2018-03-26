@@ -11,6 +11,7 @@ import reduxThunk from "redux-thunk";
 // components
 import registerServiceWorker from "./registerServiceWorker";
 import App from "./containers/App";
+import ScrollToTop from "./containers/ScrollToTop";
 import rootReducer from "./reducers/index.js";
 import "./index.css";
 
@@ -20,7 +21,9 @@ let history = createHistory();
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <App />
+      <ScrollToTop>
+        <App />
+      </ScrollToTop>
     </Router>
   </Provider>,
   document.getElementById("root")
